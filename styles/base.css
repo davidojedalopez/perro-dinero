@@ -1,0 +1,44 @@
+@tailwind base;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+body {
+  scroll-behavior: smooth;
+  @apply font-main;
+  @apply text-primary;
+  hyphens: auto;
+}
+
+h1 {
+  @apply text-2xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+p {
+  @apply text-base;
+}
+
+a {
+  @apply underline;
+}
+
+a:hover {
+  @apply text-accent;
+}
+
+a:visited {
+  @apply text-opacity-25;
+}
+
+hr {
+  @apply border-2;
+  @apply border-accent;
+  @apply mb-4;
+}
+
+@tailwind components;
+@tailwind utilities;

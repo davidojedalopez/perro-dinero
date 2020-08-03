@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/main.css' | url }}" >
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/img/apple-touch-icon.png' | url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/img/favicon-32x32.png' | url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/img/favicon-16x16.png' | url }}">    
+    
+  </head>
+  <body class="bg-background w-4/5 md:w-1/2 xl:w-1/3 mx-auto">
+
+      <header class="mt-4">
+        <a href="/" class="no-underline">
+          <span class="text-3xl font-black font-logo">perro dinero</span><div class="square-logo"></div>
+        </a>
+      </header>
+
+      <main class="">
+        {{ content | safe }}
+      </main>      
+    
+    <script src="{{ '/assets/main.js' | url }}"></script>
+  </body>
+</html>

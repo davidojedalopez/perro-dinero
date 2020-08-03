@@ -1,0 +1,93 @@
+.square-logo {
+  height: 10px;
+  width: 10px;
+  @apply bg-accent; 
+  @apply ml-1;
+  display: inline-block;
+}
+
+article p {
+  @apply mb-4;
+}
+
+article ul {
+  @apply pl-4;  
+}
+
+article ol {
+  list-style-type: decimal;
+}
+
+article h2,
+article h3 {
+  @apply text-accent;
+  @apply py-4;
+}
+
+article img {
+  @apply mx-auto;
+}
+
+article blockquote {
+  @apply ml-4;
+  @apply my-12;
+  @apply p-4;
+  @apply border-l-4;
+  @apply border-accent;
+  @apply bg-green-100;
+  @apply rounded;
+}
+
+article blockquote p {
+  @apply text-xl;
+  @apply mb-0;
+}
+
+article blockquote p::after {
+  content: " 💬"
+}
+
+article details {
+  @apply border;
+  @apply border-accent;
+  @apply rounded;
+  @apply p-4;
+  @apply mb-8;  
+  width: fit-content;
+  min-width: fit-content;
+}
+
+article a::after {
+  content: " 🔗";
+  @apply text-xs;  
+}
+
+article div > ol {
+  @apply pl-8;
+  @apply mb-4;
+}
+
+/* TOC styles */
+article details summary {
+  @apply font-black;
+  @apply cursor-pointer;
+}
+
+article .table-of-contents a {
+  @apply no-underline;
+}
+
+article .table-of-contents li {
+  display: block;
+  counter-increment: list-item; 
+}
+
+article .table-of-contents ol {
+  counter-reset: list-item;
+  @apply pl-4;
+}
+
+article .table-of-contents li:before {
+  content: counters(list-item,'.') '. ';
+}
+/* End TOC styles */

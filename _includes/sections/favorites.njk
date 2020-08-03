@@ -1,0 +1,18 @@
+<section id="favorites" class="w-4/5 lg:w-1/2 mx-auto py-4">
+  <div class="relative z-10 mb-4"> 
+    <h2 class="transform rotate-6 pr-4 text-primary font-bold inline-block text-shadow-bg bg-background">Favorites</h2>
+    <hr class="border-t-1 -pl-6 absolute w-full divider border-secondary">    
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+  
+    {% favorite "📚 Books", "#" %}
+    {% favorite "🎲 Board games", "#" %}
+    {% favorite "🎮 Videogames", "#" %}
+    {% favorite "📝 Blog posts", "#" %}
+    {% favorite "↪️ Twitter follows", "#" %}
+    {% favorite "🎸 Music", "#" %}
+
+  </div>
+  
+</section>  
