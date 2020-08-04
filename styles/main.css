@@ -11,7 +11,7 @@ article p {
 }
 
 article ul {
-  @apply pl-4;  
+  @apply pl-4;
 }
 
 article ol {
@@ -67,7 +67,15 @@ article div > ol {
   @apply mb-4;
 }
 
+article code {
+  @apply bg-gray-300;
+}
+
 /* TOC styles */
+article details {
+  @apply w-full;
+}
+
 article details summary {
   @apply font-black;
   @apply cursor-pointer;

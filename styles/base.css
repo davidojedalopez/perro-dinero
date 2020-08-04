@@ -8,19 +8,31 @@ body {
   @apply font-main;
   @apply text-primary;
   hyphens: auto;
+
+  font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.5em + (2 - 1.5) * ((100vw - 300px)/(1600 - 300)));
 }
 
 h1 {
-  @apply text-2xl;
+  @apply leading-snug;
+  font-size: calc(32px + (36 - 32) * ((100vw - 300px) / (1600 - 300)));
 }
+
+/* h1 {
+  @apply text-2xl;
+} */
 
 h2 {
-  @apply text-xl;
+  font-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
 }
 
-p {
-  @apply text-base;
+h3 {
+  font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
+
+/* p {
+  @apply text-base;
+} */
 
 a {
   @apply underline;
