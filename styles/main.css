@@ -1,7 +1,7 @@
 .square-logo {
   height: 10px;
   width: 10px;
-  @apply bg-accent; 
+  @apply bg-accent-500; 
   @apply ml-1;
   display: inline-block;
 }
@@ -20,8 +20,9 @@ article ol {
 
 article h2,
 article h3 {
-  @apply text-accent;
+  @apply text-accent-500;
   @apply py-4;
+  @apply font-black;
 }
 
 article img {
@@ -33,7 +34,7 @@ article blockquote {
   @apply my-12;
   @apply p-4;
   @apply border-l-4;
-  @apply border-accent;
+  @apply border-accent-500;
   @apply bg-green-100;
   @apply rounded;
 }
@@ -49,7 +50,7 @@ article blockquote p::after {
 
 article details {
   @apply border;
-  @apply border-accent;
+  @apply border-accent-500;
   @apply rounded;
   @apply p-4;
   @apply mb-8;  
@@ -57,9 +58,8 @@ article details {
   min-width: fit-content;
 }
 
-article a::after {
-  content: " 🔗";
-  @apply text-xs;  
+article strong {
+  @apply text-accent-500;
 }
 
 article div > ol {
@@ -67,8 +67,17 @@ article div > ol {
   @apply mb-4;
 }
 
+article div > ul {
+  @apply mb-4;
+}
+
 article code {
   @apply bg-gray-300;
+}
+
+article p > a {
+  @apply bg-accent-100;
+  @apply rounded-t;
 }
 
 /* TOC styles */

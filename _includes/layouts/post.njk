@@ -7,8 +7,8 @@ permalink: "posts/{{ page.fileSlug }}/"
   {% if cover_path %}
     <img class="rounded mx-auto mb-4" src="{{ cover_path | url }}">  
   {% endif %}  
-  <h1 class="text-accent font-black text-3xl">{{ title }}</h1>
-  <time class="text-sm text-accent" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time>
+  <h1 class="text-accent-500 font-black">{{ title }}</h1>
+  <time class="text-base text-accent-500" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time>
   
   <div class="mt-8">
     {{ content | safe }}

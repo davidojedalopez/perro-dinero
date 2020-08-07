@@ -1,8 +1,8 @@
 <a class="no-underline" href="{{ post.url | url }}">
   {% if post.data.cover_path %}
-    <img class="rounded mx-auto mb-4" src="{{ post.data.cover_path | url }}">  
+    <img class="rounded mx-auto mb-4" loading="lazy" src="{{ post.data.cover_path | url }}">  
   {% endif %}  
   <h2 class="font-black">{{ post.data.title }} </h2>
-  <time class="text-sm text-accent" datetime="{{ post.data.published_at | htmlDateString }}">{{ post.data.published_at | readableDate }}</time>
+  <time class="text-sm text-accent-500" datetime="{{ post.data.published_at | htmlDateString }}">{{ post.data.published_at | readableDate }}</time>
   <p class="mt-4">{{ post.data.description }}</p>  
 </a>

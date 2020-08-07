@@ -15,7 +15,7 @@ body {
 
 h1 {
   @apply leading-snug;
-  font-size: calc(32px + (36 - 32) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(36px + (40 - 36) * ((100vw - 300px) / (1600 - 300)));
 }
 
 /* h1 {
@@ -23,7 +23,7 @@ h1 {
 } */
 
 h2 {
-  font-size: calc(24px + (28 - 24) * ((100vw - 300px) / (1600 - 300)));
+  font-size: calc(28px + (32 - 28) * ((100vw - 300px) / (1600 - 300)));
 }
 
 h3 {
@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-  @apply text-accent;
+  @apply text-accent-500;
 }
 
 a:visited {
@@ -48,8 +48,25 @@ a:visited {
 
 hr {
   @apply border-2;
-  @apply border-accent;
+  @apply border-accent-500;
   @apply mb-4;
+}
+
+.button {
+  @apply p-4;
+  @apply border-accent-500;
+  @apply text-accent-500;
+  @apply border-2;
+  @apply text-center;
+  @apply mx-auto;
+  @apply rounded;
+  @apply no-underline;
+  @apply font-bold;
+  @apply cursor-pointer;
+}
+
+.button:hover {
+  @apply bg-accent-100;
 }
 
 @tailwind components;

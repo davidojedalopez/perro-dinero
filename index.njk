@@ -4,7 +4,7 @@ layout: layouts/base.njk
 
 <section class="flex items-center flex-col my-8 text-center">
   <img class="rounded-full mb-8" src="{{ '/img/nina.png' | url }}" width="150" height="150">  
-  <p class="mb-4">¡Qué pedo! Mi nombre es<br> <span class="text-accent font-black">David Ojeda</span> 👋🏼</p>
+  <p class="mb-4">¡Qué pedo! Mi nombre es<br> <span class="text-accent-500 font-black">David Ojeda</span> 👋🏼</p>
   <p class="mb-4">Tengo muchos hobbies, y las finanzas personales es uno de ellos 🤑. Llevo años presupuestando mis gastos y a finales del 2019 comencé a estudiar a fondo sobre inversiones en México 🇲🇽</p>
   <p class="mb-4">Acompáñame en este viaje y emprendamos juntos el camino hacia la libertad financiera 💪🏼</p>
 
@@ -16,22 +16,27 @@ layout: layouts/base.njk
 </section>
 
 <h1 class="font-black text-center">
-  <span class="text-accent">El dinero no compra la felicidad,<br></span> pero sí compra libertad.
+  <span class="text-accent-500">El dinero no compra <br>la felicidad,<br></span> pero sí compra libertad.
 </h1>
+
+<hr class="my-8">
+
+<p class="text-xl my-8">Posts recientes</p>
 
 {% set postsList = collections.posts | head(-4) %}
 {% set postsListCount = collections.posts | length %}
-
 <section class="flex flex-col my-8 space-y-16">
   {% for post in postsList | reverse %}
     {% include "postitem.njk" %}
   {% endfor %}
+
+  <a class="button" href="/posts">Todos los posts ({{ postsListCount }})</a>
 </section>
 
 <hr>
 
 <section class="my-8 text-center">
-  <h2 class="text-center mb-4">Actualizaciones <span class="text-accent">perronas</span> 🐕 💌</h2>
+  <h2 class="text-center mb-4">Actualizaciones <span class="text-accent-500">perronas</span> 🐕 💌</h2>
   <p class="mb-4">Suscríbete a mi newsletter y recibe una versión simplificada, directa y más personal de mi post semanal.</p>
   <p class="mb-4">Solo un correo a la semana.</p>
   <p class="font-black">Cero spam 🚫</p>
