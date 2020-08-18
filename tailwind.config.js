@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['_site/**/*.html'],
+  purge: ['./_site/**/*.html', './**/*.njk'],
   theme: {    
     extend: {      
       colors: {      
