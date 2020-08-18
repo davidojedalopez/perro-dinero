@@ -1,8 +1,5 @@
 module.exports = {
-  purge: {
-    enabled: false,
-    content: ['_site/**/*.html'],
-  },
+  purge: ['./src/**/*.html'],
   theme: {    
     extend: {      
       colors: {      
