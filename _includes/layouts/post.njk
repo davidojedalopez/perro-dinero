@@ -9,8 +9,8 @@ permalink: "posts/{{ page.fileSlug }}/"
       <img src="{{ cover_path | url }}" alt="{{ cover_alt }}" class="relative -z-1" />
     </div>
   {% endif %}
-  <h1 class="text-accent-500 font-black text-5xl">{{ title }}</h1>
-  <time class="text-base text-accent-500 opacity-75" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-500 opacity-75">·</span> <span class="text-base text-accent-500 opacity-75">Lectura de {{ content | readingTime }}</span>
+  <h1 class="text-accent-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
+  <time class="text-base text-accent-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600">·</span> <span class="text-base text-accent-600">Lectura de {{ content | readingTime }}</span>
   
   <div class="mt-8">
     {{ content | safe }}
