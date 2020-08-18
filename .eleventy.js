@@ -6,6 +6,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const readingTime = require('eleventy-plugin-reading-time');
+const cleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -20,12 +21,17 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
+  eleventyConfig.addFilter("cssmin", code => {
+    return new cleanCSS({}).minify(code).styles;
+  });
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     if(dateObj instanceof String) {
       dateObj = new Date(dateObj);
     }
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
+
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', dateObj => {

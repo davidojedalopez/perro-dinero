@@ -1,6 +1,5 @@
 @tailwind base;
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
 
 body {
@@ -17,10 +16,6 @@ h1 {
   @apply leading-snug;
   font-size: calc(36px + (40 - 36) * ((100vw - 300px) / (1600 - 300)));
 }
-
-/* h1 {
-  @apply text-2xl;
-} */
 
 h2 {
   font-size: calc(28px + (32 - 28) * ((100vw - 300px) / (1600 - 300)));
