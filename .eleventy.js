@@ -6,7 +6,6 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const readingTime = require('eleventy-plugin-reading-time');
-const cleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -20,10 +19,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
-
-  eleventyConfig.addFilter("cssmin", code => {
-    return new cleanCSS({}).minify(code).styles;
-  });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     if(dateObj instanceof String) {
@@ -71,21 +66,21 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Browsersync Overrides
-  // eleventyConfig.setBrowserSyncConfig({
-  //   callbacks: {
-  //     ready: function(err, browserSync) {
-  //       const content_404 = fs.readFileSync('_site/404.html');
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function(err, browserSync) {
+        const content_404 = fs.readFileSync('_site/404.html');
 
-  //       browserSync.addMiddleware("*", (req, res) => {
-  //         // Provides the 404 content without redirect.
-  //         res.write(content_404);
-  //         res.end();
-  //       });
-  //     },
-  //   },
-  //   ui: false,
-  //   ghostMode: false
-  // });
+        browserSync.addMiddleware("*", (req, res) => {
+          // Provides the 404 content without redirect.
+          res.write(content_404);
+          res.end();
+        });
+      },
+    },
+    ui: false,
+    ghostMode: false
+  });
 
   
 
