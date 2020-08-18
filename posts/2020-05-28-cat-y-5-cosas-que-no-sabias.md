@@ -3,7 +3,9 @@ title: "Costo Anual Total (CAT)— 5 cosas que no sabías de él 🐈"
 description: "El Costo Anual Total (CAT) es un indicador para que nosotros, los consumidores, usemos como herramienta para determinar qué crédito nos conviene más sin complicarnos mucho la vida."
 published: true
 published_at: 2020-05-28
-cover_path: 
+cover_path: /img/posts/covers/cat.png
+cover_alt: "Nina y yo, David, abrazados frente a mi pastel de cumpleaños número 28."
+tags: ['mexico', 'creditos', 'deudas']
 ---
 
 <details open>

@@ -3,7 +3,9 @@ title: "Cobros Digitales (CoDi), adiós al efectivo"
 description: "CoDi es una plataforma creada por el Banco de México para pagar y cobrar hasta $8,000 pesos en cualquier momento del día, sin comisiones, usando códigos QR."
 published: true
 published_at: 2020-07-02
-cover_path: 
+cover_path: /img/posts/covers/codi.png
+cover_alt: "Nina con la lengua de fuera viendo fijamente a la cámara."
+tags: ['mexico', 'plataformas']
 ---
 
 <details open>

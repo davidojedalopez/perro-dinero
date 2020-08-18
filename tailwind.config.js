@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+    content: ['_site/**/*.html'],
+  },
   theme: {    
     extend: {      
       colors: {      
@@ -14,13 +17,26 @@ module.exports = {
             700: '#115023',
             800: '#0D3C1B',
             900: '#092812',
-        },        
+        },
+        'accent-dark': {
+          100: '#FEFAEC',
+          200: '#FCF2CF',
+          300: '#FAEAB2',
+          400: '#F7DA78',
+          500: '#F3CA3E',
+          600: '#DBB638',
+          700: '#927925',
+          800: '#6D5B1C',
+          900: '#493D13',
+        },
         background: '#FAFAFA'
       },
       fontFamily: {
         'logo': ['Roboto Condensed', 'sans-serif'],
         'main': ['Open Sans', 'sans-serif']
-        // 'logo': ['Oswald', 'sans-serif']
+      },
+      zIndex: {
+        '-1': '-1'
       }
     } 
   },

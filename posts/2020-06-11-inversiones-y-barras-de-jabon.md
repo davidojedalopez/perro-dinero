@@ -3,7 +3,9 @@ title: "Inversiones y barras de jabón 🧼"
 description: "¿En qué se parece una inversión a una barra de jabón? Entre más la manejes más pequeña se hace. Sin albur 🙃"
 published: true
 published_at: 2020-06-11
-cover_path: 
+cover_path: /img/posts/covers/inversiones_y_jabon.png
+cover_alt: "Nina sentada y vestida con un moño rojo."
+tags: ['inversiones']
 ---
 
 <details open>

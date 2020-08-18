@@ -1,8 +1,5 @@
-<a class="no-underline" href="{{ post.url | url }}">
-  {% if post.data.cover_path %}
-    <img class="rounded mx-auto mb-4" loading="lazy" src="{{ post.data.cover_path | url }}">  
-  {% endif %}  
-  <h2 class="font-black">{{ post.data.title }} </h2>
-  <time class="text-sm text-accent-500" datetime="{{ post.data.published_at | htmlDateString }}">{{ post.data.published_at | readableDate }}</time>
-  <p class="mt-4">{{ post.data.description }}</p>  
+<a class="no-underline hover:bg-accent-100 p-4 rounded" href="{{ post.url | url }}">
+  <h2 class="font-black text-accent-500">{{ post.data.title }} </h2>
+  <time class="text-sm text-accent-500 opacity-75" datetime="{{ post.data.published_at | htmlDateString }}">{{ post.data.published_at | readableDate }}</time> <span class="px-2 text-sm text-accent-500 opacity-75">·</span> <span class="text-sm text-accent-500 opacity-75">Lectura de {{ post | readingTime }}</span>  
+  <p>{{ post.data.description }}</p>  
 </a>

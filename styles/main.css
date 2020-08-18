@@ -6,6 +6,11 @@
   display: inline-block;
 }
 
+.square-logo--small {
+  height: 5px;
+  width: 5px;
+}
+
 article p {
   @apply mb-4;
 }
@@ -31,9 +36,10 @@ article img {
 
 article blockquote {
   @apply ml-4;
-  @apply my-12;
+  @apply my-4;
   @apply p-4;
   @apply border-l-4;
+  @apply border-b;
   @apply border-accent-500;
   @apply bg-green-100;
   @apply rounded;
@@ -45,7 +51,7 @@ article blockquote p {
 }
 
 article blockquote p::after {
-  content: " 💬"
+  /* content: " 💬" */
 }
 
 article details {
@@ -92,11 +98,12 @@ article details summary {
 
 article .table-of-contents a {
   @apply no-underline;
+  @apply mb-2 inline-block;
 }
 
 article .table-of-contents li {
   display: block;
-  counter-increment: list-item; 
+  counter-increment: list-item;  
 }
 
 article .table-of-contents ol {
@@ -108,3 +115,7 @@ article .table-of-contents li:before {
   content: counters(list-item,'.') '. ';
 }
 /* End TOC styles */
+
+.gradient-background {
+  background: linear-gradient(0deg, rgba(88,100,116,1) 0%, transparent 30%);
+}

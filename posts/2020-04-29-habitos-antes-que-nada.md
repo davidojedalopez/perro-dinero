@@ -3,7 +3,9 @@ title: "Hábitos antes que nada 🧘🏻‍♂️"
 description: "Aunque parezca extraño, el primer paso para mejorar tu situación financiera no tiene nada que ver con dinero; tiene que ver con tus hábitos."
 published: true
 published_at: 2020-04-29
-cover_path: 
+cover_path: /img/posts/covers/habitos.png
+cover_alt: "Nina viendo un cartel que dice, escrito con gis: 'Hábitos, antes que nada'."
+tags: ['desarrollo personal']
 ---
 
 <details open>

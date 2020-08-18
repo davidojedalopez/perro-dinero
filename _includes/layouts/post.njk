@@ -5,12 +5,46 @@ permalink: "posts/{{ page.fileSlug }}/"
 
 <article class="py-8">
   {% if cover_path %}
-    <img class="rounded mx-auto mb-4" src="{{ cover_path | url }}">  
-  {% endif %}  
-  <h1 class="text-accent-500 font-black">{{ title }}</h1>
-  <time class="text-base text-accent-500" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time>
+    <div class="mb-4 gradient-background rounded mx-auto w-full max-w-screen-sm h-auto">
+      <img src="{{ cover_path | url }}" alt="{{ cover_alt }}" class="relative -z-1" />
+    </div>
+  {% endif %}
+  <h1 class="text-accent-500 font-black text-5xl">{{ title }}</h1>
+  <time class="text-base text-accent-500 opacity-75" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-500 opacity-75">·</span> <span class="text-base text-accent-500 opacity-75">Lectura de {{ content | readingTime }}</span>
   
   <div class="mt-8">
     {{ content | safe }}
   </div>
+
+  <div id="disqus_thread" class="mt-8"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://perrodinero.blog/{{ page.url | url }}";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "{{ page.url | url }}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://perrodinero.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                              
+  
+  {# <div class="space-y-8 mt-16 p-4 border-2 border-accent-dark-500"> #}
+  <div class="flex flex-col mt-16 p-4 bg-gray-200">
+    <p class="opacity-75">Otros posts que pueden interesarte:</p>
+    {% set post = collections.posts | getPreviousCollectionItem(page) %}
+    {% if post %}
+        {% include "postitem_no_description.njk" %}
+    {% endif %}
+
+    {% set post = collections.posts | getNextCollectionItem(page) %}
+    {% if post %}
+        {% include "postitem_no_description.njk" %}
+    {% endif %}
+  </div>
+
 </article>

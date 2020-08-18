@@ -5,7 +5,7 @@ layout: layouts/base.njk
 {% set postsList = collections.posts %}
 {% set postsListCount = collections.posts | length %}
 
-<section class="flex flex-col my-8 space-y-16">
+<section class="flex flex-col my-8 space-y-4">
   {% for post in postsList | reverse %}
     {% include "postitem.njk" %}
   {% endfor %}

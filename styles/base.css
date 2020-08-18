@@ -30,16 +30,11 @@ h3 {
   font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
-/* p {
-  @apply text-base;
-} */
-
 a {
   @apply underline;
 }
 
 a:hover {
-  @apply text-accent-500;
 }
 
 a:visited {
@@ -49,24 +44,27 @@ a:visited {
 hr {
   @apply border-2;
   @apply border-accent-500;
-  @apply mb-4;
+  @apply my-8;
 }
 
 .button {
   @apply p-4;
   @apply border-accent-500;
   @apply text-accent-500;
+
+  @apply bg-accent-500;
+  @apply text-white;
+
   @apply border-2;
   @apply text-center;
   @apply mx-auto;
   @apply rounded;
   @apply no-underline;
-  @apply font-bold;
   @apply cursor-pointer;
 }
 
 .button:hover {
-  @apply bg-accent-100;
+  
 }
 
 @tailwind components;

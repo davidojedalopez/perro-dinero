@@ -3,7 +3,9 @@ title: "Tu portafolio de inversiones desde cero"
 description: "Diseña tu portafolio basado en las ideas de David Swensen— enfocado a capital, diversificado y sin pagar tantos impuestos."
 published: true
 published_at: 2020-06-17
-cover_path: 
+cover_path: /img/posts/covers/portafolio_desde_cero.png
+cover_alt: "Nina acostada en el parque volteando hacia atrás, sorprendida."
+tags: ['inversiones']
 ---
 
 <details open>

@@ -3,7 +3,8 @@ title: "¡Bienvenidos! 👋"
 description: "Primera publicación en mi blog de finanzas personales. ¡Únete a mí y emprendamos juntos el camino hacia la libertad financiera! 💰"
 published: true
 published_at: 2020-04-19
-cover_path: /img/bienvenido.png
+cover_path: /img/posts/covers/bienvenido.png
+cover_alt: "Un salvavidas que dice 'Welcome board' colgado en la pared."
 ---
 
 **¡Hola!** Mi nombre es David, y te doy la bienvenida a mi blog de finanzas personales 🤑

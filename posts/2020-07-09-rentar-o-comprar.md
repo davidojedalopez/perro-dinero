@@ -3,7 +3,9 @@ title: "¿Rentar o comprar?"
 description: "Ninguna opción es mala o buena en esencia. A veces es mejor rentar y otras veces comprar, depende de tu situación."
 published: true
 published_at: 2020-07-09
-cover_path: 
+cover_path: /img/posts/covers/comprar_o_rentar.png
+cover_alt: "Nina con su gorrito de cumpleaños viendo ansiosamente su pastel en forma de hueso."
+tags: ['inversiones']
 ---
 
 <details open>

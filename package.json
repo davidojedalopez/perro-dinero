@@ -34,6 +34,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "autoprefixer": "^9.8.0",
     "css-loader": "^3.5.3",
+    "eleventy-plugin-lazyimages": "^2.0.1",
     "gray-matter": "^4.0.2",
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
@@ -49,6 +50,7 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
+    "eleventy-plugin-reading-time": "0.0.1",
     "flat-cache": "^2.0.1"
   }
 }

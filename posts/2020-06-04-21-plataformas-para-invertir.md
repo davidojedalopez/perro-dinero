@@ -3,7 +3,9 @@ title: "21 plataformas para comenzar a invertir"
 description: "Empieza a invertir con $100 pesos en una de estas 21 plataformas."
 published: true
 published_at: 2020-06-04
-cover_path: 
+cover_path: /img/posts/covers/21_plataformas.png
+cover_alt: "Nina acostada, volteando a la cámara con cara de no molestar."
+tags: ['inversiones', 'plataformas']
 ---
 
 <details open>

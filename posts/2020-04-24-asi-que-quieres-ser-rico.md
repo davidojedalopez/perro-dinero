@@ -3,7 +3,9 @@ title: "Así que quieres ser rico 💰..."
 description: "¿Qué significa ser rico para ti? Tu respuesta es el primer paso hacia tu libertad financiera 👊🏼"
 published: true
 published_at: 2020-04-24
-cover_path: 
+cover_path: /img/posts/covers/ser_rico.png
+cover_alt: "Ninca acostada al lado de muchos billetes de $500 pesos mexicanos y de un cartel que dice: '¿Qué significa ser rico? $'."
+tags: ['desarrollo personal']
 ---
 
 <details open>

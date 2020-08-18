@@ -2,30 +2,30 @@
 layout: layouts/base.njk
 ---
 
-<section class="flex items-center flex-col my-8 text-center">
-  <img class="rounded-full mb-8" src="{{ '/img/nina.png' | url }}" width="150" height="150">  
-  <p class="mb-4">¡Qué pedo! Mi nombre es<br> <span class="text-accent-500 font-black">David Ojeda</span> 👋🏼</p>
-  <p class="mb-4">Tengo muchos hobbies, y las finanzas personales es uno de ellos 🤑. Llevo años presupuestando mis gastos y a finales del 2019 comencé a estudiar a fondo sobre inversiones en México 🇲🇽</p>
+<section class="flex flex-col my-8">
+  <img class="rounded-full mb-8 self-center" src="{{ '/img/david_y_nina.png' | url }}" alt="Yo, David, y Nina, mi perra, felices en un parque." width="200" height="200">  
+  <p class="mb-4 self-center">¡Qué pedo! Mi nombre es <span class="text-accent-500 font-black">David Ojeda</span>, y mi perra se llama <span class="text-accent-500 font-black">Nina</span> 👋🏼</p>
+  <p class="mb-4">Tengo muchos hobbies, y las finanzas personales es uno de ellos. Llevo años presupuestando mis gastos y a finales del 2019 comencé a estudiar a fondo sobre inversiones en México 🇲🇽</p>
   <p class="mb-4">Acompáñame en este viaje y emprendamos juntos el camino hacia la libertad financiera 💪🏼</p>
 
-  <div class="flex space-x-10 my-8">
-    <a href="#"><img src="{{ '/img/twitter.png' | url }}" width="35"></a>
-    <a href="#"><img src="{{ '/img/twitter.png' | url }}" width="35"></a>
-    <a href="#"><img src="{{ '/img/twitter.png' | url }}" width="35"></a>
+  <div class="self-center my-4">
+    <a href="https://twitter.com/PerroDinero">
+      <img src="{{ '/img/twitter.png' | url }}" alt="Twitter logo in black. Abre perfil de Perro Dinero en Twitter." width="45">
+    </a>    
   </div>
 </section>
 
 <h1 class="font-black text-center">
-  <span class="text-accent-500">El dinero no compra <br>la felicidad,<br></span> pero sí compra libertad.
+  El dinero <span class="text-accent-500"> sí compra</span> la felicidad.
 </h1>
 
 <hr class="my-8">
 
-<p class="text-xl my-8">Posts recientes</p>
+<p class="opacity-75 my-4">Posts recientes</p>
 
 {% set postsList = collections.posts | head(-4) %}
 {% set postsListCount = collections.posts | length %}
-<section class="flex flex-col my-8 space-y-16">
+<section class="flex flex-col my-8 space-y-4">
   {% for post in postsList | reverse %}
     {% include "postitem.njk" %}
   {% endfor %}
@@ -35,13 +35,13 @@ layout: layouts/base.njk
 
 <hr>
 
-<section class="my-8 text-center">
-  <h2 class="text-center mb-4">Actualizaciones <span class="text-accent-500">perronas</span> 🐕 💌</h2>
-  <p class="mb-4">Suscríbete a mi newsletter y recibe una versión simplificada, directa y más personal de mi post semanal.</p>
-  <p class="mb-4">Solo un correo a la semana.</p>
-  <p class="font-black">Cero spam 🚫</p>
+<section class="my-8">
+  <h2 class="mb-4 text-center">Actualizaciones <span class="text-accent-500">perronas</span> 🐕 💌</h2>
+  <p class="mb-4">Suscríbete a mi newsletter y recibe historias que cambiarán cómo percibes el dinero.</p>
+  <p class="text-center mb-4">Solo un correo a la semana.</p>
+  <p class="text-center font-black">Cero spam 🚫</p>
 
-  <iframe src="https://perrodinero.substack.com/embed" class="bg-background mx-auto" frameborder="0" scrolling="no"></iframe>
+  <iframe src="https://perrodinero.substack.com/embed" class="bg-background mx-auto" frameborder="0" scrolling="no" title="Widget de Substack, el servicio para newsletters que utilizo."></iframe>
 
-  <p>Puedes revisar los <a href="https://perrodinero.substack.com/">correos anteriores aquí</a>, para que veas que están perrones.</p>
+  <p>Puedes revisar los <a href="https://perrodinero.substack.com/archive">correos anteriores aquí</a>, para que veas que están perrones.</p>
 </section>

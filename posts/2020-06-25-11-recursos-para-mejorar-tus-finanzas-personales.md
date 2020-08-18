@@ -3,7 +3,9 @@ title: "11 recursos para mejorar tus finanzas personales"
 description: "Cada quien aprende de forma diferente y la gran ventaja que tenemos hoy es que hay infinidad de formatos para consumir información."
 published: true
 published_at: 2020-06-25
-cover_path: 
+cover_path: /img/posts/covers/11_recursos.png
+cover_alt: "Nina y su papá, Panda, amarrados a una barda de madera en Altata, una playa de Sinaloa."
+tags: ['recursos', 'inversiones', 'ahorro', 'deuda', 'desarrollo personal']
 ---
 
 <details open>
