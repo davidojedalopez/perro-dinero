@@ -30,7 +30,8 @@ article h3 {
   @apply font-black;
 }
 
-article img {
+article img, 
+article video {
   @apply mx-auto;
 }
 
