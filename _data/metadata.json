@@ -1,9 +1,9 @@
 {
-  "title": "David Ojeda",
+  "title": "Perro Dinero - Finanzas Personales 🐕💵",
   "url": "https://perrodinero.blog/",
-  "description": "Finanzas personales.",
+  "description": "El dinero sí compra la felicidad. Inversiones, deudas, créditos, presupuestos, seguros, impuestos y recomendaciones para mejorar tus finanzas.",
   "feed": {
-    "subtitle": "El dinero sí compra la felicidad.",
+    "subtitle": "El dinero sí compra la felicidad. Inversiones, deudas, créditos, presupuestos, seguros, impuestos y recomendaciones para mejorar tus finanzas.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://perrodinero.blog/"
