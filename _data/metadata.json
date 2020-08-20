@@ -1,15 +1,15 @@
 {
   "title": "David Ojeda",
-  "url": "https://myurl.com/",
-  "description": "Web development.",
+  "url": "https://perrodinero.blog/",
+  "description": "Finanzas personales.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "El dinero sí compra la felicidad.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "id": "https://perrodinero.blog/"
   },
   "author": {
     "name": "David Ojeda",
-    "email": "david.ojeda.lopez@gmail.com"
+    "email": "david@perrodinero.blog"
   }
 }
