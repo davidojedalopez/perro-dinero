@@ -24,7 +24,8 @@ article ol {
 }
 
 article h2,
-article h3 {
+article h3,
+article h4 {
   @apply text-accent-500;
   @apply py-4;
   @apply font-black;
@@ -33,6 +34,10 @@ article h3 {
 article img, 
 article video {
   @apply mx-auto;
+}
+
+article video {
+  @apply mb-4;
 }
 
 article blockquote {

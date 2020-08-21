@@ -25,6 +25,10 @@ h3 {
   font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
 }
 
+h4 {
+  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+}
+
 a {
   @apply underline;
 }
