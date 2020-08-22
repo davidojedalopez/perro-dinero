@@ -28,3 +28,6 @@ package = "netlify-plugin-no-more-404"
 
 [[plugins]]
   package = "netlify-plugin-submit-sitemap"
+
+[[plugins]]
+  package = "netlify-plugin-a11y"  
