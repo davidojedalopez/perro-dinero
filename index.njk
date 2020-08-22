@@ -5,7 +5,12 @@ cover_path: /img/perro_dinero.png
 ---
 
 <section class="flex flex-col my-8">
-  <img class="rounded-full mb-8 self-center lazyload" loading="lazy" src="{{ '/img/david_y_nina.png' | url }}" alt="Yo, David, y Nina, mi perra, felices en un parque." width="200" height="200">  
+  <picture class="rounded-full mb-8 self-center">
+    <source srcset="/img/david_y_nina.webp" type="image/webp">
+    <source srcset="/img/david_y_nina.png" type="image/png">
+    <img src="/img/david_y_nina.png" alt="Yo, David, y Nina, mi perra, felices en un parque." width="200" height="200">
+  </picture>
+
   <p class="mb-4 self-center">¡Qué pedo! Mi nombre es <span class="text-accent-500 font-black">David Ojeda</span>, y mi perra se llama <span class="text-accent-500 font-black">Nina</span> 👋🏼</p>
   <p class="mb-4">Tengo muchos hobbies, y las finanzas personales es uno de ellos. Llevo años presupuestando mis gastos y a finales del 2019 comencé a estudiar a fondo sobre inversiones en México 🇲🇽</p>
   <p class="mb-4">Acompáñame en este viaje y emprendamos juntos el camino hacia la libertad financiera 💪🏼</p>
@@ -43,7 +48,7 @@ cover_path: /img/perro_dinero.png
   <p class="text-center mb-4">Solo un correo a la semana.</p>
   <p class="text-center font-black">Cero spam 🚫</p>
 
-  <iframe src="https://perrodinero.substack.com/embed" class="bg-background mx-auto" frameborder="0" scrolling="no" title="Widget de Substack, el servicio para newsletters que utilizo."></iframe>
+  <iframe src="https://perrodinero.substack.com/embed" class="bg-background mx-auto" frameborder="0" scrolling="no" title="Widget de Substack, el servicio para newsletters que utilizo." same></iframe>
 
   <p>Puedes revisar los <a href="https://perrodinero.substack.com/archive">correos anteriores aquí</a>, para que veas que están perrones.</p>
 </section>
