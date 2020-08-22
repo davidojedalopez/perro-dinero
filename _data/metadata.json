@@ -1,11 +1,12 @@
 {
   "title": "Perro Dinero - Finanzas Personales 🐕💵",
-  "url": "https://perrodinero.blog/",
+  "url": "https://perrodinero.blog",
   "description": "El dinero sí compra la felicidad. Inversiones, deudas, créditos, presupuestos, seguros, impuestos y recomendaciones para mejorar tus finanzas.",
+  "default_cover": "/img/perro_dinero.png",
   "feed": {
     "subtitle": "El dinero sí compra la felicidad. Inversiones, deudas, créditos, presupuestos, seguros, impuestos y recomendaciones para mejorar tus finanzas.",
     "filename": "feed.xml",
-    "path": "/feed/feed.xml",
+    "path": "/feed.xml",
     "id": "https://perrodinero.blog/"
   },
   "author": {
