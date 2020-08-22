@@ -11,9 +11,6 @@
     best-practices = 0.9
     seo = 0.9
 
-  [[plugins.inputs.audits]]
-    url = "https://perrodinero.blog"
-
 [[plugins]]
 package = "netlify-plugin-no-more-404"
 
