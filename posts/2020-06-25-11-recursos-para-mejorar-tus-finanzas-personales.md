@@ -99,7 +99,7 @@ Una desventaja de este libro es que muchas cosas son específicas a Estados Unid
 
 ### [The intelligent asset allocator](https://www.amazon.com.mx/Intelligent-Asset-Allocator-Portfolio-Maximize/dp/1260026647/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=intelligent%20asset%20allocator&qid=1593104017&sr=8-1), de William Bernstein
 
-Excelente libro para estudiar **asignación de activos**. Como lo [había dicho en un post anterior](posts/tu-portafolio-de-inversiones-desde-cero), la asignación de activos es una de las **decisiones más importantes** a tomar para tener un **buen portafolio** de inversiones.
+Excelente libro para estudiar **asignación de activos**. Como lo [había dicho en un post anterior](/posts/tu-portafolio-de-inversiones-desde-cero), la asignación de activos es una de las **decisiones más importantes** a tomar para tener un **buen portafolio** de inversiones.
 
 William entra en detalle sobre cada uno de los activos que él considera deben estar en tu portafolio.
 
