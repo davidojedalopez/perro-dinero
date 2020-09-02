@@ -87,7 +87,7 @@ Si quieres saber [más sobre CETES puedes hacerlo en este otro post que escribí
 
 > Deuda con tasa de interés fija. Pagan intereses cada 6 meses y los plazos son más largos, desde 3 hasta 30 años.
 
-También conocidos como Bonos M o Bonos de Desarrollo del Gobierno Federal con Tasa de Interés Fija. 
+También conocidos como Bonos de Desarrollo del Gobierno Federal con Tasa de Interés Fija o Bonos M, porque su clave de identificación empieza con M. Cuando compras estos bonos lo que estás haciendo es prestarle dinero al gobierno para que invierta en sus proyectos. Ellos en cambio te regresan un porcentaje en intereses al vencer el plazo del bono por hacerles el paro.
 
 #### Características 
 
@@ -104,7 +104,7 @@ Encuentra información más detallada en la [descripción técnica de bonos M](h
 
 > Deuda con tasa de interés **variable**. Paga intereses cada 28 días, y es cuando se re-calcula la tasa. Se subastan a plazos de 3, 5 y 7 años.
  
-También son bonos de Desarrollo del Gobierno Federal, pero su tasa de interés es variable. 
+También son bonos de Desarrollo del Gobierno Federal, pero su tasa de interés es variable. Busqué el porqué de la "D" en el nombre, pero no encontré nada relevante 😶. Las primeras letras de su clave de identificación son "LD"; deberían llamarse BONDESL más bien 🙃
 
 #### Características
 
@@ -115,13 +115,13 @@ También son bonos de Desarrollo del Gobierno Federal, pero su tasa de interés 
 - 🔸 Regresa el valor nominal al vencimiento
 - 🔸 Tasa de interés variable. Se re-calcula con cada pago de interés
 
-Encuentra información más detallada en la [descripción técnica de BONDESD](http://hacienda.gob.mx/POLITICAFINANCIERA/credito_publico_ii/deuda_interna/biblio_conoce_valores/nt_bondes.pdf) de Banxico.
+Encuentra información más detallada en la [descripción técnica de BONDESD](https://www.banxico.org.mx/mercados/d/%7B1FD9FBB3-A8B6-1905-6BE0-0896E00682BB%7D.pdf) de Banxico.
 
 ### UDIBONO
 
 > Bonos con tasa de interés ligada directamente a la inflación; se usan como protección porque son las menos riesgosas. Plazos mínimos de 3 años.
 
-Bonos de Desarrollo del Gobierno Federal denominados en Unidades de Inversión (UDIs).
+Bonos de Desarrollo del Gobierno Federal denominados en Unidades de Inversión (UDIs). Las UDIs son unidades de medida cuyo valor varía dependiendo de la inflación del país; este valor solo sube, nunca baja. Entonces, cuando inviertes en UDIBONOS te están asegurando el porcentaje de inflación, más una ganancia.
 
 #### Características
 
@@ -182,11 +182,13 @@ Vamos haciéndolo más fácil y primero voy a eliminar las opciones en las que *
 
 Eso deja a CETES, BONOS y BONDDIA como opciones viables de inversión.
 
-✅ Yo utilizo **BONDDIA para invertir mi fondo de emergencia** porque ofrece liquidez diaria y el dinero sigue trabajando por mí. Ojo que no se puede invertir directamente en este fondo. Lo que hago es domiciliar mi inversión en CETES de 28 días sin reinversión al finalizar el plazo. Esto hace que cuando venza el plazo de los CETES estos se queden invertidos en BONDDIA.
+✅ Yo utilizo **BONDDIA para invertir mi fondo de emergencia** porque ofrece liquidez diaria y el dinero sigue trabajando por mí. Ojo que no puedes elegir invertir directamente en este fondo; no aparece como una opción en Cetesdirecto. Más bien todo el dinero que no esté invertido en otro instrumento se quedará en BONDDIA. Puedes simplemente transferir a tu cuenta de Cetesdirecto y se quedará en BONDDIA si no haces nada con él. Lo que yo hago es domiciliar mi inversión en CETES de 28 días sin reinversión al finalizar el plazo. Esto hace que cuando venza el plazo de los CETES estos se queden invertidos en BONDDIA.
 
-✅ También utilicé **CETES cuando estaba empezando a invertir**. Me dio seguridad para seguir invirtiendo y para entender cómo funciona todo el proceso de principio a fin. Ahora estoy moviendo todas mis inversiones de CETES al fondo de emergencia y no invertiré más aquí por un tiempo. Te recomiendo entrarle cuando no estás dispuesto a asumir riesgos de otras inversiones como fondos de renta variable. También si tienes cantidades estúpidas de dinero podrías meter tu dinero en CETES e ir retirando los rendimientos para tus gastos anuales. PONER QUE TAMBIEN SE PUEDE INVERTIR CON SOLO HACER TRANSFERENCIA
+✅ También utilicé **CETES cuando estaba empezando a invertir**. Me dio seguridad para seguir invirtiendo y para entender cómo funciona todo el proceso de principio a fin. Ahora estoy moviendo todas mis inversiones de CETES al fondo de emergencia y no invertiré más aquí por un tiempo. También si tienes cantidades estúpidas de dinero podrías meter tu dinero en CETES e ir retirando los rendimientos para tus gastos anuales. Te recomiendo entrarle a este instrumento si no quieres arriesgarte mucho, o si tu horizonte de inversión es a corto plazo.
 
 ✅ Los **BONOS son buena opción si quieres tener un ingreso periódico**, como para cubrir gastos semestrales. Si es así, puedes revisar las tasas de interés fijas de los bonos y calcular cuánto necesitas invertir para recibir X cantidad de dinero cada 6 meses. Yo no he invertido en este instrumento porque prefiero no devengar intereses y recibir todo al final de los plazos. Pero es solo una preferencia personal.
+
+Cetesdirecto tiene una [calculadora muy práctica para que puedas proyectar tus inversiones](https://www.cetesdirecto.com/calculadoras/bonos) 📈
 
 ***
 
