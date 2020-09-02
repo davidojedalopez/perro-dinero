@@ -34,7 +34,7 @@ Esto es lo que ves cuando entras a la pestaña de "Invertir" en cetesdirecto:
 
 ![Opciones de inversión en Cetesdirecto](/img/posts/opciones_de_inversion_cetesdirecto.png)
 
-Son seis opciones de inversión diferente, donde tres de ellas son bonos:
+Son seis opciones de inversión diferente, donde cuatro de ellas son bonos:
 
 - 🏦 CETES
 - 🏦 BONOS
@@ -67,7 +67,7 @@ En este tipo de inversión el portafolio está **enfocado en deuda gubernamental
 
 ### CETES
 
-> Son como pagarés a plazo fijo. Los compras a descuento y los vendes al valor nominal (10 pesos) cuando vence el plazo. Esa diferencia es el rendimiento.
+> Son como pagarés a plazo fijo. Los compras a descuento y los vendes al valor nominal (10 pesos) cuando vence el plazo. Esa diferencia es el rendimiento. Plazos de 1 hasta 12 meses.
 
 Los Certificados de la Tesorería de la Federación (CETES) se conocen como bonos cupón cero; se compran a un precio (precio del bono) y se recibe el reembolso a otro precio (valor nominal).
 
@@ -76,7 +76,7 @@ Los Certificados de la Tesorería de la Federación (CETES) se conocen como bono
 - 🔸 Bajo riesgo
 - 🔸 No devengan intereses
 - 🔸 Se venden a descuento
-- 🔸 Valor nominal de $100 pesos
+- 🔸 Valor nominal de $10 pesos
 - 🔸 Liquidan su valor nominal en la fecha de vencimiento
 - 🔸 Plazos cuya fecha de vencimiento coincida con un jueves
 - 🔸 Buenos rendimientos en comparación a otros instrumentos de Cetesdirecto
@@ -155,12 +155,13 @@ Es el instrumento más liquido que podrás encontrar en Cetesdirecto. Se conside
 
 > Fondo de inversión de renta variable específico del sector energético. Es lo más arriesgado que ofrece Cetesdirecto. El fondo está conformado en gran parte por deuda de PEMEX y CFE.
 
-Los intereses los obtienes al vender tus títulos; si el precio de venta es más alto que el de tú compra, obtienes rendimientos y vice-versa. El rendimiento del fondo en relación a su riesgo deja mucho que desear.
+Los intereses los obtienes al vender tus títulos; si el precio de venta es más alto que el de tu compra, obtienes rendimientos y viceversa. El rendimiento del fondo en relación a su riesgo deja mucho que desear.
 
 #### Características
 
 - 🔸 **Alto** riesgo
-- 🔸 Liquidez mensual
+- 🔸 Sin plazo definido
+- 🔸 Liquidez mensual (el primer lunes de cada mes)
 - 🔸 Diversificación únicamente dentro del sector energético
 
 ## ¿En dónde invertir?
@@ -177,13 +178,13 @@ Vamos haciéndolo más fácil y primero voy a eliminar las opciones en las que *
 
 ❌ En **ENERFIN** porque es un fondo únicamente del sector energético que ha demostrado tener rendimientos muy bajos. Si voy a invertir en renta variable sería a través de ETFs con un broker como [GBMHomeBroker](https://vrlps.co/faB1igj/cp).
 
-### En donde SÍ invertir
+### En dónde SÍ invertir
 
 Eso deja a CETES, BONOS y BONDDIA como opciones viables de inversión.
 
-✅ Yo utilizo **BONDDIA para invertir mi fondo de emergencia** porque ofrece liquidez diaria y el dinero sigue trabajando por mí. Ojo que no se puede invertir directamente en este fondo. Lo que hago es domiciliar mi inversión en CETES de 28 días sin reinversión al finalizar el plazo. Esto hace que cuando venza el plazo de los CETES éstos se queden invertidos en BONDDIA.
+✅ Yo utilizo **BONDDIA para invertir mi fondo de emergencia** porque ofrece liquidez diaria y el dinero sigue trabajando por mí. Ojo que no se puede invertir directamente en este fondo. Lo que hago es domiciliar mi inversión en CETES de 28 días sin reinversión al finalizar el plazo. Esto hace que cuando venza el plazo de los CETES estos se queden invertidos en BONDDIA.
 
-✅ También utilicé **CETES cuando estaba empezando a invertir**. Me dio seguridad para seguir invirtiendo y para entender cómo funciona todo el proceso de principio a fin. Ahora estoy moviendo todas mis inversiones de CETES al fondo de emergencia y no invertiré más aquí por un tiempo. Te recomiendo entrarle cuando no estás dispuesto a asumir riesgos de otras inversiones como fondos de renta variable. También si tienes cantidades estúpidas de dinero podrías meter tú dinero en CETES e ir retirando los rendimientos para tus gastos anuales.
+✅ También utilicé **CETES cuando estaba empezando a invertir**. Me dio seguridad para seguir invirtiendo y para entender cómo funciona todo el proceso de principio a fin. Ahora estoy moviendo todas mis inversiones de CETES al fondo de emergencia y no invertiré más aquí por un tiempo. Te recomiendo entrarle cuando no estás dispuesto a asumir riesgos de otras inversiones como fondos de renta variable. También si tienes cantidades estúpidas de dinero podrías meter tu dinero en CETES e ir retirando los rendimientos para tus gastos anuales. PONER QUE TAMBIEN SE PUEDE INVERTIR CON SOLO HACER TRANSFERENCIA
 
 ✅ Los **BONOS son buena opción si quieres tener un ingreso periódico**, como para cubrir gastos semestrales. Si es así, puedes revisar las tasas de interés fijas de los bonos y calcular cuánto necesitas invertir para recibir X cantidad de dinero cada 6 meses. Yo no he invertido en este instrumento porque prefiero no devengar intereses y recibir todo al final de los plazos. Pero es solo una preferencia personal.
 
@@ -191,7 +192,7 @@ Eso deja a CETES, BONOS y BONDDIA como opciones viables de inversión.
 
 Espero que con esto te haya aclarado todas las diferentes opciones y plazos de inversión que existen en Cetesdirecto. 
 
-El hecho de que yo no invierta en algunas de estas opciones no quiere decir que nunca te convenga hacerlo. **Dependerá mucho de tu portafolio, tú perfil de riesgo y la etapa de vida en que te encuentres.** Para mí no hacen sentido todavía, y algunas quizá nunca lo hagan.
+El hecho de que yo no invierta en algunas de estas opciones no quiere decir que nunca te convenga hacerlo. **Dependerá mucho de tu portafolio, tu perfil de riesgo y la etapa de vida en que te encuentres.** Para mí no hacen sentido todavía, y algunas quizá nunca lo hagan.
 
 **Muchas gracias por leerme 🧡**
 

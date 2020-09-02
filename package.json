@@ -14,7 +14,8 @@
     "build:eleventy": "eleventy",
     "build": "run-s clean build:*",
     "debug": "DEBUG=* eleventy",
-    "convert-gifs": "for i in img/posts/*.gif; do ffmpeg -i \"$i\" -b:v 0 -crf 25 -vcodec libx264 -pix_fmt yuv420p \"${i%.*}.mp4\" -y; ffmpeg -i \"$i\" -c vp9 -b:v 0 -crf 41 \"${i%.*}.webm\" -y; done"
+    "convert-gifs": "for i in img/posts/*.gif; do ffmpeg -i \"$i\" -b:v 0 -crf 25 -vcodec libx264 -pix_fmt yuv420p \"${i%.*}.mp4\" -y; ffmpeg -i \"$i\" -c vp9 -b:v 0 -crf 41 \"${i%.*}.webm\" -y; done",
+    "update-portfolio": "./scripts/updatePortfolio.js"
   },
   "repository": {
     "type": "git",
@@ -33,9 +34,11 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "autoprefixer": "^9.8.0",
     "css-loader": "^3.5.3",
+    "dotenv": "^8.2.0",
     "eleventy-plugin-lazyimages": "^2.0.1",
     "eleventy-plugin-reading-time": "0.0.1",
     "flat-cache": "^2.0.1",
+    "googleapis": "^39.2.0",
     "gray-matter": "^4.0.2",
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
