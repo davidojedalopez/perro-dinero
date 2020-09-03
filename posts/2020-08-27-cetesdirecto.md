@@ -4,8 +4,8 @@ description: "Todas las opciones de inversión de CETES directo explicadas con p
 published: false
 published_at: 2020-09-01
 cover_path: /img/posts/covers/cetesdirecto.png
-cover_alt: "La Nina esperando ansiosamente a que le lancemos el frisbee"
-tags: ['inversiones', 'cetes']
+cover_alt: "La Nina, como jefa, parada en las piedrotas de Tapalpa viendo hacía el horizonte"
+tags: ['inversiones', 'cetesdirecto', 'cetes', 'bonddia', 'enerfin']
 ---
 
 <details open>
