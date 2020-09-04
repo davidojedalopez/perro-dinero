@@ -141,7 +141,7 @@ Los **fondos de inversión son de renta variable** y por lo tanto el riesgo es m
 
 > Fondo de liquidez diaria. La cartera consiste principalmente en deuda gubernamental y bancaria.
 
-Es el instrumento más liquido que podrás encontrar en Cetesdirecto. Se considera en el apartado de fondos de inversión por su tasa variable, pero no por su riesgo.
+Es el instrumento más líquido que podrás encontrar en Cetesdirecto. Se considera en el apartado de fondos de inversión por su tasa variable, pero no por su riesgo.
 
 #### Características
 
