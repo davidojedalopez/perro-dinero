@@ -73,7 +73,7 @@ Hay videos de todo. Inversiones, impuestos, retiro, presupuestos, hábitos de co
 
 Empezaré por los **dos libros clásicos** que recomiendan en todos lados. 
 
-### [Padre rico, padre pobre](https://www.amazon.com.mx/Padre-Rico-Pobre-Robert-Kiyosaki/dp/6073156731/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=padre%20rico%20padre%20pobre&qid=1593104457&sr=8-1), de Robert T. Kiyosaki
+### [Padre rico, padre pobre](https://amzn.to/2RjIJ6a), de Robert T. Kiyosaki
 
 No es un clásico solo por casualidad. Padre rico, padre pobre toca uno de los **temas más importantes** no solo en las finanzas personales, sino de la vida en general: la **educación** 🎓. 
 
@@ -81,7 +81,7 @@ A lo largo del libro, Kiyosaki hace comparaciones entre las sugerencias de algui
 
 **Si no lo has leído, empieza por este libro**.
 
-### [Pequeño cerdo capitalista](https://www.amazon.com.mx/Peque%C3%B1o-cerdo-capitalista-Finanzas-personales/dp/6071107849/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=34RGCP6D3UBPI&dchild=1&keywords=peque%C3%B1o%20cerdo%20capitalista&qid=1593104551&sprefix=peque%C3%B1o%2Caps%2C225&sr=8-1), de Sofía Macias
+### [Pequeño cerdo capitalista](https://amzn.to/33jxNuO), de Sofía Macias
 
 También es uno de los primeros libros de finanzas que escuchamos mencionar aquí en México. 
 
@@ -89,7 +89,7 @@ También es uno de los primeros libros de finanzas que escuchamos mencionar aqu�
 
 A pesar de lo que aprendí, el libro no me gustó porque está escrito con tono de niña fresa 🍓. Si eso no te importa, te **recomiendo** que sea de tus **primeras lecturas** sobre finanzas 😉.
 
-### [I will teach you to be rich](https://www.amazon.com.mx/Will-Teach-You-Rich-Second/dp/1523505745/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2XI1EXW74KL5Y&dchild=1&keywords=i%20will%20teach%20you%20to%20be%20rich&qid=1593102235&sprefix=i%20will%20teach%20%2Caps%2C222&sr=8-1), de Ramit Sethi
+### [I will teach you to be rich](https://amzn.to/3bNdoSJ), de Ramit Sethi
 
 En este libro Ramit te **enseña** a **crear un sistema** para liquidar tus deudas y automatizar tus finanzas e inversiones. Me gustó mucho porque el **cabrón se siente genuino**. Habla directo, sin muchos rodeos 🤠.
 
@@ -97,7 +97,7 @@ Una desventaja de este libro es que muchas cosas son específicas a Estados Unid
 
 **Aun así lo recomiendo mucho ✅**
 
-### [The intelligent asset allocator](https://www.amazon.com.mx/Intelligent-Asset-Allocator-Portfolio-Maximize/dp/1260026647/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=intelligent%20asset%20allocator&qid=1593104017&sr=8-1), de William Bernstein
+### [The intelligent asset allocator](https://amzn.to/2DQ5gEk), de William Bernstein
 
 Excelente libro para estudiar **asignación de activos**. Como lo [había dicho en un post anterior](/posts/tu-portafolio-de-inversiones-desde-cero), la asignación de activos es una de las **decisiones más importantes** a tomar para tener un **buen portafolio** de inversiones.
 
@@ -154,3 +154,5 @@ Recursos para aprender **sobran**. Solo falta que te **pongas las pilas** para m
 Si te gustaron estas recomendaciones, es probable que también le gusten a tus amigos 😁 Así que **comparte** este post para ayudar a más personas y mejorar la educación financiera de nuestro México querido 🇲🇽
 
 **Muchas gracias por leerme 💙**
+
+<small class="opacity-50">Algunos links son de afiliados, pero solo comparto lo que de verdad me ha sido útil.</small>
