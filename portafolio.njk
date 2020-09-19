@@ -1,0 +1,138 @@
+---
+layout: layouts/base.njk
+title: Portafolio de inversiones
+lastUpdated: 2020-09-19
+---
+
+<h1>Portafolio</h1>
+<time class="text-base text-accent-600" datetime="{{ lastUpdated | htmlDateString }}">Actualizado el {{ lastUpdated | readableDate }}</time>
+<p>
+    Mi portafolio está compuesto 100% por ETFs de Vanguard.    
+</p>
+<p>
+    Fuera de estas inversiones tengo:
+    <ul>
+        <li>Mi fondo de emergencia en deuda gubernamental (CETES)</li>
+        <li>Mi Afore con aportaciones voluntarias</li>
+    </ul>
+</p>
+
+<section class="mb-16">
+    <h2>Portafolio objetivo</h2>
+    <p>
+        Esta es la asignación de activos a la que quiero llegar y en la que quiero permanecer por muchos años.
+    </p>
+
+    <canvas data-id="target-portfolio" height="260"></canvas>
+</section>
+
+<section>
+    <h2>Portafolio actual</h2>
+    <p>
+        Esta es la asignación de activos que tengo actualmente. Cada mes invierto más dinero y siempre lo hago con la finalidad de alcanzar la asignación anterior.
+    </p>
+
+    <canvas data-id="current-portfolio" height="260"></canvas>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script>
+  var ctx = document.querySelector('[data-id="target-portfolio"]').getContext('2d');
+  var chart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+          labels: ['VOO', 'VNQ', 'VEA', 'VWO', 'VYM', 'VTIP', 'VGSH'],
+          datasets: [{
+              label: 'Activos',                         
+              data: [25, 25, 20, 15, 5, 5, 5],
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(255, 206, 86, 0.8)',
+                'rgba(75, 192, 192, 0.8)',
+                'rgba(153, 102, 255, 0.8)',
+                'rgba(255, 159, 64, 0.8)',
+                'rgba(255, 50, 15, 0.8)'
+              ],
+              
+              borderColor: 'rgb(255,255,255)',
+              borderWidth: 1
+          }],
+      },
+      options: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    fontColor: '#1D853B',
+                    fontSize: 14,
+                    fontStyle: 'bold',
+                    padding: 20
+                },
+                align: 'center'
+            },
+            title: {
+                display: false,
+                fontSize: 36,
+                fontColor: '#1D853B',
+                fontStyle: 'bold',
+                text: 'Portafolio objetivo'
+            },
+            layout: {
+                padding: {
+                    top: 25
+                }
+            }
+        },
+  });
+
+  var ctx = document.querySelector('[data-id="current-portfolio"]').getContext('2d');
+  var chart = new Chart(ctx, {
+      type: 'pie',
+      data: {
+          labels: ['VOO', 'VNQ', 'VEA', 'VWO', 'VYM', 'VTIP', 'VGSH'],
+          datasets: [{
+              label: 'Activos',                         
+              data: [37.31, 19.16, 12.18, 12.81, 4.9, 5.63, 6.86],
+              backgroundColor: [
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(255, 206, 86, 0.8)',
+                'rgba(75, 192, 192, 0.8)',
+                'rgba(153, 102, 255, 0.8)',
+                'rgba(255, 159, 64, 0.8)',
+                'rgba(255, 50, 15, 0.8)'
+              ],
+              
+              borderColor: 'rgb(255,255,255)',
+              borderWidth: 1
+          }],
+      },
+      options: {
+            legend: {
+                position: 'bottom',
+                labels: {
+                    fontColor: '#1D853B',
+                    fontSize: 14,
+                    fontStyle: 'bold',
+                    fontFamily: "'Open Sans', 'sans-serif'",
+                    padding: 20
+                },
+                align: 'center'
+            },
+            title: {
+                display: false,
+                fontSize: 36,
+                fontFamily: "'Open Sans', 'sans-serif'",
+                fontColor: '#1D853B',
+                fontStyle: 'bold',
+                text: 'Portafolio actual'
+            },
+            layout: {
+                padding: {
+                    top: 25
+                }
+            }
+        },
+  });
+</script>
