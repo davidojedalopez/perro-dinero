@@ -31,3 +31,13 @@ package = "netlify-plugin-no-more-404"
 
 [[plugins]]
   package = "netlify-plugin-a11y"
+
+[[redirects]]
+  from = "/feed"
+  to = "/feed.xml"
+  status = 200
+
+[[redirects]]
+  from = "/rss"
+  to = "/feed.xml"
+  status = 200    
