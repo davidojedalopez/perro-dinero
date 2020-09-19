@@ -4,36 +4,40 @@ title: Portafolio de inversiones
 lastUpdated: 2020-09-19
 ---
 
-<h1>Portafolio</h1>
-<time class="text-base text-accent-600" datetime="{{ lastUpdated | htmlDateString }}">Actualizado el {{ lastUpdated | readableDate }}</time>
-<p>
-    Mi portafolio está compuesto 100% por ETFs de Vanguard.    
-</p>
-<p>
-    Fuera de estas inversiones tengo:
+<article class="py-8">  
+  <h1 class="text-accent-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
+  <time class="text-base text-accent-600" datetime="{{ lastUpdated | htmlDateString }}">Actualizado el {{ lastUpdated | readableDate }}</time>
+  
+  <div class="mt-8">
+    <p>
+      Mi portafolio está compuesto 100% por ETFs de Vanguard. Fuera de estas inversiones tengo:
+    </p>
     <ul>
-        <li>Mi fondo de emergencia en deuda gubernamental (CETES)</li>
-        <li>Mi Afore con aportaciones voluntarias</li>
+        <li>🏦 Mi fondo de emergencia en deuda gubernamental (CETES)</li>
+        <li>🏦 Mi Afore con aportaciones voluntarias</li>
     </ul>
-</p>
 
-<section class="mb-16">
-    <h2>Portafolio objetivo</h2>
-    <p>
-        Esta es la asignación de activos a la que quiero llegar y en la que quiero permanecer por muchos años.
-    </p>
+    <section class="mb-16">
+        <h2>Portafolio objetivo</h2>
+        <p>
+            Esta es la asignación de activos a la que quiero llegar y en la que quiero permanecer por muchos años.
+        </p>
 
-    <canvas data-id="target-portfolio" height="260"></canvas>
-</section>
+        <canvas data-id="target-portfolio" height="260"></canvas>
+    </section>
 
-<section>
-    <h2>Portafolio actual</h2>
-    <p>
-        Esta es la asignación de activos que tengo actualmente. Cada mes invierto más dinero y siempre lo hago con la finalidad de alcanzar la asignación anterior.
-    </p>
+    <section>
+        <h2>Portafolio actual</h2>
+        <p>
+            Esta es la asignación de activos que tengo actualmente. Cada mes invierto más dinero y siempre lo hago con la finalidad de alcanzar la asignación anterior.
+        </p>
 
-    <canvas data-id="current-portfolio" height="260"></canvas>
-</section>
+        <canvas data-id="current-portfolio" height="260"></canvas>
+    </section>
+  </div>
+  
+</article>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
