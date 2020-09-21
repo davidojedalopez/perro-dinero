@@ -1,7 +1,8 @@
 ---
 layout: layouts/base.njk
 title: Portafolio de inversiones
-lastUpdated: 2020-09-19
+description: "Detalles sobre mi portafolio de inversiones."
+lastUpdated: 2020-09-20
 ---
 
 <article class="py-8">  
@@ -13,11 +14,11 @@ lastUpdated: 2020-09-19
       Mi portafolio está compuesto 100% por ETFs de Vanguard. Fuera de estas inversiones tengo:
     </p>
     <ul>
-        <li>🏦 Mi fondo de emergencia en deuda gubernamental (CETES)</li>
-        <li>🏦 Mi Afore con aportaciones voluntarias</li>
+        <li><p>🏦 Mi fondo de emergencia en deuda gubernamental (CETES)</p></li>
+        <li><p>🏦 Mi Afore con aportaciones voluntarias</p></li>
     </ul>
 
-    <section class="mb-16">
+    <section>
         <h2>Portafolio objetivo</h2>
         <p>
             Esta es la asignación de activos a la que quiero llegar y en la que quiero permanecer por muchos años.
@@ -34,6 +35,59 @@ lastUpdated: 2020-09-19
 
         <canvas data-id="current-portfolio" height="260"></canvas>
     </section>
+
+    <section>
+        <h2>Sobre los activos</h2>
+		<p>Todos los activos de mi portafolio de inversiones son ETFs de Vanguard. Aquí una breve descripción de cada uno de ellos y cómo aportan al portafolio en general:</p>
+		<ul>
+			<li>
+				<p>📈 <a href="https://investor.vanguard.com/etf/profile/overview/voo">VOO</a>: invierte en las 500 compañías más grandes de Estados Unidos y es el principal generador de rendimientos del portafolio. Entre las principales posiciones o empresas están Apple, Amazon, Alphabet (Google), Facebook, Visa y Walmart.</p>
+			</li>
+			<li>
+				<p>📈 <a href="https://investor.vanguard.com/etf/profile/overview/vnq">VNQ</a>: invierte en compañías que compran edificios de oficinas, hoteles y otras propiedades. Es una gran opción para diversificar el riesgo del portafolio porque este ETF se <a href="{{ '/posts/tu-portafolio-de-inversiones-desde-cero/#bienes-raíces-🏢' }}">puede comportar como bono o acción.</a></p>
+			</li>
+			<li>
+				<p>📈 <a href="https://investor.vanguard.com/etf/profile/overview/vea">VEA</a>: es uno de los ETFs de alto riesgo del portafolio. Este fondo invierte en compañías internacionales pequeñas, medianas y grandes localizadas en Canada, Europa y la región del Pacífico. Las posiciones más dominantes son de empresas como Nestle, Samsung, SAP y Toyota.</p>
+			</li>
+			<li>
+				<p>📈 <a href="https://investor.vanguard.com/etf/profile/overview/vwo">VWO</a>: el segundo ETF de alto riesgo del portafolio. Invierte en economías emergentes como China, Brazil, Taiwan y Sudáfrica. Lo utilizo para rendimientos a muy largo plazo.</p>
+			</li>
+			<li>
+				<p>📈 <a href="https://investor.vanguard.com/etf/profile/overview/vym">VYM</a>: este ETF invierte en compañías que pagan un alto porcentaje de dividendos. La parte de VYM es pequeña porque no estoy preocupado por la liquidez en estos momentos.</p>
+			</li>
+			<li>
+				<p>📈 <a href="https://investor.vanguard.com/etf/profile/overview/vgsh">VGSH</a>: son inversiones en renta fija, específicamente en bonos de tesorería de Estados Unidos; son como los Cetes de México.</p>
+			</li>
+			<li>
+				<p>📈 <a href="https://investor.vanguard.com/etf/profile/overview/vtip">VTIP</a>: es la inversión de protección contra la inflación; son como los UDIBONOS de México.</p>
+			</li>
+		</ul>
+    </section>
+
+	<section>
+        <h2>Dudas o sugerencias</h2>
+        <p>
+            Mi portafolio <strong>no es perfecto</strong> ni tampoco está escrito en piedra. Así que te invito a dejar cualquier duda o sugerencia 🙌🏼
+        </p>
+    </section>
+
+	<div id="disqus_thread" class="mt-8"></div>
+	<script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+		var disqus_config = function () {
+			this.page.url = "https://perrodinero.blog{{ page.url | url }}";
+			this.page.identifier = "{{ page.url | url }}";
+		};
+		
+		(function() {
+		var d = document, s = d.createElement('script');
+		s.src = 'https://perrodinero.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+		});    
+	</script>
+	<noscript>Habilita JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios</a>.</noscript>
   </div>
   
 </article>
@@ -119,7 +173,6 @@ lastUpdated: 2020-09-19
                     fontColor: '#1D853B',
                     fontSize: 14,
                     fontStyle: 'bold',
-                    fontFamily: "'Open Sans', 'sans-serif'",
                     padding: 20
                 },
                 align: 'center'
@@ -127,7 +180,6 @@ lastUpdated: 2020-09-19
             title: {
                 display: false,
                 fontSize: 36,
-                fontFamily: "'Open Sans', 'sans-serif'",
                 fontColor: '#1D853B',
                 fontStyle: 'bold',
                 text: 'Portafolio actual'
