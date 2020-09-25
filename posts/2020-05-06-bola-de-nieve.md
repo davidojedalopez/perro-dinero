@@ -121,7 +121,7 @@ No te creas. En este punto ya hiciste la mitad de la chamba: sabes cuánto debes
 
 Lo que sigue es **apegarte a tu plan**. 
 
-¿Recuerdas que [anteriormente hablé de hábitos y de cómo crearlos fácilmente](/posts/habitos-antes-que-nada)?
+¿Recuerdas que [anteriormente hablé de hábitos y de cómo crearlos fácilmente](/posts/habitos-antes-que-nada/)?
 
 Es hora de ponerlo en práctica. Y justo lo que hace que el método bola de nieve sea **extremadamente efectivo** es que te obliga a **empezar con lo más fácil**, la menor deuda.
 

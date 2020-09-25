@@ -17,7 +17,7 @@ tags: ['inversiones']
 
 </details>
 
-Ya te decidiste a invertir, **pero no sabes cómo empezar** 🤔. Ya conoces [muchas plataformas para invertir con poco dinero](/posts/21-plataformas-para-invertir), pero **no te puedes decidir por una** 😕.
+Ya te decidiste a invertir, **pero no sabes cómo empezar** 🤔. Ya conoces [muchas plataformas para invertir con poco dinero](/posts/21-plataformas-para-invertir/), pero **no te puedes decidir por una** 😕.
 
 ![Hombre frustrado tirando todo lo que encuentra en su escritorio](/img/posts/frustrado.gif)
 

@@ -85,7 +85,7 @@ Si decides comprar o ya compraste tu casa, lo más seguro es que tu portafolio d
 
 Lo ideal es tener un portafolio de inversión diversificado, con suficiente exposición para que cada tipo de activo sea significante, pero sin que ningún activo predomine. 
 
-Si todavía no tienes un portafolio con esas características, échale un ojo a este otro artículo que escribí para [crear tu portafolio de inversiones desde cero](/posts/tu-portafolio-de-inversiones-desde-cero) 😉
+Si todavía no tienes un portafolio con esas características, échale un ojo a este otro artículo que escribí para [crear tu portafolio de inversiones desde cero](/posts/tu-portafolio-de-inversiones-desde-cero/) 😉
 
 ### Costo de oportunidad
 

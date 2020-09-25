@@ -27,7 +27,7 @@ Las mejoras cosas en la vida toman tiempo, y lo mejor que puedes hacer es avanza
 
 Es imposible empezar tu negocio desde cero de la noche a la mañana. Es difícil que te den un aumento si no lo pides y no tomas más responsabilidades cada día. Tienes que trabajar un chingo para conseguirlo, no hay atajos.
 
-La forma en la que decidas aumentar tus ingresos dependerá totalmente de ti: ¿negocio propio, freelancing, promoción en el trabajo? Tú decides. [Lee esto si necesitas más ideas de fuentes de ingreso](/posts/la-unica-forma-sostenible-de-ahorrar-mas/#incrementa-tus-ingresos).
+La forma en la que decidas aumentar tus ingresos dependerá totalmente de ti: ¿negocio propio, freelancing, promoción en el trabajo? Tú decides. [Lee esto si necesitas más ideas de fuentes de ingreso](/posts/la-unica-forma-sostenible-de-ahorrar-mas/#incrementa-tus-ingresos/).
 
 ## Págate primero
 
@@ -72,7 +72,7 @@ Es una chinga al principio, sí, pero también es una de las mejoras formas de c
 
 ¿En qué se va tu dinero? ¿Cuáles son tus verdades prioridades, dictadas por tus hábitos de gasto? Te sorprenderás bien cabrón.
 
-No importa cómo lo hagas, pero empieza con lo más sencillo. Algo como ver tu estado de cuenta al final del mes nada más. Ya después puedes ir avanzando y tener tu propio Excel o, como yo, [usar **YNAB**, una aplicación para manejar tu presupuesto](/posts/conoce-ynab-y-crea-tu-presupuesto) 😉.
+No importa cómo lo hagas, pero empieza con lo más sencillo. Algo como ver tu estado de cuenta al final del mes nada más. Ya después puedes ir avanzando y tener tu propio Excel o, como yo, [usar **YNAB**, una aplicación para manejar tu presupuesto](/posts/conoce-ynab-y-crea-tu-presupuesto/) 😉.
 
 ## Haz aportaciones voluntarias a tu Afore
 

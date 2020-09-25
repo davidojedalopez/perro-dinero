@@ -73,7 +73,7 @@ Todos hemos tenido deudas en algún momento de nuestras vidas, no es problema de
 
 > Abona más del mínimo a tus deudas.
 
-Considera el pagar tus deudas como la inversión que más rendimientos te dará en estos momentos. Si aún no tienes un plan para pagar tus deudas, te recomiendo el [método de bola de nieve](/posts/bola-de-nieve) ⛄️
+Considera el pagar tus deudas como la inversión que más rendimientos te dará en estos momentos. Si aún no tienes un plan para pagar tus deudas, te recomiendo el [método de bola de nieve](/posts/bola-de-nieve/) ⛄️
 
 ## No entiendes nada de finanzas
 
@@ -87,11 +87,11 @@ Y en este caso, para invertir, no necesitas saber mucho de finanzas. Lo que sí 
 
 Si todavía no te sientes listo para invertir, no hay pedo, empieza a mejorar tus finanzas personales de otra forma y vuelve cuando te sientas listo. Puedes:
 
-- 💰[Checar estos recursos para aprender sobre muchos temas de finanzas personales](/posts/11-recursos-para-mejorar-tus-finanzas-personales)
+- 💰[Checar estos recursos para aprender sobre muchos temas de finanzas personales](/posts/11-recursos-para-mejorar-tus-finanzas-personales/)
 
-- 💰[Crear tu presupuesto](/posts/conoce-ynab-y-crea-tu-presupuesto)
+- 💰[Crear tu presupuesto](/posts/conoce-ynab-y-crea-tu-presupuesto/)
 
-- 💰[Aprender sobre amortización en créditos](/posts/amortizacion)
+- 💰[Aprender sobre amortización en créditos](/posts/amortizacion/)
 
 El punto es que no te quedes en cero y pongas como pretexto que no sabes de finanzas.
 

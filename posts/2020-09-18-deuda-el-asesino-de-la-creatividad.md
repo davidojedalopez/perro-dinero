@@ -63,7 +63,7 @@ y tener esa restricción te obligará a encontrar la solución. Podrías dejar d
 
 ### Mi casa. En efectivo
 
-Sonará excesivo, pero yo pienso comprar mi casa hasta que pueda pagarla en efectivo. Me da más hueva tener que lidiar con un crédito hipotecario que aprender y probar cosas nuevas para alcanzar a tener ese dinero. Tendré que rentar por varios años más, no hay pedo, a final de cuentas estoy [pagando renta y no tirando el dinero a la basura](/posts/rentar-o-comprar).
+Sonará excesivo, pero yo pienso comprar mi casa hasta que pueda pagarla en efectivo. Me da más hueva tener que lidiar con un crédito hipotecario que aprender y probar cosas nuevas para alcanzar a tener ese dinero. Tendré que rentar por varios años más, no hay pedo, a final de cuentas estoy [pagando renta y no tirando el dinero a la basura](/posts/rentar-o-comprar/).
 
 Vivir con la limitación de no endeudarte hará que tu creatividad vuele y que encuentres nuevas oportunidades. ¿Qué estoy intentando yo?
 

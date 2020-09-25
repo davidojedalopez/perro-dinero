@@ -99,7 +99,7 @@ Una desventaja de este libro es que muchas cosas son específicas a Estados Unid
 
 ### [The intelligent asset allocator](https://amzn.to/2DQ5gEk), de William Bernstein
 
-Excelente libro para estudiar **asignación de activos**. Como lo [había dicho en un post anterior](/posts/tu-portafolio-de-inversiones-desde-cero), la asignación de activos es una de las **decisiones más importantes** a tomar para tener un **buen portafolio** de inversiones.
+Excelente libro para estudiar **asignación de activos**. Como lo [había dicho en un post anterior](/posts/tu-portafolio-de-inversiones-desde-cero/), la asignación de activos es una de las **decisiones más importantes** a tomar para tener un **buen portafolio** de inversiones.
 
 William entra en detalle sobre cada uno de los activos que él considera deben estar en tu portafolio.
 
@@ -109,7 +109,7 @@ Aviéntatelo ya que hayas comenzado a armar tu portafolio y hayas leído un poco
 
 ### [Invest Like a Pro: A 10-Day Investing Course](https://www.amazon.com.mx/Invest-Like-Pro-Investing-English-ebook/dp/B00O4G1BBI/ref=sr_1_1?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=Invest%20Like%20a%20Pro%3A%20A%2010-Day%20Investing%20Course&qid=1593103959&sr=8-1), de Jesse Mecham
 
-Jesse es el fundador de You Need A Budget (**YNAB**), una aplicación para ayudarte a manejar tu presupuesto y tener control de tu dinero. Ya hablé [sobre esta app en otro post](/posts/conoce-ynab-y-crea-tu-presupuesto), por si no habías escuchado de ella y tienes curiosidad. Es 🔥.
+Jesse es el fundador de You Need A Budget (**YNAB**), una aplicación para ayudarte a manejar tu presupuesto y tener control de tu dinero. Ya hablé [sobre esta app en otro post](/posts/conoce-ynab-y-crea-tu-presupuesto/), por si no habías escuchado de ella y tienes curiosidad. Es 🔥.
 
 En este libro Jesse habla sobre las inversiones desde un punto de vista de **inversor pasivo**. Es justo el tipo de inversionista que soy yo, y el que recomiendo ser.
 

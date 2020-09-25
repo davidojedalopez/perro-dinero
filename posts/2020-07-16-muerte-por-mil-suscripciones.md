@@ -95,7 +95,7 @@ Agregar tus suscripciones a tu presupuesto es una forma de **controlar y monitor
 
 Yo tengo todas mis suscripciones en mi presupuesto, cada una de ellas con su propia categoría. Y lo que hago es pagar la anualidad, pero tratarlas como si fueran mensualidad. Es decir, pago el año y cada mes asigno un poco de dinero a esa suscripción para que cuando llegue el siguiente año ya tenga la cantidad completa de nuevo.
 
-Si todavía no tienes un presupuesto, bueno, mejor empieza por ahí. [Yo uso y recomiendo YNAB (You Need A Budget)](/posts/conoce-ynab-y-crea-tu-presupuesto), una app que te cambiará la forma en que ves el dinero y los presupuestos. 
+Si todavía no tienes un presupuesto, bueno, mejor empieza por ahí. [Yo uso y recomiendo YNAB (You Need A Budget)](/posts/conoce-ynab-y-crea-tu-presupuesto/), una app que te cambiará la forma en que ves el dinero y los presupuestos. 
 
 ## Ahorra dinero en tus suscripciones
 
@@ -119,7 +119,7 @@ Ahora que cancelaste las suscripciones que no valen la pena y que estás ahorran
 
 La mayoría compraría cosas materiales que no necesita realmente 🙄. Pero como tú estás aquí leyendo mi post, seguirás el consejo de Perro Dinero: **inviértelo** 💰
 
-No importa si son $100 o $3,000 pesos, si todavía no estás invirtiendo constantemente, puedes empezar con este dinero que te acabas de ahorrar. **Lo importante es empezar**, no con cuánto empiezas. Y si no sabes por dónde empezar, te recomiendo estos dos posts que escribí sobre el tema: [Tu portafolio de inversiones desde cero](/posts/tu-portafolio-de-inversiones-desde-cero/) y [21 plataformas para comenzar a invertir](/posts/21-plataformas-para-invertir).
+No importa si son $100 o $3,000 pesos, si todavía no estás invirtiendo constantemente, puedes empezar con este dinero que te acabas de ahorrar. **Lo importante es empezar**, no con cuánto empiezas. Y si no sabes por dónde empezar, te recomiendo estos dos posts que escribí sobre el tema: [Tu portafolio de inversiones desde cero](/posts/tu-portafolio-de-inversiones-desde-cero/) y [21 plataformas para comenzar a invertir](/posts/21-plataformas-para-invertir/).
 
 Por otro lado, si aún no tienes un fondo de emergencia, puede ser el pretexto perfecto para empezar a armarlo. Calcula cuanto dinero te ahorraste cancelando y pagando anualmente y configura una transferencia automática a tu cuenta de ahorros o a dónde sea que quieras guardar tu fondo de emergencia.
 
