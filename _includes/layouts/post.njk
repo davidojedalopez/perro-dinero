@@ -16,6 +16,10 @@ permalink: "posts/{{ page.fileSlug }}/"
     {{ content | safe }}
   </div>
 
+  {% if has_affiliate_links %}
+    <small class="opacity-50">Este post tiene enlaces de afiliado. Me dan una comisión si compras con mi enlace, pero a tí te cuesta lo mismo. Nunca recomiendo nada que no haya probado yo mismo.</small>
+  {% endif %}
+
   <div id="disqus_thread" class="mt-8"></div>
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {

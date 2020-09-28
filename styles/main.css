@@ -112,8 +112,9 @@ article details summary {
 }
 
 article .table-of-contents a {
+  @apply inline;
   @apply no-underline;
-  @apply mb-2 inline-block;
+  @apply mb-2;
 }
 
 article .table-of-contents li {
