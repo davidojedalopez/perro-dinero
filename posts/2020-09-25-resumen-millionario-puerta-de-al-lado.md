@@ -1,6 +1,6 @@
 ---
 title: "Notas: El Millonario de la Puerta de al Lado"
-description: "Amasar una fortuna require disciplina, sacrificio y trabajo duro. Esa es la enseñanza del libro El millonario de la puerta de al lado, de Thomas J. Stanley y William D. Danko."
+description: "Amasar una fortuna requiere disciplina, sacrificio y trabajo duro. Esa es la enseñanza del libro El millonario de la puerta de al lado, de Thomas J. Stanley y William D. Danko."
 published: true
 published_at: 2020-09-25
 cover_path: /img/posts/covers/millionario_puerta_de_al_lado.png
@@ -30,7 +30,7 @@ El [millonario de la puerta de al lado](https://amzn.to/2Hz1kJJ), escrito por Th
 
 Estos estudios recabaron detalles de la historia, hábitos, ideas, ocupaciones y muchas cosas más de estos millonarios. Toda esta información está explicada y destilada en este libro, sustentada con datos duros. 
 
-La conclusión principal de la investigación fue: **Amasar una fortuna require disciplina, sacrificio y trabajo duro**.
+La conclusión principal de la investigación fue: **Amasar una fortuna requiere disciplina, sacrificio y trabajo duro**.
 
 ## Mi opinión
 
@@ -88,7 +88,7 @@ Divididas por capítulo 🔖
 
 > La riqueza es más a menudo el resultado de llevar una vida de trabajo duro, perseverancia, planificación y, sobre todo, autodisciplina.
 
-> ¿Qué llegamos a descubrir en nuestra investigación? Principalmente que amasar una fortuna require disciplina, sacrificio y trabajo duro.
+> ¿Qué llegamos a descubrir en nuestra investigación? Principalmente que amasar una fortuna requiere disciplina, sacrificio y trabajo duro.
 
 ### Capítulo 1: Conoce al millonario de la puerta de al lado
 
