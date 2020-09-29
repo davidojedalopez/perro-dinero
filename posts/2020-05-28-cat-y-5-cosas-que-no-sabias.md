@@ -187,7 +187,7 @@ Si quieres conocer todos los detalles de lo que dice la ley sobre el CAT, te rec
 
 Listo, ahí están 5 cosas que quizás no sabías sobre el CAT. Y aquí te va un extra:
 
-- 💡 A menos que digan lo contario, el **CAT no incluye IVA**.
+- 💡 A menos que digan lo contrario, el **CAT no incluye IVA**.
 
 - 💡 El CAT de la publicidad es informativo porque es un cálculo **promedio**.
 
