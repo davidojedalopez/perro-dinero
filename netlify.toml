@@ -38,6 +38,11 @@ package = "netlify-plugin-no-more-404"
   status = 200
 
 [[redirects]]
+  from = "/feed/feed.xml"
+  to = "/feed.xml"
+  status = 200
+
+[[redirects]]
   from = "/rss"
   to = "/feed.xml"
   status = 200
