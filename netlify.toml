@@ -46,3 +46,8 @@ package = "netlify-plugin-no-more-404"
   from = "/atom"
   to = "/feed.xml"
   status = 200
+
+[[redirects]]
+  from = "/blog/bienvenido"
+  to = "/posts/bienvenido/"
+  status = 200
