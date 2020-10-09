@@ -1,7 +1,5 @@
 @tailwind base;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap&text=perro%20dinero');
-
 body {
   scroll-behavior: smooth;
   @apply font-main;
