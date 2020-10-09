@@ -82,7 +82,7 @@ El mercado mexicano representa menos del 1% del mercado global, eso significa qu
 
 En un mercado como el de Estados Unidos esto no es un problema porque es el mercado más grande y con más actividad de todo el mundo.
 
-Para que te des una idea de los tamaños de mercado, checa la siguiente imagen con un comparativo de los tamaños de diferentes mercados en el mundo:
+Para que te des una idea de los tamaños de mercado, checa la siguiente imagen con un comparativo de los tamaños de diferentes mercados en el mundo, [cortesía de *Visual Capitalist*](https://www.visualcapitalist.com/all-of-the-worlds-money-and-markets-in-one-visualization-2020/):
 
 ![Comparativo de tamaños de mercados globales](/img/posts/tamano_mercado.png)
 
