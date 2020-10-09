@@ -1,0 +1,13 @@
+/* TEAM */
+	Owner, author, developer, designer: David Ojeda
+	Twitter: @PerroDinero
+	From: Pericos, Sinaloa, México
+
+/* THANKS */
+	Editor: Madeleine Ahumada
+	From: Culiacán, Sinaloa, México
+
+/* SITE */	
+	Language: Spanish
+	Doctype: HTML5
+	IDE: Visual Studio Code
