@@ -22,6 +22,10 @@ article ul {
   @apply pl-4;
 }
 
+article ul li {
+  @apply my-4;
+}
+
 article ol {
   list-style-type: decimal;
 }
@@ -50,7 +54,7 @@ article video {
 
 article blockquote {
   @apply ml-4;
-  @apply my-4;
+  @apply my-8;
   @apply p-4;
   @apply border-l-4;
   @apply border-b;
@@ -85,11 +89,11 @@ article strong {
 
 article div > ol {
   @apply pl-8;
-  @apply mb-4;
+  @apply mb-8;
 }
 
 article div > ul {
-  @apply mb-4;
+  @apply mb-8;
 }
 
 article code {
