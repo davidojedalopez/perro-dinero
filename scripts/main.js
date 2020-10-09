@@ -7,6 +7,10 @@ window.addEventListener("load", (event) => {
     threshold: .75
   };
 
+  if(!embed) {
+    return;
+  }
+
   const observer = new IntersectionObserver((entries) => {
     entries.map((entry) => {
       if (entry.isIntersecting) {
