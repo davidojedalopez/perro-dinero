@@ -4,16 +4,11 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-// const lazyImagesPlugin = require('eleventy-plugin-lazyimages');
 const readingTime = require('eleventy-plugin-reading-time');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginNavigation);
-  // eleventyConfig.addPlugin(lazyImagesPlugin, {
-  //   imgSelector: 'article img',
-  //   preferNativeLazyLoad: true
-  // });
   eleventyConfig.addPlugin(readingTime);
 
   eleventyConfig.setDataDeepMerge(true);

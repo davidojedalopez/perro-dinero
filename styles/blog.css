@@ -1,0 +1,129 @@
+article p {
+  @apply mb-4;
+}
+
+article a:hover {
+  @apply text-accent-500;
+}
+
+article ul {
+  @apply pl-4;
+}
+
+article ul li {
+  @apply my-4;
+}
+
+article ol {
+  list-style-type: decimal;
+}
+
+article h2,
+article h3,
+article h4 {
+  @apply text-accent-500;
+  @apply pt-8;
+  @apply pb-4;
+  @apply font-black;
+}
+
+article h4 {
+  @apply py-4;
+}
+
+article img, 
+article video {
+  @apply mx-auto;
+}
+
+article video {
+  @apply mb-4;
+}
+
+article blockquote {
+  @apply ml-4;
+  @apply my-8;
+  @apply p-4;
+  @apply border-l-4;
+  @apply border-b;
+  @apply border-accent-500;
+  @apply bg-green-100;
+  @apply rounded;
+}
+
+article blockquote p {
+  @apply text-xl;
+  @apply mb-0;
+}
+
+article blockquote p::after {
+  /* content: " 💬" */
+}
+
+article details {
+  @apply border-l-4;
+  @apply border-b;
+  @apply border-accent-500;
+  @apply rounded;
+  @apply p-4;
+  @apply mb-8;  
+  width: fit-content;
+  min-width: fit-content;
+}
+
+article strong {
+  @apply text-accent-500;
+}
+
+article div > ol {
+  @apply pl-8;
+  @apply mb-8;
+}
+
+article div > ul {
+  @apply mb-8;
+}
+
+article code {
+  @apply bg-gray-300;
+}
+
+article p > a {
+  @apply bg-accent-100;
+  @apply rounded-t;
+}
+
+/* TOC styles */
+article details {
+  @apply w-full;
+}
+
+article details summary {
+  @apply font-black;
+  @apply cursor-pointer;
+}
+
+article .table-of-contents a {
+  @apply inline;
+  @apply no-underline;
+  @apply mb-2;
+}
+
+article .table-of-contents li {
+  display: block;
+  counter-increment: list-item;  
+}
+
+article .table-of-contents ol {
+  counter-reset: list-item;
+  @apply pl-4;
+}
+
+article .table-of-contents li:before {
+  content: counters(list-item,'.') '. ';
+}
+/* End TOC styles */
+
+.gradient-background {
+  background: linear-gradient(0deg, rgba(88,100,116,1) 0%, transparent 30%);
+}
