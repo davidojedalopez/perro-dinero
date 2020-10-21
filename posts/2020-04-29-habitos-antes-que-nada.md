@@ -6,6 +6,7 @@ published_at: 2020-04-29
 cover_path: /img/posts/covers/habitos.png
 cover_alt: "Nina viendo un cartel que dice, escrito con gis: 'Hábitos, antes que nada'."
 tags: ['desarrollo personal']
+newsletter_cta: true
 ---
 
 <details open>

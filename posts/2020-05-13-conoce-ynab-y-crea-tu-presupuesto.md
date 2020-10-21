@@ -6,6 +6,7 @@ published_at: 2020-05-13
 cover_path: /img/posts/covers/presupuesto.png
 cover_alt: "Nina acostada en una esquina con las patas hacia arriba."
 tags: ['presupuestos']
+newsletter_cta: true
 ---
 
 <details open>

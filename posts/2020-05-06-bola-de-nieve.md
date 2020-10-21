@@ -6,6 +6,7 @@ published_at: 2020-05-06
 cover_path: /img/posts/covers/deudas.png
 cover_alt: "Nina sentada pensativamente la palabra: ¿Deudas?. Debajo del texto hay un mono de nieve."
 tags: ['deudas', 'ahorro']
+newsletter_cta: true
 ---
 
 <details open>

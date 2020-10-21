@@ -6,6 +6,7 @@ published_at: 2020-05-21
 cover_path: /img/posts/covers/amortizacion.png
 cover_alt: "Nina sentada sobre el pasto en el parque, con la lengua de fuera."
 tags: ['creditos', 'deudas']
+newsletter_cta: true
 ---
 
 <details open>

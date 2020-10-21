@@ -1,4 +1,4 @@
 <a class="no-underline hover:bg-accent-100 p-4 rounded" href="{{ post.url | url }}">
   <h2 class="font-black text-accent-500 py-0">{{ post.data.title }} </h2>
-  <time class="text-sm text-accent-600" datetime="{{ post.data.published_at | htmlDateString }}">{{ post.data.published_at | readableDate }}</time> <span class="px-2 text-sm text-accent-600">·</span> <span class="text-sm text-accent-600">Lectura de {{ post | readingTime }}</span>  
+  <time class="text-sm text-accent-600" datetime="{{ post.data.published_at | htmlDateString }}">{{ post.data.published_at | readableDate }}</time> <span class="px-2 text-sm text-accent-600">·</span> <span class="text-sm text-accent-600">Lectura de {{ post | readingTime }}</span>
 </a>

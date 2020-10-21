@@ -1,10 +1,12 @@
-const { DateTime } = require("luxon");
+const { DateTime, Settings } = require("luxon");
 const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const readingTime = require('eleventy-plugin-reading-time');
+
+Settings.defaultLocale = 'es-MX';
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -19,7 +21,7 @@ module.exports = function(eleventyConfig) {
     if(dateObj instanceof String) {
       dateObj = new Date(dateObj);
     }
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLLL yyyy");  
   });
 
 
