@@ -124,6 +124,18 @@ article .table-of-contents li:before {
 }
 /* End TOC styles */
 
+article table {
+  @apply shadow-lg bg-white mx-auto mt-4 mb-8;
+}
+
+article th {
+  @apply bg-accent-100 border text-center px-4 py-4;
+}
+
+article td {
+  @apply border p-3 text-center;
+}
+
 .gradient-background {
   background: linear-gradient(0deg, rgba(88,100,116,1) 0%, transparent 30%);
 }

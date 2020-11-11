@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Perro Dinero - Finanzas Personales",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=13.0.0"
   },
   "scripts": {
     "clean": "rimraf _site",
@@ -27,7 +27,9 @@
     "email": "davidojeda@hey.com",
     "url": "https://davidojeda.dev"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "full-icu": "^1.3.1"
+  },
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-navigation": "^0.1.3",
@@ -40,7 +42,6 @@
     "eleventy-plugin-lazyimages": "^2.0.1",
     "eleventy-plugin-reading-time": "0.0.1",
     "flat-cache": "^2.0.1",
-    "full-icu": "^1.3.1",
     "googleapis": "^39.2.0",
     "gray-matter": "^4.0.2",
     "luxon": "^1.21.3",
