@@ -93,6 +93,11 @@ article p > a {
   @apply rounded-t;
 }
 
+article li > a {
+  @apply bg-accent-100;
+  @apply rounded-t;
+}
+
 /* TOC styles */
 article details {
   @apply w-full;
@@ -107,11 +112,12 @@ article .table-of-contents a {
   @apply inline;
   @apply no-underline;
   @apply mb-2;
+  @apply rounded-none bg-transparent;
 }
 
 article .table-of-contents li {
   display: block;
-  counter-increment: list-item;  
+  counter-increment: list-item;
 }
 
 article .table-of-contents ol {
