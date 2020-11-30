@@ -1,3 +1,8 @@
 User-agent: *
 Disallow: 
 Sitemap: https://perrodinero.blog/sitemap.xml
+
+User-agent: Algolia Crawler
+Allow: /posts/*
+Allow: /portafolio
+Disallow: /
