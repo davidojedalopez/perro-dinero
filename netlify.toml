@@ -56,3 +56,5 @@ package = "netlify-plugin-no-more-404"
   from = "/blog/bienvenido"
   to = "/posts/bienvenido/"
   status = 200
+
+template = "hierarchical"
