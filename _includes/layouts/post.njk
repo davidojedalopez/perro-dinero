@@ -14,6 +14,11 @@ permalink: "posts/{{ page.fileSlug }}/"
   
   <div class="mt-8">
     {{ content | safe }}
+
+    <div class="hidden" data-id="share-section">
+      <p>Compartir este post ayudará a más personas a mejorar su vida y sus finanzas, hay que echarnos la mano:</p>
+      <button class="button block" data-id="share">Compartir 📲 </button>
+    </div>
   </div>
 
   {% if newsletter_cta %}
@@ -72,3 +77,31 @@ permalink: "posts/{{ page.fileSlug }}/"
   </div>
 
 </article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    if(navigator.share) {
+      document.querySelector('[data-id="share-section"]').classList.toggle('hidden');
+    }
+
+    const shareButton = document.querySelector('[data-id="share"]');
+    if(!shareButton) {
+      return
+    }
+
+    shareButton.addEventListener('click', (e) => {
+      if(navigator.share) {
+        navigator.share({
+          title: document.title,
+          url: document.querySelector('link[rel=canonical]') ? document.querySelector('link[rel=canonical]').href : document.location.href
+        }).then(() => {
+          // Not feeling like showing something to confirm.
+        }).catch((error) => {
+          console.error('Error sharing post ☹️', error);
+        });
+      } else {
+        // Add fallback, if needed.
+      }
+    });
+  });
+</script>

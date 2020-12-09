@@ -45,7 +45,7 @@ hr {
 }
 
 .button {
-  @apply p-4;
+  @apply py-2 px-4;
   @apply border-accent-500;
   @apply text-accent-500;
 
@@ -61,7 +61,8 @@ hr {
 }
 
 .button:hover {
-  
+  @apply bg-accent-700;
+  @apply border-accent-700;
 }
 
 @tailwind components;

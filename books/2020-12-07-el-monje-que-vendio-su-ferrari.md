@@ -4,6 +4,7 @@ author: Robin S. Sharma
 description: "6 lecciones prácticas que puedes sacar de este libro."
 cover_path: /img/books/covers/el_monje_que_vendio_su_ferrari.jpg
 published_at: 2020-12-10
+newsletter_cta: true
 ---
 
 <details open>
@@ -130,5 +131,3 @@ No tienen que ser espontáneos. Puedes planear qué buena acción harás durante
 La lección más importante de este libro es que **el dinero**, en automático, **no te garantiza la felicidad**. El **dinero te puede hacer feliz** siempre y cuando lo puedas controlar, y no al revés.
 
 Las cortas lecciones que comparto aquí son solo una probada de lo que este libro ofrece. Te recomiendo que le des una oportunidad. Y si conoces la filosofía estoica, te sentirás muy identificada con el contenido.
-
-## Pasajes
