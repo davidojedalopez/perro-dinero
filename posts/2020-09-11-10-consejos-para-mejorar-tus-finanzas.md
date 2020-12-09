@@ -98,7 +98,7 @@ Si tienes inversiones, negocio propio, ofreces servicios por tu cuenta o tienes 
 
 Esta puede parecer obvia, pero es muy, muy, muy común que la raza siga pagando por servicios que no usa porque simplemente se cobran en automático a tu tarjeta cada mes.
 
-¿Cuándo fue la última vez que revisaste todas tus suscripciones? ¿Sigues pagando por el gym aunque no vayas? ¿Dejaste contratado HBO cuando estabas viendo Game of Thrones? No vayas a sufrir una [muerte por 1000 suscripciones](/posts/muerte-por-mil-suscripciones).
+¿Cuándo fue la última vez que revisaste todas tus suscripciones? ¿Sigues pagando por el gym aunque no vayas? ¿Dejaste contratado HBO cuando estabas viendo Game of Thrones? No vayas a sufrir una [muerte por 1000 suscripciones](/posts/muerte-por-mil-suscripciones/).
 
 ## Abona más del mínimo a tus deudas
 
@@ -106,7 +106,7 @@ Si no tienes deudas, **¡felicidades!** 👏. Si sí tienes, échale todas las g
 
 No vas a llegar muy lejos si siempre te estás endeudando y solo pagando el mínimo. Si te vas a endeudar, al menos asegúrate de aportar más de lo que te piden pa' sacar el mes.
 
-¿Tienes múltiples deudas y no sabes cuál pagar primero? Si la disciplina no es tu fuerte puedes usar el [método bola de nieve para liquidarlas](/posts/bola-de-nieve).
+¿Tienes múltiples deudas y no sabes cuál pagar primero? Si la disciplina no es tu fuerte puedes usar el [método bola de nieve para liquidarlas](/posts/bola-de-nieve/).
 
 ## Ármate un fondo de emergencia
 

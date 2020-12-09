@@ -30,7 +30,9 @@ module.exports = {
           800: '#6D5B1C',
           900: '#493D13',
         },
-        background: '#FAFAFA'
+        background: '#FAFAFA',
+        'twitter': '#1b95e0',
+        'twitter-hover': '#0c7abf'
       },
       fontFamily: {
         'logo': ['Roboto Condensed', 'sans-serif'],

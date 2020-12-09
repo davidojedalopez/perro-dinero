@@ -1,0 +1,186 @@
+---
+layout: layouts/base.njk
+permalink: "libros/{{ page.fileSlug }}/"
+---
+
+<article class="py-8">
+
+  <div class="flex items-center">
+    <div>
+      <h1 class="text-accent-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
+      <span class="opacity-75">Escrito por {{ author }}</span>
+      <br>
+      <time class="text-base text-accent-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600">·</span> <span class="text-base text-accent-600">Lectura de {{ content | readingTime }}</span>
+    </div>
+    <div>
+      <img src="{{ cover_path | url }}" alt="{{ cover_alt }}" width="200" class="" />
+    </div>
+  </div>  
+
+  <div class="mt-8">
+    {{ content | safe }}
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center">
+      {% for quote in quotes %}
+        <div class="shadow-md px-6 py-4 text-base border-accent-500 flex flex-col leading-snug transform {{ ['-rotate-4', '-rotate-3', '-rotate-2', '-rotate-1', 'rotate-0', 'rotate-1', 'rotate-2', 'rotate-3', 'rotate-4'] | random }}">
+          {{ quote }}
+          <div class="pt-4 self-end mt-auto cursor-pointer flex items-center space-x-4">            
+            <a href='https://twitter.com/intent/tweet?text="{{ quote | urlencode }}" - {{ title }}, por {{ author }}.' class="text-xs subpixel-antialiased py-1 px-2 font-bold no-underline text-white hover:text-white bg-twitter hover:bg-twitter-hover rounded" data-via="PerroDinero" data-text='"{{ quote }}" - {{ title }}, por {{ author }}' data-lang="es" data-dnt="true" data-show-count="false">              
+              <?xml version="1.0" encoding="iso-8859-1"?><svg version="1.1" class="inline-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path style="fill:#ffffff;" d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016	c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992	c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056	c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152	c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792	c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44	C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568	C480.224,136.96,497.728,118.496,512,97.248z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+              <span class="pl-1">Twittear</span>
+            </a>
+            <div class="tooltip">
+              <span class="tooltiptext" id="myTooltip">Copiar</span>
+              <span data-id="quote-copy-button" data-quote="{{ quote }}" class="">📋</span>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </section>
+  </div>
+  
+  {% if newsletter_cta %}
+    <hr>
+    <div class="mt-8 p-4 rounded-lg bg-accent-100">
+      <p class="mb-4 font-black">¡Si te gustó este contenido también disfrutarás mi newsletter!</p>
+      <ul>
+        <li class="mb-4">Nudismo financiero 😳</li>
+        <li class="mb-4">Historias personales, de éxito y fracaso 📈📉</li>
+        <li class="mb-4">Opiniones de libros, apps y hechos modernos 📚📰</li>
+        <li class="mb-4">Recursos para enriquecer la mente y la cartera 🧠💰</li>
+        <li class="mb-4">Directo en tu correo 📬</li>
+        <li class="font-black">Una vez por semana— Cero spam 🚫</li>
+      </ul>
+      <iframe src="https://perrodinero.substack.com/embed" class="mx-auto w-64" frameborder="0" scrolling="no" title="Widget de Substack, el servicio para newsletters que utilizo." same></iframe>
+    </div>
+      
+    
+  {% endif %}
+
+  {% set booksListCount = collections.books | length %}
+  {% if booksListCount > 1 %}
+    <div class="flex flex-col mt-16 p-4">
+      <p class="opacity-75">Otros libros que pueden interesarte 👇🏼</p>
+
+      {% set post = collections.books | getPreviousCollectionItem(page) %}
+      {% if post %}
+          {% include "postitem_no_description.njk" %}
+      {% endif %}
+
+      {% set post = collections.books | getNextCollectionItem(page) %}
+      {% if post %}
+          {% include "postitem_no_description.njk" %}
+      {% endif %}
+    </div>
+  {% endif %}
+</article>
+
+
+
+<style>
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('[data-id="quote-copy-button"]').forEach(item => {
+      item.addEventListener('click', async (event) => {
+        if (!navigator.clipboard) {
+          return;
+        }
+
+        try {
+            const quote = event.srcElement.getAttribute("data-quote");
+            await navigator.clipboard.writeText(quote);
+
+            const tooltip = event.srcElement.previousElementSibling;
+            console.info({tooltip});
+            tooltip.innerHTML = "¡Frase copiada!";
+        } catch(error) {
+            console.error('Failed to copy quote', error);
+        }
+        
+      });
+    });
+  });
+
+  (function() {
+    if (window.__twitterIntentHandler) return;
+    var intentRegex = /twitter\.com\/intent\/(\w+)/,
+        windowOptions = 'scrollbars=yes,resizable=yes,toolbar=no,location=yes',
+        width = 550,
+        height = 420,
+        winHeight = screen.height,
+        winWidth = screen.width;
+
+    function handleIntent(e) {
+      e = e || window.event;
+      var target = e.target || e.srcElement,
+          m, left, top;
+
+      while (target && target.nodeName.toLowerCase() !== 'a') {
+        target = target.parentNode;
+      }
+
+      if (target && target.nodeName.toLowerCase() === 'a' && target.href) {
+        m = target.href.match(intentRegex);
+        if (m) {
+          left = Math.round((winWidth / 2) - (width / 2));
+          top = 0;
+
+          if (winHeight > height) {
+            top = Math.round((winHeight / 2) - (height / 2));
+          }
+
+          window.open(target.href, 'intent', windowOptions + ',width=' + width +
+                                            ',height=' + height + ',left=' + left + ',top=' + top);
+          e.returnValue = false;
+          e.preventDefault && e.preventDefault();
+        }
+      }
+    }
+
+    if (document.addEventListener) {
+      document.addEventListener('click', handleIntent, false);
+    } else if (document.attachEvent) {
+      document.attachEvent('onclick', handleIntent);
+    }
+    window.__twitterIntentHandler = true;
+  }());
+</script>

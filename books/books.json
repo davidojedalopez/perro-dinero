@@ -1,0 +1,6 @@
+{
+  "tags": [
+    "books"
+  ],
+  "layout": "layouts/book.njk" 
+}

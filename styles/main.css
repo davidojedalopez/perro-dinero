@@ -101,6 +101,7 @@ article li > a {
 /* TOC styles */
 article details {
   @apply w-full;
+  @apply w-4/5;
 }
 
 article details summary {

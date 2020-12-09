@@ -32,7 +32,7 @@ cover_path: /img/perro_dinero.png
 
 <hr class="my-8">
 
-<p class="opacity-75 my-4">Posts recientes</p>
+<p class="opacity-75 my-4">Posts recientes ⏳</p>
 
 {% set postsList = collections.posts | head(-4) %}
 {% set postsListCount = collections.posts | length %}
@@ -42,6 +42,24 @@ cover_path: /img/perro_dinero.png
   {% endfor %}
 
   <a class="button" href="/posts">Todos los posts ({{ postsListCount }})</a>
+</section>
+
+<hr>
+
+<p class="opacity-75 my-4">Lecciones de libros 📚</p>
+
+{% set booksList = collections.books | head(-4) %}
+{% set booksListCount = collections.books | length %}
+<section class="flex flex-col my-8 space-y-4">
+  {% for book in booksList | reverse %}
+    <a class="no-underline hover:bg-accent-100 p-4 rounded" href="{{ book.url | url }}">
+      <h2 class="font-black text-accent-500">{{ book.data.title }} </h2>
+      <span class="text-sm opacity-75">Escrito por {{ book.data.author }}</span>
+      <br>
+      <time class="text-sm text-accent-600" datetime="{{ book.data.published_at | htmlDateString }}">{{ book.data.published_at | readableDate }}</time> <span class="px-2 text-sm text-accent-600">·</span> <span class="text-sm text-accent-600">Lectura de {{ book | readingTime }}</span>  
+      <p>{{ book.data.description }}</p>  
+    </a>
+  {% endfor %}
 </section>
 
 <hr>

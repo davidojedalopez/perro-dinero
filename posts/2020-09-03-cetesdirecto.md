@@ -81,7 +81,7 @@ Los Certificados de la Tesorería de la Federación (CETES) se conocen como bono
 - 🔸 Plazos cuya fecha de vencimiento coincida con un jueves
 - 🔸 Buenos rendimientos en comparación a otros instrumentos de Cetesdirecto
 
-Si quieres saber [más sobre CETES puedes hacerlo en este otro post que escribí](/posts/cetes).
+Si quieres saber [más sobre CETES puedes hacerlo en este otro post que escribí](/posts/cetes/).
 
 ### BONOS
 
