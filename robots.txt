@@ -2,6 +2,8 @@ User-agent: Algolia Crawler
 Allow: /posts/*/
 Allow: /portafolio
 Disallow: /posts
+Disallow: /tags/*
+Disallow: /tags
 
 User-agent: *
 Disallow: 
