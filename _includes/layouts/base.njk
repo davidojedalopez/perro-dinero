@@ -47,9 +47,10 @@
         </a>
         <a href="/portafolio" class="no-underline text-lg md:text-2xl">
           <strong>📈 <span class="hidden sm:inline-block">Portafolio</span></strong>
-        </a>
-        {# <input type="search" placeholder="Buscar..." /> #}
+        </a>        
       </header>
+
+      {# <input type="search" placeholder="Buscar..." class="w-full" /> #}
 
       <main class="">
         {{ content | safe }}
@@ -83,19 +84,13 @@
         apiKey: '9527453d5af995a6740a1279e66fb553',
         siteId: '484d9a9f-dc24-4d30-90c4-142ae40c60b7',
         branch: 'master',
-        autocomplete: {
-          inputSelector: 'input[type=search]',
-        },
-          // Optional
-        analytics: true,                              // Enable search analytics
-        autocomplete: {
-          hitsPerPage: 5,                             // Amount of results to display
-          inputSelector: 'input[type=search]',        // CSS selector of your search input(s)
-        },
-        color: '#3c4fe0',                             // Main color
-        debug: false,                                 // Debug mode (keeps the autocomplete open)
-        silenceWarnings: false,                       // Disable warnings (e.g. no search input found)
-        poweredBy: true,                              // Controls displaying the logo (mandatory with our FREE plan)
+        selector: 'div#search',
+        analytics: true,
+        hitsPerPage: 5,
+        placeholder: "Buscar en posts...",
+        openOnFocus: true,
+        poweredBy: true,
+        color: '#1D853B'
       });
     </script> #}
   </body>
