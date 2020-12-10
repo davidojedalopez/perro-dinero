@@ -4,7 +4,6 @@ Allow: /libros/*/
 Allow: /portafolio
 Disallow: /posts/
 Disallow: /libros/
-Disallow: *
 
 User-agent: *
 Disallow: 
