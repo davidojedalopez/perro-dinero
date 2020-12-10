@@ -148,8 +148,13 @@ article td {
 }
 
 /* Algolia search */
+.aa-hit--title {
+  @apply text-2xl !important;
+}
+
 .aa-hit--description {
   @apply leading-snug !important;
+  @apply text-lg !important;
 }
 
 .aa-hit--highlight {

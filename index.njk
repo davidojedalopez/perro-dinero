@@ -30,11 +30,12 @@ cover_path: /img/perro_dinero.png
   El dinero <span class="text-accent-500"> sí compra</span> la felicidad.
 </h1>
 
-<hr class="my-8">
+<input type="search" placeholder="🔍 Buscar en posts..." class="w-full px-4 py-2 rounded-full border-accent-500 border-l-2 border-b-2 placeholder-accent-500 placeholder-opacity-100 my-8" />
+
 
 <p class="opacity-75 my-4">Posts recientes ⏳</p>
 
-{% set postsList = collections.posts | head(-4) %}
+{% set postsList = collections.posts | head(-3) %}
 {% set postsListCount = collections.posts | length %}
 <section class="flex flex-col my-8 space-y-4">
   {% for post in postsList | reverse %}
@@ -48,7 +49,7 @@ cover_path: /img/perro_dinero.png
 
 <p class="opacity-75 my-4">Lecciones de libros 📚</p>
 
-{% set booksList = collections.books | head(-4) %}
+{% set booksList = collections.books | head(-3) %}
 {% set booksListCount = collections.books | length %}
 <section class="flex flex-col my-8 space-y-4">
   {% for book in booksList | reverse %}
