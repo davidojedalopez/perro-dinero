@@ -1,5 +1,6 @@
 <a class="no-underline hover:bg-accent-100 p-4 rounded" href="{{ post.url | url }}">
   <h2 class="font-black text-accent-500">{{ post.data.title }} </h2>
   <time class="text-sm text-accent-600" datetime="{{ post.data.published_at | htmlDateString }}">{{ post.data.published_at | readableDate }}</time> <span class="px-2 text-sm text-accent-600">·</span> <span class="text-sm text-accent-600">Lectura de {{ post | readingTime }}</span>  
+  {% if post.data.last_updated_at %} <span class="px-2 text-sm text-accent-600">·</span> <span class="text-sm text-accent-400">Actualizado el</span> <time class="text-sm text-accent-400" datetime="{{ published_at | htmlDateString }}">{{ post.data.last_updated_at | readableDate }}</time> {% endif %}
   <p>{{ post.data.description }}</p>  
 </a>
