@@ -134,7 +134,7 @@ En específico, **cada mes** se destina a tu Afore el **6.5% de tu salario base*
 - 2️⃣ **Incremento en las aportaciones tripartitas** (los porcentajes de arriba). Serán ahora los patrones quienes pagarán el incremento de las aportaciones para pasar de una aportación de 6.5% al 15%. Esto a partir del 2023.
 - 3️⃣ **Aumentar el monto de pensión garantizada**. Esto es una pensión mínima para quienes no cumplen los requisitos para retirarse, como semanas cotizadas o montos mínimos en Afore.
 
-[Aquí hay más información de este cambio](https://www.infobae.com/america/mexico/2020/12/09/camara-de-diputados-aprobo-en-lo-general-la-reforma-de-pensiones-y-afores-de-amlo/).
+[Aquí hay más información de este cambio](https://www.infobae.com/america/mexico/2020/12/09/camara-de-diputados-aprobo-en-lo-general-la-reforma-de-pensiones-y-afores-de-amlo/), y [aquí una discusión civilizada en Reddit](https://www.reddit.com/r/MexicoFinanciero/comments/kbca3j/que_opinan_de_la_reforma_de_afores/).
 
 Hay ciertas prácticas medio oscuras en que las empresas te subcontratan (*outsourcing*) para poder darte de alta con el mínimo posible. Esto quiere decir que las aportaciones a tu Afore son una popo 💩
 
