@@ -41,6 +41,9 @@
 [[plugins]]
   package = "netlify-plugin-subfont"  
 
+[[plugins]]
+  package = "netlify-plugin-a11y"
+  
 [[redirects]]
   from = "/feed"
   to = "/feed.xml"
