@@ -36,7 +36,8 @@ cover_path: /img/perro_dinero.png
 
 <p class="opacity-75 my-4">Posts recientes ⏳</p>
 
-{% set postsList = collections.posts | head(-3) %}
+{% set maxPosts = 3 %}
+{% set postsList = collections.posts | head(-maxPosts) %}
 {% set postsListCount = collections.posts | length %}
 <section class="flex flex-col my-8 space-y-4">
   {% for post in postsList | reverse %}

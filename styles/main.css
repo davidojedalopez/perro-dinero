@@ -47,7 +47,7 @@ article blockquote {
   @apply border-l-4;
   @apply border-b;
   @apply border-accent-500;
-  @apply bg-green-100;
+  @apply bg-accent-100;
   @apply rounded;
 }
 
@@ -132,7 +132,7 @@ article .table-of-contents li:before {
 /* End TOC styles */
 
 article table {
-  @apply shadow-lg bg-white mx-auto mt-4 mb-8;
+  @apply ring-1 ring-black ring-opacity-10 bg-white mx-auto mt-4 mb-8;
 }
 
 article th {

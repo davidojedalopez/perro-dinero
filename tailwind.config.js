@@ -1,9 +1,9 @@
 module.exports = {
-  purge: ['./_site/**/*.html', './**/*.njk'],
-  future: {
-    purgeLayersByDefault: true,
-    removeDeprecatedGapUtilities: true
-  },
+  purge: {
+    mode: 'all',
+    preserveHtmlElements: false,
+    content: ['./_site/**/*.html', './**/*.njk']
+  },  
   theme: {    
     extend: {      
       colors: {      
@@ -44,4 +44,7 @@ module.exports = {
     } 
   },
   plugins: [],
+  corePlugins: {
+    float: false
+  }
 }
