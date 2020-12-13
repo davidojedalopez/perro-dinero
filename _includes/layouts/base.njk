@@ -34,9 +34,13 @@
     {% if last_updated_at %}
       <meta property="article:modified_time" content="{{ last_updated_at | getTime }}">
     {% endif %}
-    <meta property="article:author" content="[{{ metadata.author.name }}]">
+    <meta property="article:author" content="{{ metadata.author.name }}">
     {% if tags %}
-      <meta property="article:tag" content="[{{ tags }}]">
+      {% for tag in tags %}
+        {% if tag !== 'posts' and tag !== 'books' %}
+          <meta property="article:tag" content="{{ tag }}">
+        {% endif %}
+      {% endfor %}
     {% endif %}
 
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
