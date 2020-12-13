@@ -33,10 +33,11 @@
   package = "netlify-plugin-submit-sitemap"
 
 [[plugins]]
-  package = "netlify-plugin-a11y"
-
-[[plugins]]
   package = "@algolia/netlify-plugin-crawler"
+
+  [plugins.inputs]
+    template = "hierarchical"
+
 
 [[plugins]]
   package = "netlify-plugin-subfont"  
@@ -68,4 +69,3 @@
   from = "/blog/bienvenido"
   to = "/posts/bienvenido/"
   status = 200
-
