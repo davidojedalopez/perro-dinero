@@ -4,6 +4,9 @@ Allow: /libros/*/
 Allow: /portafolio
 Disallow: /posts/
 Disallow: /libros/
+Disallow: /feed.xml
+Disallow: /404.html
+Disallow: /sitemap.xml
 
 User-agent: *
 Disallow: 
