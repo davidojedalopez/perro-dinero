@@ -2,7 +2,6 @@
 title: "Retiro, pensión y Afores: una mini guía"
 description: "Lo mínimo que tienes que saber para tener un buen retiro. Aprende sobre los diferentes regímenes de retiro, Afores y SIEFOREs."
 published_at: 2020-11-30
-last_updated_at: 2020-12-12
 cover_path: /img/posts/covers/retiro_y_afores.jpg
 cover_alt: "Nina y Thamy."
 tags: ['retiro', 'afore']
@@ -128,13 +127,6 @@ En específico, **cada mes** se destina a tu Afore el **6.5% de tu salario base*
 - 👉🏼 5.15% lo aporta tu patrón
 - 👉🏼 1.125% lo aportas tú—descontado automáticamente de tu sueldo
 - 👉🏼 0.225% lo aporta el gobierno
-
-⚠️ **EDICIÓN**: El 9 de diciembre del 2020 se aprobó una reforma de pensiones en México. Los cambios principales fueron:
-- 1️⃣ **Reducción del mínimo de semanas de cotización**. De 1250 a 750 temporalmente, pero eventualmente a 1000.
-- 2️⃣ **Incremento en las aportaciones tripartitas** (los porcentajes de arriba). Serán ahora los patrones quienes pagarán el incremento de las aportaciones para pasar de una aportación de 6.5% al 15%. Esto a partir del 2023.
-- 3️⃣ **Aumentar el monto de pensión garantizada**. Esto es una pensión mínima para quienes no cumplen los requisitos para retirarse, como semanas cotizadas o montos mínimos en Afore.
-
-[Aquí hay más información de este cambio](https://www.infobae.com/america/mexico/2020/12/09/camara-de-diputados-aprobo-en-lo-general-la-reforma-de-pensiones-y-afores-de-amlo/), y [aquí una discusión civilizada en Reddit](https://www.reddit.com/r/MexicoFinanciero/comments/kbca3j/que_opinan_de_la_reforma_de_afores/).
 
 Hay ciertas prácticas medio oscuras en que las empresas te subcontratan (*outsourcing*) para poder darte de alta con el mínimo posible. Esto quiere decir que las aportaciones a tu Afore son una popo 💩
 
