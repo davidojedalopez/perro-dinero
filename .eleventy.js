@@ -31,6 +31,13 @@ module.exports = function(eleventyConfig) {
     return dateObj.toISOString();
   });
 
+  eleventyConfig.addFilter("getTime", dateObj => {
+    if(dateObj instanceof String) {
+      dateObj = new Date(dateObj)
+    }
+    return dateObj.getTime();
+  });
+
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
