@@ -1,9 +1,5 @@
 module.exports = {
-  purge: {
-    mode: 'all',
-    preserveHtmlElements: false,
-    content: ['./_site/**/*.html', './**/*.njk']
-  },  
+  purge: ['./_site/**/*.html', './**/*.njk'],
   theme: {    
     extend: {      
       colors: {      
