@@ -10,7 +10,7 @@ tags: ['recursos', 'inversiones', 'ahorro', 'deuda', 'desarrollo personal']
 
 <details open>
   <summary>
-    Índice
+    Contenidos
   </summary>
 
   [[toc]]

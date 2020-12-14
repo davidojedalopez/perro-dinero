@@ -9,24 +9,24 @@ permalink: "posts/{{ page.fileSlug }}/"
       <img src="{{ cover_path | url }}" alt="{{ cover_alt }}" class="relative -z-1" />
     </div>
   {% endif %}
-  <h1 class="text-accent-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
-  <time class="text-base text-accent-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600">·</span> <span class="text-base text-accent-600">Lectura de {{ content | readingTime }}</span> 
+  <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
+  <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Lectura de {{ content | readingTime }}</span> 
   {% if last_updated_at %} 
-    <span class="px-2 text-base text-accent-600">·</span> <span class="text-base text-accent-600">Actualizado el</span> <time class="text-base text-accent-600" datetime="{{ published_at | htmlDateString }}">{{ last_updated_at | readableDate }}</time> 
+    <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Actualizado el</span> <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ last_updated_at | readableDate }}</time> 
   {% endif %}
   
   <div class="mt-8">
     {{ content | safe }}
 
     <div class="hidden" data-id="share-section">
-      <p>Compartir este post ayudará a más personas a mejorar su vida y sus finanzas, hay que echarnos la:</p>
+      <p>Compartir este post ayudará a más personas a mejorar su vida y sus finanzas, hay que echarnos la mano:</p>
       <button class="button block" data-id="share">Compartir 📲 </button>
     </div>
   </div>
 
   {% if newsletter_cta %}
     <hr>
-    <div class="mt-8 p-4 rounded-lg bg-accent-100">
+    <div class="mt-8 p-4 rounded-lg bg-accent-100 dark:bg-foreground-dark text-center">
       <p class="mb-4 font-black">¡Si te gustó este contenido también disfrutarás mi newsletter!</p>
       <ul>
         <li class="mb-4">Nudismo financiero 😳</li>
@@ -36,6 +36,7 @@ permalink: "posts/{{ page.fileSlug }}/"
         <li class="mb-4">Directo en tu correo 📬</li>
         <li class="font-black">Una vez por semana— Cero spam 🚫</li>
       </ul>
+      <div class="animate-bounce text-4xl">👇🏼</div>      
       <iframe src="https://perrodinero.substack.com/embed" class="mx-auto w-64" frameborder="0" scrolling="no" title="Widget de Substack, el servicio para newsletters que utilizo." same></iframe>
     </div>
       
@@ -66,7 +67,7 @@ permalink: "posts/{{ page.fileSlug }}/"
 
 
   <div class="flex flex-col mt-16 p-4">
-    <p class="opacity-75">Otros posts que pueden interesarte 👇🏼</p>
+    <p class="opacity-75">Otros posts que pueden interesarte 💭</p>
 
     {% set post = collections.posts | getPreviousCollectionItem(page) %}
     {% if post %}

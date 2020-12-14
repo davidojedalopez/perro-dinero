@@ -10,7 +10,7 @@ tags: ['mexico', 'creditos', 'deudas']
 
 <details open>
   <summary>
-    Índice
+    Contenidos
   </summary>
 
   [[toc]]

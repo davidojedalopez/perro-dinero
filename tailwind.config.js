@@ -1,4 +1,5 @@
 module.exports = {
+  darkMode: 'class',
   purge: ['./_site/**/*.html', './**/*.njk'],
   theme: {    
     extend: {      
@@ -16,17 +17,20 @@ module.exports = {
             900: '#092812',
         },
         'accent-dark': {
-          100: '#FEFAEC',
-          200: '#FCF2CF',
-          300: '#FAEAB2',
-          400: '#F7DA78',
-          500: '#F3CA3E',
-          600: '#DBB638',
-          700: '#927925',
-          800: '#6D5B1C',
-          900: '#493D13',
+            100: '#FEFAEC',
+            200: '#FCF2CF',
+            300: '#FAEAB2',
+            400: '#F7DA78',
+            500: '#F3CA3E',
+            600: '#DBB638',
+            700: '#927925',
+            800: '#6D5B1C',
+            900: '#493D13',
         },
         background: '#FAFAFA',
+        'background-dark': '#222831',
+        'foreground-dark': '#393e46',
+        'primary-dark': '#EEEEEE',
         'twitter': '#1b95e0',
         'twitter-hover': '#0c7abf'
       },
@@ -39,8 +43,5 @@ module.exports = {
       }
     } 
   },
-  plugins: [],
-  corePlugins: {
-    float: false
-  }
+  plugins: []  
 }

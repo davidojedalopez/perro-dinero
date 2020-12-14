@@ -10,7 +10,7 @@ tags: ['inversiones', 'plataformas']
 
 <details open>
   <summary>
-    Índice
+    Contenidos
   </summary>
 
   [[toc]]

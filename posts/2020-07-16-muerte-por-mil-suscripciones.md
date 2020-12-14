@@ -10,7 +10,7 @@ tags: ['ahorro', 'presupuestos']
 
 <details open>
   <summary>
-    Índice
+    Contenidos
   </summary>
 
   [[toc]]

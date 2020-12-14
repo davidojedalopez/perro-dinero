@@ -3,7 +3,7 @@
 body {
   scroll-behavior: smooth;
   @apply font-main;
-  @apply text-primary;
+  @apply text-primary dark:text-primary-dark;
   hyphens: auto;
 
   font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
@@ -40,17 +40,17 @@ a:visited {
 
 hr {
   @apply border-2;
-  @apply border-accent-500;
+  @apply border-accent-500 dark:border-accent-dark-500;
   @apply my-8;
 }
 
 .button {
   @apply py-2 px-4;
-  @apply border-accent-500;
-  @apply text-accent-500;
+  @apply border-accent-500 dark:border-accent-dark-500;
+  @apply text-accent-500 dark:text-accent-dark-500;
 
-  @apply bg-accent-500;
-  @apply text-white;
+  @apply bg-accent-500 dark:bg-accent-dark-500;
+  @apply text-white dark:text-black;
 
   @apply border-2;
   @apply text-center;
@@ -61,8 +61,8 @@ hr {
 }
 
 .button:hover {
-  @apply bg-accent-700;
-  @apply border-accent-700;
+  @apply bg-accent-400 dark:bg-accent-dark-400;
+  @apply border-accent-400 dark:border-accent-dark-400;
 }
 
 @tailwind components;

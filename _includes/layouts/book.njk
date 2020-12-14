@@ -7,10 +7,10 @@ permalink: "libros/{{ page.fileSlug }}/"
 
   <div class="flex items-center">
     <div>
-      <h1 class="text-accent-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
+      <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
       <span class="opacity-75">Escrito por {{ author }}</span>
       <br>
-      <time class="text-base text-accent-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600">·</span> <span class="text-base text-accent-600">Lectura de {{ content | readingTime }}</span>
+      <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Lectura de {{ content | readingTime }}</span>
     </div>
     <div>
       <img src="{{ cover_path | url }}" alt="{{ cover_alt }}" width="200" class="" />
@@ -20,7 +20,7 @@ permalink: "libros/{{ page.fileSlug }}/"
   <div class="mt-8">
     {{ content | safe }}
 
-    <p class="font-bold pt-4 text-accent-500">Muchas gracias por leerme {{ ['💙', '💚', '💛', '❤️', '🖤'] | random }}<p>
+    <p class="font-bold pt-4 text-accent-500 dark:text-accent-dark-500">Muchas gracias por leerme {{ ['💙', '💚', '💛', '❤️', '🖤'] | random }}<p>
     
     <div class="hidden" data-id="share-section">
       <p>Compartir este post ayudará a más personas a mejorar su vida y sus finanzas, hay que echarnos la mano:</p>

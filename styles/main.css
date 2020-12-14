@@ -3,7 +3,7 @@ article p {
 }
 
 article a:hover {
-  @apply text-accent-500;
+  @apply text-accent-500 dark:text-accent-dark-500;
 }
 
 article ul {
@@ -21,7 +21,7 @@ article ol {
 article h2,
 article h3,
 article h4 {
-  @apply text-accent-500;
+  @apply text-accent-500 dark:text-accent-dark-500;
   @apply pt-8;
   @apply pb-4;
   @apply font-black;
@@ -46,8 +46,8 @@ article blockquote {
   @apply p-4;
   @apply border-l-4;
   @apply border-b;
-  @apply border-accent-500;
-  @apply bg-accent-100;
+  @apply border-accent-500 dark:border-accent-dark-500;
+  @apply bg-accent-100 dark:bg-foreground-dark;
   @apply rounded;
 }
 
@@ -63,7 +63,7 @@ article blockquote p::after {
 article details {
   @apply border-l-4;
   @apply border-b;
-  @apply border-accent-500;
+  @apply border-accent-500 dark:border-accent-dark-500;
   @apply rounded;
   @apply p-4;
   @apply mb-8;  
@@ -72,7 +72,7 @@ article details {
 }
 
 article strong {
-  @apply text-accent-500;
+  @apply text-accent-500 dark:text-accent-dark-500;
 }
 
 article div > ol {
@@ -88,18 +88,15 @@ article code {
   @apply bg-gray-300;
 }
 
-article p > a {
-  @apply bg-accent-100;
-  @apply rounded-t;
-}
-
+article p > a,
 article li > a {
-  @apply bg-accent-100;
-  @apply rounded-t;
+  @apply bg-accent-100 dark:bg-foreground-dark;
+  @apply rounded-t px-1 pt-1;
 }
 
 /* TOC styles */
 article details {
+  @apply dark:text-primary-dark;
   @apply w-full;
   @apply w-4/5;
 }
@@ -110,10 +107,11 @@ article details summary {
 }
 
 article .table-of-contents a {
+  @apply dark:text-primary-dark;
   @apply inline;
   @apply no-underline;
   @apply mb-2;
-  @apply rounded-none bg-transparent;
+  @apply rounded-none bg-transparent dark:bg-transparent;
 }
 
 article .table-of-contents li {
@@ -132,11 +130,11 @@ article .table-of-contents li:before {
 /* End TOC styles */
 
 article table {
-  @apply ring-1 ring-black ring-opacity-10 bg-white mx-auto mt-4 mb-8;
+  @apply ring-1 ring-black dark:ring-white ring-opacity-10 bg-white dark:bg-foreground-dark mx-auto mt-4 mb-8;
 }
 
 article th {
-  @apply bg-accent-100 border text-center px-4 py-4;
+  @apply bg-accent-100 dark:bg-foreground-dark border text-center px-4 py-4;
 }
 
 article td {
@@ -150,14 +148,53 @@ article td {
 /* Algolia search */
 .aa-hit--title {
   @apply text-2xl !important;
+  @apply dark:text-primary-dark !important;
 }
 
 .aa-hit--description {
   @apply leading-snug !important;
   @apply text-lg !important;
+  @apply dark:text-primary-dark !important;
+}
+
+.aa-dataset-hits {
+  @apply dark:bg-foreground-dark dark:text-primary-dark !important;  
 }
 
 .aa-hit--highlight {
-  @apply text-accent-500 !important;
-  @apply bg-accent-100 !important;
+  @apply text-accent-500 dark:text-accent-dark-500 !important;  
+  @apply bg-accent-100 dark:bg-foreground-dark !important;
+}
+
+.aa-suggestion {
+  @apply dark:hover:bg-background-dark !important;
+}
+
+input[type="search"]::placeholder {
+  @apply dark:text-foreground-dark;
+}
+
+input[type="search"] {
+  @apply dark:text-black;
+}
+
+.dark-mode-toggle {
+  @apply relative w-12;  
+}
+.dark-mode-toggle .well {
+  @apply cursor-pointer block bg-foreground-dark dark:bg-primary-dark h-4 rounded-full;  
+}
+.dark-mode-toggle .toggle {
+  @apply border-0 opacity-0 outline-none w-full h-full bg-transparent absolute cursor-pointer z-50;
+}
+.dark-mode-toggle .toggle ~ .emoji:before {
+  content: "\01F31A";  
+  @apply absolute -left-5 z-10 text-4xl;  
+  top: -11px;
+  transition: 0.2s; 
+}
+.dark-mode-toggle .toggle:checked ~ .emoji:before {
+  content: "\01F31E";  
+  @apply -ml-5;
+  left: 100%;  
 }

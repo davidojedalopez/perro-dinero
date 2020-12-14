@@ -10,7 +10,7 @@ tags: ['mexico', 'plataformas']
 
 <details open>
   <summary>
-    Índice
+    Contenidos
   </summary>
 
   [[toc]]

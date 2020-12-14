@@ -10,7 +10,7 @@ tags: ['inversiones', 'cetesdirecto', 'cetes', 'bonddia', 'enerfin']
 
 <details open>
   <summary>
-    Índice
+    Contenidos
   </summary>
 
   [[toc]]

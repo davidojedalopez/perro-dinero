@@ -10,7 +10,7 @@ tags: ['desarrollo personal', 'lista']
 
 <details open>
   <summary>
-    Índice
+    Contenidos
   </summary>
 
   [[toc]]

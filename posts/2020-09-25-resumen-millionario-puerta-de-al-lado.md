@@ -11,7 +11,7 @@ has_affiliate_links: true
 
 <details open>
   <summary>
-    Índice
+    Contenidos
   </summary>
 
   [[toc]]

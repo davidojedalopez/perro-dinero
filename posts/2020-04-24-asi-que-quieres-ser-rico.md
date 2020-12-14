@@ -11,7 +11,7 @@ newsletter_cta: true
 
 <details open>
   <summary>
-    Índice
+    Contenidos
   </summary>
 
   [[toc]]

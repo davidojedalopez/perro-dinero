@@ -10,7 +10,7 @@ tags: ['inversiones']
 
 <details open>
   <summary>
-    Índice
+    Contenidos
   </summary>
 
   [[toc]]
