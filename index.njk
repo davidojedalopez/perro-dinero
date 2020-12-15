@@ -38,13 +38,11 @@ cover_path: /img/perro_dinero.png
 
 {% set maxPosts = 3 %}
 {% set postsList = collections.posts | head(-maxPosts) %}
-{% set postsListCount = collections.posts | length %}
+{% set postsListCount = collections.postsAndBooks | length %}
 <section class="flex flex-col my-8 space-y-4">
   {% for post in postsList | reverse %}
     {% include "postitem.njk" %}
-  {% endfor %}
-
-  <a class="button" href="/posts">Todos los posts ({{ postsListCount }})</a>
+  {% endfor %}  
 </section>
 
 <hr>
@@ -65,7 +63,7 @@ cover_path: /img/perro_dinero.png
   {% endfor %}
 </section>
 
-<hr>
+<a class="button block" href="/posts">Todos los posts 📂 ({{ postsListCount }})</a>
 
 <section class="mt-8 mb-8 p-4 rounded-lg bg-accent-100 dark:bg-foreground-dark text-center">
   <h2 class="mb-4 text-center font-black">Actualizaciones <span class="text-accent-500 dark:text-accent-dark-500">perronas</span> 🐕 💌</h2>

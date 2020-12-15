@@ -2,5 +2,6 @@
   "tags": [
     "posts"
   ],
+  "monthYear": "",
   "layout": "layouts/post.njk" 
 }

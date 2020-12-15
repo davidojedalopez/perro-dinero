@@ -56,6 +56,12 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
+  // Filter source file names using a glob
+  eleventyConfig.addCollection("postsAndBooks", function(collectionApi) {
+    // Also accepts an array of globs!
+    return collectionApi.getFilteredByGlob(["posts/*.md", "books/*.md"]);
+  });
+
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy('favicon.ico')

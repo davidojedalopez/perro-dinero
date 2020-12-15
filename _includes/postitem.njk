@@ -1,4 +1,4 @@
-<a class="no-underline hover:bg-accent-100 dark:hover:bg-foreground-dark p-4 rounded" href="{{ post.url | url }}">
+<a class="block no-underline hover:bg-accent-100 dark:hover:bg-foreground-dark p-4 rounded" href="{{ post.url | url }}">
   <div class="flex">    
     <h2 class="font-black w-full text-accent-500 dark:text-accent-dark-500">{{ post.data.title }} </h2>
     {% if postsList[maxPosts - 1] === post %}
