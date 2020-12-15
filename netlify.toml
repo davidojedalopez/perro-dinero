@@ -35,10 +35,6 @@
 [[plugins]]
   package = "@algolia/netlify-plugin-crawler"
 
-  [plugins.inputs]
-    template = "hierarchical"
-
-
 [[plugins]]
   package = "netlify-plugin-subfont"  
 
