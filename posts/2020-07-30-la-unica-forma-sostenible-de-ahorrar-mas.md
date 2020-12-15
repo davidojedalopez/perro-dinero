@@ -3,8 +3,8 @@ title: "La única forma sostenible de ahorrar más"
 description: "¿Has pensado que la mejor forma de ahorrar es en realidad ganando más?"
 published: true
 published_at: 2020-07-30
-cover_path: /img/posts/covers/unica_forma_de_ahorrar.png
-cover_alt: "Nina acostada sobre su espalda jugando con un pato amarillo de plástico"
+cover_path: /img/posts/covers/forma_de_ahorrar.png
+cover_alt: "Nina acostada sobre su espalda jugando con un pato de plástico amarillo"
 tags: ['ahorro', 'presupuestos']
 ---
 
