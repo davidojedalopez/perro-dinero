@@ -1,9 +1,0 @@
-<div class="pt-4 pb-2">
-  <p>Most recent</p>
-</div>
-
-<ul class="list-none divide-opacity-50 divide-primary flex-auto">
-  {% for post in postsList | reverse %}
-    {% include "postitem.njk" %}
-  {% endfor %}
-</ul>

@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: "Lecciones de libros"
+permalink: libros/
+---
+
+{% set postsList = collections.books %}
+{% set postsListCount = collections.books | length %}
+
+<h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-3xl mb-8">Lecciones de libros 📚 ({{ postsListCount }} posts)</h1>
+
+<section class="flex flex-col space-y-8 mb-8">
+  {% for date, posts in postsList | reverse | groupby("data.monthYear") %}
+    <details {% if loop.first or loop.index0 === 1 %} open {% endif %} class="">
+      <summary class="cursor-pointer">
+        {{ date | capitalize }} ({{ posts | length }} posts)
+      </summary>
+      {% for post in posts %}
+        {% include "postitem.njk" %}
+      {% endfor %}
+    </details>    
+  {% endfor %}
+</section>

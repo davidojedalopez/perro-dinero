@@ -40,8 +40,23 @@ module.exports = {
       },
       zIndex: {
         '-1': '-1'
+      },
+      keyframes: {
+        scaleUp: {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+          '100%': { transform: 'scale(1)' }
+        }
+      },
+      animation: {
+        scaleUp: 'scaleUp 1s ease-in-out infinite'        
       }
     } 
   },
-  plugins: []  
+  plugins: [],
+  variants: {
+    extend: {
+      animation: ['hover']
+    }
+  }  
 }
