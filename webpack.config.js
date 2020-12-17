@@ -11,7 +11,8 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin(),
     new InjectManifest({
-      swSrc: './scripts/service-worker.js'
+      swSrc: './scripts/service-worker.js',
+      swDest: path.resolve(__dirname, 'service-worker.js')
     })
   ],
   module: {
