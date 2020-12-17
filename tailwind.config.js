@@ -3,7 +3,7 @@ module.exports = {
   purge: ['./_site/**/*.html', './**/*.njk'],
   theme: {    
     extend: {      
-      colors: {      
+      colors: {
         primary: '#000000',
         accent: {
             100: '#E8F3EB',
