@@ -1,6 +1,5 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const { InjectManifest } = require('workbox-webpack-plugin')
 
 module.exports = {
   entry: './scripts/main.js',
@@ -9,11 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, '_site/assets')
   },
   plugins: [
-    new MiniCssExtractPlugin(),
-    new InjectManifest({
-      swSrc: './scripts/service-worker.js',
-      swDest: path.resolve(__dirname, 'service-worker.js')
-    })
+    new MiniCssExtractPlugin()    
   ],
   module: {
     rules: [
