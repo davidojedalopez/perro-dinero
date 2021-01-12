@@ -3,12 +3,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: {
-    main: './scripts/main.js',
-    "service-worker": './scripts/service-worker.js'
+    "assets/main": path.resolve(__dirname, './scripts/main.js'),
+    "service-worker": path.resolve(__dirname, './scripts/service-worker.js')
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, '_site/assets')
+    path: path.resolve(__dirname, '_site/')
   },
   plugins: [
     new MiniCssExtractPlugin()    
