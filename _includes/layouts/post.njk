@@ -3,6 +3,7 @@ layout: layouts/base.njk
 permalink: "posts/{{ page.fileSlug }}/"
 ---
 
+
 <article class="py-8">
   {% if cover_path %}
     <div class="mb-4 gradient-background rounded mx-auto w-full max-w-screen-sm h-auto">
@@ -18,8 +19,8 @@ permalink: "posts/{{ page.fileSlug }}/"
   <div class="mt-4">
     {% include "tweet_share_button.njk" %}    
   </div>
-  
-  <div class="mt-8">
+
+  <div class="mt-8">    
     {{ content | safe }}
 
     <div class="hidden" data-id="share-section">

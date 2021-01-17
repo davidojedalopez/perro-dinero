@@ -1,5 +1,6 @@
 ---
 title: "Cetesdirecto y sus mil y un opciones"
+titleKey: "cetesdirecto_opciones"
 description: "Todas las opciones de inversión de CETES directo explicadas con peras y manzanas."
 published: true
 published_at: 2020-09-03

@@ -27,6 +27,11 @@ article h4 {
   @apply font-black;
 }
 
+article h3,
+article h4 {
+  @apply text-accent-600 dark:text-accent-dark-600;
+}
+
 article h4 {
   @apply py-4;
 }

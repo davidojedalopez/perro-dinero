@@ -1,5 +1,6 @@
 ---
 title: "Conoce YNAB, crea tu presupuesto y toma el control de tu dinero 💸"
+titleKey: "ynab_intro"
 description: "Un presupuesto es un plan para decidir qué harás con tu dinero antes de gastarlo. Y la mejor forma que conozco de manejar tu presupuesto es con YNAB."
 published: true
 published_at: 2020-05-13

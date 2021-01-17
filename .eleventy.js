@@ -79,7 +79,7 @@ module.exports = function(eleventyConfig) {
     permalinkSymbol: "🔗"
   }).use( require("markdown-it-toc-done-right"), {
     level: [1, 2, 3]
-  });
+  }).disable('code');
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Browsersync Overrides
@@ -119,7 +119,7 @@ module.exports = function(eleventyConfig) {
     // You can also pass this in on the command line using `--pathprefix`
     // pathPrefix: "/",
 
-    markdownTemplateEngine: "liquid",
+    markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
 
