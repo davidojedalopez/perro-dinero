@@ -1,9 +1,9 @@
 ---
 title: "12 consejos financieros para este 2021"
-description: "."
+description: "12 recomendaciones que si sigues, estarás en una excelente posición financiera."
 published_at: 2021-01-17
 cover_path: /img/posts/covers/nina_y_kai.png
-cover_alt: "12 recomendaciones que si sigues, estarás en una excelente posición financiera."
+cover_alt: "Nina y Kai cotorreando un rato."
 tags: ['listticle']
 newsletter_cta: true
 ---
