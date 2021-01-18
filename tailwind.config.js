@@ -32,7 +32,8 @@ module.exports = {
         'foreground-dark': '#393e46',
         'primary-dark': '#EEEEEE',
         'twitter': '#1b95e0',
-        'twitter-hover': '#0c7abf'
+        'twitter-hover': '#0c7abf',
+        'reddit': '#ff5700'
       },
       fontFamily: {
         'logo': ['Roboto Condensed', 'sans-serif'],
