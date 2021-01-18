@@ -10,6 +10,12 @@ body {
   line-height: calc(1.5em + (2 - 1.5) * ((100vw - 300px)/(1600 - 300)));
 }
 
+header {
+  grid-template-areas:
+    "home . . toggle"
+    "search search search search"
+}
+
 h1 {
   @apply leading-snug;
   font-size: calc(36px + (40 - 36) * ((100vw - 300px) / (1600 - 300)));

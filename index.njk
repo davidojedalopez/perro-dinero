@@ -4,16 +4,18 @@ title: Perro Dinero
 cover_path: /img/perro_dinero.png
 ---
 
-<section class="flex flex-col mb-8">
-  <picture class="rounded-full mb-8 self-center">
+<section class="flex flex-col md:flex-row items-center mb-8 space-x-4 space-y-4">  
+  <picture class="rounded-full self-center">
     <source srcset="/img/david_y_nina.webp" type="image/webp">
     <source srcset="/img/david_y_nina.png" type="image/png">
-    <img src="/img/david_y_nina.png" alt="Yo, David, y Nina, mi perra, felices en un parque." width="200" height="200">
+    <img src="/img/david_y_nina.png" alt="Yo, David, y Nina, mi perra, felices en un parque." class="w-40 md:w-56 lg:w-72">
   </picture>
-
-  <p class="mb-4 self-center">¡Qué pedo! Mi nombre es <span class="text-accent-500 dark:text-accent-dark-500 font-black">David Ojeda</span>, y mi perra se llama <span class="text-accent-500 dark:text-accent-dark-500 font-black">Nina</span> 👋🏼</p>
-  <p class="mb-4">Aquí documento todo lo que he aprendido sobre finanzas personales para que tú también puedas subir de nivel 💪🏼</p>  
-
+  <h1 class="font-black text-center text-4xl md:text-5xl lg:text-6xl break-normal">
+    El dinero <span class="text-accent-500 dark:text-accent-dark-500"> sí compra</span> la felicidad.
+  </h1>
+</section>
+  
+<section>
   <div class="grid gap-x-4 gap-y-8 grid-cols-2 sm:grid-cols-3 2xl:grid-cols-6 text-center my-8">
     <a href="/portafolio/" class="no-underline text-lg md:text-2xl flex flex-col items-center hover:animate-scaleUp">
       <span class="text-4xl">📈</span>
@@ -47,13 +49,7 @@ cover_path: /img/perro_dinero.png
   </div>
 </section>
 
-<h1 class="font-black text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl break-normal">
-  El dinero <span class="text-accent-500 dark:text-accent-dark-500"> sí compra</span> la felicidad.
-</h1>
-
-<label class="sr-only" for="search-posts">Buscar en posts</label>
-<input id="search-posts" type="search" placeholder="🔍 Buscar en posts..." class="w-full px-4 py-2 rounded-full border-accent-500 dark:border-accent-dark-5 border-l-2 border-b-2 placeholder-accent-500 dark:placeholder-accent-dark-500 placeholder-opacity-100 my-8" />
-
+<hr>
 
 <p class="opacity-75 my-4">Posts recientes ⏳</p>
 
@@ -104,21 +100,3 @@ cover_path: /img/perro_dinero.png
 
   <p>Puedes revisar los <a href="https://perrodinero.substack.com/archive">correos anteriores aquí</a>, para que veas que están perrones.</p>
 </section>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.css" />
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
-<script type="text/javascript">
-  algoliasearchNetlify({
-    appId: '0XVEQ8TLK3',
-    apiKey: 'fef279042309319fe04cbb7778b5e67f',
-    siteId: '484d9a9f-dc24-4d30-90c4-142ae40c60b7',
-    branch: 'master',
-    selector: 'div#search',
-    analytics: true,
-    hitsPerPage: 5,
-    placeholder: "Buscar en posts...",
-    openOnFocus: true,
-    poweredBy: true,
-    color: '#1D853B'
-  });
-</script>
