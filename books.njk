@@ -16,7 +16,7 @@ permalink: libros/
         {{ date | capitalize }} ({{ posts | length }} posts)
       </summary>
       {% for post in posts %}
-        {% include "postitem.njk" %}
+        {% include "bookitem.njk" %}
       {% endfor %}
     </details>    
   {% endfor %}
