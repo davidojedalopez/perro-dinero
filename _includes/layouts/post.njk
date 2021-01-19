@@ -33,21 +33,7 @@ permalink: "posts/{{ page.fileSlug }}/"
 
   {% if newsletter_cta %}
     <hr>
-    <div class="mt-8 p-4 rounded-lg bg-accent-100 dark:bg-foreground-dark text-center">
-      <p class="mb-4 font-black">¡Si te gustó este contenido también disfrutarás mi newsletter!</p>
-      <ul>
-        <li class="mb-4">Nudismo financiero 😳</li>
-        <li class="mb-4">Historias personales, de éxito y fracaso 📈📉</li>
-        <li class="mb-4">Opiniones de libros, apps y hechos modernos 📚📰</li>
-        <li class="mb-4">Recursos para enriquecer la mente y la cartera 🧠💰</li>
-        <li class="mb-4">Directo en tu correo 📬</li>
-        <li class="font-black">Una vez por semana— Cero spam 🚫</li>
-      </ul>
-      <div class="animate-bounce text-4xl">👇🏼</div>      
-      <iframe src="https://perrodinero.substack.com/embed" class="mx-auto w-64" frameborder="0" scrolling="no" title="Widget de Substack, el servicio para newsletters que utilizo." same></iframe>
-    </div>
-      
-    
+    {% include "calls_to_action/newsletter.njk" %}
   {% endif %}
 
   {% if has_affiliate_links %}
