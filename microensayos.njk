@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: "Micro ensayos"
+permalink: microensayos/
+---
+
+{% set essaysList = collections.micro_essays %}
+{% set essaysListCount = collections.micro_essays | length %}
+
+<p class="mb-8">Un micro ensayo es una idea desarrollada en menos de 250 palabras. Lo puedes leer en menos de 2 minutos.<p>
+
+<h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-3xl mb-8">Micro ensayos ✍️ ({{ essaysListCount }} {% if essaysListCount > 1 %} ensayos{% else %} ensayo{% endif %})</h1>
+
+<section class="flex flex-col space-y-8 mb-8">
+  {% for date, essays in essaysList | reverse | groupby("data.monthYear") %}
+    <details {% if loop.first or loop.index0 === 1 %} open {% endif %} class="">
+      <summary class="cursor-pointer">
+        {% set essaysCount = essays | length %}
+        {{ date | capitalize }} ({{ essays | length }} {% if essaysCount > 1 %} ensayos{% else %} ensayo{% endif %})
+      </summary>
+      <div class="flex flex-row justify-between">
+        {% for essay in essays %}
+            {% include "micro_essay_item.njk" %}
+        {% endfor %}
+      </div>
+    </details>    
+  {% endfor %}
+</section>

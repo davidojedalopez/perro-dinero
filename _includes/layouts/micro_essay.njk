@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+permalink: "microensayos/{{ page.fileSlug }}/"
+---
+
+<article class="py-8">
+    <h1 class="text-center text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
+    {# <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> #}
+    <div class="mt-8">
+        {{ content | safe }}
+    </div>
+</article>

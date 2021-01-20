@@ -1,6 +1,7 @@
 User-agent: Algolia Crawler
 Allow: /posts/*/
 Allow: /libros/*/
+Allow: /microensayos/*/
 Allow: /portafolio
 Disallow: /posts/
 Disallow: /libros/
