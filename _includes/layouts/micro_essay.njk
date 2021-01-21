@@ -3,10 +3,19 @@ layout: layouts/base.njk
 permalink: "microensayos/{{ page.fileSlug }}/"
 ---
 
-<article class="py-8">
-    <h1 class="text-center text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
-    {# <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> #}
+<article class="pt-8">
+    <h1 class="break-normal text-center text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
     <div class="mt-8">
         {{ content | safe }}
     </div>
+
+    <hr>
+
+    <div class="pb-4">
+        <p class="mb-4" data-id="share">Puedes <strong>compartir este micro ensayo como una imagen</strong> desde el celular dejando presionada la foto de aquí abajo y seleccionando la opción de compartir 📲 </p>
+        <img class="mx-auto" src="{{ '/img/micro_essays/001_intentalo_de_nuevo.png' | url }}" alt="Micro ensayo en formato imagen" width="150">
+        {% include "calls_to_action/newsletter.njk" %}
+    </div>
+
+
 </article>

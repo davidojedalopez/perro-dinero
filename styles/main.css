@@ -77,7 +77,7 @@ article details {
 }
 
 article strong {
-  @apply text-accent-500 dark:text-accent-dark-500;
+  @apply font-bold text-accent-500 dark:text-accent-dark-500;
 }
 
 article div > ol {
