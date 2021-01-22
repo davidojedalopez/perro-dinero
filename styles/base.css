@@ -23,6 +23,7 @@ h1 {
 
 h2 {
   font-size: calc(28px + (32 - 28) * ((100vw - 300px) / (1600 - 300)));
+  @apply leading-tight;
 }
 
 h3 {
@@ -69,6 +70,18 @@ hr {
 .button:hover {
   @apply bg-accent-400 dark:bg-accent-dark-400;
   @apply border-accent-400 dark:border-accent-dark-400;
+}
+
+.button--outline {
+  @apply button;
+  @apply border-accent-300 dark:border-accent-dark-300;
+
+  @apply bg-accent-100 dark:bg-foreground-dark;
+  @apply text-black dark:text-accent-dark-300;
+}
+
+.button--outline:hover {
+  @apply dark:text-black;  
 }
 
 @tailwind components;
