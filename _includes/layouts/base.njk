@@ -14,7 +14,7 @@
     <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
     <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
-    <meta property="og:image" content="{{ metadata.url }}{{ cover_path }}">
+    <meta property="og:image" content="{{ metadata.url }}{{ cover_path or metadata.default_cover }}">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ metadata.url }}{{ page.url }}">
