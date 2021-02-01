@@ -67,13 +67,13 @@ cover_path: /img/perro_dinero.png
 {% set maxPosts = 3 %}
 {% set postsList = collections.posts | head(-maxPosts) %}
 {% set postsListCount = collections.postsAndBooks | length %}
-<section class="flex flex-col my-2 space-y-4">
+<section class="flex flex-col my-4 space-y-4">
   {% for post in postsList | reverse %}
     {% include "postitem.njk" %}
   {% endfor %}  
 </section>
 
-<a class="button--outline block" href="/posts/">Todos los posts 📂 ({{ postsListCount }})</a>
+<a class="button--outline block mt-4" href="/posts/">Todos los posts 📂 ({{ postsListCount }})</a>
 
 <hr>
 
@@ -81,7 +81,7 @@ cover_path: /img/perro_dinero.png
 
 {% set booksList = collections.books | head(-3) %}
 {% set booksListCount = collections.books | length %}
-<section class="flex flex-col my-2 space-y-4">
+<section class="flex flex-col my-4 space-y-4">
   {% for book in booksList | reverse %}
     <a class="no-underline hover:bg-accent-100 dark:hover:bg-foreground-dark p-4 rounded" href="{{ book.url | url }}">
       <h2 class="font-black text-accent-500 dark:text-accent-dark-500">{{ book.data.title }} </h2>
@@ -93,7 +93,7 @@ cover_path: /img/perro_dinero.png
   {% endfor %}
 </section>
 
-<a class="button--outline block" href="/libros/">Todos las lecciones 📂 ({{ booksListCount }})</a>
+<a class="button--outline block mt-4" href="/libros/">Todos las lecciones 📂 ({{ booksListCount }})</a>
 
 <hr>
 
@@ -101,13 +101,13 @@ cover_path: /img/perro_dinero.png
 
 {% set microEssaysList = collections.micro_essays | head(-3) %}
 {% set microEssaysCount = collections.micro_essays | length %}
-<section class="flex flex-row justify-between space-y-4 my-2">
+<section class="flex flex-col my-4 space-y-4">
   {% for essay in microEssaysList | reverse %}
     {% include "micro_essay_item.njk" %}
   {% endfor %}
 </section>
 
-<a class="button--outline block" href="/microensayos/">Todos los micro ensayos 📂 ({{ microEssaysCount }})</a>
+<a class="button--outline block mt-4" href="/microensayos/">Todos los micro ensayos 📂 ({{ microEssaysCount }})</a>
 
 <hr>
 
