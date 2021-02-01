@@ -77,26 +77,6 @@ cover_path: /img/perro_dinero.png
 
 <hr>
 
-<p class="">Lecciones de libros 📚</p>
-
-{% set booksList = collections.books | head(-3) %}
-{% set booksListCount = collections.books | length %}
-<section class="flex flex-col my-4 space-y-4">
-  {% for book in booksList | reverse %}
-    <a class="no-underline hover:bg-accent-100 dark:hover:bg-foreground-dark p-4 rounded" href="{{ book.url | url }}">
-      <h2 class="font-black text-accent-500 dark:text-accent-dark-500">{{ book.data.title }} </h2>
-      <span class="text-sm opacity-75">Escrito por {{ book.data.author }}</span>
-      <br>
-      <time class="text-sm text-accent-600 dark:text-accent-dark-600" datetime="{{ book.data.published_at | htmlDateString }}">{{ book.data.published_at | readableDate }}</time> <span class="px-2 text-sm text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-sm text-accent-600 dark:text-accent-dark-600">Lectura de {{ book | readingTime }}</span>  
-      <p>{{ book.data.description }}</p>  
-    </a>
-  {% endfor %}
-</section>
-
-<a class="button--outline block mt-4" href="/libros/">Todos las lecciones 📂 ({{ booksListCount }})</a>
-
-<hr>
-
 <p class="">Micro ensayos ✍️</p>
 
 {% set microEssaysList = collections.micro_essays | head(-3) %}
