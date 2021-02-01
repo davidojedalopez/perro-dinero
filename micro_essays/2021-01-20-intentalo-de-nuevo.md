@@ -3,6 +3,7 @@ title: Inténtalo de nuevo
 description: Vive tu vida como un videojuego.
 published_at: 2021-01-20
 newsletter_cta: true
+share_image_url: /img/micro_essays/001_intentalo_de_nuevo.png
 ---
 
 > Todos deberíamos tratar nuestros fracasos en la vida real como los tratamos en los videojuegos.
