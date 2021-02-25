@@ -42,7 +42,7 @@ No esperes más, acércate a un asesor y **contrata un seguro de gastos médicos
 
 ## Revisa tu opinión de cumplimiento en el SAT
 
-Dicen que no hay cosa más de adultos que pagar impuestos. Y todos los tenemos que pagar. Por eso la segunda recomendación es asegurarte que **estás al corriente con hacienda**. 
+Dicen que no hay cosa más de adultos que pagar impuestos. Y todos los tenemos que pagar. Por eso la segunda recomendación es asegurarte que **estás al corriente con hacienda**.
 
 Es común tener obligaciones pendientes, especialmente en jóvenes de entre 20 y 30 años porque es cuando empiezan a trabajar y aprender sobre impuestos, por las buenas o por las malas 🤭
 
@@ -60,7 +60,7 @@ Positiva es que todo está al corriente ✅
 
 Negativa es que tienes obligaciones pendientes ❌
 
-**Ojo** 👀: Una opinión positiva no quiere decir que lo que hayas declarado de impuestos está correcto. Sino que **no hay acciones pendientes de tu parte**.
+**Ojo** 👀: Una opinión positiva no quiere decir que lo que hayas declarado de impuestos está correcto. Si no que **no hay acciones pendientes de tu parte**.
 
 Yo nunca me había preocupado por estas cosas, pero en el 2019, cuando me empecé a poner las pilas con mis finanzas, revisé mi situación fiscal y **debía dos declaraciones anuales** 😅
 
@@ -70,7 +70,7 @@ Tuve que pagar recargos por mi ignorancia, pero también salí ganando porque te
 
 ## Revisa tu historial en Buró de Crédito
 
-El temido buró de crédito. 
+El temido buró de crédito.
 
 Para empezar, **estar en buró no es necesariamente malo**. Todos los que hayan tenido una línea de crédito están ahí, incluyéndome. Si tienes una tarjeta de crédito, un plan de celular o cualquier otro crédito, estás en buró.
 
@@ -95,7 +95,7 @@ Con estas notificaciones podrás incluso **detectar un robo de identidad** en el
 
 Tuve que ir a la procuraduría a levantar una denuncia por dos cuentas bancarias que no reconocía, y una dirección dada de alta que tampoco era mía. Y fue más pedo porque ya había sucedido hace muchos meses pero nunca me di cuenta. **Lección aprendida**.
 
-La suscripción a Alertas Buró **cuesta $232 pesos** y es un solo pago anual, pero **vale la pena**. El Uber de ida y vuelta a la procuraduría me costó más que eso 🤣 
+La suscripción a Alertas Buró **cuesta $232 pesos** y es un solo pago anual, pero **vale la pena**. El Uber de ida y vuelta a la procuraduría me costó más que eso 🤣
 
 Además, la suscripción incluye 4 reportes "Mi Buró", el que mencioné anteriormente, y 4 reportes "Mi Score", un número que indica qué tan buen comportamiento crediticio tienes. **Es una ganga**.
 
@@ -165,7 +165,7 @@ Y si esa nueva fuente de ingreso es **pasiva**, mucho mejor.
 
 Pregúntate, **¿para qué eres bueno?** Quizá haces manualidades, o sabes de matemáticas, o eres buen escritor. Puede ser lo que sea.
 
-> Ya que identifiques tus habilidades, haz un plan para monetirzarlas. 
+> Ya que identifiques tus habilidades, haz un plan para monetirzarlas.
 
 Lo primero que viene a la mente es ofrecer tus servicios; ser **freelancer**. Es un muy buen comienzo, y puedes aprender y hacer mucho dinero así, pero **estás vendiendo tu tiempo. Y tu tiempo es limitado**.
 
@@ -214,7 +214,7 @@ Pero si todavía no te animas o tienes dudas, siempre puedes [mandarme un DM en 
 
 Sí, ahorrar e invertir está perro, pero también hay que gastar y disfrutar ese dinero 🤑
 
-> Si pudieras gastar 10 veces más en algo que ya gastas, ¿en qué sería? 
+> Si pudieras gastar 10 veces más en algo que ya gastas, ¿en qué sería?
 
 Pueden ser:
 - ⭐️ Ropa
@@ -245,7 +245,7 @@ Para quienes viven en México, como yo, les dejo una mini guía con lo mínimo q
 
 ***
 
-Si sigues estos consejos que te acabo de dar ya estarás entre el 99% de la población con excelente estabilidad financiera. Y sí, inventé ese número, pero no importa. 
+Si sigues estos consejos que te acabo de dar ya estarás entre el 99% de la población con excelente estabilidad financiera. Y sí, inventé ese número, pero no importa.
 
 **Lo que importa es que tomes acción, y empieces a mejorar tu vida**.
 
