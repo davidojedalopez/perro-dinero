@@ -67,7 +67,7 @@ cover_path: /img/perro_dinero.png
 {% set maxPosts = 3 %}
 {% set postsList = collections.posts | head(-maxPosts) %}
 {% set postsListCount = collections.postsAndBooks | length %}
-<section class="flex flex-col my-4 space-y-4">
+<section class="flex flex-col my-4">
   {% for post in postsList | reverse %}
     {% include "postitem.njk" %}
   {% endfor %}  
@@ -81,7 +81,7 @@ cover_path: /img/perro_dinero.png
 
 {% set microEssaysList = collections.micro_essays | head(-3) %}
 {% set microEssaysCount = collections.micro_essays | length %}
-<section class="flex flex-col my-4 space-y-4">
+<section class="flex flex-col my-4">
   {% for essay in microEssaysList | reverse %}
     {% include "micro_essay_item.njk" %}
   {% endfor %}
