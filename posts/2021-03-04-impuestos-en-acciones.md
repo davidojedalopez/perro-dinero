@@ -45,11 +45,11 @@ Y como dije antes, pagas impuestos solo sobre los rendimientos anuales que hayas
 
 ### Rendimiento positivo (solo ganancias)
 
-Si compraste una acción el primero de diciembre del 2020 a $1,000 pesos, y la vendiste el 31 de enero del mismo año a $5,000, entonces tuviste una ganancia de $4,000. **Pagarías el 10% sobre los $4,000. O sea, $400 pesos**.
+Si compraste una acción el primero de enero del 2020 a $1,000 pesos, y la vendiste el 31 de diciembre del mismo año a $5,000, entonces tuviste una ganancia de $4,000. **Pagarías el 10% sobre los $4,000. O sea, $400 pesos**.
 
 ### Rendimiento positivo (ganancias y pérdidas)
 
-Para determinar los rendimientos anuales tienes que restar las pérdidas de las ganancias. Siguiendo el ejemplo anterior, imagina que además de esa ganancia tuviste una pérdida de $2,000 pesos. Vendiste una acción a precio menor que al que la compraste.
+Para determinar los rendimientos anuales tienes que restar las pérdidas de las ganancias. Siguiendo el ejemplo anterior, imagina que además de esa ganancia tuviste una pérdida de $2,000 pesos.
 
 Eso te deja con un total de $4,000 (ganancia) - $2,000 (pérdida) = $2,000 (rendimiento). Como tuviste pérdidas, el rendimiento anual se redujo, y ahora tienes que **pagar impuestos solo de los $2,000 pesos. O sea, $200 pesos**.
 
@@ -59,11 +59,11 @@ Eso te deja con un total de $4,000 (ganancia) - $2,000 (pérdida) = $2,000 (rend
 
 > Si tu rendimiento anual es negativo, es decir, tuviste pérdidas materializadas, entonces no pagas impuestos por venta de acciones en ese ejercicio fiscal.
 
-Siguiendo con el ejemplo anterior, supón que también vendiste otra acción con minusvalía y tu rendimiento anual fue de -$1,000 pesos 😟. Es triste porque no tuviste rendimientos, pero **al menos no tendrás que pagar impuestos** 😏
+Supón que también vendiste otra acción con minusvalía y tu rendimiento anual fue de -$1,000 pesos 😟. Es triste porque no tuviste rendimientos, pero **al menos no tendrás que pagar impuestos** 😏
 
 Y hay otra ventaja de haber terminado el año fiscal con rendimientos negativos: **puedes usar esa cantidad como pérdida para los siguientes años**.
 
-El tema es este, tus pérdidas a disminuir no pueden ser mayores a tus ganancias. Retomando los números anteriores, tu rendimiento neto fue este:
+El tema es este, tus pérdidas a disminuir no pueden ser mayores a tus ganancias. Si tu rendimiento neto fue este:
 - 💰 Ganancias: $4,000
 - 💰 Pérdidas: -$5,000
 - 💰 **Total: -$1,000**
@@ -82,9 +82,9 @@ Es un poco más complicado que como lo menciono arriba porque, para simplificar 
 - 👉 Las comisiones del broker
 - 👉 El costo actualizado
 
-Las comisiones del broker pues son solo eso, comisiones que influyen en el rendimiento.
+Las comisiones del broker pues son solo eso, comisiones que influyen en el rendimiento. Además, el broker te retiene ISR por estas transacciones entonces puedes acreditártelo en la declaración anual.
 
-El costo actualizado se complica un poco más porque tiene que ver con la inflación. Para obtener el costo actualizado se tiene que determinar un factor de actualización que se calcula con el Índice Nacional de Precios al Consumidor <abbr title="Índice Nacional de Precios al Consumidor">INPC</abbr>. Ya sé, que aburrido 😪
+El costo actualizado se complica un poco más porque tiene que ver con la inflación. Para obtener el costo actualizado se tiene que determinar un factor de actualización que se calcula con el Índice Nacional de Precios al Consumidor <abbr title="Índice Nacional de Precios al Consumidor">INPC</abbr>. Ya sé, qué aburrido 😪
 
 **Qué hueva hacer todos esos cálculos para todas las ventas que hagas.** Por suerte, tu broker debería darte una **constancia fiscal** con todos estos detalles para que lo único que tengas que hacer (o tu contador), sea copiar las ganancias y pérdidas al SAT 😎
 
@@ -117,7 +117,7 @@ Un pequeño detalle sobre la constancia fiscal. Al menos en GBM+, el archivo est
 
 El 10% de impuestos sobre los rendimientos es una tasa relativamente baja, lo que hace a las acciones un muy buen instrumento para invertir.
 
-Un tema que no toqué en este artículo es el de los dividendos. Probablemente alguna de las acciones que tengas en tu portafolio te pague dividendos, y también hay que pagar impuestos por ellos. Pero por eso no hay problema porque el broker te retiene el ISR de esos dividendos.
+Un tema que no toqué en este artículo es el de los dividendos. Probablemente alguna de las acciones que tengas en tu portafolio te pague dividendos, y también hay que pagar impuestos por ellos. El broker te retiene ISR por estos dividendos, entonces en la declaración anual te los puedes acreditar.
 
 Si te interesa un artículo específico sobre impuestos en dividendos, **[mándame un DM en Twitter](https://twitter.com/messages/compose?recipient_id=1252783162180227072&text=Hola%20Perro%20%F0%9F%91%8B%0A%0A%C2%A1Avi%C3%A9ntate%20el%20post%20sobre%20impuestos%20en%20dividendos%21) y me lo aviento** 😉
 
