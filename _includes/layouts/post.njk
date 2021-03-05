@@ -3,7 +3,6 @@ layout: layouts/base.njk
 permalink: "posts/{{ page.fileSlug }}/"
 ---
 
-
 <article class="py-8">
   {% if cover_path %}
     <div class="mb-4 gradient-background rounded mx-auto w-full max-w-screen-sm h-auto">
@@ -11,25 +10,25 @@ permalink: "posts/{{ page.fileSlug }}/"
     </div>
   {% endif %}
   <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
-  <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Lectura de {{ content | readingTime }}</span> 
-  {% if last_updated_at %} 
-    <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Actualizado el</span> <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ last_updated_at | readableDate }}</time> 
+  <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Lectura de {{ content | readingTime }}</span>
+  {% if last_updated_at %}
+    <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Actualizado el</span> <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ last_updated_at | readableDate }}</time>
   {% endif %}
-  
+
   <div class="mt-4">
-    {% include "tweet_share_button.njk" %}    
+    {% include "tweet_share_button.njk" %}
   </div>
 
-  <div class="mt-8">    
+  <div class="mt-8">
     {{ content | safe }}
 
     <div class="hidden" data-id="share-section">
       <p>Compartir este post ayudará a más personas a mejorar su vida y sus finanzas, hay que echarnos la mano:</p>
       <button class="button block" data-id="share">Compartir 📲 </button>
-    </div>   
+    </div>
   </div>
 
-  {% include "tweet_share_button.njk" %}  
+  {% include "tweet_share_button.njk" %}
 
   {% if newsletter_cta %}
     <hr>
@@ -39,25 +38,6 @@ permalink: "posts/{{ page.fileSlug }}/"
   {% if has_affiliate_links %}
     <small class="opacity-50">Este post tiene enlaces de afiliado. Me dan una comisión si compras con mi enlace, pero a tí te cuesta lo mismo. Nunca recomiendo nada que no haya probado yo mismo.</small>
   {% endif %}
-
-  <div id="disqus_thread" class="mt-8"></div>
-  <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      var disqus_config = function () {
-        this.page.url = "https://perrodinero.blog{{ page.url | url }}";
-        this.page.identifier = "{{ page.url | url }}";
-      };
-      
-      (function() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://perrodinero.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
-    });    
-  </script>
-  <noscript>Habilita JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios</a>.</noscript>
-
 
   <div class="flex flex-col mt-16 p-4">
     <p class="opacity-75">Otros posts que pueden interesarte 💭</p>
@@ -76,7 +56,7 @@ permalink: "posts/{{ page.fileSlug }}/"
 </article>
 
 <script>
-  document.addEventListener('DOMContentLoaded', (event) => {
+  document.addEventListener('DOMContentLoaded', () => {
     if(navigator.share) {
       document.querySelector('[data-id="share-section"]').classList.toggle('hidden');
     }
@@ -86,7 +66,7 @@ permalink: "posts/{{ page.fileSlug }}/"
       return
     }
 
-    shareButton.addEventListener('click', (e) => {
+    shareButton.addEventListener('click', () => {
       if(navigator.share) {
         navigator.share({
           title: document.title,
