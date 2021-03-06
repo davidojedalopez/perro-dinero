@@ -29,14 +29,14 @@ article h4 {
 
 article h3,
 article h4 {
-  @apply text-accent-600 dark:text-accent-dark-600;
+  @apply text-accent-500 dark:text-accent-dark-500;
 }
 
 article h4 {
   @apply py-4;
 }
 
-article img, 
+article img,
 article video {
   @apply mx-auto;
 }
@@ -71,7 +71,7 @@ article details {
   @apply border-accent-500 dark:border-accent-dark-500;
   @apply rounded;
   @apply p-4;
-  @apply mb-8;  
+  @apply mb-8;
   width: fit-content;
   min-width: fit-content;
 }
@@ -163,11 +163,11 @@ article td {
 }
 
 .aa-dataset-hits {
-  @apply dark:bg-foreground-dark dark:text-primary-dark !important;  
+  @apply dark:bg-foreground-dark dark:text-primary-dark !important;
 }
 
 .aa-hit--highlight {
-  @apply text-accent-500 dark:text-accent-dark-500 !important;  
+  @apply text-accent-500 dark:text-accent-dark-500 !important;
   @apply bg-accent-100 dark:bg-foreground-dark !important;
 }
 
@@ -184,22 +184,22 @@ input[type="search"] {
 }
 
 .dark-mode-toggle {
-  @apply relative w-12;  
+  @apply relative w-12;
 }
 .dark-mode-toggle .well {
-  @apply cursor-pointer block bg-foreground-dark dark:bg-primary-dark h-4 rounded-full;  
+  @apply cursor-pointer block bg-foreground-dark dark:bg-primary-dark h-4 rounded-full;
 }
 .dark-mode-toggle .toggle {
   @apply border-0 opacity-0 outline-none w-full h-full bg-transparent absolute cursor-pointer z-50;
 }
 .dark-mode-toggle .toggle ~ .emoji:before {
-  content: "\01F31A";  
-  @apply absolute -left-5 z-10 text-4xl;  
+  content: "\01F31A";
+  @apply absolute -left-5 z-10 text-4xl;
   top: -11px;
-  transition: 0.2s; 
+  transition: 0.2s;
 }
 .dark-mode-toggle .toggle:checked ~ .emoji:before {
-  content: "\01F31E";  
+  content: "\01F31E";
   @apply -ml-5;
-  left: 100%;  
+  left: 100%;
 }
