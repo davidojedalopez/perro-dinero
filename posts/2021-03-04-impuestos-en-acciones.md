@@ -63,12 +63,12 @@ Supón que también vendiste otra acción con minusvalía y tu rendimiento anual
 
 Y hay otra ventaja de haber terminado el año fiscal con rendimientos negativos: **puedes usar esa cantidad como pérdida para los siguientes años**.
 
-El tema es este, tus pérdidas a disminuir no pueden ser mayores a tus ganancias. Si tu rendimiento neto fue este:
+Si tu rendimiento neto fue este:
 - 💰 Ganancias: $4,000
 - 💰 Pérdidas: -$5,000
 - 💰 **Total: -$1,000**
 
-En el SAT, para el ejercicio 2020, tú reportarás ganancias de $4,000 y pérdidas por esa misma cantidad. Y esos $1,000 restantes de pérdidas los puedes **usar para uno de los siguientes 10 años fiscales**.
+En el SAT, para el ejercicio 2020, tú reportarás ganancias de $4,000 y pérdidas $5,000. Y esos $1,000 de diferencia entre las ganancias y pérdidas los puedes **usar para uno de los siguientes 10 años fiscales**.
 
 Para terminar de ilustrar el punto, imagina que en 2021 tienes un rendimiento anual de $1,000, pero te "sobraban" otros $1,000 pesos en pérdidas del año 2020. Los puedes usar para este nuevo ejercicio fiscal y tu **rendimiento neto quedaría en $0 y no tendrías que pagar impuestos**. Si no lo haces así, entonces pagarías impuestos sobre los $1,000 de ganancia que reportas.
 
