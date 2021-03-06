@@ -2,14 +2,14 @@
 layout: layouts/base.njk
 title: Portafolio de inversiones
 description: "Detalles sobre mi portafolio de inversiones."
-lastUpdated: 2021-02-01
+lastUpdated: 2021-03-06
 cover_path: /img/perro_dinero.png
 ---
 
-<article class="py-8">  
+<article class="py-8">
   <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
   <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ lastUpdated | htmlDateString }}">Actualizado el {{ lastUpdated | readableDate }}</time>
-  
+
   <div class="mt-8">
     <p>
       Mi portafolio está compuesto por ETFs de Vanguard y activos de renta fija en Cetesdirecto. Fuera de estas inversiones tengo:
@@ -60,7 +60,7 @@ cover_path: /img/perro_dinero.png
 			</li>
 			<li>
 				<p>📈 <a href="https://investor.vanguard.com/etf/profile/overview/vht"><strong>VHT</strong></a>: son inversiones en el sector salud. Entre las principales empresas están: Johnson & Johnson, UnitedHealth Group y Pfizer.</p>
-			</li>			
+			</li>
 		</ul>
 
         <h3>Renta fija</h3>
@@ -92,39 +92,22 @@ cover_path: /img/perro_dinero.png
         </p>
     </section>
 
-	<div id="disqus_thread" class="mt-8"></div>
-	<script>
-		document.addEventListener('DOMContentLoaded', (event) => {
-		var disqus_config = function () {
-			this.page.url = "https://perrodinero.blog{{ page.url | url }}";
-			this.page.identifier = "{{ page.url | url }}";
-		};
-		
-		(function() {
-		var d = document, s = d.createElement('script');
-		s.src = 'https://perrodinero.disqus.com/embed.js';
-		s.setAttribute('data-timestamp', +new Date());
-		(d.head || d.body).appendChild(s);
-		})();
-		});    
-	</script>
-	<noscript>Habilita JavaScript para ver los <a href="https://disqus.com/?ref_noscript">comentarios</a>.</noscript>
   </div>
-  
+
 </article>
 
 
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script>
-  var ctx = document.querySelector('[data-id="target-portfolio"]').getContext('2d');
-  var chart = new Chart(ctx, {
+  const ctxTarget = document.querySelector('[data-id="target-portfolio"]').getContext('2d');
+  const chartTarget = new Chart(ctxTarget, {
       type: 'pie',
       data: {
-          labels: ['VOO', 'VNQ', 'VEA', 'VWO', 'VGT', 'VHT', 'CETES', 'UDIBONOS'],
+          labels: ['VOO', 'VNQ', 'VEA', 'VWO', 'VGT', 'VHT', 'CETES', 'UDIBONOS', 'EFECTIVO', 'ALSEA'],
           datasets: [{
-              label: 'Activos',                         
-              data: [26, 22, 16, 12, 7, 7, 5, 5],
+              label: 'Activos',
+              data: [23, 18, 14, 12, 7, 7, 5, 5, 8, 1],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.8)',
                 'rgba(54, 162, 235, 0.8)',
@@ -132,9 +115,11 @@ cover_path: /img/perro_dinero.png
                 'rgba(75, 192, 192, 0.8)',
                 'rgba(153, 102, 255, 0.8)',
                 'rgba(255, 159, 64, 0.8)',
-                'rgba(255, 50, 15, 0.8)'
+                'rgba(255, 50, 15, 0.8)',
+                'rgba(240, 123, 114, 0.8)',
+                'rgba(123, 170, 247, 0.8)'
               ],
-              
+
               borderColor: 'rgb(255,255,255)',
               borderWidth: 1
           }],
@@ -165,14 +150,14 @@ cover_path: /img/perro_dinero.png
         },
   });
 
-  var ctx = document.querySelector('[data-id="current-portfolio"]').getContext('2d');
-  var chart = new Chart(ctx, {
+  const ctxCurrent = document.querySelector('[data-id="current-portfolio"]').getContext('2d');
+  const chartCurrent = new Chart(ctxCurrent, {
       type: 'pie',
       data: {
-          labels: ['VOO', 'VNQ', 'VEA', 'VWO', 'VGT', 'VHT', 'CETES', 'UDIBONOS'],
+          labels: ['VOO', 'VNQ', 'VEA', 'VWO', 'VGT', 'VHT', 'CETES', 'UDIBONOS', 'EFECTIVO', 'ALSEA'],
           datasets: [{
-              label: 'Activos',                         
-              data: [25.01, 20.47, 12.57, 11.32, 8.56, 11.06, 2.87, 2.39],
+              label: 'Activos',
+              data: [21.78, 20.02, 14.05, 9.8, 7.42, 9.26, 2.11, 2.54, 7.07, 1.13],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.8)',
                 'rgba(54, 162, 235, 0.8)',
@@ -180,9 +165,11 @@ cover_path: /img/perro_dinero.png
                 'rgba(75, 192, 192, 0.8)',
                 'rgba(153, 102, 255, 0.8)',
                 'rgba(255, 159, 64, 0.8)',
-                'rgba(255, 50, 15, 0.8)'
+                'rgba(255, 50, 15, 0.8)',
+                'rgba(240, 123, 114, 0.8)',
+                'rgba(123, 170, 247, 0.8)'
               ],
-              
+
               borderColor: 'rgb(255,255,255)',
               borderWidth: 1
           }],
