@@ -18,11 +18,9 @@ permalink: microensayos/
         {% set essaysCount = essays | length %}
         {{ date | capitalize }} ({{ essays | length }} {% if essaysCount > 1 %} ensayos{% else %} ensayo{% endif %})
       </summary>
-      <div class="flex flex-row justify-between">
-        {% for essay in essays %}
-            {% include "micro_essay_item.njk" %}
-        {% endfor %}
-      </div>
-    </details>    
+      {% for essay in essays %}
+          {% include "micro_essay_item.njk" %}
+      {% endfor %}
+    </details>
   {% endfor %}
 </section>
