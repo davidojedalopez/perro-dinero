@@ -3,7 +3,7 @@ title: "¿Planear detenidamente o solo empezar?"
 description: "En un proceso centrado en ideas lo más importante es encontrar las ideas adecuadas. En un proceso centrado en progreso lo más importante es empezar ya. ¿Cómo encuentras el balance?"
 published: true
 published_at: 2020-08-06
-cover_path: /img/posts/covers/idea_o_progreso.png
+cover_path: img/posts/covers/idea_o_progreso.png
 cover_alt: "Nina, con la lengua de fuera, acostada en el parque sobre el pasto"
 tags: ['desarrollo personal']
 ---
@@ -17,11 +17,11 @@ tags: ['desarrollo personal']
 
 </details>
 
-Al empezar un nuevo proyecto o hábito es común que caigas en uno de estos dos extremos: **piensas demasiado las cosas y no haces nada, o solamente empiezas sin un plan muy definido**. 
+Al empezar un nuevo proyecto o hábito es común que caigas en uno de estos dos extremos: **piensas demasiado las cosas y no haces nada, o solamente empiezas sin un plan muy definido**.
 
 Yo he estado en las dos situaciones muchas veces, y muy pocas en un punto medio. De hecho en varias de mis publicaciones anteriores recomiendo solamente empezar, no pensártela mucho, pero no hago distinción de cuándo es una buena decisión.
 
-En este post quiero retar mis propias ideas y convencerte de que en muchas ocasiones pensar y planear detenidamente es el camino correcto en lugar de solo empezar. 
+En este post quiero retar mis propias ideas y convencerte de que en muchas ocasiones pensar y planear detenidamente es el camino correcto en lugar de solo empezar.
 
 ![Perro con ropa de oficina sentado frente a una computadora](/img/posts/perro_en_computadora.gif)
 
@@ -29,25 +29,25 @@ En este post quiero retar mis propias ideas y convencerte de que en muchas ocasi
 
 ## ¿Ideas o progreso?
 
-En un proceso **centrado en ideas** lo más importante es encontrar las ideas adecuadas. 
+En un proceso **centrado en ideas** lo más importante es encontrar las ideas adecuadas.
 
 En un proceso **centrado en progreso** lo más importante es empezar ya.
 
-Cuál de los dos es adecuado depende de tu personalidad, contexto y objetivos. Son dos procesos que suelen estar en extremos opuestos, pero que puedes combinar para incrementar tus probabilidades de éxito en todo lo que te propongas. 
+Cuál de los dos es adecuado depende de tu personalidad, contexto y objetivos. Son dos procesos que suelen estar en extremos opuestos, pero que puedes combinar para incrementar tus probabilidades de éxito en todo lo que te propongas.
 
 ## Solo empieza
 
 Empezar sin planear mucho es útil para ciertas actividades que sabes que te hacen bien como:
 
 - **Ejercitarte**
-  No vale la pena planear ni buscar una rutina al principio; lo mejor que puedes hacer es solo empezar y salir a caminar a la calle o en el gym por unas semanas. 
+  No vale la pena planear ni buscar una rutina al principio; lo mejor que puedes hacer es solo empezar y salir a caminar a la calle o en el gym por unas semanas.
 
 - **Comer saludable**
   Pudieras ir con un nutriólogo y tener una dieta mamalona pero te será muy difícil seguirla porque estás optimizando y planeando mucho desde un inicio. En este caso el “solo empezar” podría ser algo como tomar dos refrescos menos a la semana.
 
-O en otras palabras, **solo empezar te ayuda a formar hábitos**. 
+O en otras palabras, **solo empezar te ayuda a formar hábitos**.
 
-Y es consenso popular que hay que estar en constante movimiento para tener éxito en nuestros proyectos o hábitos, siempre seguir avanzando. Es cierto, pero ese progreso tiene que estar **enfocado**, tiene que estar, al menos, vagamente definido. 
+Y es consenso popular que hay que estar en constante movimiento para tener éxito en nuestros proyectos o hábitos, siempre seguir avanzando. Es cierto, pero ese progreso tiene que estar **enfocado**, tiene que estar, al menos, vagamente definido.
 
 Cuando “solo empiezas” es muy fácil quedarte ahí atorado dando vueltas en lo básico, en tu zona de confort y olvidas que el propósito final no era empezar, sino alcanzar una meta o crear algo de valor. Hacer las cosas solo por hacerlas no te llevará muy lejos. Sentirás que estás avanzando, pero pronto alcanzarás una meseta y tendrás que hacer cosas diferentes para seguir creciendo.
 
@@ -73,7 +73,7 @@ Si tú no tienes problemas de procrastinación y puedes planear, analizar y **ej
 
 Cuando hablo de una idea no me refiero a un vago comentario o a un sueño, sino a una investigación desarrollada y sustentada. La mente es inquieta, y es fácil que un pensamiento se convierta rápidamente en un sueño de cómo te harás millonario sin pensar en el camino para llegar ahí.
 
-Si te centras en ideas comienzas a darte cuenta de que la mayoría de tus ideas son basura o no tienen una base sólida. **Es completamente normal y es parte del proceso**. Pero al estar centrado en ideas lo que intentas hacer es maximizar tus probabilidades de éxito sin divagar o invertir tiempo y esfuerzo en cualquier idea que cruce tu mente. 
+Si te centras en ideas comienzas a darte cuenta de que la mayoría de tus ideas son basura o no tienen una base sólida. **Es completamente normal y es parte del proceso**. Pero al estar centrado en ideas lo que intentas hacer es maximizar tus probabilidades de éxito sin divagar o invertir tiempo y esfuerzo en cualquier idea que cruce tu mente.
 
 Un contra argumento popular es que las ideas no valen nada sin una gran ejecución, como una frase de Gary Vaynerchuk que tengo muy presente:
 
@@ -109,7 +109,7 @@ El balance está entonces en **enfocarte en definir un umbral para iniciar la et
 
 ### Define tu umbral
 
-El umbral para decidir cuando una idea es viable es subjetivo y depende mucho del tiempo, riesgo y recursos que tengas disponibles. Mis recomendaciones generales son: 
+El umbral para decidir cuando una idea es viable es subjetivo y depende mucho del tiempo, riesgo y recursos que tengas disponibles. Mis recomendaciones generales son:
 
 No definas un umbral tan bajo o estarás desperdiciando tu tiempo en ideas poco viables.
 
@@ -119,6 +119,6 @@ Una vez que hayas hecho experimentos y tu idea haya cruzado tu umbral, entonces 
 
 ***
 
-Define en qué etapa de tus proyectos personales estás y decide qué mentalidad asumir primero: centrada en progreso o centrada en ideas. Espero que este post te ayude a alcanzar tus metas y a finalizar tus proyectos actuales y futuros 🙌🏼 
+Define en qué etapa de tus proyectos personales estás y decide qué mentalidad asumir primero: centrada en progreso o centrada en ideas. Espero que este post te ayude a alcanzar tus metas y a finalizar tus proyectos actuales y futuros 🙌🏼
 
 **Muchas gracias por leerme 💛**

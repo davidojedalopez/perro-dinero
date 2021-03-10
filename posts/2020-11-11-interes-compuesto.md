@@ -2,7 +2,7 @@
 title: "Interés compuesto, ¿octava maravilla o pura farsa?"
 description: "Muchos te venden el interés compuesto como lo mejor del mundo, pero pocos te cuentan la realidad. Vamos a desmentirlo un poco."
 published_at: 2020-11-11
-cover_path: /img/posts/covers/nina_en_la_cama.png
+cover_path: img/posts/covers/nina_en_la_cama.png
 cover_alt: "Nina, a gusto acostada en la cama."
 tags: ['inversiones']
 newsletter_cta: true
@@ -31,7 +31,7 @@ Es la generación de interés tomando en cuenta la inversión inicial, **más** 
 
 > Es generar intereses de los intereses.
 
-Por ejemplo, una inversión de $10,000 pesos a una tasa de 10% a un año. Empiezas con $10,000 pesos y en un año tienes $11,000; **ganas $1,000 pesos de interés**. 
+Por ejemplo, una inversión de $10,000 pesos a una tasa de 10% a un año. Empiezas con $10,000 pesos y en un año tienes $11,000; **ganas $1,000 pesos de interés**.
 
 Si reinviertes los $10,000 iniciales más tu ganancia de $1,000 con las mismas características, 10% a un año, el siguiente año tienes $12,100. Una ganancia de $1,100 pesos. Y así sucesivamente.
 
@@ -116,7 +116,7 @@ Las acciones de la bolsa de valores o fondos de inversión no siempre pagan inte
 
 La confusión está en que estos tipos de inversión **pueden** pagar dividendos o utilidades, y estos pueden ser **reinvertidos** para comprar más títulos. Sí, esto crea un efecto bola de nieve similar al interés compuesto, pero no todas las acciones o fondos pagan utilidades.
 
-Y si los pagan, tienen que ser suficientes para poder ser reinvertidos. Si no es el caso, entonces no podrás generar interés compuesto. 
+Y si los pagan, tienen que ser suficientes para poder ser reinvertidos. Si no es el caso, entonces no podrás generar interés compuesto.
 
 ### Los intereses generados no siempre son suficientes para ser reinvertidos
 
@@ -155,11 +155,11 @@ No te quedarían los $880,000 íntegros por los impuestos y comisiones que tiene
 
 Si tienes $10,000 pesos y los inviertes y reinviertes por 30 años a una tasa del 10%, sin impuestos ni comisiones, al final tendrías más de $170,000 pesos. Pero si aparte hicieras aportaciones mensuales de $1,000, tendrías más de 2 millones de pesos 🤯
 
-La diferencia entre hacer o no aportaciones adicionales es **abismal**. 
+La diferencia entre hacer o no aportaciones adicionales es **abismal**.
 
 ## Interés compuesto en deudas
 
-Aguas, que el interés compuesto también puede jugar en tu contra. 
+Aguas, que el interés compuesto también puede jugar en tu contra.
 
 > Las deudas también generan interés compuesto, **pero pa'l otro lado**.
 
@@ -177,7 +177,7 @@ Esta fórmula solo aplica para interés compuesto anual, y no considera impuesto
 
 Igualmente puedes despejar la fórmula para determinar la tasa de interés que necesitas para duplicar tu inversión en X años:
 
-> **Tasa de interés para duplicar inversión en 5 años** = 72 / años de inversión = 72 / 5 = 14.4% 
+> **Tasa de interés para duplicar inversión en 5 años** = 72 / años de inversión = 72 / 5 = 14.4%
 
 ¿De dónde sale el 72? Sale de la fórmula exacta para calcular el tiempo que tomaría a una inversión duplicar su valor con interés compuesto ([imagen tomada de Investopedia](https://www.investopedia.com/terms/r/ruleof72.asp)):
 

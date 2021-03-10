@@ -3,7 +3,7 @@ title: "Tu fondo de emergencia"
 titleKey: "fondo_emergencia"
 description: "Contar con un fondo de emergencia es una señal de buena salud financiera. Aquí te explico dónde tengo el mío."
 published_at: 2020-10-20
-cover_path: /img/posts/covers/nina_fondo_emergencia.JPG
+cover_path: img/posts/covers/nina_fondo_emergencia.JPG
 cover_alt: "Nina acostada en la tierra, junto a su frisbee azul."
 tags: ['inversiones']
 newsletter_cta: true
@@ -26,7 +26,7 @@ En este post respondo las preguntas más comunes sobre un fondo de emergencia: *
 
 ## ¿Qué es una emergencia?
 
-Para crear un fondo de emergencia valioso primero tienes que definir qué es una emergencia para ti. 
+Para crear un fondo de emergencia valioso primero tienes que definir qué es una emergencia para ti.
 
 Pero primero, ¿qué **NO** es una emergencia?
 - ❌ Comprar el siguiente iPhone
@@ -87,7 +87,7 @@ Primero te hablaré sobre algunas opciones disponibles, y después te diré lo q
 
 ### Bonddia
 
-Es un vehículo de inversión que puedes comprar en [Cetesdirecto](https://cetesdirecto.com/). Es muy volátil; las tasas de interés cambian diariamente, y no es a plazos e intereses fijos como otros instrumentos de Cetesdirecto. 
+Es un vehículo de inversión que puedes comprar en [Cetesdirecto](https://cetesdirecto.com/). Es muy volátil; las tasas de interés cambian diariamente, y no es a plazos e intereses fijos como otros instrumentos de Cetesdirecto.
 
 Tiene **disponibilidad diaria**; pero tienes que pedir el retiro antes de las 12 para poder recibir el dinero ese mismo día por la tarde. Si no te llegará hasta el siguiente día.
 
@@ -167,7 +167,7 @@ De seguro tendrás algunas dudas sobre mi metodología, y me adelantaré un poco
 
 ### ¿Por qué no mejor invertir lo que voy aportando mensualmente para los gastos anuales?
 
-Me hace más ruido estar invirtiendo o programando transferencias para ese dinero cuando es seguro que lo usaré en un año. Por ejemplo, pago alrededor de $12,000 pesos al año por mi seguro de gastos médicos. Entonces cada mes guardo $1,000 pesos. Podría invertir esos $1,000 pesos en CETES de 28 días, y cada mes ir acumulando otros $1,000 más y reinvertirlos en CETES de 28 días de nuevo y así hasta cumplir el año. 
+Me hace más ruido estar invirtiendo o programando transferencias para ese dinero cuando es seguro que lo usaré en un año. Por ejemplo, pago alrededor de $12,000 pesos al año por mi seguro de gastos médicos. Entonces cada mes guardo $1,000 pesos. Podría invertir esos $1,000 pesos en CETES de 28 días, y cada mes ir acumulando otros $1,000 más y reinvertirlos en CETES de 28 días de nuevo y así hasta cumplir el año.
 
 La neta **me da hueva** hacer todo eso. No creo que valga la pena la **inversión de tiempo** en comparación con los rendimientos. Si invirtiera los $12,000 pesos de mi seguro en CETES de 12 meses en el mismo día en que acabo de pagar mi seguro, entonces ya se reduce la complejidad y quizá sí convenga. Pero yo no lo hago así.
 
@@ -175,13 +175,13 @@ La neta **me da hueva** hacer todo eso. No creo que valga la pena la **inversió
 
 Así es. No está invertido, pero está totalmente a mi disposición. Es solo lo correspondiente a mis **gastos de los siguientes 30 días**, tampoco es la millonada. Y este dinero no lo veo estrictamente como mi fondo de emergencia, sino también como dinero que tengo disponible para alguna **oportunidad de inversión**.
 
-### ¿Por qué no lo diversifico? 
+### ¿Por qué no lo diversifico?
 
 La verdad es que mi fondo de emergencias no es tan grande. No tengo dependientes, y tampoco soy de gastar tanto. No veo muchos beneficios en diversificar mi fondo en varias instituciones. Me **agregaría más carga** para mantener el control y los números. Además las inversiones en que tengo mi fondo son de muy bajo riesgo.
 
-Si tu fondo de emergencia es más grande, puedes diversificar y reducir el riesgo todavía más. 
+Si tu fondo de emergencia es más grande, puedes diversificar y reducir el riesgo todavía más.
 
-### ¿Por qué no aprovecho una SOFIPO para no pagar impuestos? 
+### ¿Por qué no aprovecho una SOFIPO para no pagar impuestos?
 
 Porque usaría una SOFIPO para invertir la parte de renta fija de mi portafolio, no mi fondo de emergencias.
 

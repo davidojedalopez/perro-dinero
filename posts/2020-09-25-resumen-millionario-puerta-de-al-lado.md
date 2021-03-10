@@ -3,7 +3,7 @@ title: "Notas: El Millonario de la Puerta de al Lado"
 description: "Amasar una fortuna requiere disciplina, sacrificio y trabajo duro. Esa es la enseñanza del libro El millonario de la puerta de al lado, de Thomas J. Stanley y William D. Danko."
 published: true
 published_at: 2020-09-25
-cover_path: /img/posts/covers/millionario_puerta_de_al_lado.png
+cover_path: img/posts/covers/millionario_puerta_de_al_lado.png
 cover_alt: "Nina, acostada a sus anchas. Visitando Pericos, Sinaloa."
 tags: ['notas', 'libros']
 has_affiliate_links: true
@@ -28,7 +28,7 @@ Las notas son una combinación de parafraseo personal y de pasajes literales del
 
 El [millonario de la puerta de al lado](https://amzn.to/2Hz1kJJ), escrito por Thomas J. Stanley y William D. Danko, es un libro basado en una serie de estudios hechos a más de 1,000 millonarios de Estados Unidos en la década de los 90.
 
-Estos estudios recabaron detalles de la historia, hábitos, ideas, ocupaciones y muchas cosas más de estos millonarios. Toda esta información está explicada y destilada en este libro, sustentada con datos duros. 
+Estos estudios recabaron detalles de la historia, hábitos, ideas, ocupaciones y muchas cosas más de estos millonarios. Toda esta información está explicada y destilada en este libro, sustentada con datos duros.
 
 La conclusión principal de la investigación fue: **Amasar una fortuna requiere disciplina, sacrificio y trabajo duro**.
 
@@ -54,7 +54,7 @@ El libro cuenta la historia de una pareja de millonarios que nunca habían salid
 
 Yo creo que hay que encontrar un balance y también cosechar los frutos del trabajo duro que uno se avienta. De otra forma solo te chingas la vida por generar dinero para tus hijos y nietos, pero nunca lo disfrutas tú.
 
-No estoy diciendo que esté mal dejar una herencia o preocuparse por la familia, sino que también hay que preocuparse por la felicidad de nosotros mismos. 
+No estoy diciendo que esté mal dejar una herencia o preocuparse por la familia, sino que también hay que preocuparse por la felicidad de nosotros mismos.
 
 ## Notas
 
@@ -113,9 +113,9 @@ Divididas por capítulo 🔖
       <li>¿Tienes un presupuesto anual en tu hogar?</li>
       <li>¿Sabes cuánto gastas en tu familia anualmente en comida, ropa y vivienda?</li>
       <li>¿Tienes objetivos a corto, mediano y largo plazo?</li>
-      <li>¿Pasas mucho tiempo planeando tu futuro económico?</li>      
+      <li>¿Pasas mucho tiempo planeando tu futuro económico?</li>
     </ol>
-  </li>  
+  </li>
 </ul>
 
 > Gastar tiempo y dinero intentando parecer superiores tiene un resultado predecible: menos logros económicos.
@@ -143,7 +143,7 @@ Divididas por capítulo 🔖
   <li>Comprar algo de alto valor "sube" tu estatus, y te obliga a mantenerlo comprando aun más cosas de alto valor.</li>
   <li><a href="https://perrodinero.substack.com/p/la-historia-de-floripundio">Historia del Rolls-Royce</a></li>
   <li>Los millonarios negocian más.</li>
-  <li>Es más fácil ganar mucho dinero que hacerse rico.</li>  
+  <li>Es más fácil ganar mucho dinero que hacerse rico.</li>
 </ul>
 
 > [...] gestiona tu hogar como si gestionaras un negocio productivo.
@@ -165,7 +165,7 @@ Divididas por capítulo 🔖
       <li>Regalar dinero genera más consumo que ahorro e inversión.</li>
       <li>Quienes reciben dinero de sus padres por lo general nunca acaban de distinguir entre su patrimonio y el patriomonio de sus progenitores.</li>
       <li>Quienes reciben dinero de sus padres dependen mucho más de los créditos que los que no reciben esas ayudas económicas.</li>
-      <li>Los que reciben dinero invierten 65% menos.</li>      
+      <li>Los que reciben dinero invierten 65% menos.</li>
     </ol>
   </li>
   <li>Enseña a tu hijo a pescar.</li>

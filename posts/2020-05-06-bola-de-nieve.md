@@ -4,7 +4,7 @@ titleKey: "bola_de_nieve"
 description: "El método bola de nieve consiste en pagar tus deudas más pequeñas primero para obtener victorias rápidas y mantenerte motivado a seguir abonando."
 published: true
 published_at: 2020-05-06
-cover_path: /img/posts/covers/deudas.png
+cover_path: img/posts/covers/deudas.png
 cover_alt: "Nina sentada pensativamente la palabra: ¿Deudas?. Debajo del texto hay un mono de nieve."
 tags: ['deudas', 'ahorro']
 newsletter_cta: true
@@ -23,13 +23,13 @@ Todos tenemos o hemos tenido deudas; ya sea por un favor que alguien nos hizo, o
 
 **O que no necesitábamos…** 🧐
 
-Tener deuda es estresante pues llega un momento en que en lo único que piensas es en ver cómo obtener suficiente dinero solo para pagar tus deudas. 
+Tener deuda es estresante pues llega un momento en que en lo único que piensas es en ver cómo obtener suficiente dinero solo para pagar tus deudas.
 
 Eso no es vivir 🙅🏻‍♂️
 
 Y **no todas las deudas son malas**, siempre y cuando sean **planeadas** y de acuerdo a tus **objetivos**.
 
-Solicitar un crédito para comprar tu casa y que tu familia pueda vivir mejor no es malo. 
+Solicitar un crédito para comprar tu casa y que tu familia pueda vivir mejor no es malo.
 
 Es **malo no tener un plan** claro para liquidar esa deuda sin que te consuma la vida.
 
@@ -47,13 +47,13 @@ Al inicio no es más que una bola de nieve, pero pronto se convierte en una gran
 
 ## ¿En qué consiste el método?
 
-El método bola de nieve consiste en **pagar tus deudas más pequeñas primero** para obtener victorias rápidas y mantenerte motivado a seguir abonando. 
+El método bola de nieve consiste en **pagar tus deudas más pequeñas primero** para obtener victorias rápidas y mantenerte motivado a seguir abonando.
 
 Una vez que hayas pagado tu deuda más pequeña, continúas con la siguiente más pequeña, y así **sucesivamente** hasta que **eres libre de deuda** 🙌🏼
 
 ## ¿Por qué funciona?
 
-Funciona porque estás trabajando en **crear un hábito** y en obtener **victorias a corto plazo**. 
+Funciona porque estás trabajando en **crear un hábito** y en obtener **victorias a corto plazo**.
 
 Si empiezas pagando tu deuda más grande probablemente pierdas la motivación a los pocos meses porque la cantidad sigue siendo enorme y no le ves fin.
 
@@ -107,7 +107,7 @@ Ese mismo día cierras también la deuda que tienes conmigo, porque somos compas
 
 Me pagas entonces $500 y **tu primera deuda queda saldada** 🥳 ¡Y aquí está tu primer victoria!
 
-Ahora, viene lo interesante. El siguiente 15 del mes pagas lo mínimo para tus créditos del carro y escuela de nuevo. 
+Ahora, viene lo interesante. El siguiente 15 del mes pagas lo mínimo para tus créditos del carro y escuela de nuevo.
 
 Pero esta vez abonas el mínimo de $500 a tu tarjeta de crédito **MÁS** los $500 que usabas para la primera deuda.
 
@@ -121,7 +121,7 @@ Chi, ya es todo. Bye.
 
 No te creas. En este punto ya hiciste la mitad de la chamba: sabes cuánto debes, sabes a qué deudas abonar el mínimo y sabes a cual abonar lo más que puedas.
 
-Lo que sigue es **apegarte a tu plan**. 
+Lo que sigue es **apegarte a tu plan**.
 
 ¿Recuerdas que [anteriormente hablé de hábitos y de cómo crearlos fácilmente](/posts/habitos-antes-que-nada/)?
 
@@ -136,4 +136,3 @@ Recuerda que cuando estás pagando intereses por tus deudas, la mejor inversión
 Espero que este post sobre el método bola de nieve te sirva y aproveches estos días para comenzar a implementarlo.
 
 **Muchas gracias por leerme ❤️**
-

@@ -3,7 +3,7 @@ title: "Tu portafolio de inversiones desde cero"
 description: "Diseña tu portafolio basado en las ideas de David Swensen— enfocado a capital, diversificado y sin pagar tantos impuestos."
 published: true
 published_at: 2020-06-17
-cover_path: /img/posts/covers/portafolio_desde_cero.png
+cover_path: img/posts/covers/portafolio_desde_cero.png
 cover_alt: "Nina acostada en el parque volteando hacia atrás, sorprendida."
 tags: ['inversiones']
 ---
@@ -23,7 +23,7 @@ Ya te decidiste a invertir, **pero no sabes cómo empezar** 🤔. Ya conoces [mu
 
 Algo que puedes hacer para sobrepasar esa frustración es comenzar con un **portafolio prediseñado** y avanzar desde ahí 😯.
 
-En este post te platicaré sobre un portafolio propuesto por **David Swensen**, mi tocayo, el encargado de las inversiones de Yale desde 1985. Está pensado para inversiones a largo plazo, mínimo 5-10 años. 
+En este post te platicaré sobre un portafolio propuesto por **David Swensen**, mi tocayo, el encargado de las inversiones de Yale desde 1985. Está pensado para inversiones a largo plazo, mínimo 5-10 años.
 
 El portafolio está diseñado para tener un balance entre **buenos rendimientos, bajo riesgo y alta diversificación**. Aquí aprenderás por qué activos está compuesto, y cómo es que cada uno contribuye a formar una mejor inversión.
 
@@ -49,19 +49,19 @@ Velo de esta manera, tu portafolio es como tu **carrito del super** 🛒
 
 ![Perro paseando un mini carrito del super](/img/posts/perro_paseando_carrito.gif)
 
-Cuando vas al super compras diferentes tipos de comida para tener una dieta balanceada: carne, frutas, verduras, lácteos, chelas, etc. 
+Cuando vas al super compras diferentes tipos de comida para tener una dieta balanceada: carne, frutas, verduras, lácteos, chelas, etc.
 
-**Los tipos de comida son como los distintos tipos de activos**. En el super no tienes una forma fácil de medirlo, pero podrías revisar tu ticket y decir que gastaste: 
+**Los tipos de comida son como los distintos tipos de activos**. En el super no tienes una forma fácil de medirlo, pero podrías revisar tu ticket y decir que gastaste:
 
-- 🥩 40% en carne 
+- 🥩 40% en carne
 
-- 🍅 30% en frutas y verduras 
+- 🍅 30% en frutas y verduras
 
 - 🍳 20% en lácteos
 
 - 🍻 10% en chelas
 
-Así defines tus activos también, en proporciones del total de tu portafolio. 
+Así defines tus activos también, en proporciones del total de tu portafolio.
 
 La parte más interesante es esta (sin albur): el **[90% de la variabilidad en los retornos de tu portafolio dependen de tu asignación de activos](https://www.sciencedirect.com/science/article/pii/S1573442002800210)**. **¡90%!**
 
@@ -73,7 +73,7 @@ Justo me enfocaré en hablar más sobre asignación de activos, pero primero des
 
 ## Market timing
 
-No encontré palabras en español para traducir el concepto, pero market timing se refiere a los **cambios o desviaciones de las asignaciones** de activos al largo plazo. 
+No encontré palabras en español para traducir el concepto, pero market timing se refiere a los **cambios o desviaciones de las asignaciones** de activos al largo plazo.
 
 Se puede ver de dos formas:
 
@@ -115,7 +115,7 @@ Veamos ahora el conjunto de clases de activos que cumplen con estos tres princip
 
 - ✨ Acciones en Estados Unidos (USA)
 
-- ✨ Acciones en mercados desarrollados 
+- ✨ Acciones en mercados desarrollados
 
 - ✨ Acciones en mercados emergentes
 
@@ -145,9 +145,9 @@ Las acciones en mercados desarrollados pueden incluir países como Canadá y reg
 
 ### Renta fija 🏦
 
-Aquí pueden entrar bonos de deuda gubernamental tanto de México como de USA. En **México son CETES**, y en U**SA son U.S. Treasury bonds**. 
+Aquí pueden entrar bonos de deuda gubernamental tanto de México como de USA. En **México son CETES**, y en U**SA son U.S. Treasury bonds**.
 
-Este tipo de inversión en renta fija aporta **seguridad** a tu portafolio. La única forma en que no te paguen es que absolutamente todo el **gobierno se vaya a la chingada**. Digo, estamos de la chingada, pero no pa’ tanto. 
+Este tipo de inversión en renta fija aporta **seguridad** a tu portafolio. La única forma en que no te paguen es que absolutamente todo el **gobierno se vaya a la chingada**. Digo, estamos de la chingada, pero no pa’ tanto.
 
 Los cambios de precios e inflación siguen afectando estos bonos por igual. Y **no puedes esperar muchos rendimientos** de este tipo de inversión porque el riesgo es muy bajo.
 
@@ -165,7 +165,7 @@ Son una forma de protegerte contra la inflación porque **su valor incrementa di
 
 Las inversiones en bienes raíces exponen tu portafolio a los beneficios y riesgos de tener propiedades como oficinas, edificios de departamentos, locales comerciales, etc. 🏠🏗
 
-Este tipo de inversión actúa como **soporte a las acciones y a la renta fija** porque son una combinación de ambas. 
+Este tipo de inversión actúa como **soporte a las acciones y a la renta fija** porque son una combinación de ambas.
 
 Tiene propiedades de renta fija porque recibes dinero en periodos regulares provenientes de la renta. Y tiene propiedades de capital o acción porque habrá momentos en que tus propiedades no están rentadas, o lo están, pero con un contrato a corto plazo.
 
@@ -175,7 +175,7 @@ Ahora que conoces un poco sobre los seis tipos de activos que debe tener tu port
 
 ## Construcción de portafolio
 
-Como te platicaba, recomiendo comenzar con una plantilla de asignación de activos y modificar los porcentajes según tu contexto. 
+Como te platicaba, recomiendo comenzar con una plantilla de asignación de activos y modificar los porcentajes según tu contexto.
 
 Yo comencé con el modelo de Swensen. La asignación de activos con este modelo es así:
 
@@ -187,7 +187,7 @@ Como recordatorio, antes mencioné los tres principios de un buen portafolio: 1)
 
 ### Enfoque en capital
 
-El 50% del portafolio es de acciones— entre USA, economías desarrolladas y emergentes. Otro 20% es en bienes raíces, que también tiene un componente de capital. Esto quiere decir que está enfocado en generar altos rendimientos. 
+El 50% del portafolio es de acciones— entre USA, economías desarrolladas y emergentes. Otro 20% es en bienes raíces, que también tiene un componente de capital. Esto quiere decir que está enfocado en generar altos rendimientos.
 
 Check ✅
 
@@ -239,7 +239,7 @@ Dentro de la plataforma puedes buscar, comprar y vender títulos. Los ETFs que u
 
 Con estos ejemplos ya podrías comenzar a invertir y trabajar en llegar a la asignación de activos de la que hablamos. Si todavía no tienes cuenta en GBM, puedes [crear una con mi enlace y nos regalan una acción a cada uno](https://vrlps.co/faB1igj/cp) 😉.
 
-Mi recomendación, aun si tienes dinero ahí parado, es que inviertas mensualmente. Pueden ser $1,000, $5,000 o $10,000 pesos, lo importante es que seas **constante**. 
+Mi recomendación, aun si tienes dinero ahí parado, es que inviertas mensualmente. Pueden ser $1,000, $5,000 o $10,000 pesos, lo importante es que seas **constante**.
 
 Cada mes ves tu asignación, y decides en dónde hace falta invertir más dinero para mantener el balance.
 
@@ -247,7 +247,7 @@ Cada mes ves tu asignación, y decides en dónde hace falta invertir más dinero
 
 Espero que esta información te haya sido útil. Es mi principal estrategia de inversión, y probablemente lo sea por muchos años más.
 
-Yo le estoy tirando al largo plazo, si lo que buscas son inversiones a corto plazo—menores a 2 años—entonces no te recomiendo usar esta estrategia. 
+Yo le estoy tirando al largo plazo, si lo que buscas son inversiones a corto plazo—menores a 2 años—entonces no te recomiendo usar esta estrategia.
 
 ¡Y esto es solo la punta del iceberg! Hay muchas otros factores que podrías tomar en consideración, pero eso déjalo para cuando ya hayas empezado a invertir constantemente. **No tiene caso optimizar tan pronto**.
 

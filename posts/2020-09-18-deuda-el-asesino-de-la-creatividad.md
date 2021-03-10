@@ -3,7 +3,7 @@ title: "Deudas: asesinas de creatividad"
 description: "3 razones de por qué tener deudas es muy mala idea."
 published: true
 published_at: 2020-09-18
-cover_path: /img/posts/covers/deudas_asesinas.png
+cover_path: img/posts/covers/deudas_asesinas.png
 cover_alt: "Nina frente a una alberca con vista al mar de Mazatán"
 tags: ['deudas']
 ---
@@ -33,13 +33,13 @@ Cuando te endeudas lo haces porque no tienes suficiente dinero en efectivo para 
 
 Los intereses son el costo extra de no haber tenido suficiente efectivo. Pero no importa si tu deuda es a meses sin intereses, porque esa deuda también tiene un interés implícito.
 
-El interés implícito es psicológico porque sabes que cada mes una gran parte de tus ingresos están destinados a pagar algo que no pudiste pagar de contado. 
+El interés implícito es psicológico porque sabes que cada mes una gran parte de tus ingresos están destinados a pagar algo que no pudiste pagar de contado.
 
 Y quién no conoce a alguien que sacó su celular a crédito y este se chingó antes de haberlo pagado por completo. El típico: "wey, valió madre mi cel y todavía ni lo terminaba de pagar". Te aseguro que lo que más duele es el "todavía ni lo terminaba de pagar" 🤣
 
 ![Rana Rene quejándose que no puede comprar el iPhone 11 porque todavía no termina de pagar el iPhone 6](/img/posts/iphone_meme.jpg)
 
-La siguiente vez que quieras hacer una compra grande piensa esto primero: 
+La siguiente vez que quieras hacer una compra grande piensa esto primero:
 
 > **Si no puedes pagarlo en efectivo, todavía no debes comprarlo**.
 
@@ -75,7 +75,7 @@ Vivir con la limitación de no endeudarte hará que tu creatividad vuele y que e
 
 4. Inversiones. Junto con el desarrollo de mi blog también dedico gran parte de mi tiempo e ingresos a invertir al largo plazo.
 
-Estas son solo algunas de las ideas que estoy experimentando. Todo para que, en un futuro, pueda comprar mi casa en efectivo. Y ese es solo unos de mis objetivos. 
+Estas son solo algunas de las ideas que estoy experimentando. Todo para que, en un futuro, pueda comprar mi casa en efectivo. Y ese es solo unos de mis objetivos.
 
 Define tus objetivos y trata de alcanzarlos teniendo en mente que **no es necesario endeudarte**. Si necesitas un crédito, no hay pedo, pero siempre considera la opción libre de deuda y de paz mental.
 
@@ -91,13 +91,13 @@ La neta es que te la piensas un chingo porque tienes una deuda que pagar. Tu mar
 
 En cambio, si no tuvieras la deuda, podrías tomar el trabajo sin tanta preocupación porque el dinero que estarías usando para pagar tu deuda ahora es tu colchón. El riesgo al que te expones es mucho menor porque ya no estás endeudado.
 
-> Si vives dentro de tus posibilidades tendrás un margen de oportunidad más grande, y eso te dará libertad de tomar decisiones y de aventurarte en nuevos negocios. 
+> Si vives dentro de tus posibilidades tendrás un margen de oportunidad más grande, y eso te dará libertad de tomar decisiones y de aventurarte en nuevos negocios.
 
 Así se ve un buen margen de oportunidad:
 
 ![Gráfica de barra que muestra un margen de oportunidad grande. Poco gasto y mucho ingreso.](/img/posts/margen_de_oportunidad_ideal.png)
 
-Cuando vives rozando tus posibilidades, o más allá, tu margen de oportunidad es tan bajo que ni siquiera te pasa por la cabeza arriesgarte. Tu mente se limita a seguir haciendo lo que ya haces aunque apenas sea suficiente. 
+Cuando vives rozando tus posibilidades, o más allá, tu margen de oportunidad es tan bajo que ni siquiera te pasa por la cabeza arriesgarte. Tu mente se limita a seguir haciendo lo que ya haces aunque apenas sea suficiente.
 
 Y es en esta situación donde muchos optan por un crédito, haciendo que tu margen sea prácticamente nulo. Eres esclavo de tus deudas:
 

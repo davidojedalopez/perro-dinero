@@ -3,7 +3,7 @@ title: "10 consejos para mejorar tu situación financiera"
 description: "Empieza con estas sugerencias hoy mismo y mejora tu vida financiera."
 published: true
 published_at: 2020-09-11
-cover_path: /img/posts/covers/10-recomendaciones.png
+cover_path: img/posts/covers/10-recomendaciones.jpg
 cover_alt: "Nina acostada al lado de un peluche de Totoro"
 tags: ['desarrollo personal', 'lista']
 ---
@@ -33,7 +33,7 @@ La forma en la que decidas aumentar tus ingresos dependerá totalmente de ti: ¿
 
 ¡Ahorra! Si tú no te esfuerzas en ahorrar e invertir tu dinero, nadie lo hará por ti.
 
-Esta es la forma tradicional de ahorrar: 
+Esta es la forma tradicional de ahorrar:
 
 > ❌ Ingresos - gastos = ahorro
 
@@ -58,7 +58,7 @@ Y el **tiempo es tu mejor aliado** en este caso; entre más pronto empieces a in
 
 ## Enfócate en lo que más te beneficia primero
 
-Intenta siempre identificar la tarea que más beneficios te dará y enfócate en eso. 
+Intenta siempre identificar la tarea que más beneficios te dará y enfócate en eso.
 
 Se trata de encontrar ese 20% de chamba que te traerá el 80% de los resultados. Encontrar y ejecutar esa tarea no es fácil, pero es la forma más eficiente y efectiva de administrar tus limitados recursos para lograr tus objetivos.
 
@@ -68,7 +68,7 @@ Busca ese 20% en todo lo que hagas; en tu negocio, en tu trabajo, en tus inversi
 
 ## Crea tu presupuesto
 
-Es una chinga al principio, sí, pero también es una de las mejoras formas de conocerte a ti mismo y de ahorrarte una lana. 
+Es una chinga al principio, sí, pero también es una de las mejoras formas de conocerte a ti mismo y de ahorrarte una lana.
 
 ¿En qué se va tu dinero? ¿Cuáles son tus verdades prioridades, dictadas por tus hábitos de gasto? Te sorprenderás bien cabrón.
 
@@ -76,7 +76,7 @@ No importa cómo lo hagas, pero empieza con lo más sencillo. Algo como ver tu e
 
 ## Haz aportaciones voluntarias a tu Afore
 
-Ya sé, el Afore no será suficiente para que te retires de verdad, pero quiero que lo veas diferente: **tu Afore es una inversión más**. Una inversión a la que el dinero extra que aportes será **deducible de impuestos**. ¿Por qué no aprovecharlo? 
+Ya sé, el Afore no será suficiente para que te retires de verdad, pero quiero que lo veas diferente: **tu Afore es una inversión más**. Una inversión a la que el dinero extra que aportes será **deducible de impuestos**. ¿Por qué no aprovecharlo?
 
 Y como en toda inversión, no vas a poner todos los huevos en una sola canasta. Tu Afore es solo otra cuenta que diversifica tu portafolio y reduce el riesgo del mismo.
 
@@ -86,7 +86,7 @@ Y hablando de impuestos...
 
 ## Contrata un contador
 
-Está muy cabrón que tú estés al corriente de todos los cambios en la ley **mientras** sigues haciendo todo lo que sea que haces. 
+Está muy cabrón que tú estés al corriente de todos los cambios en la ley **mientras** sigues haciendo todo lo que sea que haces.
 
 Velo como una inversión; el servicio se paga en automático con el dinero y tiempo que te puede ahorrar. Es muy fácil que la cagues si no conoces el sistema a fondo.
 
@@ -112,7 +112,7 @@ No vas a llegar muy lejos si siempre te estás endeudando y solo pagando el mín
 
 No querrás verte en la necesidad de sacar dinero de tus inversiones porque ocurrió algo inesperado; para eso está tu fondo de emergencia.
 
-Un fondo de emergencia es dinero que tienes guardado en alguna cuenta líquida (que puedes sacarlo prácticamente cuando quieras), y es tu colchón para emergencias o situaciones inesperadas. Qué consideras una emergencia dependerá de ti. Puede ser quedarse sin chamba, sufrir un accidente o un mal negocio. 
+Un fondo de emergencia es dinero que tienes guardado en alguna cuenta líquida (que puedes sacarlo prácticamente cuando quieras), y es tu colchón para emergencias o situaciones inesperadas. Qué consideras una emergencia dependerá de ti. Puede ser quedarse sin chamba, sufrir un accidente o un mal negocio.
 
 Sugiero que tu fondo de emergencia sea de al menos 4 meses la cantidad mínima que necesites para vivir. Ojo, no 4 meses de tu sueldo, sino **4 meses de tus gastos en necesidades básicas** como vivienda, comida, transporte y escuela. Si estás utilizando tu fondo es porque es una emergencia, y en una emergencia, Spotify y las salidas a restaurantes no son prioridad.
 
@@ -121,4 +121,3 @@ Sugiero que tu fondo de emergencia sea de al menos 4 meses la cantidad mínima q
 Si sigues estas 10 recomendaciones que acabo de darte ya estarás bien encaminado a una vida de finanzas saludable 💪🏼.
 
 **Muchas gracias por leerme 💛**
-

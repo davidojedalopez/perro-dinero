@@ -4,7 +4,7 @@ titleKey: "afore_guia"
 description: "Lo mínimo que tienes que saber para tener un buen retiro. Aprende sobre los diferentes regímenes de retiro, Afores y SIEFOREs."
 published_at: 2020-11-30
 last_updated_at: 2020-12-12
-cover_path: /img/posts/covers/retiro_y_afores.jpg
+cover_path: img/posts/covers/retiro_y_afores.jpg
 cover_alt: "Nina y Thamy."
 tags: ['retiro', 'afore']
 newsletter_cta: true
@@ -67,7 +67,7 @@ Si no tienes tu NSS a la mano, ahora es tiempo de arreglarlo. Yo lo guardo en un
 
 ¿Cuál es la principal diferencia entre estos dos regímenes? Que **el del 73 es mucho mejor que el del 97**. En el régimen del 73 el IMSS se encargaba de dar a todos los trabajadores formales su pensión, pero el gobierno luego se dio cuenta que no era un sistema sostenible. Esto porque hubo dos cambios importantes desde que se creó el primer régimen de pensiones:
 
-- 📈 La esperanza de vida incrementó 
+- 📈 La esperanza de vida incrementó
 - 📉 La tasa de natalidad se redujo
 
 Esto quiere decir que la diferencia entre el número de pensionados eventualmente sería muy grande en comparación a la población económicamente activa. En otras palabras, **ya no iba alcanzar la lana para pensionar a todos de la misma forma**.
@@ -179,7 +179,7 @@ Soy del norte, pero no tan al norte, entonces haré el cálculo con los $123.22:
 
 > Lo máximo que puedes deducir con aportaciones voluntarias es 123.22 * 365 * 5 = **$224,876.5**
 
-Si eres de la generación Afore, y **no te interesa aprender de inversiones** y le vas a dejar todo tu futuro al Afore, entonces **incrementa tus aportaciones** voluntarias. 
+Si eres de la generación Afore, y **no te interesa aprender de inversiones** y le vas a dejar todo tu futuro al Afore, entonces **incrementa tus aportaciones** voluntarias.
 
 Pero **si sabes un poco de inversiones**, o me lees con regularidad, te sugiero que solo hagas **aportaciones voluntarias** hasta al **máximo deducible**. Puedes automatizar el proceso usando la opción de domiciliación de tu Afore. Así harás aportaciones pequeñas, pero **constantes**.
 
@@ -189,7 +189,7 @@ En mi caso, **el dinero que salga de mi Afore cuando esté viejo lo usaré para 
 
 ### Impuestos
 
-No soy la persona indicada para decirte cuántos impuestos tendrás que pagar al retirar tu dinero del Afore, pero **no te escaparás**. Habla con tu contador para darte una idea. 
+No soy la persona indicada para decirte cuántos impuestos tendrás que pagar al retirar tu dinero del Afore, pero **no te escaparás**. Habla con tu contador para darte una idea.
 
 ### Comisiones
 
@@ -213,7 +213,7 @@ Las SIEFOREs son los fondos de inversión en que puede invertir una Afore. Estos
 
 ### Regimen anterior (pre-2020)
 
-**Antes** existían solo 5 SIEFOREs, y tus ahorros se iban moviendo entre cada una dependiendo de tu edad. Las SIEFOREs en que estabas al inicio, cuando eras más **joven**, invertían en vehículos con **más riesgo**, pero con **mayor rendimiento**. 
+**Antes** existían solo 5 SIEFOREs, y tus ahorros se iban moviendo entre cada una dependiendo de tu edad. Las SIEFOREs en que estabas al inicio, cuando eras más **joven**, invertían en vehículos con **más riesgo**, pero con **mayor rendimiento**.
 
 Conforme te hacías más viejo ese dinero se iba **moviendo** de SIEFORE, donde la siguiente invertía cada vez más en vehículos de **menor riesgo** y **mayor liquidez**.
 
@@ -255,7 +255,7 @@ Con el nuevo régimen ya no ocurren estas transacciones pues siempre perteneces 
 
 ### Recomendación 💡
 
-Al igual que en las Afores, [puedes también cambiarte de SIEFORE](https://www.e-sar.com.mx/PortalEsar/public/sieforeInicio.do). Si eres como yo y el Afore lo ves solo como una inversión más y no como todo lo que tendrás al retirarte, **te recomiendo cambiarte de SIEFORE**. 
+Al igual que en las Afores, [puedes también cambiarte de SIEFORE](https://www.e-sar.com.mx/PortalEsar/public/sieforeInicio.do). Si eres como yo y el Afore lo ves solo como una inversión más y no como todo lo que tendrás al retirarte, **te recomiendo cambiarte de SIEFORE**.
 
 > Elige la SIEFORE con el portafolio de más alto riesgo— la Básica Inicial.
 
@@ -265,7 +265,7 @@ Te conviene estar en la SIEFORE de más alto riesgo porque es la que tiene mayor
 
 Este fue un post largo y lleno de información, pero que estoy seguro te **ayudará a tener un retiro más chingón** 💪🏼
 
-Usa esta información como una base para planear tu retiro, y pregunta a especialistas sobre tu situación en específico. 
+Usa esta información como una base para planear tu retiro, y pregunta a especialistas sobre tu situación en específico.
 
 > 🚨 NO LO DEJES PARA MAÑANA
 

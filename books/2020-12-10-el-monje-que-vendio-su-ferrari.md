@@ -2,7 +2,7 @@
 title: El monje que vendió su Ferrari
 author: Robin S. Sharma
 description: "6 lecciones prácticas que puedes sacar de este libro."
-cover_path: /img/books/covers/el_monje_que_vendio_su_ferrari.jpg
+cover_path: img/books/covers/el_monje_que_vendio_su_ferrari.jpg
 published_at: 2020-12-10
 newsletter_cta: true
 ---
@@ -18,7 +18,7 @@ newsletter_cta: true
 
 Un monje que vendió su Ferrari... okay. Para empezar, **¿por qué un monje tendría un Ferrari?** 🧐
 
-El título es muy llamativo, pero la realidad es que este libro es una fábula ficticia de un abogado que ganaba chingos de dinero y tenía un Ferrari, **pero no era feliz**. Un día, a causa de una vida llena de excesos, el abogado sufre un infarto, y con ello, una revelación. 
+El título es muy llamativo, pero la realidad es que este libro es una fábula ficticia de un abogado que ganaba chingos de dinero y tenía un Ferrari, **pero no era feliz**. Un día, a causa de una vida llena de excesos, el abogado sufre un infarto, y con ello, una revelación.
 
 Vende su Ferrari. Vende su casa. Deja su trabajo. Deja a su mujer. Y se va en un viaje espiritual con los monjes del Himalaya a buscar sabiduría y un propósito en su vida. Casual.
 
@@ -34,7 +34,7 @@ Tus emociones y tu actitud están dadas principalmente por la calidad de pensami
 
 > Velo de esta manera, todo lo que pasa en la vida es neutral.
 
-Si todo lo que pasa es neutral, entonces tú decides cómo interpretarlo y manejarlo. 
+Si todo lo que pasa es neutral, entonces tú decides cómo interpretarlo y manejarlo.
 
 ¿La cagaste en el trabajo? **Convierte ese error en una lección y sigue adelante**. Comparte lo que aprendiste, y asegúrate de que no vuelva a pasar.
 
@@ -42,7 +42,7 @@ Si todo lo que pasa es neutral, entonces tú decides cómo interpretarlo y manej
 
 ## Dos: Persigue un propósito
 
-No existe criterio universal para el éxito, eso es algo que cada quien define, y es diferente para todos. 
+No existe criterio universal para el éxito, eso es algo que cada quien define, y es diferente para todos.
 
 No importa cuál sea tu criterio de éxito, pero tienes que tener uno. **Y más importante aún, tienes que disfrutar el proceso de alcanzarlo**.
 
@@ -56,7 +56,7 @@ Define objetivos a diferentes plazos, los que te funcionen a ti, y persíguelos 
 
 Kaizen es la palabra japonesa para "**mejora continua**". Lo escucharás mucho en empresas como una técnica para mejorar sus procesos y hacerlos más eficientes, pero pocos lo usan fuera de su trabajo. **Pero es ahí donde está el oro**.
 
-No es la persona que cree saber todo la que más crece, sino la que es **humilde** y admite ser ignorante, pues es la que está **dispuesta a aprender**. 
+No es la persona que cree saber todo la que más crece, sino la que es **humilde** y admite ser ignorante, pues es la que está **dispuesta a aprender**.
 
 La idea es que busques un progreso constante en tu vida. En lo personal, profesional y espiritual. Si no sabes por dónde empezar, aquí está mi recomendación 👇🏼
 
@@ -90,7 +90,7 @@ Pero admítelo, no siempre duermes 8 horas, ni trabajas 8 horas, ni vives 8 hora
 
 Ya no trabajaste lo que debías trabajar. No viviste lo que debías vivir. Y mucho menos dormiste lo que debías dormir.
 
-Tú puedes lograr todo lo que te propones en esas 24 horas, pero tienes que aprender a decir que no a ciertas cosas. **Todo es un intercambio**. 
+Tú puedes lograr todo lo que te propones en esas 24 horas, pero tienes que aprender a decir que no a ciertas cosas. **Todo es un intercambio**.
 
 > Cada que decides hacer algo, también estás decidiendo dejar de hacer otra cosa.
 

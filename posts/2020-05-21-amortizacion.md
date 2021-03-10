@@ -3,7 +3,7 @@ title: "Lo mínimo que debes saber sobre amortización 📉"
 description: "Amortización es el pago gradual de una deuda o crédito mediante abonos periódicos. Cierto porcentaje de cada abono sirve para pagar los intereses de la deuda, mientras que otro porcentaje es para reducirla."
 published: true
 published_at: 2020-05-21
-cover_path: /img/posts/covers/amortizacion.png
+cover_path: img/posts/covers/amortizacion.png
 cover_alt: "Nina sentada sobre el pasto en el parque, con la lengua de fuera."
 tags: ['creditos', 'deudas']
 newsletter_cta: true
@@ -20,17 +20,17 @@ newsletter_cta: true
 
 ¿Amorti-qué? 🤨
 
-Amortización me pareció una palabra muy críptica desde el primer momento que la escuché. Suena como Morticia: 
+Amortización me pareció una palabra muy críptica desde el primer momento que la escuché. Suena como Morticia:
 
 ![Morticia, de Los Locos Adams](/img/posts/morticia.png)
 
-Si vas a un diccionario encontrarás: El acto o proceso de amortizar. O sea, no salimos del mismo hoyo. 
+Si vas a un diccionario encontrarás: El acto o proceso de amortizar. O sea, no salimos del mismo hoyo.
 
-Cuando sacas un crédito usualmente tienes que hacer una serie de pagos periódicos para poder liquidar la deuda; **eso se conoce como amortización**. Usualmente este concepto se utiliza en dos situaciones: en deudas y en temas contables para empresas. 
+Cuando sacas un crédito usualmente tienes que hacer una serie de pagos periódicos para poder liquidar la deuda; **eso se conoce como amortización**. Usualmente este concepto se utiliza en dos situaciones: en deudas y en temas contables para empresas.
 
 Aquí solo nos enfocamos en amortización cuando hablamos de deudas o créditos.
 
-> Amortización es el pago gradual de una deuda o crédito mediante abonos periódicos. Cierto porcentaje de cada abono sirve para pagar los intereses, mientras que otro porcentaje es para reducir la deuda. 
+> Amortización es el pago gradual de una deuda o crédito mediante abonos periódicos. Cierto porcentaje de cada abono sirve para pagar los intereses, mientras que otro porcentaje es para reducir la deuda.
 
 Este tema me pareció interesante porque tuve una discusión con los del trabajo sobre deudas y salieron muchas preguntas que ninguno de nosotros pudo resolver por completo.
 
@@ -48,7 +48,7 @@ Lo primero que debes conocer son los conceptos o factores que interactúan en un
 
 - 💵 **Principal**: Es la cantidad de dinero que te están prestando. En un crédito por 1 millón de pesos, esa misma cantidad es el principal. Sobre este monto se calculan los intereses por pagar.
 
-- 💵 **Cantidad amortizada**: Es la cantidad de dinero que se va a tu deuda. Cierto porcentaje de tu pago mensual va directo al principal, esta es la cantidad amortizada. 
+- 💵 **Cantidad amortizada**: Es la cantidad de dinero que se va a tu deuda. Cierto porcentaje de tu pago mensual va directo al principal, esta es la cantidad amortizada.
 
 - 💵 **Tabla de amortización**: Es el calendario de pagos a realizar para liquidar tu crédito. Lo más común es que sea una tabla con las cantidades específicas a pagar cada mes, así como los intereses y cantidad amortizada de cada pago.
 
@@ -58,9 +58,9 @@ Lo primero que debes conocer son los conceptos o factores que interactúan en un
 
 - 💵 **Pagos fijos o mínimo**: Es la cantidad mínima a pagar en cada periodo. Un porcentaje del pago mínimo se usa para pagarle al acreedor (el banco), y otro porcentaje se usa para reducir tu deuda.
 
-- 💵 **Abonos a capital**: Es cuando abonas más del mínimo a tu crédito para liquidarlo más rápido y ahorrarte lana en intereses. 
+- 💵 **Abonos a capital**: Es cuando abonas más del mínimo a tu crédito para liquidarlo más rápido y ahorrarte lana en intereses.
 
-Uff, ya terminó la parte aburrida. Me sentí como haciendo una tarea de secundaria. 
+Uff, ya terminó la parte aburrida. Me sentí como haciendo una tarea de secundaria.
 
 No te preocupes si no recuerdas lo que acabas de leer, cuando lleguemos al archivo de Excel cada concepto hará sentido.
 
@@ -68,7 +68,7 @@ No te preocupes si no recuerdas lo que acabas de leer, cuando lleguemos al archi
 
 También quiero mencionar algunos hechos/tips generales sobre los créditos bancarios:
 
--🏦 Los bancos son unos perros. Pero no **perros chingones como Perro Dinero** 🤙, sino unos perros cabrones. No te darán información que no les conviene a menos que preguntes, y preguntes, y preguntes. 
+-🏦 Los bancos son unos perros. Pero no **perros chingones como Perro Dinero** 🤙, sino unos perros cabrones. No te darán información que no les conviene a menos que preguntes, y preguntes, y preguntes.
 
 - 🏦 Es **buena idea pagar más del mínimo en cada periodo**. Ahorras dinero al largo plazo, y terminas de pagar más pronto.
 
@@ -78,9 +78,9 @@ También quiero mencionar algunos hechos/tips generales sobre los créditos banc
 
 - 🏦 Busca opciones en varios bancos diferentes.
 
-- 🏦 Al inicio de los créditos es común que la mayor parte de tu mensualidad se vaya a intereses. Esto quiere decir que le estás pagando al primero al banco y luego a tu deuda. Por eso los abonos a capital son, en general, una buena idea; pagas directamente a tu deuda. 
+- 🏦 Al inicio de los créditos es común que la mayor parte de tu mensualidad se vaya a intereses. Esto quiere decir que le estás pagando al primero al banco y luego a tu deuda. Por eso los abonos a capital son, en general, una buena idea; pagas directamente a tu deuda.
 
-Con eso fuera del camino, vamos a comenzar con nuestro ejemplo. En esta tabla de amortización tomo en cuenta lo más esencial: pagos mensuales, porcentaje de tus pagos que se van a interés y principal y abonos a capital. 
+Con eso fuera del camino, vamos a comenzar con nuestro ejemplo. En esta tabla de amortización tomo en cuenta lo más esencial: pagos mensuales, porcentaje de tus pagos que se van a interés y principal y abonos a capital.
 
 Un crédito real es mucho más complejo porque puede incluir comisión por apertura, comisión anual, comisión por abonos a capital, refinanciamientos, tasas de interés variable, entre otras cosas.
 
@@ -124,7 +124,7 @@ Sin embargo, sí recomiendo que entiendas cómo se calcula cada celda. Es import
 
 ## ¿De dónde salen los números?
 
-Usaré los valores de la imagen de arriba para los ejemplos. 
+Usaré los valores de la imagen de arriba para los ejemplos.
 
 - 📈 Crédito de $1,000,000 de pesos
 
@@ -156,7 +156,7 @@ Esta celda es la suma de la mensualidad y el pago extra, suponiendo que haces un
 
 ### Intereses
 
-Es la **tasa de interés** dividida entre el **número de pagos al año** multiplicada por el **balance o saldo del mes anterior** (la cantidad antes del pago del mes para el que estás calculando el interés). 
+Es la **tasa de interés** dividida entre el **número de pagos al año** multiplicada por el **balance o saldo del mes anterior** (la cantidad antes del pago del mes para el que estás calculando el interés).
 
 Recuerda que en nuestros ejemplos la tasa de interés es anualizada y los pagos son mensuales. Entonces:
 
@@ -256,19 +256,19 @@ Con esta información que acabamos de descubrir, quizá piensas, "okay, entonces
 
 ## ¿Qué es mejor entonces?
 
-Las malas noticias. Es imposible que yo te pueda decir qué es lo mejor para ti. Hay demasiados factores que no estoy tomando en consideración en estos ejemplos. No porque no quiera, **sino porque no puedo**. 
+Las malas noticias. Es imposible que yo te pueda decir qué es lo mejor para ti. Hay demasiados factores que no estoy tomando en consideración en estos ejemplos. No porque no quiera, **sino porque no puedo**.
 
-Cada uno de nosotros tiene su contexto, sus problemas, sus necesidades. Todos tenemos diferentes responsabilidades. No puedo sugerirte que vayas y abones a capital el 15% de tus ingresos cada mes para pagar tus deudas más rápido. 
+Cada uno de nosotros tiene su contexto, sus problemas, sus necesidades. Todos tenemos diferentes responsabilidades. No puedo sugerirte que vayas y abones a capital el 15% de tus ingresos cada mes para pagar tus deudas más rápido.
 
 Lo que si te digo es que con esta tabla de amortización tienes **una herramienta más para poder tomar la mejor decisión** de acuerdo a tu contexto.
 
-**¿Tienes más deudas?** Crea dos tablas de amortización y juega con los valores en cada una. 
+**¿Tienes más deudas?** Crea dos tablas de amortización y juega con los valores en cada una.
 
 **¿Tienes gastos previstos dentro de unos meses?** Reduce tu abono a capital para que no te las veas negras, y luego intenta volver a incrementarlo.
 
-**¿No ves manera de ahorrar un poco de lana al mes para pagar extra?** Usa parte de tus ingresos irregulares para abonar a capital. Con ingresos irregulares me refiero a cosas como aguinaldo, retorno de impuestos, bonos, etc. 
+**¿No ves manera de ahorrar un poco de lana al mes para pagar extra?** Usa parte de tus ingresos irregulares para abonar a capital. Con ingresos irregulares me refiero a cosas como aguinaldo, retorno de impuestos, bonos, etc.
 
-**¿Estás muy motivada ahorrarte dinero y quieres aportar más?** Busca la forma de incrementar tus ingresos. Puede ser con un ascenso en el trabajo, vender cosas que no usas, etc. 
+**¿Estás muy motivada ahorrarte dinero y quieres aportar más?** Busca la forma de incrementar tus ingresos. Puede ser con un ascenso en el trabajo, vender cosas que no usas, etc.
 
 Podría seguir con más situaciones, pero no es el punto. Lo que quiero que entiendas es que tienes aquí una herramienta cuyo único propósito es ayudarte a salir de tus deudas lo antes posible. Úsala.
 
@@ -281,10 +281,10 @@ Eso si, hay cosas que aplican a casi todos los créditos:
 - 💡 Intenta negociar una reducción de la tasa de interés después de unos años.
 
 - 💡 Juega con diferentes combinaciones de abonos a capital.
-  
+
 ***
-  
-Este fue un post denso. Espero que la tabla de amortización que creé te sirva para ahorrarte un buen varo y salir de tus deudas más rápido. 
+
+Este fue un post denso. Espero que la tabla de amortización que creé te sirva para ahorrarte un buen varo y salir de tus deudas más rápido.
 
 Modifica la tabla y prueba distintas combinaciones de aportaciones a capital. Prueba reduciendo la mensualidad unos meses y luego a reducir el tiempo. Luego al revés.
 

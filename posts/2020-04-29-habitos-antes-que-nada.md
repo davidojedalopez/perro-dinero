@@ -3,7 +3,7 @@ title: "Hábitos antes que nada 🧘🏻‍♂️"
 description: "Aunque parezca extraño, el primer paso para mejorar tu situación financiera no tiene nada que ver con dinero; tiene que ver con tus hábitos."
 published: true
 published_at: 2020-04-29
-cover_path: /img/posts/covers/habitos.png
+cover_path: img/posts/covers/habitos.png
 cover_alt: "Nina viendo un cartel que dice, escrito con gis: 'Hábitos, antes que nada'."
 tags: ['desarrollo personal']
 newsletter_cta: true
@@ -33,7 +33,7 @@ Si de entrada no tienes buenos hábitos en tu vida en general, lo más probable 
 
 - ✅ Tener un ahorro para emergencias.
 
-**Si tu respuesta es no, sigue leyendo**. En este post te hablaré un poco sobre psicología detrás de los hábitos y de cómo puedes comenzar con el pie derecho. 
+**Si tu respuesta es no, sigue leyendo**. En este post te hablaré un poco sobre psicología detrás de los hábitos y de cómo puedes comenzar con el pie derecho.
 
 ## ¿Por qué cuestan tanto trabajo?
 
@@ -41,13 +41,13 @@ Como en muchas otras cosas en la vida, **lo más difícil es comenzar**. Y una d
 
 ![Bato cayendo de hocico](/img/posts/bato_cayendo_de_hocico.gif)
 
-Están los típicos propósitos de año nuevo (que en realidad la gente se propone empezar después del Día de Reyes porque, pues, la rosca 🐷): Bajar de peso, ir al gimnasio, leer más, viajar más, etc.   
+Están los típicos propósitos de año nuevo (que en realidad la gente se propone empezar después del Día de Reyes porque, pues, la rosca 🐷): Bajar de peso, ir al gimnasio, leer más, viajar más, etc.
 
-Esa es la **primera etapa**, tener una **vaga idea de querer hacer algo** o mejorar un aspecto de tu vida. Luego está la **etapa de irse de hocico**. Usaré como ejemplo el propósito más común: bajar de peso 🍟. 
+Esa es la **primera etapa**, tener una **vaga idea de querer hacer algo** o mejorar un aspecto de tu vida. Luego está la **etapa de irse de hocico**. Usaré como ejemplo el propósito más común: bajar de peso 🍟.
 
 Los que quieren bajar de peso empiezan una dieta super restrictiva con comidas que no les gustan y pagan la anualidad del gimnasio proponiéndose a sí mismos ir cinco veces a la semana antes o después del trabajo.
 
-Te puedo asegurar que el 50% de las personas que empezaron así no aguantarán las primeras dos semanas con ese ritmo, y el 99% no lo seguirán a los dos meses. 
+Te puedo asegurar que el 50% de las personas que empezaron así no aguantarán las primeras dos semanas con ese ritmo, y el 99% no lo seguirán a los dos meses.
 
 ¿Por qué crees que los gimnasios están estúpidamente llenos en enero y febrero, pero para marzo ya casi están de vuelta a la normalidad? 🤭
 
@@ -55,23 +55,23 @@ Comenzar un nuevo hábito con una rutina tan difícil es una fórmula segura par
 
 ## Algo es mejor que nada
 
-Cuando comienzas algo nuevo, sin importar que sea, tu **prioridad no debe ser optimizar** para obtener el mejor resultado, sino **empezar**.  
+Cuando comienzas algo nuevo, sin importar que sea, tu **prioridad no debe ser optimizar** para obtener el mejor resultado, sino **empezar**.
 
  ¿Quieres comenzar a hacer ejercicio?  🏃🏻‍♂️
 
-- ❌ No te inscribas al gimnasio y busques la mejor rutina.     
+- ❌ No te inscribas al gimnasio y busques la mejor rutina.
 
-- ✅ Ponte ropa de gym y sal a caminar cinco minutos. 
+- ✅ Ponte ropa de gym y sal a caminar cinco minutos.
 
  ¿Quieres comenzar a leer con regularidad? 📚
 
 - ❌ No intentes leer una hora cada día o un libro cada mes.
 
-- ✅ Lee una página al día.  
+- ✅ Lee una página al día.
 
 ¿Quieres ser más productivo? 📈
 
-- ❌ No intentes sacar lo más complicado primero.   
+- ❌ No intentes sacar lo más complicado primero.
 
 - ✅ Completa la tarea más fácil de tu día en la mañana.
 
@@ -91,11 +91,11 @@ Si te equivocas, **ni modo, la vida sigue**, a todos nos pasa. Aprende de tus er
 
 Cuando haces lo mínimo posible, pero lo haces **consistentemente**, estás abriendo las puertas a formar un hábito. Una vez que tengas el hábito, puedes comenzar a **optimizar**.
 
-Dos semanas después… 
+Dos semanas después…
 
 En lugar de salir a caminar cinco minutos, caminas cinco y corres cinco. En lugar de leer una página, lees 10. En lugar de empezar con la tarea más fácil, empiezas con algo más complicado.
 
-**Cuando menos lo esperes** estarás ejercitándote constantemente, leyendo una buena cantidad de libros al año y llegando a tus objetivos en el trabajo. 
+**Cuando menos lo esperes** estarás ejercitándote constantemente, leyendo una buena cantidad de libros al año y llegando a tus objetivos en el trabajo.
 
 ¿Y qué tiene que ver esto con las finanzas personales?
 

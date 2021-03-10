@@ -4,7 +4,7 @@ titleKey: "ynab_intro"
 description: "Un presupuesto es un plan para decidir qué harás con tu dinero antes de gastarlo. Y la mejor forma que conozco de manejar tu presupuesto es con YNAB."
 published: true
 published_at: 2020-05-13
-cover_path: /img/posts/covers/presupuesto.png
+cover_path: img/posts/covers/presupuesto.png
 cover_alt: "Nina acostada en una esquina con las patas hacia arriba."
 tags: ['presupuestos']
 newsletter_cta: true
@@ -33,9 +33,9 @@ En este post te voy a explicar **por qué necesitas un presupuesto** y **cómo e
 
 ## ¿Qué es un presupuesto?
 
-**Un presupuesto es un plan** para decidir qué harás con tu dinero **antes** de gastarlo. 
+**Un presupuesto es un plan** para decidir qué harás con tu dinero **antes** de gastarlo.
 
-Es como cuando tienes hambre y estás en tu casa pensando qué cocinar. No vas y echas la cebolla al sartén y luego piensas qué harás o dónde pondrás esa cebolla. Más bien piensas primero en el platillo y luego comienzas a cocinar. Planeas lo que harás con los ingredientes que tienes. 
+Es como cuando tienes hambre y estás en tu casa pensando qué cocinar. No vas y echas la cebolla al sartén y luego piensas qué harás o dónde pondrás esa cebolla. Más bien piensas primero en el platillo y luego comienzas a cocinar. Planeas lo que harás con los ingredientes que tienes.
 
 Así debes ser con tu dinero. Debes **planear en qué te lo gastarás** o se te irá en cosas que no necesitas o que no te ayudan a alcanzar tus objetivos.
 
@@ -44,16 +44,16 @@ Así debes ser con tu dinero. Debes **planear en qué te lo gastarás** o se te 
 Un presupuesto bien ejecutado:
 
 - ✅ Te ahorra lana
-  
+
 - ✅ Te ayuda a definir y planear tus objetivos financieros
-  
+
 - ✅ Te permite gastar sin culpa en lo que más quieres
-  
+
 - ✅ Te da libertad de hacer modificaciones cuando tus prioridades cambian
-  
+
 - ✅ Te hace consciente de dónde termina tu dinero
 
-¿Vas por la plaza y ves un pantalón que te gusta? **Sin un presupuesto** vas, lo compras, y luego ves cómo te arreglas con las cuentas. 
+¿Vas por la plaza y ves un pantalón que te gusta? **Sin un presupuesto** vas, lo compras, y luego ves cómo te arreglas con las cuentas.
 
 En cambio, **con un presupuesto** primero revisas si tienes dinero asignado para comprar un pantalón, y si sí, vas y lo compras y no te preocupas por arreglar cuentas porque ese dinero ya estaba destinado para ese pantalón.
 
@@ -129,16 +129,16 @@ Diciembre es un mes muy peculiar. Es el mes que más dinero gano (por el aguinal
 La regla número dos se trata de buscar esos gastos poco frecuentes que eventualmente tendremos que hacer, y ahorrar para ellos mucho antes de que lleguen. Algunos que se me ocurren:
 
 - 🗓 Seguro de gastos médicos
-  
+
 - 🗓 Cambio de llantas del carro
-  
+
 - 🗓 Regalos de navidad
-  
+
 - 🗓 Suscripciones anuales
 
 Ahora, en lugar de esperar pasivamente para hacer los pagos, estarás ahorrando mes a mes para no sentir el gasto de golpe.
 
-Ya no tendrás que usar todo tu aguinaldo para comprar los regalos de tu familia (soy de familia numerosa) porque lo habrás **ahorrado mes a mes**. 
+Ya no tendrás que usar todo tu aguinaldo para comprar los regalos de tu familia (soy de familia numerosa) porque lo habrás **ahorrado mes a mes**.
 
 ### Aguanta los chingazos
 
@@ -148,7 +148,7 @@ Esta regla es la más importante para mí. Antes dije que un presupuesto es un p
 
 Con aguantar los chingazos me refiero a **ajustar tu presupuesto** cuando gastas más de lo que tenías asignado para ese trabajo o categoría 🥊
 
-Digamos que cuando te llegó la quincena asignaste $500 pesos para comer en la calle y $1,000 pesos para tu siguiente viaje. Luego fuiste a un restaurante a cenar y la cuenta se te fue de las manos, gastaste $800 pesos. 
+Digamos que cuando te llegó la quincena asignaste $500 pesos para comer en la calle y $1,000 pesos para tu siguiente viaje. Luego fuiste a un restaurante a cenar y la cuenta se te fue de las manos, gastaste $800 pesos.
 
 Eso te deja con -$300 en tu categoría de comida en la calle. **No hay pedo, no te sientas mal**. Tener tu presupuesto no significa adivinar cuánto gastarás para cada cosa; lo único que tienes que hacer es ajustar.
 
@@ -172,15 +172,15 @@ Espero que para este punto ya estés convencido de hacer tu presupuesto 😁
 
 ## ¿Cómo empiezo con YNAB?
 
-Para empezar tienes que hacer una cuenta con ellos y descargar su app o usar la página web; yo uso ambas. Pronto te darás cuenta de que tienen material infinito para que aprendas y hagas tu presupuesto de la mejor forma 🎓 
+Para empezar tienes que hacer una cuenta con ellos y descargar su app o usar la página web; yo uso ambas. Pronto te darás cuenta de que tienen material infinito para que aprendas y hagas tu presupuesto de la mejor forma 🎓
 
-No lo había mencionado antes, pero **YNAB no es gratis**. Ya sé, ahora estarás diciendo “no mames, leí todo esto para que me dijeras que me cobran por usar la app”. 
+No lo había mencionado antes, pero **YNAB no es gratis**. Ya sé, ahora estarás diciendo “no mames, leí todo esto para que me dijeras que me cobran por usar la app”.
 
-Todos tenemos que comer. Ellos encontraron un problema y lo resuelven muy bien con su app, **es justo que cobren por ella**. 
+Todos tenemos que comer. Ellos encontraron un problema y lo resuelven muy bien con su app, **es justo que cobren por ella**.
 
 Si te sirve de algo, **no he conocido a alguien que haya empezado a usar YNAB y se haya arrepentido de su decisión**.
 
-Ofrecen poco más de un mes gratuito para que pruebes, y ya después de eso te cobran la suscripción. Aquí la [página con sus precios actuales](https://www.youneedabudget.com/pricing/). Yo lo pago anualmente para ahorrarme un varo. 
+Ofrecen poco más de un mes gratuito para que pruebes, y ya después de eso te cobran la suscripción. Aquí la [página con sus precios actuales](https://www.youneedabudget.com/pricing/). Yo lo pago anualmente para ahorrarme un varo.
 
 Puedes usar [mi link de afiliado](https://ynab.com/referral/?ref=kNk3NCzRHNbzgaZm&utm_source=customer_referral) y nos regalarán un mes gratis a ambos si te suscribes 😉
 
@@ -190,15 +190,15 @@ Espero que el hecho de que YNAB cobre no te detenga a probar su metodología. **
 
 Uff, este fue un post largo, aquí el resumen:
 
-- ✨ Un **presupuesto es un plan** que te ayuda a gastar en lo que más quieres, a pagar tus deudas, ahorrar y tener control de tu dinero    
-  
-- ✨ Existen muchas excusas para **no** tener presupuesto, pero comenzar con él **te hará la vida más fácil**    
-  
-- ✨ YNAB es la herramienta que uso y recomiendo para manejar tu presupuesto y objetivos financieros    
-  
-- ✨ Usando la metodología de YNAB pronto **estarás gastando sin culpa y ahorrando varo** 
+- ✨ Un **presupuesto es un plan** que te ayuda a gastar en lo que más quieres, a pagar tus deudas, ahorrar y tener control de tu dinero
 
-Cabe mencionar que no estoy directamente afiliado con YNAB de ninguna forma. Recomiendo la herramienta porque me ha funcionado. El enlace que compartí arriba es algo que todos los usuarios tienen; cuando te suscribas también podrás compartir tu propio enlace. 
+- ✨ Existen muchas excusas para **no** tener presupuesto, pero comenzar con él **te hará la vida más fácil**
+
+- ✨ YNAB es la herramienta que uso y recomiendo para manejar tu presupuesto y objetivos financieros
+
+- ✨ Usando la metodología de YNAB pronto **estarás gastando sin culpa y ahorrando varo**
+
+Cabe mencionar que no estoy directamente afiliado con YNAB de ninguna forma. Recomiendo la herramienta porque me ha funcionado. El enlace que compartí arriba es algo que todos los usuarios tienen; cuando te suscribas también podrás compartir tu propio enlace.
 
 En otro post hablaré sobre tips específicos que me han ayudado a manejar mejor mi dinero con YNAB. Por el momento, **lo importante es empezar**.
 

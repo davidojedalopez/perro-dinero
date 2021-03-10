@@ -3,7 +3,7 @@ title: "Cobros Digitales (CoDi), adiós al efectivo"
 description: "CoDi es una plataforma creada por el Banco de México para pagar y cobrar hasta $8,000 pesos en cualquier momento del día, sin comisiones, usando códigos QR."
 published: true
 published_at: 2020-07-02
-cover_path: /img/posts/covers/codi.png
+cover_path: img/posts/covers/codi.png
 cover_alt: "Nina con la lengua de fuera viendo fijamente a la cámara."
 tags: ['mexico', 'plataformas']
 ---
@@ -17,7 +17,7 @@ tags: ['mexico', 'plataformas']
 
 </details>
 
-De seguro en algún momento de tu vida has utilizado un código QR: 
+De seguro en algún momento de tu vida has utilizado un código QR:
 
 - 📱 Para obtener una promoción en una tienda
 
@@ -43,7 +43,7 @@ Ya está, te puedes ir 👋
 
 ## ¿Cómo usarlo?
 
-Si quieres **pagar, escaneas** un QR. 
+Si quieres **pagar, escaneas** un QR.
 
 Si quieres **cobrar, generas** un QR y lo compartes para que alguien más lo escanee.
 
@@ -91,9 +91,9 @@ Puedes escanearlo o seleccionar una foto de tu galería. Si te mandaron la image
 
 ![Pagar con código QR en app BBVA](/img/posts/codi_bbva_5.png)
 
-Al aceptar te llegará una notificación del cobro y también le llegará una notificación a quien le pagaste. 
+Al aceptar te llegará una notificación del cobro y también le llegará una notificación a quien le pagaste.
 
-Y así es como puedes cobrar o pagar con CoDi. No tiene mucha ciencia, y el componente principal son **códigos QR**, con los que ya estamos **familiarizados**. 
+Y así es como puedes cobrar o pagar con CoDi. No tiene mucha ciencia, y el componente principal son **códigos QR**, con los que ya estamos **familiarizados**.
 
 ## ¿Qué necesitas?
 
@@ -105,9 +105,9 @@ Para registrarte con CoDi necesitas lo siguiente, que de seguro ya tienes:
 
 - 🏦 Celular con internet
 
-Yo hice mi registro **directamente desde la app** de BBVA, y quedó listo como en 1 minuto. No todos los bancos tienen disponible CoDi todavía, pero ya hay muchos que sí. Y eventualmente todos lo tienen que tener porque el **estándar** lo diseño el Banco de México. 
+Yo hice mi registro **directamente desde la app** de BBVA, y quedó listo como en 1 minuto. No todos los bancos tienen disponible CoDi todavía, pero ya hay muchos que sí. Y eventualmente todos lo tienen que tener porque el **estándar** lo diseño el Banco de México.
 
-Aquí hay una [lista de instituciones con las que puedes usar CoDi](https://www.banxico.org.mx/sistemas-de-pago/codi-cobro-digital-banco-me.html). 
+Aquí hay una [lista de instituciones con las que puedes usar CoDi](https://www.banxico.org.mx/sistemas-de-pago/codi-cobro-digital-banco-me.html).
 
 Si lo único que necesitas es cobrar y no tienes app de tu banco, puedes descargar la app “CoDi Banxico” para iOS y Android.
 
@@ -137,7 +137,7 @@ Banxico te dirá que CoDi es una solución para combatir la corrupción, fraude 
 
 ![Gráfico de usuarios estimados que usan CoDi](/img/posts/uso_de_codi.png)
 
-Pero ya, [según los datos disponibles en la página oficial de CoDi](https://www.banxico.org.mx/sistemas-de-pago/d/%7B4B9AD916-9308-AF18-D469-E17A63D4AB56%7D.xlsx) (link es un archivo de Excel), el **29 de junio del 2020** había **3,207,704** usuarios registrados en CoDi. 
+Pero ya, [según los datos disponibles en la página oficial de CoDi](https://www.banxico.org.mx/sistemas-de-pago/d/%7B4B9AD916-9308-AF18-D469-E17A63D4AB56%7D.xlsx) (link es un archivo de Excel), el **29 de junio del 2020** había **3,207,704** usuarios registrados en CoDi.
 
 El primer y segundo banco con más registros son **BBVA** con 2,359,837 y **Banamex** con 230,540. Son más de 2 millones de usuarios de diferencia 😳
 
@@ -145,15 +145,15 @@ El número de usuarios registrados solo seguirá creciendo conforme más se esta
 
 ## ¿Es seguro?
 
-**Siempre hay formas de estafar**. En el caso de un código QR, es relativamente sencillo alterarlo para que pagues a otra persona. 
+**Siempre hay formas de estafar**. En el caso de un código QR, es relativamente sencillo alterarlo para que pagues a otra persona.
 
 Mi única recomendación para mantenerte a salvo es que **revises y confirmes** que el destinatario, concepto e importe son correctos. No puedes hacer los pagos o cobros sin una confirmación de tu parte.
 
 ***
 
-Eso es lo **mínimo** que necesitas saber sobre CoDi. 
+Eso es lo **mínimo** que necesitas saber sobre CoDi.
 
-Yo pago todo lo que puedo con tarjeta, así que lo veo como una buena herramienta, especialmente en tiempos de Covid, pues no necesitas tener contacto con nada para pagar o cobrar. 
+Yo pago todo lo que puedo con tarjeta, así que lo veo como una buena herramienta, especialmente en tiempos de Covid, pues no necesitas tener contacto con nada para pagar o cobrar.
 
 En el correo de esta semana podrás encontrar:
 

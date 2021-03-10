@@ -3,7 +3,7 @@ title: "11 recursos para mejorar tus finanzas personales"
 description: "Cada quien aprende de forma diferente y la gran ventaja que tenemos hoy es que hay infinidad de formatos para consumir información."
 published: true
 published_at: 2020-06-25
-cover_path: /img/posts/covers/11_recursos.png
+cover_path: img/posts/covers/11_recursos.png
 cover_alt: "Nina y su papá, Panda, amarrados a una barda de madera en Altata, una playa de Sinaloa."
 tags: ['recursos', 'inversiones', 'ahorro', 'deuda', 'desarrollo personal']
 ---
@@ -29,15 +29,15 @@ Hoy puedes aprender:
 
 - 🤓 Escuchando un podcast.
 
-- 🤓 Leyendo un libro. 
+- 🤓 Leyendo un libro.
 
 Hay días en que no tienes ganas de leer y prefieres **ver** un video. O vas en el carro y prefieres **escuchar** un podcast. O estás viajando y prefieres **aventarte** un libro todo el vuelo. O estás esperando en una fila y prefieres **leer** un post corto en un blog.
 
-Mi forma preferida de aprender es leyendo. Pero no es mi única forma—todo **depende del contexto**. 
+Mi forma preferida de aprender es leyendo. Pero no es mi única forma—todo **depende del contexto**.
 
 Sea cual sea tu formato preferido, aquí te dejo **11 recomendaciones** de recursos para mejorar tus finanzas personales 💪🏼
 
-P.D: No estoy afiliado con nadie de mis recomendaciones. **Las comparto porque me gustan**. 
+P.D: No estoy afiliado con nadie de mis recomendaciones. **Las comparto porque me gustan**.
 
 ***
 
@@ -53,7 +53,7 @@ Fue de los **primeros** canales de YouTube que seguí cuando empecé a mejorar m
 
 - 💰 Impuestos
 
-- 💰 Crédito 
+- 💰 Crédito
 
 - 💰 Ahorro
 
@@ -71,11 +71,11 @@ Hay videos de todo. Inversiones, impuestos, retiro, presupuestos, hábitos de co
 
 ## Libros 📚
 
-Empezaré por los **dos libros clásicos** que recomiendan en todos lados. 
+Empezaré por los **dos libros clásicos** que recomiendan en todos lados.
 
 ### [Padre rico, padre pobre](https://amzn.to/2RjIJ6a), de Robert T. Kiyosaki
 
-No es un clásico solo por casualidad. Padre rico, padre pobre toca uno de los **temas más importantes** no solo en las finanzas personales, sino de la vida en general: la **educación** 🎓. 
+No es un clásico solo por casualidad. Padre rico, padre pobre toca uno de los **temas más importantes** no solo en las finanzas personales, sino de la vida en general: la **educación** 🎓.
 
 A lo largo del libro, Kiyosaki hace comparaciones entre las sugerencias de alguien con una carrera terminada y un trabajo (el padre pobre) y alguien que ni terminó la secundaria pero que aprendió cómo trabaja el dinero (el padre rico).
 
@@ -83,9 +83,9 @@ A lo largo del libro, Kiyosaki hace comparaciones entre las sugerencias de algui
 
 ### [Pequeño cerdo capitalista](https://amzn.to/33jxNuO), de Sofía Macias
 
-También es uno de los primeros libros de finanzas que escuchamos mencionar aquí en México. 
+También es uno de los primeros libros de finanzas que escuchamos mencionar aquí en México.
 
-**Sofía es un crack de las finanzas personales**, no lo voy a negar. Aprendí mucho de este libro, desde tips para ahorrar hasta AFORES y planes de retiro específicos de México.   
+**Sofía es un crack de las finanzas personales**, no lo voy a negar. Aprendí mucho de este libro, desde tips para ahorrar hasta AFORES y planes de retiro específicos de México.
 
 A pesar de lo que aprendí, el libro no me gustó porque está escrito con tono de niña fresa 🍓. Si eso no te importa, te **recomiendo** que sea de tus **primeras lecturas** sobre finanzas 😉.
 
@@ -127,7 +127,7 @@ Si te gustan los podcasts que se escuchan como una plática común y corriente, 
 
 Mónica tiene más de 25 años de experiencia como asesor de inversiones y operador de mercados. Su podcast está enfocado principalmente a inversiones.
 
-Sus episodios son **amenos** y **muy honestos**. 
+Sus episodios son **amenos** y **muy honestos**.
 
 ## Blogs 📝
 
@@ -141,11 +141,11 @@ Creo que es más conocido por su [canal de YouTube](https://www.youtube.com/chan
 
 ### [Blog de YNAB](https://www.youneedabudget.com/blog/)
 
-**Ya sé, otra recomendación más de YNAB** 🙄. Con esta es la tercera: libro, podcast y blog. Y la única razón por la que sigo recomendando su contenido es **porque es muy bueno**. 
+**Ya sé, otra recomendación más de YNAB** 🙄. Con esta es la tercera: libro, podcast y blog. Y la única razón por la que sigo recomendando su contenido es **porque es muy bueno**.
 
 Mucho de sus posts son sobre cómo aprovechar su aplicación y de mejoras que hacen, y es especialmente útil para los usuarios de la app, incluyéndome. Pero también tienen contenido valioso que no tiene nada que ver con su app.
 
-Date una vuelta por su blog, y lee un par de posts para que veas lo que digo 😉. 
+Date una vuelta por su blog, y lee un par de posts para que veas lo que digo 😉.
 
 ***
 

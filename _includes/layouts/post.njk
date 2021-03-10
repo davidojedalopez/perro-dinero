@@ -6,7 +6,9 @@ permalink: "posts/{{ page.fileSlug }}/"
 <article class="py-8">
   {% if cover_path %}
     <div class="mb-4 gradient-background rounded mx-auto w-full max-w-screen-sm h-auto">
-      <img src="{{ cover_path | url }}" alt="{{ cover_alt }}" class="relative -z-1" />
+      <div class="relative -z-1">
+        {% image cover_path | url, cover_alt %}
+      </div>
     </div>
   {% endif %}
   <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>

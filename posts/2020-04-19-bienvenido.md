@@ -3,7 +3,7 @@ title: "¡Bienvenidos! 👋"
 description: "Primera publicación en mi blog de finanzas personales. ¡Únete a mí y emprendamos juntos el camino hacia la libertad financiera! 💰"
 published: true
 published_at: 2020-04-19
-cover_path: /img/posts/covers/bienvenido.png
+cover_path: img/posts/covers/bienvenido.png
 cover_alt: "Un salvavidas que dice 'Welcome board' colgado en la pared."
 ---
 
@@ -21,9 +21,9 @@ En este blog aprenderemos juntos todo lo que necesitas saber sobre manejo de tus
 
 - 💵 **Impuestos** -  ¿Cómo funcionan? ¿Tienes que pagarlos? *Sí* 🙃
 
-- 💵 **Hábitos** - ¿Y el dinero? *Sin buenos hábitos no habrá dinero del que hablar*. 
+- 💵 **Hábitos** - ¿Y el dinero? *Sin buenos hábitos no habrá dinero del que hablar*.
 
-No será fácil, pues no se habla mucho de dinero en las escuelas, donde obtenemos la mayor parte de nuestra educación. 
+No será fácil, pues no se habla mucho de dinero en las escuelas, donde obtenemos la mayor parte de nuestra educación.
 
 La mayoría tampoco recibimos educación financiera en nuestras casas; para muchas personas en México hablar sobre dinero sigue siendo tabú.
 
@@ -49,6 +49,6 @@ Si esto último resuena contigo, estás en el lugar correcto. Prepárate porque 
 
 ***
 
-Muchas gracias por leerme ❤️ 
+Muchas gracias por leerme ❤️
 
 Cualquier duda y/o sugerencia por favor no dudes en dejar un comentario o mandarme un WhatsApp o correo 👇🏼

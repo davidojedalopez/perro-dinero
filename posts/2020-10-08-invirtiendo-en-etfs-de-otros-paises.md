@@ -2,7 +2,7 @@
 title: "Invirtiendo en ETFs de otros países"
 description: "¿Qué debes buscar en un ETF? ¿Cómo sabes si el precio es justo? ¿Qué tanto importa el mercado origen? Aquí las respuestas."
 published_at: 2020-10-08
-cover_path: /img/posts/covers/nina_etf_otros_paises.jpg
+cover_path: img/posts/covers/nina_etf_otros_paises.jpg
 cover_alt: "Nina comiendo nieve de vainilla de una cuchara"
 tags: ['inversiones', 'etfs']
 newsletter_cta: true
@@ -24,7 +24,7 @@ Los Exchange Traded Funds (<abbr title="Exchange Traded Fund">ETFs</abbr>) ofrec
 - ✅ **Son eficientes**; costo operativo promedio de 0.10% sobre los rendimientos, al año.
 - ✅ **Tienen bajo umbral de inversión**; hay <abbr title="Exchange Traded Fund">ETFs</abbr> desde $25 pesos.
 
-En [este otro post describo los ETFs a grandes rasgos](/posts/etf/). En pocas palabras: 
+En [este otro post describo los ETFs a grandes rasgos](/posts/etf/). En pocas palabras:
 
 > Un <abbr title="Exchange Traded Fund">ETF</abbr> es un fondo de inversión que cotiza en bolsa. Es como una canasta de bonos, acciones y otros activos.
 
@@ -36,8 +36,8 @@ Los ETFs son fondos que siguen un índice, y tú compras esos fondos a través d
 
 Imagina que vas a un restaurante mamalón a cenar. El orden en que fluye la noche suele ser así:
 
-1. Te sientas en el **restaurante** y se acerca un **mesero** a tomar tu orden. 
-2. Ese **mesero** va con la **chef** y le pasa lo que ordenaste. 
+1. Te sientas en el **restaurante** y se acerca un **mesero** a tomar tu orden.
+2. Ese **mesero** va con la **chef** y le pasa lo que ordenaste.
 3. La **chef** sigue una **receta** y prepara tu comida.
 4. El **mesero** regresa con tu comida.
 5. **Pagas** por sus servicios y todos felices.
@@ -64,9 +64,9 @@ Pero esos instrumentos siguen estando disponibles solo mientras la bolsa del mer
 
 ### Horario del mercado origen
 
-Cuando inviertes en un mercado extranjero es importante tomar en cuenta las horas en que la bolsa está operando en esos mercados. 
+Cuando inviertes en un mercado extranjero es importante tomar en cuenta las horas en que la bolsa está operando en esos mercados.
 
-Con el mercado de Estados Unidos no hay pedo porque opera de 9:30 a 16:00 y no hay tanta diferencia con el horario de México, si acaso 1 o 2 horas. 
+Con el mercado de Estados Unidos no hay pedo porque opera de 9:30 a 16:00 y no hay tanta diferencia con el horario de México, si acaso 1 o 2 horas.
 
 Cuando quieres hacer transacciones con el mercado europeo o asiático es cuando hay que madrugar o desvelarse, en caso de que no dejes las transacciones programadas.
 
@@ -102,7 +102,7 @@ Esto no significa que no lo puedas vender o comprar. Pero será más tardado enc
 
 ### Precio justo
 
-Cuando compras un ETF que es extranjero en realidad estás pagando su valor en la moneda origen del ETF. 
+Cuando compras un ETF que es extranjero en realidad estás pagando su valor en la moneda origen del ETF.
 
 Por ejemplo, el ETF VOO de Vanguard que sigue al índice S&P 500 cotiza en la bolsa de Estados Unidos. Tú puedes comprarlo desde un broker mexicano, en pesos mexicanos, pero tu **exposición real está en dólares** porque hay una conversión de moneda.
 
@@ -128,7 +128,7 @@ Simplificando a extremos, si un ETF está compuesto por 10 acciones diferentes y
 
 Pero puede que cuando quieras comprar ese ETF con tu broker este te lo venda a $11 pesos. El precio de mercado es más alto que el valor teórico. Es decir, te sale más caro comprar un título del ETF que las acciones individuales que componen ese mismo ETF.
 
-No tienes que calcular el <abbr title="Net Asset Value">NAV</abbr> manualmente para tomar decisiones; la compañía que maneja el ETF lo incluye. 
+No tienes que calcular el <abbr title="Net Asset Value">NAV</abbr> manualmente para tomar decisiones; la compañía que maneja el ETF lo incluye.
 
 Por ejemplo, puedes ver el [NAV de VOO en la página de Vanguard](https://investor.vanguard.com/etf/profile/performance/voo):
 

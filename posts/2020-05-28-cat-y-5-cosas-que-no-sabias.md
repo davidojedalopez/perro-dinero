@@ -3,7 +3,7 @@ title: "Costo Anual Total (CAT)— 5 cosas que no sabías de él 🐈"
 description: "El Costo Anual Total (CAT) es un indicador para que nosotros, los consumidores, usemos como herramienta para determinar qué crédito nos conviene más sin complicarnos mucho la vida."
 published: true
 published_at: 2020-05-28
-cover_path: /img/posts/covers/cat.png
+cover_path: img/posts/covers/cat.png
 cover_alt: "Nina y yo, David, abrazados frente a mi pastel de cumpleaños número 28."
 tags: ['mexico', 'creditos', 'deudas']
 ---
@@ -19,7 +19,7 @@ tags: ['mexico', 'creditos', 'deudas']
 
 Es muy complejo hacer comparaciones equivalentes de tarjetas de crédito o créditos personales.
 
-Si solo comparas la tasa de interés, estás comparando 🍐 con 🍎. Hay muchos otros factores que debes considerar para hacer una mejor comparación: 
+Si solo comparas la tasa de interés, estás comparando 🍐 con 🍎. Hay muchos otros factores que debes considerar para hacer una mejor comparación:
 
 - 💰Comisión de apertura o estudio
 
@@ -45,13 +45,13 @@ Pequeño paréntesis: Hoy es mi cumpleaños 🥳🎂
 
 El **C**osto **A**nual **T**otal (**CAT**) es un indicador para que nosotros, los consumidores, **usemos como herramienta** para determinar qué crédito nos **conviene más** sin complicarnos mucho la vida.
 
-Está representado en porcentaje, y es lo que **terminarías** pagando cuando recibes un crédito. Esto incluye todas las comisiones, seguros e intereses que no te mencionan al principio. 
+Está representado en porcentaje, y es lo que **terminarías** pagando cuando recibes un crédito. Esto incluye todas las comisiones, seguros e intereses que no te mencionan al principio.
 
 **Entre más bajo, mejor.**
 
-Pero ojo, dije **terminarías** pagando. No necesariamente pagarás ese porcentaje, sino que más bien es un tope, un límite superior. 
+Pero ojo, dije **terminarías** pagando. No necesariamente pagarás ese porcentaje, sino que más bien es un tope, un límite superior.
 
-Entonces, en teoría, si tienes varias opciones de tarjetas de crédito y quieres elegir la mejor, debería bastar con investigar el CAT y elegir la que tenga el % más bajo. 
+Entonces, en teoría, si tienes varias opciones de tarjetas de crédito y quieres elegir la mejor, debería bastar con investigar el CAT y elegir la que tenga el % más bajo.
 
 Pero ojalá todo fuera así de fácil. **No lo es**. Así que aquí te van **las cinco cosas que debes saber sobre el CAT**:
 
@@ -71,17 +71,17 @@ A lo largo de este post haré referencias a créditos personales y a tarjetas de
 
 ¿Cómo? ¿Los comerciales que dicen CAT 50% informativo me están mintiendo? No te mienten, pero ese % de CAT es **promedio**.
 
-Resulta que el CAT real de un crédito se calcula para cada quien dependiendo de factores como: 
+Resulta que el CAT real de un crédito se calcula para cada quien dependiendo de factores como:
 
 - 👀 El plazo del crédito
 
 - 👀 Tu historial crediticio
 
-- 👀 Intereses adicionales por falta de pago 
+- 👀 Intereses adicionales por falta de pago
 
-Y no es un valor fijo, sino que **va cambiando a lo largo de la vida del crédito**. 
+Y no es un valor fijo, sino que **va cambiando a lo largo de la vida del crédito**.
 
-La forma más fácil de comprobarlo es investigando el CAT de tu tarjeta de crédito en la página de tu banco y luego compararlo con el CAT real de tu crédito. 
+La forma más fácil de comprobarlo es investigando el CAT de tu tarjeta de crédito en la página de tu banco y luego compararlo con el CAT real de tu crédito.
 
 Pero, ¿cómo sabes cuál es tu CAT? Puedes calcularlo, o 👇
 
@@ -89,7 +89,7 @@ Pero, ¿cómo sabes cuál es tu CAT? Puedes calcularlo, o 👇
 
 Tu banco o la institución que te da un crédito puede y debe calcular tu CAT si se lo pides.
 
-Conocer el CAT real de una tarjeta de crédito es más sencillo. Vamos haciendo el ejemplo con una de mis tarjetas. 
+Conocer el CAT real de una tarjeta de crédito es más sencillo. Vamos haciendo el ejemplo con una de mis tarjetas.
 
 Para obtener el CAT de mi tarjeta de crédito [entré a la página de BBVA y ubiqué mi tarjeta](https://www.bbva.mx/personas/productos/tarjetas-de-credito/afinidad-unam.html). El banco está obligado a mostrar el CAT para cada una de sus tarjetas (más sobre esto en otro punto). Aquí está el de mi tarjeta en particular:
 
@@ -113,9 +113,9 @@ Esas suposiciones quizás no van contigo, lo que nos lleva al tercer punto 👇
 
 ## Si eres totalero, el CAT vale madre
 
-Totalero es que pagues toda la deuda de tu tarjeta de crédito cada mes. **No pagas intereses. ¡Bien ahí!** 👊🏼 Es justo como se deben usar las tarjetas de crédito. 
+Totalero es que pagues toda la deuda de tu tarjeta de crédito cada mes. **No pagas intereses. ¡Bien ahí!** 👊🏼 Es justo como se deben usar las tarjetas de crédito.
 
-¿Por qué no importa el CAT cuando eres totalero? Porque la tasa de **interés es irrelevante** pues **nunca pagas intereses**. Y los intereses son parte del cálculo del CAT. 
+¿Por qué no importa el CAT cuando eres totalero? Porque la tasa de **interés es irrelevante** pues **nunca pagas intereses**. Y los intereses son parte del cálculo del CAT.
 
 En este caso te conviene revisar otras cosas a la hora de decidirte por una tarjeta de crédito. Tales como:
 
@@ -165,19 +165,19 @@ Le damos calcular y nos muestra el CAT de este crédito que acabamos de armar:
 
 Los detalles incluyen el monto total a pagar y la cantidad de intereses y/o cargos adicionales.
 
-Algo que me costaba entender es, **¿cómo se relaciona ese 41.3% con mi crédito?** ¿Lo puedo multiplicar por algo y que me diga algo útil? 
+Algo que me costaba entender es, **¿cómo se relaciona ese 41.3% con mi crédito?** ¿Lo puedo multiplicar por algo y que me diga algo útil?
 
-**El CAT se calcula diferente para tarjetas de crédito y para otros créditos como hipotecas y carros.** 
+**El CAT se calcula diferente para tarjetas de crédito y para otros créditos como hipotecas y carros.**
 
-Como vimos en el punto 2, el CAT estaba directamente relacionado con la línea de crédito de mi tarjeta. Pero también vimos que el cálculo del CAT para una tarjeta de crédito hace suposiciones que no aplican a otro tipo de créditos. 
+Como vimos en el punto 2, el CAT estaba directamente relacionado con la línea de crédito de mi tarjeta. Pero también vimos que el cálculo del CAT para una tarjeta de crédito hace suposiciones que no aplican a otro tipo de créditos.
 
-Es más fácil relacionar el CAT en tarjetas de crédito, pues es justo el porcentaje extra que pagarías siguiendo los supuestos. 
+Es más fácil relacionar el CAT en tarjetas de crédito, pues es justo el porcentaje extra que pagarías siguiendo los supuestos.
 
 En otro tipo de crédito no hay una relación tan directa, ya que no es una tasa de interés. Lo que **sí hace sentido es utilizar ese porcentaje para comparar con otros créditos personales** porque sí engloba los factores que he mencionado; como seguros y comisiones.
 
-## Los bancos están obligados a mostrar el CAT 
+## Los bancos están obligados a mostrar el CAT
 
-Todos los productos financieros deben especificar el CAT promedio. **Es por ley**, no hay de otra. 
+Todos los productos financieros deben especificar el CAT promedio. **Es por ley**, no hay de otra.
 
 Por eso ves que todas las tarjetas de crédito están acompañadas del CAT y por qué lo anuncian al final de un comercial.
 
@@ -193,7 +193,7 @@ Listo, ahí están 5 cosas que quizás no sabías sobre el CAT. Y aquí te va un
 
 - 💡 CAT 0% informativo se usa para promociones de **meses sin intereses**; no pagas nada extra.
 
-Espero que con este post te haya quedado más claro qué es el CAT, por qué existe, y cómo lo puedes usar para tu beneficio. Fue un post interesante de escribir porque yo no sabía que era el CAT hasta que empecé a investigar. 
+Espero que con este post te haya quedado más claro qué es el CAT, por qué existe, y cómo lo puedes usar para tu beneficio. Fue un post interesante de escribir porque yo no sabía que era el CAT hasta que empecé a investigar.
 
 Te dejo de nuevo los links de Banxico para los cálculos del CAT:
 

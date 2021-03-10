@@ -3,7 +3,7 @@ title: "Muerte por mil suscripciones"
 description: "El modelo de negocio por suscripción es una bendición y maldición al mismo tiempo. Evita la muerte por mil suscripciones y ahorra dinero con estos consejos."
 published: true
 published_at: 2020-07-16
-cover_path: /img/posts/covers/suscripciones.png
+cover_path: img/posts/covers/suscripciones.png
 cover_alt: "Nina, de pequeña, acostada en el piso del departamento, enseñando su panza rosa."
 tags: ['ahorro', 'presupuestos']
 ---
@@ -47,7 +47,7 @@ El problema de fondo es que ahora **demasiadas cosas se manejan por suscripción
 
 ¿Te ha pasado que se te olvida cancelar una suscripción y dices, “al siguiente mes la cancelo”? Llega el siguiente mes y bolas, se te olvido de nuevo. Peor aún cuando te pasa con las suscripciones anuales— más dinero tirado a la basura.
 
-O incluso te puede pasar que veas el cargo de una suscripción que ya ni usas y digas, “me da más hueva hablar para cancelar que seguir pagando los $50 pesos al mes”. 
+O incluso te puede pasar que veas el cargo de una suscripción que ya ni usas y digas, “me da más hueva hablar para cancelar que seguir pagando los $50 pesos al mes”.
 
 Ambos casos se basan en un prejuicio emocional llamado **status quo** (me recuerda a High School Musical) 🎤
 
@@ -61,7 +61,7 @@ El primer paso para **evitar** la muerte por mil suscripciones es ser consciente
 
 Una forma rápida de conocer los servicios que estás pagando es revisar los estados de cuenta de tus tarjetas de crédito. Dale una barrida a todos los gastos de un mes completo y te saltarán la mayoría de las suscripciones que tienes.
 
-También puedes revisar cada app que tienes instalada y recordar si pagas una mensualidad por ellas. 
+También puedes revisar cada app que tienes instalada y recordar si pagas una mensualidad por ellas.
 
 ## ¿Qué suscripciones tienes?
 
@@ -81,11 +81,11 @@ Ya que revistaste tus estados de cuenta o tus apps instaladas puedes armar una l
 
 Ahora que tienes una lista muy completa de tus suscripciones es importante que **determines cuáles sí son valiosas para ti** y para tu situación actual.
 
-Quizás pagaste por más almacenamiento en la nube una vez que tenías que subir un archivo muy grande y luego dejaste la suscripción activa y se te olvidó. 
+Quizás pagaste por más almacenamiento en la nube una vez que tenías que subir un archivo muy grande y luego dejaste la suscripción activa y se te olvidó.
 
 O tienes una suscripción mensual al gym pero te diste cuenta de que ya no seguirás yendo. Dato curioso sobre este tipo de suscripciones: [los gimnasios tienen que reclutar alrededor de 20 veces su capacidad máxima para ser rentables](https://thehustle.co/gym-membership-cost). Y si solo un 5% de las personas que están actualmente suscritas van a la misma hora, ya no tendrás espacio para hacer nada 😅
 
-De vuelta al tema… aquí es cuando cancelas las que ya no usas o que están muy caras para lo que te están dando. 
+De vuelta al tema… aquí es cuando cancelas las que ya no usas o que están muy caras para lo que te están dando.
 
 Ya puedes cancelar muchos servicios desde su app, **sin interactuar con otra persona** (bendita tecnología). Hay otros en los que sí tendrás que llamar para cancelar 😕. Para los que todavía tienes que hacer una llamada, chinguen a su madre.
 
@@ -95,13 +95,13 @@ Agregar tus suscripciones a tu presupuesto es una forma de **controlar y monitor
 
 Yo tengo todas mis suscripciones en mi presupuesto, cada una de ellas con su propia categoría. Y lo que hago es pagar la anualidad, pero tratarlas como si fueran mensualidad. Es decir, pago el año y cada mes asigno un poco de dinero a esa suscripción para que cuando llegue el siguiente año ya tenga la cantidad completa de nuevo.
 
-Si todavía no tienes un presupuesto, bueno, mejor empieza por ahí. [Yo uso y recomiendo YNAB (You Need A Budget)](/posts/conoce-ynab-y-crea-tu-presupuesto/), una app que te cambiará la forma en que ves el dinero y los presupuestos. 
+Si todavía no tienes un presupuesto, bueno, mejor empieza por ahí. [Yo uso y recomiendo YNAB (You Need A Budget)](/posts/conoce-ynab-y-crea-tu-presupuesto/), una app que te cambiará la forma en que ves el dinero y los presupuestos.
 
 ## Ahorra dinero en tus suscripciones
 
 Muchos servicios que se cobran por suscripción ofrecen una forma de pago anual. Es soltar un chingo de dinero de una, pero usualmente te ahorras uno o dos meses.
 
-Si estás seguro de que seguirás usando el servicio y te da mucho valor, no lo pienses dos veces, págalo anual. 
+Si estás seguro de que seguirás usando el servicio y te da mucho valor, no lo pienses dos veces, págalo anual.
 
 Con Amazon Prime te ahorras tres meses por pagarlo anual:
 

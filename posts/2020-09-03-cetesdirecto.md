@@ -4,7 +4,7 @@ titleKey: "cetesdirecto_opciones"
 description: "Todas las opciones de inversión de CETES directo explicadas con peras y manzanas."
 published: true
 published_at: 2020-09-03
-cover_path: /img/posts/covers/cetesdirecto.png
+cover_path: img/posts/covers/cetesdirecto.png
 cover_alt: "La Nina, como jefa, parada en las piedrotas de Tapalpa viendo hacía el horizonte"
 tags: ['inversiones', 'cetesdirecto', 'cetes', 'bonddia', 'enerfin']
 ---
@@ -48,7 +48,7 @@ Y para hacerlo más complicado, cada que entras a una opción te aparecen otras 
 
 ![Plazos de inversión para cetes en Cetesdirecto](/img/posts/plazos_de_inversion_para_cetes.png)
 
-¿Cuál es la diferencia entre cada una? ¿Cuál te conviene elegir? 
+¿Cuál es la diferencia entre cada una? ¿Cuál te conviene elegir?
 
 ## Resumen
 
@@ -90,7 +90,7 @@ Si quieres saber [más sobre CETES puedes hacerlo en este otro post que escribí
 
 También conocidos como Bonos de Desarrollo del Gobierno Federal con Tasa de Interés Fija o Bonos M, porque su clave de identificación empieza con M. Cuando compras estos bonos lo que estás haciendo es prestarle dinero al gobierno para que invierta en sus proyectos. Ellos en cambio te regresan un porcentaje en intereses al vencer el plazo del bono por hacerles el paro.
 
-#### Características 
+#### Características
 
 - 🔸 Bajo riesgo
 - 🔸 Valor nominal de $100 pesos
@@ -104,7 +104,7 @@ Encuentra información más detallada en la [descripción técnica de bonos M](h
 ### BONDESD
 
 > Deuda con tasa de interés **variable**. Paga intereses cada 28 días, y es cuando se re-calcula la tasa. Se subastan a plazos de 3, 5 y 7 años.
- 
+
 También son bonos de Desarrollo del Gobierno Federal, pero su tasa de interés es variable. Busqué el porqué de la "D" en el nombre, pero no encontré nada relevante 😶. Las primeras letras de su clave de identificación son "LD"; deberían llamarse BONDESL más bien 🙃
 
 #### Características
@@ -112,7 +112,7 @@ También son bonos de Desarrollo del Gobierno Federal, pero su tasa de interés 
 - 🔸 Bajo riesgo
 - 🔸 Valor nominal de $100 pesos
 - 🔸 Paga intereses cada 28 días
-- 🔸 Plazos en múltiplos de 28 días 
+- 🔸 Plazos en múltiplos de 28 días
 - 🔸 Regresa el valor nominal al vencimiento
 - 🔸 Tasa de interés variable. Se re-calcula con cada pago de interés
 
@@ -133,7 +133,7 @@ Bonos de Desarrollo del Gobierno Federal denominados en Unidades de Inversión (
 - 🔸 Paga intereses cada 6 meses en función de tasa de interés fija
 
 Encuentra información más detallada en la [descripción técnica de UDIBONOS](https://www.banxico.org.mx/mercados/d/%7B52319AD4-4B78-6F95-E313-7AC67498B728%7D.pdf) de Banxico.
-  
+
 ## Fondos de inversión
 
 Los **fondos de inversión son de renta variable** y por lo tanto el riesgo es más alto. Las opciones de fondos de inversión que ofrece Cetesdirecto son BONDDIA y ENERFIN.
@@ -167,13 +167,13 @@ Los intereses los obtienes al vender tus títulos; si el precio de venta es más
 
 ## ¿En dónde invertir?
 
-Ahora sí, ¿en dónde te conviene invertir? Hay muchas opciones y cada una con múltiples plazos, es fácil sentirse abrumado y no saber cuál elegir.  
+Ahora sí, ¿en dónde te conviene invertir? Hay muchas opciones y cada una con múltiples plazos, es fácil sentirse abrumado y no saber cuál elegir.
 
 ### En dónde NO invertir
 
 Vamos haciéndolo más fácil y primero voy a eliminar las opciones en las que **yo no invertiría**. Yo no invertiría en BONDESD, UDIBONOS ni ENERFIN.
 
-❌ En **BONDESD** porque el plazo es de 5 años y la tasa varía cada mes. No me gustaría amarrarme tanto tiempo con algo que cambia tan seguido. 
+❌ En **BONDESD** porque el plazo es de 5 años y la tasa varía cada mes. No me gustaría amarrarme tanto tiempo con algo que cambia tan seguido.
 
 ❌ En **UDIBONOS** porque los rendimientos son mediocres y los plazos disponibles muy largos. Antes que UDIBONOS mejor invertiría en CETES; riesgo bastante similar con mejores rendimientos y plazos más flexibles.
 
@@ -193,7 +193,7 @@ Cetesdirecto tiene una [calculadora muy práctica para que puedas proyectar tus 
 
 ***
 
-Espero que con esto te haya aclarado todas las diferentes opciones y plazos de inversión que existen en Cetesdirecto. 
+Espero que con esto te haya aclarado todas las diferentes opciones y plazos de inversión que existen en Cetesdirecto.
 
 El hecho de que yo no invierta en algunas de estas opciones no quiere decir que nunca te convenga hacerlo. **Dependerá mucho de tu portafolio, tu perfil de riesgo y la etapa de vida en que te encuentres.** Para mí no hacen sentido todavía, y algunas quizá nunca lo hagan.
 

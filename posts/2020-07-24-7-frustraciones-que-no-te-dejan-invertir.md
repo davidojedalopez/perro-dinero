@@ -3,7 +3,7 @@ title: "7 frustraciones que no te dejan invertir"
 description: "Te comparto las frustraciones por las que pasé al querer invertir por primera vez con la esperanza de que no tengas que pasar por ellas también."
 published: true
 published_at: 2020-07-24
-cover_path: /img/posts/covers/7_frustraciones.png
+cover_path: img/posts/covers/7_frustraciones.png
 cover_alt: "Nina con su gorrito de cumpleaños viendo ansiosamente su pastel en forma de hueso."
 tags: ['inversiones']
 ---
@@ -23,9 +23,9 @@ En noviembre del 2019 **yo no sabía nada de inversiones**. No tenía nada inver
 
 En diciembre comencé a ver videos en YouTube y a leer libros sobre finanzas personales y el **27 de diciembre del 2019 hice mi primera inversión**.
 
-Desde ese momento aprender sobre inversiones, deudas, presupuestos, hábitos y todo lo relacionado con finanzas personales se convirtió en mi obsesión. 
+Desde ese momento aprender sobre inversiones, deudas, presupuestos, hábitos y todo lo relacionado con finanzas personales se convirtió en mi obsesión.
 
-**Así nació este blog.** 
+**Así nació este blog.**
 
 Ahora te voy a compartir **7 frustraciones por las que pasé** al querer invertir por primera vez con la esperanza de que no tengas que pasar por ellas también.
 
@@ -35,13 +35,13 @@ Ahora te voy a compartir **7 frustraciones por las que pasé** al querer inverti
 
 **Es normal**. Nadie empieza sabiendo las cosas, se aprenden al vuelo, con dedicación, esfuerzo y tiempo. Yo tampoco sabía por dónde empezar, y era lo que más me frustraba.
 
-¿Qué es lo que más me detenía? **La sobrecarga de información**. Tienes tanta información disponible que en muchas ocasiones es justo lo que te detiene a actuar. Lees un libro, ves tres videos de YouTube, escuchas recomendaciones de amigos y familiares y terminas con un chingo de ideas contradictorias que no te dan opción más que no hacer nada. 
+¿Qué es lo que más me detenía? **La sobrecarga de información**. Tienes tanta información disponible que en muchas ocasiones es justo lo que te detiene a actuar. Lees un libro, ves tres videos de YouTube, escuchas recomendaciones de amigos y familiares y terminas con un chingo de ideas contradictorias que no te dan opción más que no hacer nada.
 
 La mente siempre busca **seguridad**, y entrar a un mundo en el que no entiendes nada y hay tantas opiniones diferentes no es algo seguro precisamente.
 
 ### ¿Qué haces?
 
-> Si eres mexicano, ve a [CETES directo](http://cetesdirecto.com/), abre una cuenta e invierte $100 pesos en CETES de 28 días YA. 
+> Si eres mexicano, ve a [CETES directo](http://cetesdirecto.com/), abre una cuenta e invierte $100 pesos en CETES de 28 días YA.
 
 Si me estás leyendo de otra parte del mundo, el gobierno de tu país seguramente tiene una forma de invertir en bonos o deuda gubernamental. En EUA la página se llama [Treasury Direct](https://www.treasurydirect.gov/).
 
@@ -53,17 +53,17 @@ Con esto empezarás a mover la bola de nieve, y solo se hará más grande con el
 
 Yo tampoco 🤣 No necesitas mucho dinero para empezar a invertir. Claro, hay fondos de inversión que te pedirán un mínimo de $100,000 pesos para empezar. Pero hay que ir un paso a la vez.
 
-Mi primera inversión fue de $5,700 pesos, pero **puedes empezar desde $100 pesos**, como lo dije arriba. 
+Mi primera inversión fue de $5,700 pesos, pero **puedes empezar desde $100 pesos**, como lo dije arriba.
 
 ### ¿Qué haces?
 
-> Si abriste la cuenta en CETES directo, domicilia tus $100 pesos al mes. 
+> Si abriste la cuenta en CETES directo, domicilia tus $100 pesos al mes.
 
 Ni siquiera te darás cuenta de que te hace falta ese dinero, y cuando menos lo pienses ya tendrás una buena lana invertida 👇
 
 ![Gráfica de interés compuesto](/img/posts/interes_compuesto.png)
 
-No te preocupes por la cantidad con la que empiezas, pero **empieza**. 
+No te preocupes por la cantidad con la que empiezas, pero **empieza**.
 
 ## Tienes muchas deudas
 
@@ -119,7 +119,7 @@ Siempre puedes empezar con inversiones de bajo riesgo e incrementarlo conforme a
 
 ## No es un buen momento
 
-Con esa mentalidad nunca empezarás a invertir. 
+Con esa mentalidad nunca empezarás a invertir.
 
 Los mercados bajan y suben sin previo aviso. Muchos juegan a predecir esos momentos, pero es un juego en que tú, como inversor independiente, tienes las de perder.
 
@@ -133,7 +133,7 @@ Es similar al ejemplo de invertir $1,000 pesos por miedo a perder el dinero, per
 
 ## No puedes esperar al largo plazo
 
-Las inversiones suelen ser más redituables conforme más tiempo pasa porque es cuando el **interés compuesto** hace su magia. Si tu horizonte de inversión es menor a dos años, no esperes muchos rendimientos de tus inversiones. 
+Las inversiones suelen ser más redituables conforme más tiempo pasa porque es cuando el **interés compuesto** hace su magia. Si tu horizonte de inversión es menor a dos años, no esperes muchos rendimientos de tus inversiones.
 
 ### ¿Qué haces?
 

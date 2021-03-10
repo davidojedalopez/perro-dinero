@@ -3,7 +3,7 @@ title: "La única forma sostenible de ahorrar más"
 description: "¿Has pensado que la mejor forma de ahorrar es en realidad ganando más?"
 published: true
 published_at: 2020-07-30
-cover_path: /img/posts/covers/forma_de_ahorrar.png
+cover_path: img/posts/covers/forma_de_ahorrar.png
 cover_alt: "Nina acostada sobre su espalda jugando con un pato de plástico amarillo"
 tags: ['ahorro', 'presupuestos']
 ---
@@ -17,7 +17,7 @@ tags: ['ahorro', 'presupuestos']
 
 </details>
 
-Una respuesta común a cómo ahorrar más es: dejando de comprar café en la calle. 
+Una respuesta común a cómo ahorrar más es: dejando de comprar café en la calle.
 
 Es cierto que los **gastos hormiga** pueden representar un **problema si no los controlas**, pero privarse de un buen café no va con mi estilo de vida.
 
@@ -53,7 +53,7 @@ Pero **llegará un punto en que ya no puedes recortar**, un punto en que recorta
 
 ### Recortar gastos no te hará feliz
 
-A final de cuentas, lo que la mayoría queremos en esta vida es **ser feliz**. Disfrutar a nuestra familia, amigos, mascotas y por qué no, disfrutar el dinero por el que hemos trabajado. 
+A final de cuentas, lo que la mayoría queremos en esta vida es **ser feliz**. Disfrutar a nuestra familia, amigos, mascotas y por qué no, disfrutar el dinero por el que hemos trabajado.
 
 Cuando recortas gastos muchas veces te estás **privando de esas pequeñas cosas que aportan a tu felicidad**. Si a ti te mama el café, lo disfrutas, es parte de ti, y de pronto te dicen que tienes que gastar menos en él, de seguro te encabronas.
 
@@ -77,7 +77,7 @@ También es una buena decisión cuando tu cuenta de banco está sufriendo los ch
 
 **Yo lo viví personalmente**. Hace no muchos años yo gastaba estúpidamente en la peda; salía de fiesta con mis compas dos a tres veces por semana y todo ese dinero ya no lo podía usar para otras cosas que en realidad disfruto, como viajar o jugar videojuegos. No me arrepiento, pero lo pude haber manejado mejor.
 
-En esa situación en particular la mejor decisión que pude haber tomado era **recortar el presupuesto** de la peda. No dejar de tomar, porque me mama, pero dejar de caer en los excesos. 
+En esa situación en particular la mejor decisión que pude haber tomado era **recortar el presupuesto** de la peda. No dejar de tomar, porque me mama, pero dejar de caer en los excesos.
 
 Si lo quieres ver como una regla, yo tomaría las palabras de **Ramit Sethi**, autor del libro **I Will Teach You to Be Rich**:
 
