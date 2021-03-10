@@ -1,0 +1,9 @@
+{
+  "tags": [
+    "micro_essays",
+    "micro ensayos",
+    "atomic_essays",
+    "ensayos atómicos"
+  ],
+  "layout": "layouts/micro_essay.njk"
+}

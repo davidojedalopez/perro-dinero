@@ -18,7 +18,7 @@
   [plugins.inputs]
 
     # either "warn" or "error"
-    on404 = "error" 
+    on404 = "error"
 
     # change this key to a new one any time you need to restart from scratch
     cacheKey = "1607561165625"
@@ -36,11 +36,11 @@
   package = "@algolia/netlify-plugin-crawler"
 
 [[plugins]]
-  package = "netlify-plugin-subfont"  
+  package = "netlify-plugin-subfont"
 
 [[plugins]]
   package = "netlify-plugin-a11y"
-  
+
 [[redirects]]
   from = "/feed"
   to = "/feed.xml"
@@ -65,3 +65,13 @@
   from = "/blog/bienvenido"
   to = "/posts/bienvenido/"
   status = 200
+
+[[redirects]]
+  from = "/microensayos/*"
+  to = "/ensayosatomicos/:splat/"
+  status = 301
+
+[[redirects]]
+  from = "/microensayos"
+  to = "/ensayosatomicos/"
+  status = 301
