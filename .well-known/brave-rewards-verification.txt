@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: perrodinero.blog
+Token: 132f4abc764e5f7ebcf40352dc08e2d7f21f5f4aedacc19b6d6ffab3944ab8d3

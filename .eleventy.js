@@ -96,6 +96,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('humans.txt')
   eleventyConfig.addPassthroughCopy('manifest.json')
+  eleventyConfig.addPassthroughCopy('.well-known')
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
