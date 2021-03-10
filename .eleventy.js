@@ -5,8 +5,30 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const readingTime = require('eleventy-plugin-reading-time');
+const Image = require('@11ty/eleventy-img');
 
 Settings.defaultLocale = 'es-MX';
+
+async function imageShortCode(src, alt, sizes) {
+  const metadata = await Image(src, {
+    widths: [640, 960, 1200, 1800, 2400],
+    formats: ['jpeg', 'webp'],
+    urlPath: "/img/",
+    outputDir: "./_site/img"
+  });
+
+  const imageAttributes = {
+    alt,
+    sizes,
+    loading: 'lazy',
+    decoding: 'async',
+  }
+
+  return Image.generateHTML(metadata, imageAttributes, {
+    whitespaceMode: 'inline'
+  })
+}
+
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -21,7 +43,7 @@ module.exports = function(eleventyConfig) {
     if(dateObj instanceof String) {
       dateObj = new Date(dateObj);
     }
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLLL yyyy");  
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLLL yyyy");
   });
 
   eleventyConfig.addFilter("toISOString", dateObj => {
@@ -99,7 +121,7 @@ module.exports = function(eleventyConfig) {
     ghostMode: false
   });
 
-  
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortCode);
 
   return {
     templateFormats: [

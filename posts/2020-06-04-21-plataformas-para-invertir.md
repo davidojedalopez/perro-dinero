@@ -19,7 +19,10 @@ tags: ['inversiones', 'plataformas']
 
 De seguro te gustaría invertir, pero no sabes **dónde, cómo, cuándo o cuánto** invertir. **En este post te ayudaré a responder el dónde.**
 
-![Perro sorprendido](/img/posts/perro_sorprendido.gif)
+<video autoplay loop muted playsinline>
+  <source src="/img/posts/perro_sorprendido.webm" type="video/webm">
+  <source src="/img/posts/perro_sorprendido.mp4" type="video/mp4">
+</video>
 
 Te daré opciones de plataformas de inversión, y comentaré un poco más sobre aquellas que uso o he usado; dejaré una ⭐️ en estas últimas.
 
@@ -29,19 +32,19 @@ Esto no es un análisis a fondo de cada una de las plataformas. Más bien quiero
 
 Dividiré las plataformas de la siguiente forma:
 
-- 💰 Renta fija  
-- 💰 Renta variable  
-- 💰 Fondeo colectivo de préstamos  
-- 💰 Fondeo colectivo inmobiliario  
-- 💰 Fondeo colectivo de capital  
-- 💰 Paneles solares  
+- 💰 Renta fija
+- 💰 Renta variable
+- 💰 Fondeo colectivo de préstamos
+- 💰 Fondeo colectivo inmobiliario
+- 💰 Fondeo colectivo de capital
+- 💰 Paneles solares
 - 💰 Criptomonedas
 
 ## Renta fija
 
 En la renta fija **conoces los intereses** que te van a pagar **desde un principio**. La entidad que emite la deuda garantiza la devolución de tu dinero invertido **más** un porcentaje de rentabilidad. Esto es, suponiendo que no vendemos el instrumento antes de un tiempo previamente definido 😶.
 
-Pero esto no quiere decir que no hay riesgo; **toda inversión tiene un riesgo**. En este caso el riesgo es que el emisor no logre cumplir lo prometido. 
+Pero esto no quiere decir que no hay riesgo; **toda inversión tiene un riesgo**. En este caso el riesgo es que el emisor no logre cumplir lo prometido.
 
 En **general**, este tipo de inversiones son de **bajo riesgo**, por lo que los rendimientos no son los mejores.
 
@@ -57,23 +60,23 @@ Por ser una inversión tan segura, las tasas de **rendimiento** son **de 5-7%**.
 
 Al 4 de junio del 2020, las tasas están así 👇
 
-![Rendimiento de los CETES a junio del 2020](/img/posts/rendimiento_cetes.png)
+{% image "img/posts/rendimiento_cetes.png", "Rendimiento de los CETES a junio del 2020" %}
 
 Puedes encontrar muchos instrumentos diferentes dentro de la plataforma dependiendo de qué tan líquida necesitas que sea tu inversión, o si buscas solamente una protección contra la inflación.
 
-Yo uso cetesdirecto para mi **fondo de emergencias**. Tengo mi dinero específicamente en **Bonddia** porque tiene liquidez diaria. 
+Yo uso cetesdirecto para mi **fondo de emergencias**. Tengo mi dinero específicamente en **Bonddia** porque tiene liquidez diaria.
 
 ### [Kubo Financiero](https://www.kubofinanciero.com/Kubo/Portal/index.xhtml)
 
-Aquí puedes pedir préstamos personales o hacer inversiones. Están regulados por la **Comisión Nacional Bancaria y de Valores** (CNBV) y tienen más de siete años operando. 
+Aquí puedes pedir préstamos personales o hacer inversiones. Están regulados por la **Comisión Nacional Bancaria y de Valores** (CNBV) y tienen más de siete años operando.
 
 Puedes comenzar a invertir desde $100 pesos.
 
-Una peculiaridad interesante de Kubo Financiero es que puedes crear **grupos de inversión para obtener mejores rendimientos**. 
+Una peculiaridad interesante de Kubo Financiero es que puedes crear **grupos de inversión para obtener mejores rendimientos**.
 
 Se juntan varias personas, entran en un grupo, cada quien aporta lo que puede a la inversión y los rendimientos y saldos de las cuentas son confidenciales para cada uno. Todos se benefician de una mejor tasa de rendimiento, y a cada quien le toca el dinero que le corresponde.
 
-Los [rendimientos los puedes analizar aquí](https://www.kubofinanciero.com/Kubo/Portal/ley-transparencia/transparencia-kubo-plazo-tasas.xhtml). 
+Los [rendimientos los puedes analizar aquí](https://www.kubofinanciero.com/Kubo/Portal/ley-transparencia/transparencia-kubo-plazo-tasas.xhtml).
 
 Estos son del 14 de abril del 2020:
 
@@ -89,7 +92,7 @@ Es muy similar a Kubo Financiero, desde la protección de inversión hasta las t
 
 ## Renta variable
 
-A diferencia de la renta fija, en la renta variable los **rendimientos son inciertos**. Nadie te asegura que te devolverán el capital invertido, ni que tendrás rentabilidad. Y eso justo por eso que la renta variable ofrece una rentabilidad más atractiva. 
+A diferencia de la renta fija, en la renta variable los **rendimientos son inciertos**. Nadie te asegura que te devolverán el capital invertido, ni que tendrás rentabilidad. Y eso justo por eso que la renta variable ofrece una rentabilidad más atractiva.
 
 Estás pagando por el riesgo; mayor riesgo, mayor rendimiento.
 
@@ -107,7 +110,7 @@ Puedes [usar mi link](https://vrlps.co/faB1igj/cp) para registrarte y nos regala
 
 ### [Kuspit](https://www.kuspit.com/)
 
-Trabaja sobre la misma línea que GBM; intermediario para compra y venta de acciones, fondos, fibras (conocidas como REITs en Estados Unidos), etc. Puedes iniciar con ellos **desde $100 pesos** y solo necesitas: 
+Trabaja sobre la misma línea que GBM; intermediario para compra y venta de acciones, fondos, fibras (conocidas como REITs en Estados Unidos), etc. Puedes iniciar con ellos **desde $100 pesos** y solo necesitas:
 
 - 🗂 Ser mayor de 18 años
 
@@ -121,7 +124,7 @@ Trabaja sobre la misma línea que GBM; intermediario para compra y venta de acci
 
 Este tipo de plataformas **conectan personas que necesitan un préstamo con personas que tienen el dinero para prestarlo**.
 
-Puedes verlo como formar un pequeño banco entre muchas personas para hacer un préstamo grande a alguien, usualmente a una menor tasa de interés que un banco. 
+Puedes verlo como formar un pequeño banco entre muchas personas para hacer un préstamo grande a alguien, usualmente a una menor tasa de interés que un banco.
 
 Los prestadores ganan intereses sobre su parte del dinero prestado, y los que reciben el préstamo siguen con su vida pagando menos intereses que con un banco 🏦, **win-win**.
 
@@ -155,13 +158,13 @@ Ya que estas plataformas funcionan básicamente de la misma forma, **solo agrega
 
 Lendera tiene un enfoque un poco diferente. Tomado de su página:
 
-> Somos una plataforma de Fondeo Colectivo que busca conectar inversionistas con empresas que quieren adquirir maquinaria y equipo. Los fondeadores compran un bien y se lo rentan a una PYME por un determinado plazo, así su dinero genera rendimientos. Las empresas solicitantes adquieren el o los activos y son más competitivos en el mercado. 
+> Somos una plataforma de Fondeo Colectivo que busca conectar inversionistas con empresas que quieren adquirir maquinaria y equipo. Los fondeadores compran un bien y se lo rentan a una PYME por un determinado plazo, así su dinero genera rendimientos. Las empresas solicitantes adquieren el o los activos y son más competitivos en el mercado.
 
 No encontré una sección de estadísticas para revisar los rendimientos 🧐
 
 ## Fondeo colectivo inmobiliario
 
-Este tipo de plataformas **conectan a negocios de construcción con inversionistas individuales**, como tú y yo. 
+Este tipo de plataformas **conectan a negocios de construcción con inversionistas individuales**, como tú y yo.
 
 Siguen la línea de fondeo colectivo, por lo que buscan llegar a cierto capital con la ayuda de préstamos individuales. Una vez alcanzado el objetivo, comienza el proyecto y tú recibes rendimientos cada cierto tiempo.
 
@@ -221,7 +224,7 @@ Invierte desde $10,000 pesos. Rendimientos 👇
 
 ### Paneles solares: [RedGirasol](https://www.redgirasol.com/)
 
-RedGirasol también funciona como financiamiento colectivo, y el principal objetivo es fondear paneles solares para personas y empresas ☀️🌻 
+RedGirasol también funciona como financiamiento colectivo, y el principal objetivo es fondear paneles solares para personas y empresas ☀️🌻
 
 Si inviertes en esta plataforma, puedes quitarte un pequeño peso de tu consciencia pues estás fomentando el uso de energía renovable 😁
 
@@ -229,16 +232,16 @@ Si inviertes en esta plataforma, puedes quitarte un pequeño peso de tu conscien
 
 ### Criptomonedas: [Bitso](https://bitso.com/)
 
-Las polémicas criptomonedas. Ni siquiera entraré mucho en el tema, y hablar de rendimientos no hace sentido pues en lo que termino esta oración ya cambió en 50%. 
+Las polémicas criptomonedas. Ni siquiera entraré mucho en el tema, y hablar de rendimientos no hace sentido pues en lo que termino esta oración ya cambió en 50%.
 
 Te dejo la opción de Bitso por si quieres adentrarte en ese mundo 😬. Te permite manejar 10 tipos de criptomonedas, no solo Bitcoin,  y puedes empezar desde $100 pesos.
 
 ## ¡Pum! 💥
 
-Aquí tienes ya 21 opciones de inversión, y en la mayoría de ellas puedes empezar con $100 o $1,000 pesos. 
+Aquí tienes ya 21 opciones de inversión, y en la mayoría de ellas puedes empezar con $100 o $1,000 pesos.
 
 Así que no se vale decir que no hay lugares en dónde invertir con poco dinero, porque hay muchos 😉.
 
-Si tu problema no es saber dónde invertir, sino cómo invertir, espera con ansias el post de la siguiente semana. Hablaré sobre mi perfil de inversión y de cómo puedes formar el tuyo. 
+Si tu problema no es saber dónde invertir, sino cómo invertir, espera con ansias el post de la siguiente semana. Hablaré sobre mi perfil de inversión y de cómo puedes formar el tuyo.
 
 **¡Muchas gracias por leerme! ❤️**
