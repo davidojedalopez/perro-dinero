@@ -6,15 +6,22 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const readingTime = require('eleventy-plugin-reading-time');
 const Image = require('@11ty/eleventy-img');
+const path = require("path");
 
 Settings.defaultLocale = 'es-MX';
 
 async function imageShortCode(src, alt, sizes = "(min-width: 30em) 50vw, 100vw") {
   const metadata = await Image(src, {
-    widths: [640, 960, 1200, 1800, 2400],
+    widths: [200, 640],
     formats: ['jpeg', 'webp'],
+    filenameFormat: ((id, src, width, format, options) => {
+      const extension = path.extname(src);
+      const name = path.basename(src, extension)
+      return `${name}-${width}w.${format}`;
+    }),
     urlPath: "/img/",
-    outputDir: "./_site/img"
+    outputDir: "./_site/img",
+    useCache: true
   });
 
   const imageAttributes = {
