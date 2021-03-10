@@ -105,11 +105,11 @@ En el archivo podrás ver todas las ventas de acciones que hiciste durante el a�
 
 Te mostraré mi constancia para que tengas una mejor idea de cómo se ve. Solo vendí dos acciones durante el 2020; una con pérdidas y otra con ganancias:
 
-![Constancia fiscal del 2020 para Perro Dinero](/img/posts/pdf_constancia_ganancia_perdida_fiscal.png)
+{% image "img/posts/pdf_constancia_ganancia_perdida_fiscal.png", "Constancia fiscal del 2020 para Perro Dinero" %}
 
 Mi **rendimiento neto del 2020 fue de $259.66 pesos**, por lo que solo tendré que pagar $26 pesos de impuestos 😁. Y así se ve cuando metes los datos en el SAT al momento de hacer tu declaración (al SAT no le gustan los decimales):
 
-![Declaración de ganancias y pérdidas por enajenación de acciones en la página del SAT](/img/posts/enagenacion_acciones_sat.png)
+{% image "img/posts/enajenacion_acciones_sat.png", "Declaración de ganancias y pérdidas por enajenación de acciones en la página del SAT" %}
 
 Un pequeño detalle sobre la constancia fiscal. Al menos en GBM+, el archivo está disponible a más tardar el 15 de febrero del año siguiente del que quieres declarar impuestos; no tendrás acceso a él antes de esa fecha.
 
