@@ -119,18 +119,18 @@ article .table-of-contents a {
   @apply rounded-none bg-transparent dark:bg-transparent;
 }
 
-article .table-of-contents li {
-  display: block;
-  counter-increment: list-item;
-}
-
 article .table-of-contents ol {
-  counter-reset: list-item;
+  counter-reset: list-item-toc 0;
   @apply pl-4;
 }
 
-article .table-of-contents li:before {
-  content: counters(list-item,'.') '. ';
+article .table-of-contents li::before {
+  content: counters(list-item-toc,'.') '. ';
+  counter-increment: list-item-toc;
+}
+
+article .table-of-contents li {
+  display: block;
 }
 /* End TOC styles */
 

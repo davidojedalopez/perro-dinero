@@ -12,7 +12,7 @@ Settings.defaultLocale = 'es-MX';
 
 async function imageShortCode(src, alt, sizes = "(min-width: 30em) 50vw, 100vw") {
   const metadata = await Image(src, {
-    widths: [200, 600, 640],
+    widths: [200, 400, 600, 640],
     formats: ['jpeg', 'webp'],
     filenameFormat: ((id, src, width, format, options) => {
       const extension = path.extname(src);
