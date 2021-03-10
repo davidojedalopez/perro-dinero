@@ -9,7 +9,7 @@ const Image = require('@11ty/eleventy-img');
 
 Settings.defaultLocale = 'es-MX';
 
-async function imageShortCode(src, alt, sizes) {
+async function imageShortCode(src, alt, sizes = "(min-width: 30em) 50vw, 100vw") {
   const metadata = await Image(src, {
     widths: [640, 960, 1200, 1800, 2400],
     formats: ['jpeg', 'webp'],

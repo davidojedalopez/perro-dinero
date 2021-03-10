@@ -97,7 +97,7 @@ Haré el ejemplo con GBM+ porque es el broker que uso. Para descargar tu constan
 - 💰 Selecciona el año que necesitas
 - 💰 Descarga el archivo PDF
 
-![Descargar constancia informativa de ganancias y pérdidas fiscales por enajenación de acciones](/img/posts/gbm_descargar_constancia_ganancia_perdida_fiscal.png)
+{% image "img/posts/gbm_descargar_constancia_ganancia_perdida_fiscal.png", "Descargar constancia informativa de ganancias y pérdidas fiscales por enajenación de acciones" %}
 
 En el archivo podrás ver todas las ventas de acciones que hiciste durante el año, y te dirá los rendimientos netos que tuviste.
 
