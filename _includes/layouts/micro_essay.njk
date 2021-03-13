@@ -14,7 +14,25 @@ permalink: "ensayosatomicos/{{ page.fileSlug }}/"
     <div class="pb-4">
         <p class="mb-4" data-id="share">Puedes <strong>compartir este micro ensayo como una imagen</strong> desde el celular dejando presionada la foto y seleccionando la opción de compartir 📲 </p>
         <img class="mx-auto" src="{{ share_image_url | url }}" alt="Micro ensayo en formato imagen" width="150">
-        {% include "calls_to_action/newsletter.njk" %}
+    </div>
+
+    <div class="flex flex-col mt-16 p-4">
+      <p class="opacity-75">Otros posts que pueden interesarte 💭</p>
+
+      {% set post = collections.posts | reverse | first %}
+      {% if post %}
+        {% include "postitem_no_description.njk" %}
+      {% endif %}
+
+      {% set post = collections.posts | getPreviousCollectionItem(post) %}
+      {% if post %}
+        {% include "postitem_no_description.njk" %}
+      {% endif %}
+
+    </div>
+
+    <div class="mb-8">
+      {% include "calls_to_action/newsletter.njk" %}
     </div>
 
 
