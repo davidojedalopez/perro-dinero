@@ -4,13 +4,6 @@ permalink: "posts/{{ page.fileSlug }}/"
 ---
 
 <article class="py-8">
-  {% if cover_path %}
-    <div class="mb-4 gradient-background rounded mx-auto w-full max-w-screen-sm h-auto">
-      <div class="relative -z-1">
-        {% image cover_path | url, cover_alt %}
-      </div>
-    </div>
-  {% endif %}
   <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
   <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Lectura de {{ content | readingTime }}</span>
   {% if last_updated_at %}
@@ -20,6 +13,14 @@ permalink: "posts/{{ page.fileSlug }}/"
   <div class="mt-4">
     {% include "tweet_share_button.njk" %}
   </div>
+
+  {% if cover_path %}
+    <div class="mt-4 gradient-background rounded mx-auto w-full max-w-screen-sm h-auto">
+      <div class="relative -z-1">
+        {% image cover_path | url, cover_alt %}
+      </div>
+    </div>
+  {% endif %}
 
   <div class="mt-8">
     {{ content | safe }}
