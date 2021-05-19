@@ -49,7 +49,7 @@ Por otro lado, algo no fungible (Non-Fungible) **no se puede reemplazar por otra
 
 Hay infinidad de pinturas de la Mona Lisa en el mundo, pero solamente hay una Mona Lisa original. Es única.
 
-**¿Qué tiene que ver todo esto con poder vender o comprar tweets?** Para que algo sea fungible tiene que ser único. Tiene que tener algo que lo haga auténtico y no permita ser reemplazado por otra cosa. ¿Cómo logras que algo digital sea único?
+**¿Qué tiene que ver todo esto con poder vender o comprar tweets?** Para que algo sea no fungible tiene que ser único. Tiene que tener algo que lo haga auténtico y no permita ser reemplazado por otra cosa. ¿Cómo logras que algo digital sea único?
 
 ## Tokenización
 
