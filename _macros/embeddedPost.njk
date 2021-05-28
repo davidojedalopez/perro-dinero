@@ -1,8 +1,8 @@
 {% macro embedPost(title) %}
-    {% for tempPost in collections.postsAndBooks %} 
-        {% if tempPost.data.titleKey === title %}
-            {% set post = tempPost %}            
-            <div class="text-center">{% include 'embedded_post.njk' %}</div>            
+    {% for tempPost in collections.postsAndBooks %}
+        {% if tempPost.data.title_key === title %}
+            {% set post = tempPost %}
+            <div class="text-center">{% include 'embedded_post.njk' %}</div>
         {% endif %}
     {% endfor %}
 {% endmacro %}

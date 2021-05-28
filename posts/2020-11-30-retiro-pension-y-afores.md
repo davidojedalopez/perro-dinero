@@ -1,6 +1,6 @@
 ---
 title: "Retiro, pensión y Afores: una mini guía"
-titleKey: "afore_guia"
+title_key: "afore_guia"
 description: "Lo mínimo que tienes que saber para tener un buen retiro. Aprende sobre los diferentes regímenes de retiro, Afores y SIEFOREs."
 published_at: 2020-11-30
 last_updated_at: 2020-12-12

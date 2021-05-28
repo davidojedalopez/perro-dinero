@@ -1,6 +1,6 @@
 ---
 title: "Tu fondo de emergencia"
-titleKey: "fondo_emergencia"
+title_key: "fondo_emergencia"
 description: "Contar con un fondo de emergencia es una señal de buena salud financiera. Aquí te explico dónde tengo el mío."
 published_at: 2020-10-20
 cover_path: img/posts/covers/nina_fondo_emergencia.JPG

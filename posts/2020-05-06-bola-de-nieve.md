@@ -1,6 +1,6 @@
 ---
 title: "El método más efectivo para salir de tus deudas. Pista: ⛄️"
-titleKey: "bola_de_nieve"
+title_key: "bola_de_nieve"
 description: "El método bola de nieve consiste en pagar tus deudas más pequeñas primero para obtener victorias rápidas y mantenerte motivado a seguir abonando."
 published: true
 published_at: 2020-05-06

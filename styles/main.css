@@ -146,10 +146,6 @@ article td {
   @apply border p-3 text-center;
 }
 
-.gradient-background {
-  background: linear-gradient(0deg, rgba(88,100,116,1) 0%, transparent 30%);
-}
-
 /* Algolia search */
 .aa-hit--title {
   @apply text-2xl !important;

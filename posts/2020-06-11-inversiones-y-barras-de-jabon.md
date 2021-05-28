@@ -1,5 +1,6 @@
 ---
 title: "Inversiones y barras de jabón 🧼"
+title_key: "inversiones_pasivas_y_activas"
 description: "¿En qué se parece una inversión a una barra de jabón? Entre más la manejes más pequeña se hace. Sin albur 🙃"
 published: true
 published_at: 2020-06-11

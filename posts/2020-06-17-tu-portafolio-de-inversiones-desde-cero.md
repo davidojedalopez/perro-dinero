@@ -1,5 +1,6 @@
 ---
 title: "Tu portafolio de inversiones desde cero"
+title_key: "swensen"
 description: "Diseña tu portafolio basado en las ideas de David Swensen— enfocado a capital, diversificado y sin pagar tantos impuestos."
 published: true
 published_at: 2020-06-17
