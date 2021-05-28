@@ -70,7 +70,7 @@ Este portafolio se vería así, con el paso de los años:
 
 {% image "img/posts/lazy_portfolio_con_ajuste.png", "Gráfica de activos del lazy portfolio a diferentes edades" %}
 
-Require un poco más de mantenimiento, pero el riesgo es menor al primer portafolio sin ajuste. Y como el riesgo es menor, los rendimientos también lo serán.
+Requiere un poco más de mantenimiento, pero el riesgo es menor al primer portafolio sin ajuste. Y como el riesgo es menor, los rendimientos también lo serán.
 
 ## Modelo de Swensen
 
