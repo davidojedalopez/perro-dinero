@@ -195,6 +195,6 @@ Donde haga más sentido para tu situación. Aquí te dejo unas ideas para que pu
 
 ***
 
-La decisión que tomes al final dependerá mucho de tu **personalidad** y de los **riesgos** que estés dispuesto a tomar. Si todavía necesitas ayuda para decidirte, [te puedo apoyar personalmente sin costo alguno](https://calendly.com/perrodinero/exploracion).
+La decisión que tomes al final dependerá mucho de tu **personalidad** y de los **riesgos** que estés dispuesto a tomar. Si todavía necesitas ayuda para decidirte, [aviéntame un DM en Twitter](https://twitter.com/PerroDinero).
 
 **Muchas gracias por leerme 💙**
