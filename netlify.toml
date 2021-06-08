@@ -36,9 +36,6 @@
   package = "@algolia/netlify-plugin-crawler"
 
 [[plugins]]
-  package = "netlify-plugin-subfont"
-
-[[plugins]]
   package = "netlify-plugin-a11y"
 
 [[redirects]]
