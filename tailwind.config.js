@@ -1,8 +1,8 @@
 module.exports = {
   darkMode: 'class',
   purge: ['./_site/**/*.html', './**/*.njk'],
-  theme: {    
-    extend: {      
+  theme: {
+    extend: {
       colors: {
         primary: '#000000',
         accent: {
@@ -50,14 +50,14 @@ module.exports = {
         }
       },
       animation: {
-        scaleUp: 'scaleUp 1s ease-in-out infinite'        
+        scaleUp: 'scaleUp 1s ease-in-out infinite'
       }
-    } 
+    }
   },
   plugins: [],
   variants: {
     extend: {
       animation: ['hover']
     }
-  }  
+  }
 }

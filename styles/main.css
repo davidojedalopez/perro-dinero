@@ -180,7 +180,7 @@ input[type="search"] {
 }
 
 .dark-mode-toggle {
-  @apply relative w-12;
+  @apply absolute right-8 top-8 w-12;
 }
 .dark-mode-toggle .well {
   @apply cursor-pointer block bg-foreground-dark dark:bg-primary-dark h-4 rounded-full;
