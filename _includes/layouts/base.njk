@@ -164,12 +164,12 @@
 
     <script src="{{ '/assets/main.js' | url }}"></script>
 
-    {# {% if page.url !== '/app/' %} #}
+    {% if page.url !== '/app/' %}
       <script data-name="BMC-Widget" data-cfasync="true" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
        data-id="perrodinero" data-description="¡Apóyame para seguir creando contenido de calidad!" data-message=""
         data-color="#F3CA3E" data-position="Right"
        data-x_margin="18" data-y_margin="18" defer></script>
-    {# {% endif %} #}
+    {% endif %}
 
   </body>
 </html>
