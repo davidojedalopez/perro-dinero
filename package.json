@@ -50,6 +50,7 @@
     "postcss": "^8.2.1",
     "postcss-loader": "^4.1.0",
     "rimraf": "^3.0.2",
+    "rough-notation": "^0.5.1",
     "tailwindcss": "^2.0.2",
     "webpack": "^5.11.0",
     "webpack-cli": "^3.3.12",

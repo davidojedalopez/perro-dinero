@@ -77,7 +77,7 @@ La principal ventaja del tipo de orden en línea es que **se ejecuta rápido**, 
 
 Este tipo de orden es muy útil para cuando haces tu primera inversión en ETF. ¿Por qué?
 
-Porque al empezar, lo mejor es **reducir fricción**. Y entre menos opciones tengas que elegir, más fácil comenzarás a invertir.
+Porque al empezar, lo mejor es <span class="annotated">**reducir fricción**</span>. Y entre menos opciones tengas que elegir, más fácil comenzarás a invertir.
 
 Ya que agarras confianza, y/o inviertes comprando muchos títulos a la vez, puedes usar otros tipos de órdenes, como la siguiente 👇.
 
