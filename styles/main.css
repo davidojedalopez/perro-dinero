@@ -199,3 +199,16 @@ input[type="search"] {
   @apply -ml-5;
   left: 100%;
 }
+@screen sm {
+  .full-width {
+    margin-left: calc(50% - 40vw);
+    margin-right: calc(50% - 40vw);
+  }
+}
+.no-hyphens {
+  hyphens: none;
+}
+.pricing-plan {
+  height: 500px;
+  width: 450px;
+}
