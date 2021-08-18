@@ -10,5 +10,5 @@ Disallow: /404.html
 Disallow: /sitemap.xml
 
 User-agent: *
-Disallow:
+Disallow: /_macros/*/
 Sitemap: https://perrodinero.blog/sitemap.xml
