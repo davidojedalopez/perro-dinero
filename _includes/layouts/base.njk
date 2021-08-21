@@ -120,56 +120,76 @@
       {{ content | safe }}
     </main>
 
-    <footer class="flex justify-around items-center p-4 bg-accent-100 dark:bg-foreground-dark absolute inset-x-0">
-      <a href="/" class="no-underline">
-        <span class="sr-only">Enlace a la página principal</span>
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-28 sm:w-48 fill-current dark:text-primary-dark" viewBox="0 0 609.26 113.24" width="150"><defs><style>.cls-1{fill:#408244;}</style></defs><g  data-name="Capa 2"><g  data-name="Capa 1"><path d="M28.6,25.18a14.73,14.73,0,0,0-12.82,6.9l-.58-5.74H0v86.9H16.42V84.06a14.6,14.6,0,0,0,12.3,6.21q10,0,15.11-7.89T48.9,59.69V54.88q-.1-15.09-5.19-22.39T28.6,25.18Zm3.94,34.51q0,8.72-1.88,12.82T23.9,76.63q-5.28,0-7.48-4.06V43.16a7.8,7.8,0,0,1,7.37-4.23c3.17,0,5.42,1.25,6.75,3.77s2,6.8,2,12.88Z"/><path d="M82.49,25.18q-12.12,0-18.62,8.06t-6.5,22.92v5q0,14,7.08,21.59t19.73,7.54a30.1,30.1,0,0,0,12.47-2.58,21.31,21.31,0,0,0,8.76-6.76L99,71a18.47,18.47,0,0,1-13.75,5.62c-3.79,0-6.59-1.07-8.41-3.23S74,67.84,73.73,63.17h32.66V55.12q-.11-14.82-6.09-22.38T82.49,25.18Zm7.78,26.57H73.85c.23-4.53,1-7.81,2.29-9.87s3.37-3.07,6.24-3.07,4.87,1,6,2.9,1.78,4.78,1.86,8.53Z"/><path d="M131.57,33.12l-.46-6.78H115.62V89.11h16.47V47.63q2.39-5.93,9.11-5.92l5.45.46.18-16.24a11.57,11.57,0,0,0-4.53-.75Q135.46,25.18,131.57,33.12Z"/><path d="M171,33.12l-.46-6.78H155V89.11h16.47V47.63q2.39-5.93,9.11-5.92l5.45.46.18-16.24a11.57,11.57,0,0,0-4.53-.75Q174.85,25.18,171,33.12Z"/><path d="M215.81,25.18q-11.9,0-18.63,8.12t-6.73,22.39v4q0,14.4,6.7,22.48t18.77,8.1q12,0,18.68-8.07t6.67-22.39v-4q0-14.39-6.73-22.51T215.81,25.18Zm9,37.41q-.63,14.05-8.93,14-9,0-9-16.82V55.69q0-8.58,2.35-12.73c1.57-2.77,3.74-4.15,6.53-4.15A7.38,7.38,0,0,1,222.53,43q2.39,4.14,2.38,12.73Z"/><path d="M309.15,31.44q-4.81-6.26-12.07-6.26-10,0-15.2,7.6t-5.22,23v4.75q.12,14.63,5.31,22.17t15,7.54q8,0,13-7.54l.75,6.38h14.91V0H309.15Zm0,40.78a8,8,0,0,1-7.37,4.36c-3.13,0-5.36-1.23-6.67-3.69s-2-6.78-2-13V55.58q0-9.34,2.08-13a7.07,7.07,0,0,1,6.62-3.65,7.82,7.82,0,0,1,7.31,4.64Z"/><rect x="338.5" y="26.34" width="16.48" height="62.77"/><path d="M346.68,1.39a8.77,8.77,0,0,0-6.5,2.44,8.48,8.48,0,0,0-2.43,6.26,8.67,8.67,0,0,0,2.4,6.27,9.81,9.81,0,0,0,13.06,0,8.67,8.67,0,0,0,2.4-6.27,8.48,8.48,0,0,0-2.43-6.26A8.77,8.77,0,0,0,346.68,1.39Z"/><path d="M397.73,25.18a17.41,17.41,0,0,0-14.56,7.36l-.46-6.2H367.28V89.11h16.47V43.51c1.66-3.06,4-4.58,7-4.58q4,0,5.6,2.4c1.06,1.61,1.6,4.19,1.6,7.75v40h16.47V47.86Q413.92,25.18,397.73,25.18Z"/><path d="M449.83,25.18q-12.13,0-18.63,8.06t-6.49,22.92v5q0,14,7.07,21.59t19.73,7.54A30.1,30.1,0,0,0,464,87.69a21.31,21.31,0,0,0,8.76-6.76L466.3,71a18.46,18.46,0,0,1-13.75,5.62c-3.79,0-6.59-1.07-8.41-3.23s-2.84-5.56-3.07-10.23h32.66V55.12q-.12-14.82-6.09-22.38T449.83,25.18Zm7.77,26.57H441.18c.23-4.53,1-7.81,2.29-9.87s3.38-3.07,6.24-3.07,4.87,1,6,2.9,1.78,4.78,1.86,8.53Z"/><path d="M498.9,33.12l-.46-6.78H483V89.11h16.48V47.63q2.37-5.93,9.11-5.92l5.45.46.17-16.24a11.55,11.55,0,0,0-4.52-.75Q502.79,25.18,498.9,33.12Z"/><path d="M543.75,25.18q-11.89,0-18.62,8.12T518.4,55.69v4q0,14.4,6.7,22.48t18.76,8.1q12,0,18.68-8.07t6.68-22.39v-4q0-14.39-6.73-22.51T543.75,25.18Zm9,37.41q-.64,14.05-8.94,14-9,0-9-16.82V55.69q0-8.58,2.35-12.73c1.57-2.77,3.74-4.15,6.53-4.15A7.41,7.41,0,0,1,550.48,43q2.37,4.14,2.38,12.73Z"/><rect class="fill-current dark:text-accent-dark-500" x="585.77" y="65.6" width="23.49" height="23.49"/></g></g></svg>
-      </a>
+    <footer class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 justify-around items-start sm:items-end p-4 bg-accent-100 dark:bg-foreground-dark absolute inset-x-0">
       <a href="/portafolio/" class="no-underline hover:animate-scaleUp">
-        <span class="text-2xl sm:text-4xl">📈</span>
+        <div class="flex sm:flex-col place-items-center space-x-2 sm:space-x-0">
+          <span class="text-xl xl:text-3xl">📈</span>
+          <p class="text-xl xl:text-2xl">Portafolio</p>
+        </div>
       </a>
       <a href="/posts/" class="no-underline hover:animate-scaleUp">
-        <span class="text-2xl sm:text-4xl">📝</span>
+        <div class="flex sm:flex-col place-items-center space-x-2 sm:space-x-0">
+          <span class="text-xl xl:text-3xl">📝</span>
+          <p class="text-xl xl:text-2xl">Posts</p>
+        </div>
       </a>
       <a href="https://perrodinero.substack.com/welcome" class="no-underline hover:animate-scaleUp">
-        <span class="text-2xl sm:text-4xl">📬</span>
+        <div class="flex sm:flex-col place-items-center space-x-2 sm:space-x-0">
+          <span class="text-xl xl:text-3xl">📬</span>
+          <p class="text-xl xl:text-2xl">Newsletter</p>
+        </div>
       </a>
       <a href="https://twitter.com/PerroDinero" class="no-underline hover:animate-scaleUp">
         <span class="sr-only">Enlace a cuenta de Perro Dinero en Twitter</span>
-        <span>
-          <svg class="fill-current text-twitter w-7 sm:w-10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45"	viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568			C480.224,136.96,497.728,118.496,512,97.248z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
-        </span>
+        <div class="flex sm:flex-col place-items-center space-x-2 sm:space-x-0">
+          <svg class="fill-current text-twitter w-6 xl:w-8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45"	viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g>	<g>		<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568			C480.224,136.96,497.728,118.496,512,97.248z"/>	</g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+          <p class="text-xl xl:text-2xl">Twitter</p>
+        </div>
+      </a>
+      <a href="https://www.reddit.com/r/MexicoFinanciero/" class="no-underline hover:animate-scaleUp">
+        <div class="flex sm:flex-col place-items-center space-x-2 sm:space-x-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 xl:w-8 fill-current text-reddit" viewBox="0 0 24 24"><path d="M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.329-1.015c-.189-.046-.381.063-.44.249l-1.654 5.207c-2.838.034-5.409.798-7.3 2.025-.474-.438-1.103-.712-1.799-.712-1.465 0-2.656 1.187-2.656 2.646 0 .97.533 1.811 1.317 2.271-.052.282-.086.567-.086.857 0 3.911 4.808 7.093 10.719 7.093s10.72-3.182 10.72-7.093c0-.274-.029-.544-.075-.81.832-.447 1.405-1.312 1.405-2.318zm-17.224 1.816c0-.868.71-1.575 1.582-1.575.872 0 1.581.707 1.581 1.575s-.709 1.574-1.581 1.574-1.582-.706-1.582-1.574zm9.061 4.669c-.797.793-2.048 1.179-3.824 1.179l-.013-.003-.013.003c-1.777 0-3.028-.386-3.824-1.179-.145-.144-.145-.379 0-.523.145-.145.381-.145.526 0 .65.647 1.729.961 3.298.961l.013.003.013-.003c1.569 0 2.648-.315 3.298-.962.145-.145.381-.144.526 0 .145.145.145.379 0 .524zm-.189-3.095c-.872 0-1.581-.706-1.581-1.574 0-.868.709-1.575 1.581-1.575s1.581.707 1.581 1.575-.709 1.574-1.581 1.574z"/></svg>
+          <p class="text-xl xl:text-2xl">Reddit</p>
+        </div>
+      </a>
+      <a href="https://t.me/perrodinero" class="no-underline hover:animate-scaleUp">
+        <div class="flex sm:flex-col place-items-center space-x-2 sm:space-x-0">
+          <svg class="w-6 xl:w-8" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" fill="#039be5" r="12"/><path d="m5.491 11.74 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z" fill="#fff"/></svg>        </span>
+          <p class="text-xl xl:text-2xl">Telegram</p>
+        </div>
+      </a>
+      <a href="{{ '/feed.xml' | url }}" class="no-underline hover:animate-scaleUp">
+        <div class="flex sm:flex-col place-items-center space-x-2 sm:space-x-0">
+          <svg class="fill-current text-yellow-500 w-5 xl:w-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Ícono de RSS que te lleva al archivo feed.xml</title><path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"/></svg>
+          <p class="text-xl xl:text-2xl">RSS</p>
+        </div>
       </a>
     </footer>
 
-    {% if page.url !== '/app/' %}
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.css" />
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
-      <script type="text/javascript">
-        algoliasearchNetlify({
-          appId: '0XVEQ8TLK3',
-          apiKey: 'fef279042309319fe04cbb7778b5e67f',
-          siteId: '484d9a9f-dc24-4d30-90c4-142ae40c60b7',
-          branch: 'master',
-          selector: 'div#search',
-          analytics: true,
-          hitsPerPage: 5,
-          placeholder: "Buscar en posts...",
-          openOnFocus: true,
-          poweredBy: true,
-          color: '#1D853B'
-        });
-      </script>
-    {% endif %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: '0XVEQ8TLK3',
+        apiKey: 'fef279042309319fe04cbb7778b5e67f',
+        siteId: '484d9a9f-dc24-4d30-90c4-142ae40c60b7',
+        branch: 'master',
+        selector: 'div#search',
+        analytics: true,
+        hitsPerPage: 5,
+        placeholder: "Buscar en posts...",
+        openOnFocus: true,
+        poweredBy: true,
+        color: '#1D853B'
+      });
+    </script>
 
     <script src="{{ '/assets/main.js' | url }}"></script>
 
-    {% if page.url !== '/app/' %}
-      <script data-name="BMC-Widget" data-cfasync="true" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-       data-id="perrodinero" data-description="¡Apóyame para seguir creando contenido de calidad!" data-message=""
-        data-color="#F3CA3E" data-position="Right"
-       data-x_margin="18" data-y_margin="18" defer></script>
-    {% endif %}
+    <script data-name="BMC-Widget" data-cfasync="true" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+      data-id="perrodinero" data-description="¡Apóyame para seguir creando contenido de calidad!" data-message=""
+      data-color="#F3CA3E" data-position="Right"
+      data-x_margin="18" data-y_margin="70" defer></script>
 
   </body>
 </html>
