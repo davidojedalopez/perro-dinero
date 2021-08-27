@@ -65,7 +65,7 @@ article blockquote p::after {
   /* content: " 💬" */
 }
 
-article details {
+article details:not(.faq) {
   @apply border-l-4;
   @apply border-b;
   @apply border-accent-500 dark:border-accent-dark-500;
@@ -100,7 +100,7 @@ article li > a {
 }
 
 /* TOC styles */
-article details {
+article details:not(.faq) {
   @apply dark:text-primary-dark;
   @apply w-full;
   @apply w-4/5;

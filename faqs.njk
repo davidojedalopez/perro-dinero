@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+title: "Preguntas frecuentes"
+permalink: preguntas-frecuentes/
+---
+
+{% set faqsList = collections.faqs %}
+{% set faqsListCount = collections.faqs | length %}
+
+<h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">Preguntas frecuentes</h1>
+
+<button data-id="faq-collapse" class="button--outline mt-4 text-sm">Abrir todas las preguntas</button>
+
+<section class="space-y-8 mt-8">
+    {% for faq in faqsList %}
+        <article id="{{ faq.data.id }}">
+            <details class="faq">
+                <summary class="mb-4">
+                    <h2 class="inline">{{ faq.data.question }}</h2>
+                </summary>
+                <div>
+                    {{ faq.templateContent | safe }}
+                </div>
+            </details>
+        </article>
+    {% endfor %}
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    const collapseButton = document.querySelector('[data-id="faq-collapse"]')
+    if(!collapseButton) {
+        return
+    }
+    collapseButton.addEventListener('click', () => {
+        const detailsElements = document.querySelectorAll('details.faq')
+        detailsElements.forEach(it => {
+            it.toggleAttribute('open')
+        })
+        const buttonText = detailsElements[0].hasAttribute('open') ?
+                'Colapsar todas las preguntas' : 'Abrir todas las preguntas'
+        collapseButton.innerText = buttonText
+    })
+})
+</script>
