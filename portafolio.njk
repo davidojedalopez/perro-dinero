@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: Portafolio de inversiones
 description: "Detalles sobre mi portafolio de inversiones."
-lastUpdated: 2021-04-26
+lastUpdated: 2021-08-27
 cover_path: img/perro_dinero.png
 ---
 
@@ -12,27 +12,17 @@ cover_path: img/perro_dinero.png
 
   <div class="mt-8">
     <p>
-      Mi portafolio está compuesto por ETFs de Vanguard y activos de renta fija en Cetesdirecto. Fuera de estas inversiones tengo:
+      Mi portafolio está compuesto principalmente por ETFs de Vanguard y activos de renta fija en Cetesdirecto y SuperTasas. Fuera de estas inversiones tengo:
     </p>
     <ul>
-        <li><p>🏦 Mi fondo de emergencia en deuda gubernamental (Bonddia)</p></li>
-        <li><p>🏦 Mi Afore con aportaciones voluntarias</p></li>
+        <li>🏦 2/3 de mi fondo de emergencia en deuda gubernamental (Bonddia)</li>
+        <li>🏦 1/3 de mi fondo de emergencia en mi cuenta de débito</li>
+        <li>🏦 Mi Afore con aportaciones voluntarias</li>
     </ul>
 
     <section>
-        <h2>Portafolio objetivo</h2>
-        <p>
-            Esta es la asignación de activos a la que quiero llegar y en la que quiero permanecer por muchos años.
-        </p>
-
-        <canvas data-id="target-portfolio" height="260"></canvas>
-    </section>
-
-    <section>
         <h2>Portafolio actual</h2>
-        <p>
-            Esta es la asignación de activos que tengo actualmente. Cada mes invierto más dinero y siempre lo hago con la finalidad de alcanzar la asignación anterior.
-        </p>
+        <p>Esta es la asignación de activos que tengo actualmente. Intento invertir más dinero cada mes; a veces hasta el 50% de mis ingresos, otras veces no me da para invertir.</p>
 
         <canvas data-id="current-portfolio" height="260"></canvas>
     </section>
@@ -41,8 +31,11 @@ cover_path: img/perro_dinero.png
         <h2>Sobre los activos</h2>
 
         <h3>Renta variable</h3>
-		<p>Todos los activos de renta variable de mi portafolio de inversiones son ETFs de Vanguard. Aquí una breve descripción de cada uno de ellos y cómo aportan al portafolio en general:</p>
+		<p>Casi todos los activos de renta variable de mi portafolio de inversiones son ETFs de Vanguard. Aquí una breve descripción de cada uno de ellos y cómo aportan al portafolio en general:</p>
 		<ul>
+            <li>
+				<p>📈 <a href="https://investor.vanguard.com/etf/profile/overview/vt"><strong>VT</strong></a>: invierte en el mercado global.</p>
+			</li>
 			<li>
 				<p>📈 <a href="https://investor.vanguard.com/etf/profile/overview/voo"><strong>VOO</strong></a>: invierte en las 500 compañías más grandes de Estados Unidos y es el principal generador de rendimientos del portafolio. Entre las principales posiciones o empresas están Apple, Amazon, Alphabet (Google), Facebook, Visa y Walmart.</p>
 			</li>
@@ -76,19 +69,27 @@ cover_path: img/perro_dinero.png
     </section>
 
     <section>
-        <h2>Siguientes pasos:</h2>
+        <h2>Ideas o inversiones descartadas</h2>
         <ul>
-            <li>⏳ Continuar inversiones de renta fija en SOFIPO (SuperTasas) para obtener beneficios fiscales</li>
-            <li>⏳ Aprender sobre valuaciones para invertir en empresas individuales que no tengo en ningún ETF</li>
-            <li>⏳ Investigar/calcular corelación entre VOO, VGT y VTH para ajustar porcentajes</li>
-            <li>⏳ Contratar un Plan Personal de Retiro (PPR) que permita invertir en el índice S&P 500</li>
+            <li>❌ Plan Personal de Retiro (PPR) que permita invertir en el índice S&P 500. Dedicí que no me convenía porque las comisiones eran muy altas (1.5% sobre el capital invertido) y el plan en general es poco flexible (multas por no aportar cada mes). El plan que investigué para esto fue el ACTI500 de Actinver.</li>
+            <li>❌ Analisis técnico y fundamental. Decidí no estudiar más de esto porque no quiero entrar con acciones individuales todavía. Quizá en un futuro.</li>
         </ul>
     </section>
+
+    <section>
+        <h2>Siguientes pasos:</h2>
+        <ul>
+            <li>⏳ Seguir comprando casi exclusivamente VT</li>
+            <li>⏳ Investigar/calcular corelación entre VOO, VGT y VTH para ajustar porcentajes</li>
+            <li>⏳ Dedicar una pequeña parte de mi ingreso en acciones individuales de compañías que uso y me gustan</li>
+        </ul>
+    </section>
+
 
 	<section>
         <h2>Dudas o sugerencias</h2>
         <p>
-            Mi portafolio <strong>no es perfecto</strong> ni tampoco está escrito en piedra. Así que te invito a dejar cualquier duda o sugerencia 🙌🏼
+            Mi portafolio <strong>no es perfecto</strong> ni tampoco está escrito en piedra. Cualquier duda o sugerencia, podemos <a href="https://twitter.com/PerroDinero">cotorrearla en Twitter</a> 🙌🏼
         </p>
     </section>
 
@@ -100,66 +101,14 @@ cover_path: img/perro_dinero.png
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script>
-  const ctxTarget = document.querySelector('[data-id="target-portfolio"]').getContext('2d');
-  const chartTarget = new Chart(ctxTarget, {
-      type: 'pie',
-      data: {
-          labels: ['VOO', 'VNQ', 'VEA', 'VWO', 'VGT', 'VHT', 'CETES', 'UDIBONOS', 'ALSEA', 'APPLE', 'BTC'],
-          datasets: [{
-              label: 'Activos',
-              data: [25, 19, 15, 12, 7, 7, 5, 5, 1, 1, 3],
-              backgroundColor: [
-                'rgba(255, 99, 132, 0.8)',
-                'rgba(54, 162, 235, 0.8)',
-                'rgba(255, 206, 86, 0.8)',
-                'rgba(75, 192, 192, 0.8)',
-                'rgba(153, 102, 255, 0.8)',
-                'rgba(255, 159, 64, 0.8)',
-                'rgba(255, 50, 15, 0.8)',
-                'rgba(240, 123, 114, 0.8)',
-                'rgba(123, 170, 247, 0.8)',
-                'rgb(41,115,27)',
-                'rgb(107,202,89)',
-              ],
-
-              borderColor: 'rgb(255,255,255)',
-              borderWidth: 1
-          }],
-      },
-      options: {
-            legend: {
-                position: 'bottom',
-                labels: {
-                    fontColor: '#1D853B',
-                    fontSize: 14,
-                    fontStyle: 'bold',
-                    padding: 20
-                },
-                align: 'center'
-            },
-            title: {
-                display: false,
-                fontSize: 36,
-                fontColor: '#1D853B',
-                fontStyle: 'bold',
-                text: 'Portafolio objetivo'
-            },
-            layout: {
-                padding: {
-                    top: 25
-                }
-            }
-        },
-  });
-
   const ctxCurrent = document.querySelector('[data-id="current-portfolio"]').getContext('2d');
   const chartCurrent = new Chart(ctxCurrent, {
       type: 'pie',
       data: {
-          labels: ['VOO', 'VNQ', 'VEA', 'VWO', 'VGT', 'VHT', 'CETES', 'UDIBONOS', 'ALSEA', 'APPLE', 'BTC'],
+          labels: ['VOO', 'VNQ', 'VEA', 'VWO', 'VGT', 'VHT', 'SuperTasas', 'UDIBONOS', 'ALSEA', 'APPLE', 'BTC', 'VT'],
           datasets: [{
               label: 'Activos',
-              data: [21.83, 14.96, 15.31, 9.15, 5.19, 6.74, 5.89, 1.52, 1, 7.06, 1.43],
+              data: [16.57, 11.82, 11.01, 8.75, 4.26, 5.26, 4.71, 5.01, 0.88, 7.06, 1.85, 21.31],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.8)',
                 'rgba(54, 162, 235, 0.8)',
@@ -172,6 +121,7 @@ cover_path: img/perro_dinero.png
                 'rgba(123, 170, 247, 0.8)',
                 'rgb(41,115,27)',
                 'rgb(107,202,89)',
+                'rgb(247, 180, 174)'
               ],
 
               borderColor: 'rgb(255,255,255)',
