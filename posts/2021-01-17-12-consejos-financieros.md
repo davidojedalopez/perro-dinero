@@ -17,7 +17,7 @@ newsletter_cta: true
 
 </details>
 
-{% from "_macros/embeddedPost.njk" import embedPost with context %}
+{% from "embeddedPost.njk" import embedPost with context %}
 
 En el primer post de este año 2021, quiero que lleves tus finanzas y paz mental hasta los cielos. Por eso te traigo **12 consejos** para que lo logres 💪
 
