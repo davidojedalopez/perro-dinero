@@ -2,7 +2,8 @@
 title: El monje que vendió su Ferrari
 author: Robin S. Sharma
 description: "6 lecciones prácticas que puedes sacar de este libro."
-cover_path: img/books/covers/el_monje_que_vendio_su_ferrari.jpg
+cover_path: img/books/covers/el_monje_que_vendio_su_ferrari.jpeg
+cover_alt: Portada del libro El monje que vendió su Ferrari
 published_at: 2020-12-10
 newsletter_cta: true
 ---

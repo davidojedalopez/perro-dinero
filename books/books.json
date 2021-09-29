@@ -1,7 +1,7 @@
 {
   "tags": [
     "books",
-    "libro"
+    "libros"
   ],
-  "layout": "layouts/book.njk" 
+  "layout": "layouts/book.njk"
 }

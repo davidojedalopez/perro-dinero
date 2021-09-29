@@ -37,7 +37,7 @@ async function imageShortCode(src, alt, sizes = "(min-width: 30em) 50vw, 100vw")
 }
 
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(readingTime);
@@ -47,21 +47,21 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    if(dateObj instanceof String) {
+    if (dateObj instanceof String) {
       dateObj = new Date(dateObj);
     }
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLLL yyyy");
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLLL yyyy");
   });
 
   eleventyConfig.addFilter("toISOString", dateObj => {
-    if(dateObj instanceof String) {
+    if (dateObj instanceof String) {
       dateObj = new Date(dateObj)
     }
     return dateObj.toISOString();
   });
 
   eleventyConfig.addFilter("getTime", dateObj => {
-    if(dateObj instanceof String) {
+    if (dateObj instanceof String) {
       dateObj = new Date(dateObj)
     }
     return dateObj.getTime();
@@ -69,16 +69,16 @@ module.exports = function(eleventyConfig) {
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
   });
 
   eleventyConfig.addFilter('slugDate', dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy/LL/dd');
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy/LL/dd');
   })
 
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", (array, n) => {
-    if( n < 0 ) {
+    if (n < 0) {
       return array.slice(n);
     }
 
@@ -86,7 +86,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Filter source file names using a glob
-  eleventyConfig.addCollection("postsAndBooks", function(collectionApi) {
+  eleventyConfig.addCollection("postsAndBooks", function (collectionApi) {
     // Also accepts an array of globs!
     return collectionApi.getFilteredByGlob(["posts/*.md", "books/*.md"]);
   });
@@ -107,7 +107,7 @@ module.exports = function(eleventyConfig) {
     permalink: true,
     permalinkClass: "direct-link",
     permalinkSymbol: "🔗"
-  }).use( require("markdown-it-toc-done-right"), {
+  }).use(require("markdown-it-toc-done-right"), {
     level: [1, 2, 3]
   }).disable('code');
   eleventyConfig.setLibrary("md", markdownLibrary);
@@ -115,7 +115,7 @@ module.exports = function(eleventyConfig) {
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
-      ready: function(err, browserSync) {
+      ready: function (err, browserSync) {
         // browserSync.addMiddleware("*", (req, res) => {
         //   const content_404 = fs.readFileSync('_site/404.html'));
         //   res.writeHead(404, { "ContentType": "text/html; charset=UTF-8" })
