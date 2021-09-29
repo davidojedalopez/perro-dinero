@@ -15,9 +15,10 @@ permalink: libros/
       <summary class="cursor-pointer">
         {{ date | capitalize }} ({{ posts | length }} posts)
       </summary>
-      {% for post in posts %}
+      {# asyncEach because, bugs. https://github.com/11ty/eleventy-img/issues/81 #}
+      {% asyncEach post in posts %}
         {% include "bookitem.njk" %}
-      {% endfor %}
-    </details>    
+      {% endeach %}
+    </details>
   {% endfor %}
 </section>
