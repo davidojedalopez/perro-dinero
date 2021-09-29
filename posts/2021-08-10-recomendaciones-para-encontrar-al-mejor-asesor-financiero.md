@@ -9,7 +9,7 @@ tags: ['asesores']
 newsletter_cta: true
 ---
 
-{% from "_macros/embeddedPost.njk" import embedPost with context %}
+{% from "embeddedPost.njk" import embedPost with context %}
 
 <details open>
   <summary>
