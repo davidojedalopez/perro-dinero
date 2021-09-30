@@ -85,10 +85,19 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, n);
   });
 
-  // Filter source file names using a glob
+  const now = Date.now()
+  const shouldBeLive = post => post.data.published_at <= now && !post.data.draft;
+
   eleventyConfig.addCollection("postsAndBooks", function (collectionApi) {
-    // Also accepts an array of globs!
-    return collectionApi.getFilteredByGlob(["posts/*.md", "books/*.md"]);
+    return collectionApi
+      .getFilteredByGlob(["posts/*.md", "books/*.md"])
+      .filter(shouldBeLive);
+  });
+
+  eleventyConfig.addCollection("atomic_essays", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob('atomic_essays/*.md')
+      .filter(shouldBeLive);
   });
 
   eleventyConfig.addPassthroughCopy("img");
