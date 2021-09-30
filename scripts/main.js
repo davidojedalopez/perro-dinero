@@ -14,7 +14,7 @@ function setAnnotations() {
     threshold: 1
   };
 
-  if(annotations.length <= 0) {
+  if (annotations.length <= 0) {
     return;
   }
 
@@ -28,13 +28,13 @@ function setAnnotations() {
             multiline: true,
             animationDuration: 1500
           }).show();
-        }, 1000)
+        }, 500)
         observer.unobserve(entry.target)
       }
     });
   }, options);
 
-  for(const annotation of annotations) {
+  for (const annotation of annotations) {
     observer.observe(annotation);
   }
 }
@@ -45,7 +45,7 @@ function setSubstackEmbed() {
     threshold: .75
   };
 
-  if(!embed) {
+  if (!embed) {
     return;
   }
 
@@ -72,7 +72,7 @@ function setSubstackEmbed() {
 
 function setDarkModeToggle() {
   const darkModeToggle = document.querySelector('#dark-mode-toggle');
-  if(!darkModeToggle) {
+  if (!darkModeToggle) {
     return;
   }
 
@@ -80,7 +80,7 @@ function setDarkModeToggle() {
   darkModeToggle.parentElement.classList.remove('hidden');
 
   darkModeToggle.addEventListener('click', (event) => {
-    if(document.documentElement.classList.contains('dark')) {
+    if (document.documentElement.classList.contains('dark')) {
       localStorage.setItem('dark-mode-enabled', 'false');
     } else {
       localStorage.setItem('dark-mode-enabled', 'true');

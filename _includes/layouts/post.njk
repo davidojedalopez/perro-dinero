@@ -31,34 +31,34 @@ permalink: "posts/{{ page.fileSlug }}/"
     </div>
   </div>
 
-  <div class="mt-4 flex space-x-4">
-    {% include "tweet_share_button.njk" %}
-  </div>
-
-  {% if newsletter_cta %}
-    <hr>
-    {% include "calls_to_action/newsletter.njk" %}
-  {% endif %}
-
-  {% if has_affiliate_links %}
-    <small class="opacity-50">Este post tiene enlaces de afiliado. Me dan una comisión si compras con mi enlace, pero a tí te cuesta lo mismo. Nunca recomiendo nada que no haya probado yo mismo.</small>
-  {% endif %}
-
-  <div class="flex flex-col mt-16 p-4">
-    <p class="opacity-75">Otros posts que pueden interesarte 💭</p>
-
-    {% set post = collections.posts | getPreviousCollectionItem(page) %}
-    {% if post %}
-        {% include "postitem_no_description.njk" %}
-    {% endif %}
-
-    {% set post = collections.posts | getNextCollectionItem(page) %}
-    {% if post %}
-        {% include "postitem_no_description.njk" %}
-    {% endif %}
-  </div>
-
 </article>
+
+<div class="mt-4 flex space-x-4">
+  {% include "tweet_share_button.njk" %}
+</div>
+
+{% if newsletter_cta %}
+  <hr>
+  {% include "calls_to_action/newsletter.njk" %}
+{% endif %}
+
+{% if has_affiliate_links %}
+  <small class="opacity-50">Este post tiene enlaces de afiliado. Me dan una comisión si compras con mi enlace, pero a tí te cuesta lo mismo. Nunca recomiendo nada que no haya probado yo mismo.</small>
+{% endif %}
+
+<div class="flex flex-col mt-16 p-4">
+  <p class="opacity-75">Otros posts que pueden interesarte 💭</p>
+
+  {% set post = collections.posts | getPreviousCollectionItem(page) %}
+  {% if post %}
+      {% include "postitem_no_description.njk" %}
+  {% endif %}
+
+  {% set post = collections.posts | getNextCollectionItem(page) %}
+  {% if post %}
+      {% include "postitem_no_description.njk" %}
+  {% endif %}
+</div>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
