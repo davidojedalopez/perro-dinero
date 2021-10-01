@@ -10,7 +10,7 @@ const path = require("path");
 
 Settings.defaultLocale = 'es-MX';
 
-async function imageShortCode(src, alt, sizes = "(min-width: 30em) 50vw, 100vw") {
+async function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', sizes = "(min-width: 30em) 50vw, 100vw") {
   const metadata = await Image(src, {
     widths: [200, 400, 600, 640],
     formats: ['jpeg', 'webp'],
@@ -31,9 +31,11 @@ async function imageShortCode(src, alt, sizes = "(min-width: 30em) 50vw, 100vw")
     decoding: 'async',
   }
 
-  return Image.generateHTML(metadata, imageAttributes, {
-    whitespaceMode: 'inline'
-  })
+  const html = Image.generateHTML(metadata, imageAttributes, { whitespaceMode: 'inline' })
+  const figureCaption = altShouldBeCaption ? alt : caption
+  return figureCaption ?
+    `<figure>${html}<figcaption>${figureCaption}</figcaption></figure>` :
+    html
 }
 
 
@@ -87,6 +89,18 @@ module.exports = function (eleventyConfig) {
 
   const now = Date.now()
   const shouldBeLive = post => post.data.published_at <= now && !post.data.draft;
+
+  eleventyConfig.addCollection("posts", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("posts/*.md")
+      .filter(shouldBeLive);
+  });
+
+  eleventyConfig.addCollection("books", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("books/*.md")
+      .filter(shouldBeLive);
+  });
 
   eleventyConfig.addCollection("postsAndBooks", function (collectionApi) {
     return collectionApi
