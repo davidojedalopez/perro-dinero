@@ -21,7 +21,7 @@ newsletter_cta: true
 
 Probablemente hayas escuchado hablar de **presupuestos** en términos de empresas o instituciones; cómo cuando pides un aumento y te dicen: “Ahorita no joven, ya no hay presupuesto para aumentos este año— en enero vemos”.
 
-![Meme "wey ya"](/img/posts/wey_ya_meme.png)
+{% image 'img/posts/wey_ya_meme.png', 'Meme "wey ya"' %}
 
 Eso significa que no tienen planeado gastar dinero en aumentos. Claro, suponiendo que eso es cierto y que no es porque no lo merezcas 🙃.
 
@@ -79,13 +79,11 @@ Antes de introducir YNAB, me gustaría que revisáramos las principales excusas 
 
 Ahora que quité las excusas y frustraciones del camino, ¿estás dispuesto a mejorar tus finanzas creando tu presupuesto? 👊🏼
 
-![Jack Nicholson asintiendo de forma creepy](/img/posts/nicholson_asintiendo.gif)
-
 La tecnología ya nos ofrece mejores opciones que Excel, y yo te voy a platicar de una opción que utilizo: se llama **YNAB**.
 
 ## ¿Qué es YNAB?
 
-![Logo de YNAB](/img/posts/ynab_logo.png)
+{% image 'img/posts/ynab_logo.png', 'Logo de YNAB' %}
 
 **YNAB** (You Need A Budget) es, en esencia, una aplicación para manejar tu presupuesto. En ella podrás registrar tus gastos, definir objetivos tanto de ahorro como de liquidación de deudas y ver reportes sobre tu dinero.  Pero ellos van más allá de ser solo una aplicación.
 
@@ -112,7 +110,7 @@ Usaré las imágenes de su página para cada una de las reglas, pues creo que es
 
 ### Dale una chamba a cada peso
 
-![Casco de ingeniero](/img/posts/ynab_1.png)
+{% image 'img/posts/ynab_1.png', 'Casco de ingeniero' %}
 
 Cada que llegue la quincena le asignarás un trabajo a cada peso de tu cuenta.  Lo ideal es **empezar por las necesidades básicas**: comida, servicios como luz, internet, gas, etc. En otras palabras, cosas que tienes que pagar a huevo 🥚
 
@@ -122,7 +120,7 @@ Esos pesos que ahora tienen una chamba serán tu plan a seguir. Lo siguiente es 
 
 ### Acepta tus gastos
 
-![Foco de luz incandescente](/img/posts/ynab_2.png)
+{% image 'img/posts/ynab_2.png', 'Foco de luz incandescente' %}
 
 Diciembre es un mes muy peculiar. Es el mes que más dinero gano (por el aguinaldo) y también es el mes en que más gasto (por los regalos y posadas) 🎅🏼
 
@@ -142,7 +140,7 @@ Ya no tendrás que usar todo tu aguinaldo para comprar los regalos de tu familia
 
 ### Aguanta los chingazos
 
-![Guante de box](/img/posts/ynab_3.png)
+{% image 'img/posts/ynab_3.png', 'Guante de box' %}
 
 Esta regla es la más importante para mí. Antes dije que un presupuesto es un plan, y los planes no siempre funcionan como uno espera.
 
@@ -160,7 +158,7 @@ Además, toma en cuenta que ese dinero que estás “moviendo” sigue donde mis
 
 ### Envejece tu dinero
 
-![Calendario](/img/posts/ynab_4.png)
+{% image 'img/posts/ynab_4.png', 'Calendario' %}
 
 Envejecer tu dinero significa **pagar las deudas del mes actual con el dinero del mes anterior**. Cuando tu dinero ha envejecido no tienes que esperar a que llegue la quincena para pagar tus deudas, pues tendrás dinero disponible para hacerlo.
 
