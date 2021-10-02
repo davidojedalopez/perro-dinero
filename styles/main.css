@@ -46,7 +46,7 @@ article video {
 }
 
 article blockquote {
-  @apply ml-4;
+  @apply mx-auto;
   @apply my-8;
   @apply p-4;
   @apply border-l-4;
