@@ -2,7 +2,8 @@
 title: Por qué Buy the Dip es una pésima estrategia de inversión
 author: Nick Maggiulli
 description: Invertir al largo plazo justo cuando el mercado está en crisis parece una buena idea para muchos pero, ¿lo es en realidad?
-published_at: 2021-10-04
+published_at: 2021-10-03
+draft: true
 original_published_at: 2021-09-21
 cover_path: img/posts/buy_the_dip/cover.jpg
 cover_alt: 'Nina y Alyx volteando hacia arriba, a la cámara.'
