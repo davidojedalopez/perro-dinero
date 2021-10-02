@@ -7,6 +7,7 @@ published_at: 2020-09-03
 cover_path: img/posts/covers/cetesdirecto.png
 cover_alt: "La Nina, como jefa, parada en las piedrotas de Tapalpa viendo hacía el horizonte"
 tags: ['inversiones', 'cetesdirecto', 'cetes', 'bonddia', 'enerfin']
+newsletter_cta: true
 ---
 
 <details open>

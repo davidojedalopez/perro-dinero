@@ -80,7 +80,7 @@ Los [rendimientos los puedes analizar aquí](https://www.kubofinanciero.com/Kubo
 
 Estos son del 14 de abril del 2020:
 
-![Rendimientos Kubo Financiero para rangos de $100 a $49,999 pesos.](/img/posts/rendimientos_kubo_financiero.png)
+{% image 'img/posts/rendimientos_kubo_financiero.png', 'Rendimientos Kubo Financiero para rangos de $100 a $49,999 pesos' %}
 
 El GAT real es el rendimiento después de descontar la inflación. Al final de la página de rendimientos viene más información acerca de estos valores, como el hecho de que son **calculados antes de impuestos** 🙃
 
@@ -134,25 +134,25 @@ Ya que estas plataformas funcionan básicamente de la misma forma, **solo agrega
 
 [Estadísticas de rendimientos](https://prestadero.com/stats_destinos.php) 📈
 
-![Rendimientos de Prestadero del 2012 al 2020](/img/posts/rendimientos_prestadero.png)
+{% image 'img/posts/rendimientos_prestadero.png', 'Rendimientos de Prestadero del 2012 al 2020' %}
 
 ### [YoTePresto](https://www.yotepresto.com/)
 
 [Estadísticas de rendimientos](https://www.yotepresto.com/estadisticas) 📈
 
-![Rendimientos de YoTePresto.](/img/posts/rendimientos_yotepresto.png)
+{% image 'img/posts/rendimientos_yotepresto.png', 'Rendimientos de YoTePresto' %}
 
 ### [Doopla](https://www.doopla.mx/)
 
 [Estadísticas de rendimientos](https://www.doopla.mx/estadisticas-doopla) 📈
 
-![Rendimientos de Doopla](/img/posts/rendimientos_doopla.png)
+{% image 'img/posts/rendimientos_doopla.png', 'Rendimientos de Doopla' %}
 
 ### [Afluenta](https://www.afluenta.mx/)
 
 [Estadísticas de rendimientos](https://www.afluenta.mx/estadisticas/rendimiento-de-la-inversion) 📈
 
-![Rendimientos de Afluenta](/img/posts/rendimientos_afluenta.png)
+{% image 'img/posts/rendimientos_afluenta.png', 'Rendimientos de Afluenta' %}
 
 ### [Lendera](https://www.lendera.mx/)
 
@@ -186,19 +186,19 @@ Entre 16 y 23% de rendimiento anual.
 
 14% de rendimiento anual 👇
 
-![Rendimientos de Expansive](/img/posts/rendimientos_expansive.png)
+{% image 'img/posts/rendimientos_expansive.png', 'Rendimientos de Expansive' %}
 
 ### [PM2](https://www.pm2.mx/)
 
 Inversiones desde $100 pesos. 23.3% de rendimiento anual 👇
 
-![Rendimientos de PM2 en 2018](/img/posts/rendimientos_pm2.png)
+{% image 'img/posts/rendimientos_pm2.png', 'Rendimientos de PM2 en 2018' %}
 
 ### [Monific](https://monific.com/)
 
 Inversiones desde $1,000 pesos. 13.6% de rendimiento anual 👇
 
-![Rendimientos de Monific](/img/posts/rendimientos_monific.png)
+{% image 'img/posts/rendimientos_monific.png', 'Rendimientos de Monific' %}
 
 ## Fondeo colectivo de capital
 
@@ -208,7 +208,7 @@ En este tipo de plataformas inviertes en negocios o franquicias y recibes un por
 
 Inversión desde $5,000 pesos. No encontré rendimientos generales en su página, pero este es un ejemplo del tipo de compañías en que puedes invertir:
 
-![Oportunidad de inversión en Play Business](/img/posts/play_business.png)
+{% image 'img/posts/play_business.png', 'Oportunidad de inversión en Play Business' %}
 
 ### [Propeler](https://propeler.mx/)
 
@@ -218,7 +218,7 @@ Invierte desde $10,000 pesos. No pude encontrar porcentajes de rendimientos en n
 
 Invierte desde $10,000 pesos. Rendimientos 👇
 
-![Rendimientos de Wortev Capital](/img/posts/rendimientos_wortev.png)
+{% image 'img/posts/rendimientos_wortev.png', 'Rendimientos de Wortev Capital' %}
 
 ## Otros
 
@@ -228,7 +228,7 @@ RedGirasol también funciona como financiamiento colectivo, y el principal objet
 
 Si inviertes en esta plataforma, puedes quitarte un pequeño peso de tu consciencia pues estás fomentando el uso de energía renovable 😁
 
-![Rendimientos de RedGirasol](/img/posts/red_girasol.png)
+{% image 'img/posts/red_girasol.png', 'Rendimientos de RedGirasol' %}
 
 ### Criptomonedas: [Bitso](https://bitso.com/)
 
