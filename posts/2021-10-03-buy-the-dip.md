@@ -10,6 +10,7 @@ cover_alt: 'Nina y Alyx volteando hacia arriba, a la cámara.'
 tags: ['inversiones', 'inversión', 'buy the dip', 'dollar cost averaging', 'dca', 'Nick Maggiulli']
 publication_medium_name: Of Dollars and Data
 canonical_url: https://ofdollarsanddata.com/why-buying-the-dip-is-a-terrible-investment-strategy/
+newsletter_cta: true
 ---
 
 _**Comentarios de la traducción:**_
