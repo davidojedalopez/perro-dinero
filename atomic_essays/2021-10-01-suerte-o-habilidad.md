@@ -1,6 +1,6 @@
 ---
 title: ¿Suerte o habilidad?
-description: La suerte format parte de todo lo que haces, lo quieras o no.
+description: La suerte forma parte de todo lo que haces, lo quieras o no.
 published_at: 2021-10-01
 newsletter_cta: true
 share_image_url: /img/micro_essays/009_suerte_o_habilidad.png
