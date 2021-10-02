@@ -22,7 +22,7 @@ newsletter_cta: true
 
 Amortización me pareció una palabra muy críptica desde el primer momento que la escuché. Suena como Morticia:
 
-![Morticia, de Los Locos Adams](/img/posts/morticia.png)
+{% image 'img/posts/morticia.png', 'Morticia, de Los Locos Adams' %}
 
 Si vas a un diccionario encontrarás: El acto o proceso de amortizar. O sea, no salimos del mismo hoyo.
 
@@ -90,15 +90,11 @@ Pero con lo que aprenderás en este ejemplo ya estarás **por delante de la mayo
 
 El [enlace al archivo lo puedes encontrar aquí](https://docs.google.com/spreadsheets/d/1o5SewkkvbCveAVtA5jLGXOdNjkd2L0-pyqyjgI80mdU/edit?usp=sharing), es un archivo de Google Drive.
 
-La tabla de amortización se ve así (no importa si no alcanzas a distinguir nada):
-
-![Tabla de amortización](/img/posts/tabla_amortizacion.png)
-
 Tiene lo más básico de una tabla de amortización y también un par de funcionalidades para que puedas agregar abonos a capital y decidir, con granularidad mensual, si quieres que tus abonos reduzcan la mensualidad o el tiempo del crédito.
 
 Ahora, ¿cómo la utilizas? Jugarás con estos valores:
 
-![Variables a introducir en tabla de amortización](/img/posts/tabla_amortizacion_campos.png)
+{% image 'img/posts/tabla_amortizacion_campos.png', 'Variables a introducir en tabla de amortización' %}
 
 Aquí puedes modificar el total de tu crédito, la tasa de interés **anualizada**, la cantidad de pagos o meses del crédito, los abonos que planeas hacer a capital y la fecha de inicio. La mensualidad se calcula **automáticamente** con el resto de los campos.
 
@@ -108,13 +104,14 @@ El archivo tiene también una serie de casillas para modificar si los abonos a c
 
 La primera casilla es esta:
 
-![Abono a capital](/img/posts/abono_a_capital.png)
+{% image 'img/posts/abono_a_capital.png', 'Abono a capital' %}
+
 
 Cuando la seleccionas estás diciendo que todo abono a capital reduzca, cada mes, la mensualidad de tu crédito.
 
 Cada fila tiene también una casilla para decidir si quieres que el abono de ese mes se vaya a reducción de mensualidad o tiempo:
 
-![Checkbox para mantener mensualidad](/img/posts/checkbox_mensualidad.png)
+{% image 'img/posts/checkbox_mensualidad.png', 'Checkbox para mantener mensualidad' %}
 
 ¿Por qué dos tipos de casillas? Lo hice para que tuvieras un control más fino de tus pagos. Puede que primero quieras dedicarte a reducir la mensualidad por unos años para no estar con la soga en el cuello, y después de eso ya quieras que tus abonos a capital reduzcan el tiempo únicamente.
 
@@ -212,7 +209,7 @@ Esos serán nuestros valores base. Con esto, vamos a comparar lo que pagamos en 
 
 ### Solo pagando el mínimo
 
-![Variables para el ejercicio de amortización](/img/posts/variables_ejercicio.png)
+{% image 'img/posts/variables_ejercicio.png', 'Variables para el ejercicio de amortización' %}
 
 En 180 meses terminamos de pagar el melón que debíamos. Pero también pagamos $934,289 pesos en intereses 😱 **Es casi el doble el préstamo inicial** 🤯.
 
@@ -224,7 +221,8 @@ Pequeño paréntesis; moroso me parece una palabra muy cómica, no sé por qué.
 
 Vamos a suponer que pagas $1,000 pesos **extras** cada mes, es decir, tu mensualidad + $1,000. Ese dinero se abonará directamente al capital. Y cuando el banco te pregunte, ¿reduces mensualidad o tiempo? **Dirás mensualidad**:
 
-![Resultado de ejercicio con abono a capital, reduciendo mensualidad](/img/posts/abono_reduciendo_mensualidad.png)
+{% image 'img/posts/abono_reduciendo_mensualidad.png', 'Resultado de ejercicio' %}
+ con abono a capital, reduciendo mensualidad
 
 La diferencia al ejemplo anterior es que ahora pudiste ahorrar un poco de lana y aventarla al crédito para adelantarle. Terminaste de pagar el melón que te prestaron, y ahora pagaste $855,512 de interés. **Eso es aproximadamente $78,000 pesos menos que sin abonos**.
 
@@ -234,7 +232,7 @@ Y eso no es todo, también terminaste un mes antes, en 179 en lugar de 180. **Pe
 
 Recuerda que cada abono a capital se utilizó para reducir la mensualidad, por lo que no pagas los $10,746.05 como en el primer ejemplo, sino que se reduce un poco cada mes, por los $1,000 extras que estuviste abonando. En el séptimo año de tu crédito estarías pagando una mensualidad de $9,712.51:
 
-![Resultados en el séptimo año](/img/posts/resultados_septimo_ano.png)
+{% image 'img/posts/resultados_septimo_ano.png', 'Resultados en el séptimo año' %}
 
 Entonces, en teoría, cada mes que pasa es más fácil seguir pagando tu crédito pues tu mensualidad se reduce.
 
@@ -242,7 +240,8 @@ Entonces, en teoría, cada mes que pasa es más fácil seguir pagando tu crédit
 
 Mismo crédito, mismo pago extra a capital, pagando la misma mensualidad todos los meses, los $10,746.05 pesos:
 
-![Resultados con abono a capital, reduciendo el tiempo](/img/posts/abono_reduciendo_tiempo.png)
+{% image 'img/posts/abono_reduciendo_tiempo.png', 'Resultados con abono' %}
+ a capital, reduciendo el tiempo
 
 $749,437 pesos de intereses en total. **Más de $100,000 de diferencia entre el ejemplo anterior**, y mucho más que el primer ejemplo sin ninguna aportación extra. Y lo **terminas de pagar en 149 meses, o 12 años y cuatro meses**, en lugar de 15.
 
@@ -250,7 +249,8 @@ $749,437 pesos de intereses en total. **Más de $100,000 de diferencia entre el 
 
 Aquí una tabla con los resultados de cada ejercicio, para ver la imagen completa:
 
-![Comparación de resultados](/img/posts/ejercicio_comparacion.png)
+{% image 'img/posts/ejercicio_comparacion.png', 'Comparación de resultados' %}
+
 
 Con esta información que acabamos de descubrir, quizá piensas, "okay, entonces la forma de ahorrarme más dinero y salir antes de deudas es abonando a capital y reduciendo el tiempo del crédito". Técnicamente, sí, pero **decidir solo con esta información no es una solución práctica**.
 
