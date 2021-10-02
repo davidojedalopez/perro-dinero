@@ -20,7 +20,7 @@ newsletter_cta: true
 
 ¡Yo también! Pero, **¿por qué?** ¿Por qué quieres ser rico? ¿Cómo cambiaría tu vida si lo fueras? 🤔
 
-![Don Cangrejo, con tanto dinero que no sabe qué hacer](/img/posts/don_cangrejo_con_mucho_dinero.gif)
+{% image 'img/posts/don_cangrejo_con_mucho_dinero.gif', 'Don Cangrejo, con tanto dinero que no sabe qué hacer' %}
 
 Estas son preguntas muy importantes que la mayoría de nosotros ni siquiera pensamos. Siempre queremos más dinero, siempre buscamos tener más, pero, ¿por qué o para qué?
 
@@ -42,7 +42,7 @@ Yo sé, es una pregunta complicada y te sientes como en esas entrevistas que pre
 
 No sé que haré hoy en la noche y quieres que te responda qué haré en cinco años...
 
-![Michael Scott diciendo que te relajes](/img/posts/the_office_chillax.webp)
+{% image 'img/posts/the_office_chillax.webp', 'Michael Scott diciendo que te relajes' %}
 
 Aun así, todos tenemos una idea, aunque sea vaga, de qué disfrutamos y deseamos más en esta vida. Tómate un tiempo para pensarlo, será una de las **mejores inversiones que hagas en tu vida**.
 
