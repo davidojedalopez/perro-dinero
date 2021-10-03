@@ -10,7 +10,7 @@ const path = require("path");
 
 Settings.defaultLocale = 'es-MX';
 
-async function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', sizes = "(min-width: 30em) 50vw, 100vw") {
+async function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', sizes = "(min-width: 30em) 50vw, 100vw") {
   const metadata = await Image(src, {
     widths: [200, 400, 600, 640],
     formats: ['jpeg', 'webp'],
@@ -27,7 +27,7 @@ async function imageShortCode(src, alt, altShouldBeCaption = true, caption = '',
   const imageAttributes = {
     alt,
     sizes,
-    loading: 'lazy',
+    loading,
     decoding: 'async',
   }
 
