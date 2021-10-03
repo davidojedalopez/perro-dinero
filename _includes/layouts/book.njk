@@ -12,9 +12,9 @@ permalink: "libros/{{ page.fileSlug }}/"
       <br>
       <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Lectura de {{ content | readingTime }}</span>
     </div>
-    <div>
-      {% image cover_path | url, cover_alt %}
-    </div>
+    {% if cover_path %}
+      {% image cover_path | url, cover_alt, false, '', 'eager' %}
+    {% endif %}
   </div>
 
   {% include "tweet_share_button.njk" %}
