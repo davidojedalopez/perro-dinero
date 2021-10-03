@@ -1,7 +1,7 @@
 
 <a class="block no-underline hover:bg-accent-100 dark:hover:bg-foreground-dark p-4 rounded" href="{{ post.url | url }}">
   <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 sm:items-start relative">
-    {% image post.data.cover_path | url, post.data.cover_alt %}
+    {% image post.data.cover_path | url, post.data.cover_alt, false, '' %}
     <div class="text-left flex flex-col">
         <h2 class="font-black w-full text-accent-500 dark:text-accent-dark-500 leading-tight">{{ post.data.title }} </h2>
         <p class="hidden sm:inline-block">{{ post.data.description }}</p>
