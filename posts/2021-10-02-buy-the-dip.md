@@ -16,6 +16,15 @@ _**Comentarios de la traducción:**_
 - • _El término "Buy the Dip" es conocido en la comunidad de inversionistas, y especialmente en Reddit, como una estrategia de inversión que consiste en comprar renta variable cuando hay caídas de mercado._
 - • _DCA (Dollar-Cost Averaging) es la estrategia de inversión en la que inviertes una cantidad, usualmente fija, cada mes, sin importar el precio de los activos._
 
+<details open>
+  <summary>
+    Contenidos
+  </summary>
+
+  [[toc]]
+
+</details>
+
 ***
 
 Ya he escrito acerca del porqué _Buy the Dip_ no puede vencer a la inversión periódica y constante (dollar-cost averaging), [incluso si fueras Dios](https://ofdollarsanddata.com/even-god-couldnt-beat-dollar-cost-averaging/). Sin embargo, siento que ese artículo fue un poco extremo. _Buy the Dip_ fue derrotada de un solo golpe. Nunca tuvo oportunidad de pelear. No hubo una última cena, ni palabras de despedida ni marcha fúnebre.
