@@ -5,6 +5,8 @@ Allow: /ensayosatomicos/*/
 Allow: /portafolio
 Disallow: /posts/
 Disallow: /libros/
+Disallow: /faqs/*/
+Disallow: /faqs/
 Disallow: /feed.xml
 Disallow: /404.html
 Disallow: /sitemap.xml
