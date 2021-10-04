@@ -5,7 +5,7 @@ description: Algunas ideas para guiarte en tu elección de asesor financiero.
 published_at: 2021-08-10
 cover_path: img/posts/covers/perras_finas.jpg
 cover_alt: Nina y Alyx, como perras finas
-tags: ['asesores']
+tags: ['asesores', 'asesoría', 'certificaciones']
 newsletter_cta: true
 ---
 

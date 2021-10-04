@@ -5,7 +5,7 @@ published: true
 published_at: 2020-09-25
 cover_path: img/posts/covers/millionario_puerta_de_al_lado.png
 cover_alt: "Nina, acostada a sus anchas. Visitando Pericos, Sinaloa."
-tags: ['notas', 'libros']
+tags: ['notas', 'libros', 'millonario puerta de al lado']
 has_affiliate_links: true
 ---
 

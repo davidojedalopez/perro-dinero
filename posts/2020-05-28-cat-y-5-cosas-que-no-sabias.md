@@ -5,7 +5,7 @@ published: true
 published_at: 2020-05-28
 cover_path: img/posts/covers/cat.png
 cover_alt: "Nina y yo, David, abrazados frente a mi pastel de cumpleaños número 28."
-tags: ['mexico', 'creditos', 'deudas']
+tags: ['mexico', 'creditos', 'deudas', 'cat']
 ---
 
 <details open>

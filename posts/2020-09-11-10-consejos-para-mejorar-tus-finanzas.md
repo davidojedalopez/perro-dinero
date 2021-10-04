@@ -5,7 +5,7 @@ published: true
 published_at: 2020-09-11
 cover_path: img/posts/covers/10-recomendaciones.jpg
 cover_alt: "Nina acostada al lado de un peluche de Totoro"
-tags: ['desarrollo personal', 'lista']
+tags: ['desarrollo personal', 'lista', 'recomendaciones']
 ---
 
 <details open>

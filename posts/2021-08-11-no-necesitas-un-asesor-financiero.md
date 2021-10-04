@@ -5,7 +5,7 @@ description: Descubre en qué casos sí necesitas un asesor financiero, y los ti
 published_at: 2021-08-11
 cover_path: img/posts/covers/alyx_balcon.jpg
 cover_alt: Nina y Alyx en el parque
-tags: ['asesores', 'inversiones']
+tags: ['asesores', 'inversiones', 'asesoría']
 newsletter_cta: true
 ---
 
