@@ -5,7 +5,7 @@ published: true
 published_at: 2020-07-16
 cover_path: img/posts/covers/suscripciones.png
 cover_alt: "Nina, de pequeña, acostada en el piso del departamento, enseñando su panza rosa."
-tags: ['ahorro', 'presupuestos']
+tags: ['ahorro', 'presupuestos', 'suscripciones']
 ---
 
 <details open>

@@ -5,7 +5,7 @@ published: true
 published_at: 2020-07-09
 cover_path: img/posts/covers/comprar_o_rentar.png
 cover_alt: "Nina con su gorrito de cumpleaños viendo ansiosamente su pastel en forma de hueso."
-tags: ['inversiones']
+tags: ['inversiones', 'rentar', 'comprar', 'casa', 'hipoteca']
 ---
 
 <details open>

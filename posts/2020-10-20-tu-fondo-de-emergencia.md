@@ -5,7 +5,7 @@ description: "Contar con un fondo de emergencia es una señal de buena salud fin
 published_at: 2020-10-20
 cover_path: img/posts/covers/nina_fondo_emergencia.JPG
 cover_alt: "Nina acostada en la tierra, junto a su frisbee azul."
-tags: ['inversiones']
+tags: ['inversiones', 'fondo de emergencia', 'liquidez']
 newsletter_cta: true
 ---
 

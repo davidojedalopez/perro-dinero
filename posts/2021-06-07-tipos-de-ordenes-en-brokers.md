@@ -4,7 +4,7 @@ description: Si tus principales inversiones son en ETF, con estos dos tipos de Ã
 published_at: 2021-06-07
 cover_path: img/posts/covers/nina_y_alyx.png
 cover_alt:
-tags: ['inversion', 'broker']
+tags: ['inversion', 'broker', 'tipos de Ã³rdenes', 'limitada', 'a mercado']
 newsletter_cta: true
 ---
 

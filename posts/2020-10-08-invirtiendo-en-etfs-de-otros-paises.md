@@ -4,7 +4,7 @@ description: "¿Qué debes buscar en un ETF? ¿Cómo sabes si el precio es justo
 published_at: 2020-10-08
 cover_path: img/posts/covers/nina_etf_otros_paises.jpg
 cover_alt: "Nina comiendo nieve de vainilla de una cuchara"
-tags: ['inversiones', 'etfs']
+tags: ['inversiones', 'etfs', 'SIC', 'sistema internacional de cotizaciones', 'voo', 'arbitraje']
 newsletter_cta: true
 ---
 

@@ -4,7 +4,7 @@ description: Ahora ya sabrás por dónde empezar.
 published_at: 2021-05-28
 cover_path: img/posts/covers/nina_curada.jpeg
 cover_alt: "Nina debajo de una hamaca"
-tags: ['portafolios', 'inversiones']
+tags: ['portafolios', 'inversiones', 'dca', 'vt', 'vanguard', 'lazy', 'vea', 'voo', 'vwo', 'vnq', 'cetes']
 newsletter_cta: true
 ---
 

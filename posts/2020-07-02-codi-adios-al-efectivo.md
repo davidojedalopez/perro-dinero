@@ -5,7 +5,7 @@ published: true
 published_at: 2020-07-02
 cover_path: img/posts/covers/codi.png
 cover_alt: "Nina con la lengua de fuera viendo fijamente a la cámara."
-tags: ['mexico', 'plataformas']
+tags: ['mexico', 'plataformas', 'codi']
 ---
 
 <details open>

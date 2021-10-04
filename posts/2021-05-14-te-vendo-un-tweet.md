@@ -4,7 +4,7 @@ description: ¿Qué son los NFTs (Non-Fungible Tokens)?
 published_at: 2021-05-14
 cover_path: img/posts/covers/nina_impuestos_acciones.jpg
 cover_alt: "Nina con su mantel."
-tags: ['blockchain', 'nft']
+tags: ['blockchain', 'nft', 'tweet', 'cripto']
 newsletter_cta: true
 ---
 

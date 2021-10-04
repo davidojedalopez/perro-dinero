@@ -5,7 +5,7 @@ published: true
 published_at: 2020-07-24
 cover_path: img/posts/covers/7_frustraciones.png
 cover_alt: "Nina con su gorrito de cumpleaños viendo ansiosamente su pastel en forma de hueso."
-tags: ['inversiones']
+tags: ['inversiones', 'errores']
 ---
 
 <details open>
