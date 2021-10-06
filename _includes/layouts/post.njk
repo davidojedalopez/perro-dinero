@@ -39,10 +39,6 @@ permalink: "posts/{{ page.fileSlug }}/"
 
 </article>
 
-<div class="mt-4 flex space-x-4">
-  {% include "tweet_share_button.njk" %}
-</div>
-
 {% if newsletter_cta %}
   <hr>
   {% include "calls_to_action/newsletter.njk" %}
@@ -93,4 +89,3 @@ permalink: "posts/{{ page.fileSlug }}/"
     });
   });
 </script>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
