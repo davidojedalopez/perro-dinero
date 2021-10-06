@@ -10,10 +10,10 @@ const path = require("path");
 
 Settings.defaultLocale = 'es-MX';
 
-async function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', sizes = "(min-width: 30em) 50vw, 100vw") {
-  const metadata = await Image(src, {
+function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', sizes = "(min-width: 30em) 50vw, 100vw") {
+  const options = {
     widths: [200, 400, 600, 640],
-    formats: ['jpeg', 'webp'],
+    formats: ['webp', 'jpeg'],
     filenameFormat: ((id, src, width, format, options) => {
       const extension = path.extname(src);
       const name = path.basename(src, extension)
@@ -22,7 +22,8 @@ async function imageShortCode(src, alt, altShouldBeCaption = true, caption = '',
     urlPath: "/img/",
     outputDir: "./_site/img",
     useCache: true
-  });
+  }
+  Image(src, options);
 
   const imageAttributes = {
     alt,
@@ -30,7 +31,7 @@ async function imageShortCode(src, alt, altShouldBeCaption = true, caption = '',
     loading,
     decoding: 'async',
   }
-
+  const metadata = Image.statsSync(src, options)
   const html = Image.generateHTML(metadata, imageAttributes, { whitespaceMode: 'inline' })
   const figureCaption = altShouldBeCaption ? alt : caption
   return figureCaption ?
@@ -151,7 +152,7 @@ module.exports = function (eleventyConfig) {
     ghostMode: false
   });
 
-  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortCode);
+  eleventyConfig.addNunjucksShortcode("image", imageShortCode);
 
   return {
     templateFormats: [
