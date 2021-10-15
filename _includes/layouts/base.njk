@@ -92,6 +92,8 @@
     <link rel="apple-touch-startup-image" href="{{ '/img/favicon/apple-splash-640-1136.jpg' | url }}" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="{{ '/img/favicon/apple-splash-1136-640.jpg' | url }}" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 
+    {% structured_data renderData.structuredData or structuredData or metadata.structuredData %}
+
     <link rel="manifest" href="{{ '/manifest.json' | url }}" >
   </head>
   <body class="bg-background dark:bg-background-dark w-10/12 md:w-9/12 xl:w-6/12 mx-auto">
