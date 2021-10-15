@@ -10,6 +10,37 @@ const path = require("path");
 
 Settings.defaultLocale = 'es-MX';
 
+function structuredData(data = {}) {
+  const HEADLINE_CHARACTER_LIMIT = 110
+  if (!data || !data.type) {
+    return
+  }
+
+  const { type, headline, datePublished, dateModified, author, keywords, image } = data
+  const validHeadline = headline.slice(0, HEADLINE_CHARACTER_LIMIT)
+  const validKeywords = keywords
+    .split(',')
+    .filter(it => it !== 'posts' && it !== 'books')
+
+  const types = { post: 'BlogPosting' }
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": types[type],
+    headline: validHeadline,
+    keywords: validKeywords,
+    datePublished,
+    dateModified,
+    author: {
+      "@type": "Person",
+      name: author.name,
+      url: author.url
+    },
+    inLanguage: "es-MX",
+    image
+  }
+  return `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`
+}
+
 function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', sizes = "(min-width: 30em) 50vw, 100vw") {
   const options = {
     widths: [200, 400, 600, 640],
@@ -153,6 +184,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addNunjucksShortcode("image", imageShortCode);
+  eleventyConfig.addNunjucksShortcode("structured_data", structuredData);
 
   return {
     templateFormats: [

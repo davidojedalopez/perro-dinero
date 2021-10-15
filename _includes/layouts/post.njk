@@ -1,6 +1,18 @@
 ---
 layout: layouts/base.njk
 permalink: "posts/{{ page.fileSlug }}/"
+structuredData:
+  type: post
+eleventyComputed:
+  structuredData:
+    author:
+      name: "{{ author or metadata.author.name }}"
+      url: "{{ author_url or metadata.author.url }}"
+    headline: "{{ title }}"
+    keywords: "{{ tags }}"
+    image: "{{ cover_path | url | absoluteUrl(metadata.url) }}"
+    datePublished: "{{ published_at | toISOString }}"
+    dateModified: "{{ lastUpdated or published_at | toISOString }}"
 ---
 
 <article class="py-8">
