@@ -10,10 +10,10 @@ const path = require("path");
 
 Settings.defaultLocale = 'es-MX';
 
-function structuredData(data = {}) {
+function structuredData(data) {
   const HEADLINE_CHARACTER_LIMIT = 110
   if (!data || !data.type) {
-    return
+    return ''
   }
 
   const { type, headline, datePublished, dateModified, author, keywords, image } = data
