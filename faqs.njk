@@ -9,7 +9,8 @@ permalink: preguntas-frecuentes/
 
 <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">Preguntas frecuentes</h1>
 
-<button data-id="faq-collapse" class="button--outline mt-4 text-sm">Abrir todas las preguntas</button>
+<button data-id="faq-collapse" class="button--outline mt-4 text-sm">Colapsar todas las preguntas</button>
+<button data-id="faq-open" class="button--outline mt-4 text-sm">Abrir todas las preguntas</button>
 
 <section class="space-y-8 mt-8">
     {% for faq in faqsList %}
@@ -35,11 +36,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     collapseButton.addEventListener('click', () => {
         const detailsElements = document.querySelectorAll('details.faq')
         detailsElements.forEach(it => {
-            it.toggleAttribute('open')
+            it.removeAttribute('open')
         })
-        const buttonText = detailsElements[0].hasAttribute('open') ?
-                'Colapsar todas las preguntas' : 'Abrir todas las preguntas'
-        collapseButton.innerText = buttonText
+    })
+
+    const openButton = document.querySelector('[data-id="faq-open"]')
+    if(!openButton) {
+        return
+    }
+    openButton.addEventListener('click', () => {
+        const detailsElements = document.querySelectorAll('details.faq')
+        detailsElements.forEach(it => {
+            it.setAttribute('open', true)
+        })
     })
 })
 </script>
