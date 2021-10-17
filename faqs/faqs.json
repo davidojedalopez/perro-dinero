@@ -3,5 +3,5 @@
         "faqs",
         "preguntas_frecuentes"
     ],
-    "eleventyExcludeFromCollections": true
+    "eleventyExcludeFromCollections": false
 }

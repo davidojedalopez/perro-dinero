@@ -146,6 +146,11 @@ module.exports = function (eleventyConfig) {
       .filter(shouldBeLive);
   });
 
+  eleventyConfig.addCollection("faqs", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob('faqs/*.md')
+  });
+
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy('robots.txt')
