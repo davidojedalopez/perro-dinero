@@ -10,3 +10,4 @@ token.json
 .netlify
 
 .idea/*
+.cache/*
