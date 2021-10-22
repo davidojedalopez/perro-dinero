@@ -1,0 +1,10 @@
+---
+permalink: api/indicadores_economicos.json
+eleventyExcludeFromCollections: true
+---
+{% set comma = joiner() %}
+{ "economic_indicators": {
+        {% for i, v in banxico %} {{ comma() }} "{{i}}": {{ v | dump | safe}} {% endfor %}
+        {% for i, v in inegi %} {{ comma() }} "{{i}}": {{ v | dump | safe}} {% endfor %}
+    }
+}
