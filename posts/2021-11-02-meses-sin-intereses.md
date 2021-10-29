@@ -4,6 +4,7 @@ description: No es raro escuchar de personas que tienen más de 5 tarjetas de cr
 published_at: 2021-10-27
 cover_path: img/posts/deducciones_personales/cover.jpg
 cover_alt: .
+draft: true
 tags: ['tarjetas de credito', 'bbva', 'bancomer', 'nu']
 newsletter_cta: true
 ---
