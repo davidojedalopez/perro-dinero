@@ -4,15 +4,6 @@ title: Perro Dinero
 cover_path: img/perro_dinero.png
 ---
 
-{# <section class="flex flex-col md:flex-row items-center mb-16 justify-evenly space-y-4">
-  <div class="rounded-full self-center">
-    {% image "img/david_y_nina.png" | url, "Yo, David, y Nina, mi perra, felices en un parque.", false, '', 'eager' %}
-  </div>
-  <h1 class="font-black text-center sm:text-left text-4xl md:text-5xl lg:text-6xl break-normal">
-    El dinero <br><span class="text-accent-500 dark:text-accent-dark-500"> sí compra</span> <br>la felicidad
-  </h1>
-</section> #}
-
 {% set post = collections.posts | last %}
 <a class="shadow-2xl dark:shadow-2xl-dark block no-underline hover:bg-accent-100 dark:hover:bg-foreground-dark rounded" href="{{ post.url | url }}">
   <div class="flex flex-col xl:flex-row items-start xl:space-x-4">
