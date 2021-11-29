@@ -26,7 +26,7 @@ cover_path: img/perro_dinero.png
         <span class="px-2 text-sm text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-sm text-accent-600 dark:text-accent-dark-600">Actualizado el </span><time class="text-sm text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ post.data.last_updated_at | readableDate }}</time>
       {% endif %}
       <p class="pt-4">{{ post.data.description }}</p>
-      <p class="text-sm opacity-75 pt-4">Leer más...</p>
+      <p class="text-sm opacity-75 py-4">Leer más...</p>
     </div>
 
     {% if post.data.cover_path %}
