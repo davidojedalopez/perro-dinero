@@ -4,25 +4,54 @@ title: Perro Dinero
 cover_path: img/perro_dinero.png
 ---
 
-<section class="flex flex-col md:flex-row items-center mb-16 justify-evenly space-y-4">
+{# <section class="flex flex-col md:flex-row items-center mb-16 justify-evenly space-y-4">
   <div class="rounded-full self-center">
     {% image "img/david_y_nina.png" | url, "Yo, David, y Nina, mi perra, felices en un parque.", false, '', 'eager' %}
   </div>
   <h1 class="font-black text-center sm:text-left text-4xl md:text-5xl lg:text-6xl break-normal">
     El dinero <br><span class="text-accent-500 dark:text-accent-dark-500"> sí compra</span> <br>la felicidad
   </h1>
-</section>
+</section> #}
+
+{% set post = collections.posts | last %}
+<a class="border-0 shadow-2xl dark:shadow-2xl-dark border-opacity-25 block no-underline hover:bg-accent-100 dark:hover:bg-foreground-dark rounded" href="{{ post.url | url }}">
+  <div class="flex flex-col xl:flex-row items-start xl:space-x-4">
+    <div class="px-4 pt-4">
+      <h2 class="lg:text-5xl font-black w-full text-accent-500 dark:text-accent-dark-500">{{ post.data.title }} </h2>
+      {% if post.data.author %}
+        <p class="text-sm opacity-75">Escrito por {{ post.data.author }} y traducido por David Ojeda (Perro Dinero)</p>
+      {% endif %}
+      <time class="text-sm text-accent-600 dark:text-accent-dark-600" datetime="{{ post.data.published_at | htmlDateString }}">{{ post.data.published_at | readableDate }}</time> <span class="px-2 text-sm text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-sm text-accent-600 dark:text-accent-dark-600">Lectura de {{ post | readingTime }}</span>
+      {% if post.data.last_updated_at %}
+        <span class="px-2 text-sm text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-sm text-accent-600 dark:text-accent-dark-600">Actualizado el </span><time class="text-sm text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ post.data.last_updated_at | readableDate }}</time>
+      {% endif %}
+      <p class="pt-4">{{ post.data.description }}</p>
+      <p class="text-sm opacity-75 pt-4">Leer más...</p>
+    </div>
+
+    {% if post.data.cover_path %}
+      <div class="pt-4 lg:pb-4 xl:py-0 rounded mx-auto w-full max-w-screen-sm h-auto self-center z-10">
+        <div class="relative -z-1">
+          {% image post.data.cover_path | url, post.data.cover_alt, false, '', 'eager' %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+</a>
 
 <hr>
 
 <p class="text-4xl">Posts 📝</p>
 
-{% set maxPosts = 3 %}
-{% set postsList = collections.posts | head(-maxPosts) %}
+{% set maxPosts = 4 %}
+{% set postsList = collections.posts | head(-maxPosts)  %}
 {% set postsListCount = collections.postsAndBooks | length %}
 <section class="flex flex-col my-4">
   {% for post in postsList | reverse %}
-    {% include "postitem.njk" %}
+    {% if loop.index0 != 0 %}
+      {% include "postitem.njk" %}
+    {% endif %}
   {% endfor %}
 </section>
 

@@ -6,26 +6,26 @@ module.exports = {
       colors: {
         primary: '#000000',
         accent: {
-            100: '#E8F3EB',
-            200: '#C7E1CE',
-            300: '#A5CEB1',
-            400: '#61AA76',
-            500: '#1D853B',
-            600: '#1A7835',
-            700: '#115023',
-            800: '#0D3C1B',
-            900: '#092812',
+          100: '#E8F3EB',
+          200: '#C7E1CE',
+          300: '#A5CEB1',
+          400: '#61AA76',
+          500: '#1D853B',
+          600: '#1A7835',
+          700: '#115023',
+          800: '#0D3C1B',
+          900: '#092812',
         },
         'accent-dark': {
-            100: '#FEFAEC',
-            200: '#FCF2CF',
-            300: '#FAEAB2',
-            400: '#F7DA78',
-            500: '#F3CA3E',
-            600: '#DBB638',
-            700: '#927925',
-            800: '#6D5B1C',
-            900: '#493D13',
+          100: '#FEFAEC',
+          200: '#FCF2CF',
+          300: '#FAEAB2',
+          400: '#F7DA78',
+          500: '#F3CA3E',
+          600: '#DBB638',
+          700: '#927925',
+          800: '#6D5B1C',
+          900: '#493D13',
         },
         background: '#FAFAFA',
         'background-dark': '#222831',
@@ -52,11 +52,15 @@ module.exports = {
       animation: {
         scaleUp: 'scaleUp 1s ease-in-out infinite'
       },
+      boxShadow: {
+        '2xl-dark': '0 25px 50px -12px #393e46',
+      }
     }
   },
   variants: {
     extend: {
-      animation: ['hover']
+      animation: ['hover'],
+      boxShadow: ['dark']
     }
   }
 }

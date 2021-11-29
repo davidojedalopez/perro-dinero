@@ -12,22 +12,33 @@ body {
 
 header {
   grid-template-areas:
-    "home . . toggle"
-    "search search search search"
+      "home toggle"
+      "search search";
+}
+
+@screen md {
+  header {
+    grid-template-areas:
+      "home search search . toggle"
+      ". . . . ."
+  }
 }
 
 h1 {
   @apply leading-snug;
   font-size: calc(36px + (40 - 36) * ((100vw - 300px) / (1600 - 300)));
+  hyphens: none;
 }
 
 h2 {
   font-size: calc(28px + (32 - 28) * ((100vw - 300px) / (1600 - 300)));
   @apply leading-tight;
+  hyphens: none;
 }
 
 h3 {
   font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+  hyphens: none;
 }
 
 h4 {
@@ -81,7 +92,7 @@ hr {
 }
 
 .button--outline:hover {
-  @apply dark:text-black;  
+  @apply dark:text-black;
 }
 
 @tailwind components;
