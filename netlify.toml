@@ -27,9 +27,6 @@
     debugMode = false
 
 [[plugins]]
-  package = "netlify-plugin-inline-source"
-
-[[plugins]]
   package = "netlify-plugin-submit-sitemap"
 
 [[plugins]]
