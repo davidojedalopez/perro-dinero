@@ -14,9 +14,9 @@ cover_path: img/perro_dinero.png
 </section> #}
 
 {% set post = collections.posts | last %}
-<a class="border-0 shadow-2xl dark:shadow-2xl-dark border-opacity-25 block no-underline hover:bg-accent-100 dark:hover:bg-foreground-dark rounded" href="{{ post.url | url }}">
+<a class="shadow-2xl dark:shadow-2xl-dark block no-underline hover:bg-accent-100 dark:hover:bg-foreground-dark rounded" href="{{ post.url | url }}">
   <div class="flex flex-col xl:flex-row items-start xl:space-x-4">
-    <div class="px-4 pt-4">
+    <div class="px-8 pt-8">
       <h2 class="lg:text-5xl font-black w-full text-accent-500 dark:text-accent-dark-500">{{ post.data.title }} </h2>
       {% if post.data.author %}
         <p class="text-sm opacity-75">Escrito por {{ post.data.author }} y traducido por David Ojeda (Perro Dinero)</p>
@@ -42,12 +42,12 @@ cover_path: img/perro_dinero.png
 
 <hr>
 
-<p class="text-4xl">Posts 📝</p>
+<p class="text-2xl">Lo más reciente...</p>
 
 {% set maxPosts = 4 %}
 {% set postsList = collections.posts | head(-maxPosts)  %}
 {% set postsListCount = collections.postsAndBooks | length %}
-<section class="flex flex-col my-4">
+<section class="flex flex-col my-4 space-y-8">
   {% for post in postsList | reverse %}
     {% if loop.index0 != 0 %}
       {% include "postitem.njk" %}

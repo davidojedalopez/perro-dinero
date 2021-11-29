@@ -53,7 +53,8 @@ module.exports = {
         scaleUp: 'scaleUp 1s ease-in-out infinite'
       },
       boxShadow: {
-        '2xl-dark': '0 25px 50px -12px #393e46',
+        'md-dark': '0 4px 6px -1px #393E46, 0 2px 4px -1px #393E46',
+        '2xl-dark': '0 25px 50px -12px #393E46',
       }
     }
   },
