@@ -15,7 +15,7 @@ eleventyComputed:
     dateModified: "{{ lastUpdated or published_at | toISOString }}"
 ---
 
-<article class="py-8">
+<article class="pb-8 lg:w-3/4 mx-auto">
   <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
   {% if author %}
     <p class="text-sm opacity-75">Escrito por {{ author }} y traducido por David Ojeda (Perro Dinero)</p>
