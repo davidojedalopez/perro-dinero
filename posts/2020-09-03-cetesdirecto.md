@@ -199,12 +199,3 @@ Espero que con esto te haya aclarado todas las diferentes opciones y plazos de i
 El hecho de que yo no invierta en algunas de estas opciones no quiere decir que nunca te convenga hacerlo. **Dependerá mucho de tu portafolio, tu perfil de riesgo y la etapa de vida en que te encuentres.** Para mí no hacen sentido todavía, y algunas quizá nunca lo hagan.
 
 **Muchas gracias por leerme 🧡**
-
-***
-
-Si todavía tienes muchas dudas de Cetesdirecto o de cualquier otra cosa relacionadas a finanzas personales, también te puedo ayudar 😁
-
-> Agenda una llamada **gratuita** de 15 minutos conmigo y te ayudaré a resolver tus dudas e incluso te puedo crear un plan de inversión 👇👇👇
-
-<div class="calendly-inline-widget" data-url="https://calendly.com/perrodinero/exploracion?hide_event_type_details=1&background_color=fafafa&primary_color=1d853b" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>

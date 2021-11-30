@@ -6,6 +6,7 @@ published_at: 2020-09-11
 cover_path: img/posts/covers/10-recomendaciones.jpg
 cover_alt: "Nina acostada al lado de un peluche de Totoro"
 tags: ['desarrollo personal', 'lista', 'recomendaciones']
+newsletter_cta: true
 ---
 
 <details open>
@@ -51,10 +52,8 @@ Es difícil, y da miedo. Igual que aprender cualquier cosa nueva. Pero es algo q
 
 Y el **tiempo es tu mejor aliado** en este caso; entre más pronto empieces a invertir, más joven podrás cosechar los frutos.
 
-> ❓ ¿No sabes cómo empezar? Yo te echo la mano, **GRATIS**. Agenda una llamada de 15 minutos conmigo y te ayudaré a armar un plan de inversión específico a tus necesidades 👇🏼
+> ❓ ¿No sabes cómo empezar? En este blog tengo muchos recursos, y también te puedes unir a la [comunidad de Reddit](https://www.reddit.com/r/MexicoFinanciero/) y te echamos la mano.
 
-<div class="calendly-inline-widget" data-url="https://calendly.com/perrodinero/exploracion?hide_event_type_details=1&background_color=fafafa&primary_color=1d853b" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 
 ## Enfócate en lo que más te beneficia primero
 
