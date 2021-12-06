@@ -10,13 +10,13 @@ title: "Archivo"
 
 <section class="flex flex-col space-y-8 mb-8">
   {% for date, posts in postsList | reverse | groupby("data.monthYear") %}
-    <details {% if loop.first or loop.index0 === 1 %} open {% endif %} class="">
+    <details {% if loop.first or loop.index0 < 5 %} open {% endif %} class="space-y-8">
       <summary class="cursor-pointer">
         {{ date | capitalize }} ({{ posts | length }} posts)
       </summary>
       {% for post in posts %}
         {% include "postitem.njk" %}
       {% endfor %}
-    </details>    
+    </details>
   {% endfor %}
 </section>
