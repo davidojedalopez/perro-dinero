@@ -54,7 +54,7 @@ cover_path: img/perro_dinero.png
 
 {% set microEssaysList = collections.atomic_essays | head(-3) %}
 {% set microEssaysCount = collections.atomic_essays | length %}
-<section class="flex flex-col my-4">
+<section class="flex flex-col my-4 space-y-8">
   {% for essay in microEssaysList | reverse %}
     {% include "micro_essay_item.njk" %}
   {% endfor %}
