@@ -10,6 +10,7 @@ Disallow: /faqs/
 Disallow: /feed.xml
 Disallow: /404.html
 Disallow: /sitemap.xml
+Disallow: /suscrito
 
 User-agent: *
 Disallow: /_macros/*/
