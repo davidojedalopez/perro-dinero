@@ -3,7 +3,6 @@ import '../styles/main.css'
 import { annotate } from 'rough-notation'
 
 window.addEventListener("load", (event) => {
-  setSubstackEmbed();
   setDarkModeToggle();
   setAnnotations();
 }, false);
@@ -37,37 +36,6 @@ function setAnnotations() {
   for (const annotation of annotations) {
     observer.observe(annotation);
   }
-}
-
-function setSubstackEmbed() {
-  const embed = document.querySelector('[data-id="substack-embed"]');
-  let options = {
-    threshold: .75
-  };
-
-  if (!embed) {
-    return;
-  }
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.map((entry) => {
-      if (entry.isIntersecting) {
-        var ifrm = document.createElement('iframe');
-        ifrm.setAttribute('frameborder', '0');
-        ifrm.setAttribute('scrolling', 'no');
-        ifrm.setAttribute('title', 'Widget de Substack, el servicio para newsletters que utilizo.');
-        ifrm.setAttribute('same', '');
-        ifrm.setAttribute('class', 'mx-auto w-64');
-
-        entry.target.appendChild(ifrm)
-
-        ifrm.setAttribute('src', 'https://perrodinero.substack.com/embed');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, options);
-
-  observer.observe(embed);
 }
 
 function setDarkModeToggle() {

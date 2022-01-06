@@ -80,17 +80,6 @@ cover_path: img/perro_dinero.png
 
 </article>
 
-<form name="newsletter-subscription" action="/suscrito" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="flex-col space-y-4 text-center w-80 mx-auto">
-    <p class="hidden">
-        <label>No llenes esto si eres humano: <input name="bot-field" /></label>
-    </p>
-    <div>
-        <label for="email" class="sr-only">Correo</label>
-        <input class="w-full bg-background dark:bg-background-dark placeholder-opacity-25 px-2 outline-none border-b border-opacity-75" type="email" name="email" placeholder="correo.perron@woof.com" required>
-    </div>
-    <button class="w-full button text-2xl" type="submit">Suscribirse</button>
-</form>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script>
   const ctxCurrent = document.querySelector('[data-id="current-portfolio"]').getContext('2d');

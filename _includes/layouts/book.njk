@@ -40,7 +40,7 @@ permalink: "libros/{{ page.fileSlug }}/"
 
   {% if newsletter_cta %}
     <hr>
-    {% include "calls_to_action/newsletter.njk" %}
+    {% include "calls_to_action/newsletter_post.njk" %}
   {% endif %}
 
   {% set booksListCount = collections.books | length %}
