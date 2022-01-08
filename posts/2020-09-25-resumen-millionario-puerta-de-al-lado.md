@@ -141,7 +141,7 @@ Divididas por capítulo 🔖
   <li>Busca un buen contador y/o asesor financiero.</li>
   <li>Cambiar de hábitos radicalmente casi nunca funciona.</li>
   <li>Comprar algo de alto valor "sube" tu estatus, y te obliga a mantenerlo comprando aun más cosas de alto valor.</li>
-  <li><a href="https://perrodinero.substack.com/p/la-historia-de-floripundio">Historia del Rolls-Royce</a></li>
+  <li><a href="https://newsletter.perrodinero.blog/issues/la-historia-de-floripundio-684914">Historia del Rolls-Royce</a></li>
   <li>Los millonarios negocian más.</li>
   <li>Es más fácil ganar mucho dinero que hacerse rico.</li>
 </ul>
