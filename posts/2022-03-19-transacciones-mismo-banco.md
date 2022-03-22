@@ -1,7 +1,8 @@
 ---
-title: Transacciones "mismo banco"
+title: Transacciones mismo banco
+title_key: "transacciones_mismo_banco"
 description: ¿Qué hay detrás de cada transacción con tarjeta de crédito? ¿Quiénes participan? ¿Quién se lleva cuánto?
-published_at: 2022-03-19
+published_at: 2022-03-25
 cover_path: img/posts/covers/transacciones_mismo_banco.jpg
 cover_alt: Nina, con la lengua de fuera en el Jardin Botánico.
 tags: ['tarjeta de credito', 'crédito', 'credito', 'tarjeta de crédito', 'transacción mismo banco']
