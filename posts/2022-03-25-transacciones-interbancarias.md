@@ -42,7 +42,7 @@ No es tan sencillo.
 
 Pero antes de irnos a los detalles, quiero aclarar que cuando me refiero a un "banco emisor" o "banco adquiriente" **no tienen que ser literalmente un banco**. Las fintechs también pueden emitir tarjetas, pero no todas son un banco. Y los agregadores de pago como Clip tienen Terminal Punto de Venta (TpV) y pueden aceptar pagos con tarjetas, pero tampoco son un banco. A lo largo de este post me referiré a emisores y adquirientes como bancos porque así es más fácil comprenderlo y así lo encontrarás en muchos documentos oficiales, como los de Banxico.
 
-Ahora sí, vamos a ello. Está largo el post. Recomiendo unas palomitas o un café antes de comenzar. dependiendo de la posición del sol.
+Ahora sí, vamos a ello. Está largo el post. Recomiendo una cerveza o un café antes de comenzar, dependiendo de la posición del sol.
 
 ## Comparación transacción mismo banco
 
@@ -68,7 +68,7 @@ Una cámara de compensación de pagos con tarjeta es una asociación o instituci
 
 Su principal función es evitar el riesgo de incumplimiento de las contrapartes en una transacción financiera.
 
-Entonces, una cámara de compensación no es más que un intermediario entre emisor y adquiriente que **asegura que cada quien reciba lo que le toca**. Este participante no tiene nada que ver con el tarjetahabiente ni con el negocio que usa la TpV, solo con emisor y adquiriente.
+Entonces, una cámara de compensación no es mas que un intermediario entre emisor y adquiriente que **asegura que cada quien reciba lo que le toca**. Este participante no tiene nada que ver con el tarjetahabiente ni con el negocio que usa la TpV, solo con emisor y adquiriente.
 
 Este proceso de pagar a cada quien lo que le corresponda no ocurre al mismo tiempo que todo el flujo que experimentas como tarjetahabiente. Es decir, tú pagaste con tu tarjeta y, suponiendo que todo salió bien, te dieron tu café. Hasta este momento **ninguno de los participantes ha recibido nada** de sus cuotas o comisiones porque todavía no han sido liquidadas.
 
@@ -119,7 +119,7 @@ Esta comisión se cobra por cada transacción, y suele ser proporcional a la can
 
 La Cuota de Intercambio es la comisión que cobra un banco emisor a un banco adquiriente cuando se efectúa una transacción interbancaria con tarjeta de crédito o débito.
 
-¿Por qué la cobra el banco emisor? Porque es quien corre todo el riesgo de que el tarjetahabiente no pagué sus deudas.
+¿Por qué la cobra el banco emisor? Porque es quien corre todo el riesgo de que el tarjetahabiente no pague sus deudas.
 
 ### 💰 **Cuotas por Ruteo, Compensación y Liquidación**
 
