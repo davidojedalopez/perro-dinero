@@ -97,7 +97,7 @@ Para obtener el CAT de mi tarjeta de crédito [entré a la página de BBVA y ubi
 
 Ahora, si descargo mi estado de cuenta y reviso el CAT real (en la primera página, parte superior derecha) veo que **es de 5.9%**.
 
-¿Qué paso con el 100.2%? El cálculo del CAT promedio de una tarjeta de crédito **supone ciertas condiciones**:
+¿Qué pasó con el 100.2%? El cálculo del CAT promedio de una tarjeta de crédito **supone ciertas condiciones**:
 
 - 💳 Usas toda tu línea de crédito.
 
