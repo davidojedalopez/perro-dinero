@@ -2,10 +2,11 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   darkMode: 'class',
-  purge: ['./_site/**/*.html', './**/*.njk'],
+  content: ['./_site/**/*.html', './**/*.njk'],
   theme: {
     extend: {
       colors: {
+        current: 'currentColor',
         primary: '#000000',
         accent: {
           100: '#E8F3EB',
@@ -61,12 +62,12 @@ module.exports = {
       }
     }
   },
-  variants: {
-    extend: {
-      animation: ['hover'],
-      boxShadow: ['dark']
-    }
-  },
+  // variants: {
+  //   extend: {
+  //     animation: ['hover'],
+  //     boxShadow: ['dark']
+  //   }
+  // },
   plugins: [
     require('@tailwindcss/forms'),
   ],
