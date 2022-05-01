@@ -32,7 +32,7 @@
           <form action="https://newsletter.perrodinero.blog/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank" class="mt-8 sm:mx-auto sm:max-w-lg sm:flex">
             <div class="min-w-0 flex-1">
               <label for="cta-email" class="sr-only">Correo</label>
-              <input name="member[email]" id="member_email" type="email" class="block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-600" placeholder="Correo" required >
+              <input title="Correo" aria-label="Correo" name="member[email]" id="member_email" type="email" class="block w-full border border-transparent rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-600" placeholder="Correo" required >
             </div>
             <div class="mt-4 sm:mt-0 sm:ml-3">
               <button name="member[subscribe]" id="member_submit" type="submit" class="block w-full rounded-md border border-transparent px-5 py-3 bg-accent-dark-500 text-base font-medium shadow hover:bg-accent-dark-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-accent-dark-600 sm:px-10 text-black">Quiero mi archivo</button>
@@ -42,4 +42,28 @@
       </div>
     </div>
   </div>
+</div>
+
+
+<div class="mt-8 p-4 rounded-lg bg-accent-100 dark:bg-foreground-dark">
+    {# {% block newsletter_header %}{% endblock %} #}
+    {# <p class="text-center mb-4 text-2xl font-black">¡Si te gustó este contenido,<br>también disfrutarás mi <span class="text-accent-500 dark:text-accent-dark-500">newsletter</span>!</p> #}
+    {# {% block common %} #}
+        <ul class="space-y-4 ml-4 mb-4">
+            <li class="">· Historias, experiencias y recursos para mejorar tus finanzas personales e impulsar tu desarrollo personal 🚀.</li>
+            <li class="">· Ideas que esté probando y desarrollando 🧠.</li>
+            <li class="">· Anuncios parroquiales sobre mi blog 📝.</li>
+            <li class="">· Fotos de mis perras para alegrarte el día 🐶.</li>
+            <li class="">· Solo cada que tenga algo interesante qué decir 🤓.</li>
+        </ul>
+        <p class="pt-2 pb-4 text-2xl text-center text-accent-500 dark:text-accent-dark-500">Directo en tu correo—cero spam 🚫</p>
+        <div class="animate-bounce text-4xl text-center">👇🏼</div>
+        <form action="https://newsletter.perrodinero.blog/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank" class="flex-col space-y-4 text-center sm:w-80 mx-auto">
+            <div>
+                <label for="member_email" class="sr-only">Correo</label>
+                <input class="p-2 text-xl rounded-t-md w-full bg-background dark:bg-background-dark placeholder-opacity-25 px-2 outline-none border-b border-opacity-75" placeholder="correo.perron@woof.com" type="email" name="member[email]" id="member_email" required>
+            </div>
+            <input type="submit" value="Suscribirse" name="member[subscribe]" id="member_submit" class="w-full button text-2xl"></input>
+        </form>
+    {# {% endblock %}     #}
 </div>
