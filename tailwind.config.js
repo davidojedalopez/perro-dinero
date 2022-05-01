@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   darkMode: 'class',
   purge: ['./_site/**/*.html', './**/*.njk'],
@@ -33,7 +35,8 @@ module.exports = {
         'primary-dark': '#EEEEEE',
         'twitter': '#1b95e0',
         'twitter-hover': '#0c7abf',
-        'reddit': '#ff5700'
+        'reddit': '#ff5700',
+        green: colors.emerald,
       },
       fontFamily: {
         'logo': ['Roboto Condensed', 'sans-serif'],
@@ -63,5 +66,8 @@ module.exports = {
       animation: ['hover'],
       boxShadow: ['dark']
     }
-  }
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
