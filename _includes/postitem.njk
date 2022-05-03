@@ -1,8 +1,10 @@
-<a href="{{ post.url | url }}" class="no-underline">
+<a href="{{ post.data.external_url if post.data.external_content else post.url | url }}" target="{{ 'blank' if post.data.external_url else '_self' }}" class="no-underline">
   <div class="flex space-x-1 text-sm text-gray-500">
       <time class="text-accent-600 dark:text-accent-dark-600" datetime="{{ post.data.published_at | htmlDateString }}">{{ post.data.published_at | readableDate }}</time>
-      <span aria-hidden="true"> &middot; </span>
-      <p class="text-accent-600 dark:text-accent-dark-600"> Lectura de {{ post | readingTime }} </p>
+      {% if not post.data.external_content %}
+        <span aria-hidden="true"> &middot; </span>
+        <p class="text-accent-600 dark:text-accent-dark-600"> Lectura de {{ post | readingTime }} </p>
+      {% endif %}
   </div>
   <div class="flex-1">
     <div class="block mt-2">
