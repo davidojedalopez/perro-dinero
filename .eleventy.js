@@ -207,7 +207,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksShortcode("structured_data", structuredData);
 
   eleventyConfig.on('eleventy.after', async () => {
-    fs.rmSync('_site/newsletters', { recursive: true, force: true });
+    try {
+      fs.rmSync('_site/newsletters', { recursive: true, force: true });
+    } catch(error) {
+      console.error(error)
+    }
   })
 
   return {
