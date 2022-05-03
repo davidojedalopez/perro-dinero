@@ -10,17 +10,21 @@ title: "Archivo"
 
 <section class="flex flex-col space-y-8 mb-8">
   {% for date, posts in postsList | reverse | groupby("data.monthYear") %}
-    <details {% if loop.first or loop.index0 < 5 %} open {% endif %} class="space-y-8">
-      <summary class="cursor-pointer">
-        {{ date | capitalize }} ({{ posts | length }} posts)
-      </summary>
-      <div class="pb-2 px-4 sm:px-6 lg:pb-4 lg:px-8">
-        <div class="pt-4 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
-          {% for post in posts %}
-            {% include "postitem.njk" %}
-          {% endfor %}
-        </div>
+    <div class="relative">
+      <div class="absolute inset-0 flex items-center" aria-hidden="true">
+        <div class="w-full border-t border-gray-300"></div>
       </div>
-    </details>
+      <div class="relative flex justify-start">
+        <span class="pr-3 bg-background dark:bg-background-dark text-lg font-medium text-primary dark:text-primary-dark"> {{ date | capitalize }} ({{ posts | length }} posts) </span>
+      </div>
+    </div>
+    <div class="pb-2 px-4 sm:px-6 lg:pb-4 lg:px-8">
+      <div class="pt-4 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+        {% for post in posts %}
+          {% include "postitem.njk" %}
+        {% endfor %}
+      </div>
+    </div>
+
   {% endfor %}
 </section>
