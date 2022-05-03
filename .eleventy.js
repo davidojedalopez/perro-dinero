@@ -130,6 +130,13 @@ module.exports = function (eleventyConfig) {
       .filter(shouldBeLive);
   });
 
+  eleventyConfig.addCollection("rssables", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob(["posts/*.md", "books/*.md", "atomic_essays/*.md"])
+      .filter(shouldBeLive);
+  });
+
+
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob("posts/*.md")
@@ -198,6 +205,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addNunjucksShortcode("image", imageShortCode);
   eleventyConfig.addNunjucksShortcode("structured_data", structuredData);
+
+  eleventyConfig.on('eleventy.after', async () => {
+    fs.rmSync('_site/newsletters', { recursive: true, force: true });
+  })
 
   return {
     templateFormats: [
