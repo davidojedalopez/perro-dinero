@@ -3,5 +3,6 @@
     "books",
     "libros"
   ],
-  "layout": "layouts/book.njk"
+  "layout": "layouts/book.njk",
+  "type": "libros"
 }

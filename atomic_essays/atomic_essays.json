@@ -5,5 +5,6 @@
     "atomic_essays",
     "ensayos atómicos"
   ],
-  "layout": "layouts/micro_essay.njk"
+  "layout": "layouts/micro_essay.njk",
+  "type": "ensayo atómico"
 }

@@ -17,24 +17,18 @@ permalink: "ensayosatomicos/{{ page.fileSlug }}/"
         <img class="mx-auto" src="{{ share_image_url | url }}" alt="Ensayo atómico en formato imagen" width="150">
     </div>
 
-    <div class="flex flex-col mt-16 p-4">
-      <p class="opacity-75">Otros posts que pueden interesarte 💭</p>
-
-      {% set post = collections.posts | reverse | first %}
-      {% if post %}
-        {% include "postitem_no_description.njk" %}
-      {% endif %}
-
-      {% set post = collections.posts | getPreviousCollectionItem(post) %}
-      {% if post %}
-        {% include "postitem_no_description.njk" %}
-      {% endif %}
-
-    </div>
-
-    <div class="mb-8">
-      {% include "calls_to_action/newsletter_post.njk" %}
-    </div>
-
-
 </article>
+
+<div class="flex flex-col mt-8 p-4 space-y-12 mb-8">
+  <p class="opacity-75">Otras publicaciones que pueden interesarte 💭</p>
+
+  {% set post = collections.publishables | getPreviousCollectionItem(page) %}
+  {% if post %}
+      {% include "postitem.njk" %}
+  {% endif %}
+
+  {% set post = collections.publishables | getNextCollectionItem(page) %}
+  {% if post %}
+      {% include "postitem.njk" %}
+  {% endif %}
+</div>

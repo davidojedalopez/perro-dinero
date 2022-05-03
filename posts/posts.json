@@ -3,5 +3,6 @@
     "posts"
   ],
   "monthYear": "",
-  "layout": "layouts/post.njk" 
+  "layout": "layouts/post.njk",
+  "type": "post"
 }

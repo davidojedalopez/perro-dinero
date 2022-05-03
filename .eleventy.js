@@ -41,7 +41,7 @@ function structuredData(data) {
   return `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`
 }
 
-function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', sizes = "(min-width: 30em) 50vw, 100vw") {
+function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', classes = "", sizes = "(min-width: 30em) 50vw, 100vw") {
   const options = {
     widths: [200, 400, 600, 640],
     formats: ['webp', 'jpeg'],
@@ -57,11 +57,13 @@ function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loadi
   Image(src, options);
 
   const imageAttributes = {
+    class: classes,
     alt,
     sizes,
     loading,
     decoding: 'async',
   }
+
   const metadata = Image.statsSync(src, options)
   const html = Image.generateHTML(metadata, imageAttributes, { whitespaceMode: 'inline' })
   const figureCaption = altShouldBeCaption ? alt : caption
@@ -121,6 +123,12 @@ module.exports = function (eleventyConfig) {
 
   const now = Date.now()
   const shouldBeLive = post => post.data.published_at <= now && !post.data.draft;
+
+  eleventyConfig.addCollection("publishables", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob(["posts/*.md", "books/*.md", "atomic_essays/*.md", "newsletters/*.md"])
+      .filter(shouldBeLive);
+  });
 
   eleventyConfig.addCollection("posts", function (collectionApi) {
     return collectionApi

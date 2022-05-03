@@ -4,63 +4,31 @@ title: Perro Dinero
 cover_path: img/perro_dinero.png
 ---
 
-{% set post = collections.posts | last %}
-<a class="shadow-2xl dark:shadow-2xl-dark block no-underline hover:bg-accent-100 dark:hover:bg-foreground-dark rounded" href="{{ post.url | url }}">
-  <div class="flex flex-col xl:flex-row items-start xl:space-x-4">
-    <div class="px-4 pt-2 lg:px-8 lg:pt-8">
-      <h2 class="lg:text-5xl font-black w-full text-accent-500 dark:text-accent-dark-500">{{ post.data.title }} </h2>
-      {% if post.data.author %}
-        <p class="text-sm opacity-75">Escrito por {{ post.data.author }} y traducido por David Ojeda (Perro Dinero)</p>
-      {% endif %}
-      <time class="text-sm text-accent-600 dark:text-accent-dark-600" datetime="{{ post.data.published_at | htmlDateString }}">{{ post.data.published_at | readableDate }}</time> <span class="px-2 text-sm text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-sm text-accent-600 dark:text-accent-dark-600">Lectura de {{ post | readingTime }}</span>
-      {% if post.data.last_updated_at %}
-        <span class="px-2 text-sm text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-sm text-accent-600 dark:text-accent-dark-600">Actualizado el </span><time class="text-sm text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ post.data.last_updated_at | readableDate }}</time>
-      {% endif %}
-      <p class="pt-4">{{ post.data.description }}</p>
-      <p class="text-sm opacity-75 py-4">Leer más...</p>
-    </div>
-
-    {% if post.data.cover_path %}
-      <div class="pt-4 lg:pb-4 xl:py-0 rounded mx-auto w-full max-w-screen-sm h-auto self-center z-10">
-        <div class="relative -z-1">
-          {% image post.data.cover_path | url, post.data.cover_alt, false, '', 'eager' %}
-        </div>
-      </div>
-    {% endif %}
-  </div>
-
-</a>
-
-<hr class="my-16">
-
-<p class="text-xl">Lo más reciente...</p>
-
-{% set maxPosts = 4 %}
-{% set postsList = collections.posts | head(-maxPosts)  %}
-{% set postsListCount = collections.postsAndBooks | length %}
-<section class="flex flex-col my-4 space-y-8">
-  {% for post in postsList | reverse %}
-    {% if loop.index0 != 0 %}
-      {% include "postitem.njk" %}
-    {% endif %}
-  {% endfor %}
-</section>
-
-<a class="button--outline block mt-4" href="/posts/">Todos los posts 📂 ({{ postsListCount }})</a>
+{% set highlighted_publishables_count = 3 %}
+{% set publishables = collections.publishables | head(-highlighted_publishables_count) %}
+{% include "highlights.njk" %}
 
 <hr>
 
-<p class="text-4xl">Ensayos atómicos ✍️</p>
+{% set maxPosts = 6 + highlighted_publishables_count %}
+{% set publishablesList = collections.publishables | head(-maxPosts)  %}
+{% set postsListCount = collections.publishables | length %}
 
-{% set microEssaysList = collections.atomic_essays | head(-3) %}
-{% set microEssaysCount = collections.atomic_essays | length %}
-<section class="flex flex-col my-4 space-y-8">
-  {% for essay in microEssaysList | reverse %}
-    {% include "micro_essay_item.njk" %}
-  {% endfor %}
-</section>
+<h2 class="text-primary dark:text-primary-dark text-3xl tracking-tight font-extrabold sm:text-4xl">
+  Otras publicaciones
+</h2>
 
-<a class="button--outline block mt-4" href="/ensayosatomicos/">Todos los ensayos 📂 ({{ microEssaysCount }})</a>
+<div class="pt-4 pb-10 px-4 sm:px-6 lg:pt-6 lg:pb-14 lg:px-8">
+  <div class="mt-3 pt-5 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
+    {% for post in publishablesList | reverse %}
+      {% if loop.index0 >= highlighted_publishables_count %}
+        {% include "postitem.njk" %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<a href="/posts/" type="button" class="block mx-auto w-fit no-underline px-4 py-2 border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200 dark:text-yellow-700 dark:bg-yellow-100 dark:hover:bg-yellow-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 dark:focus:ring-yellow-500">Todos las publicaciones 📂 ({{ postsListCount }})</a>
 
 <hr>
 
