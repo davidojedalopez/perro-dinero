@@ -1,4 +1,4 @@
-<a href="{{ item.url | url }}" class="hover:bg-accent-100 dark:hover:bg-foreground-dark no-underline flex flex-col rounded-lg shadow-xl dark:shadow-xl-dark overflow-hidden no-hyphens">
+<a href="{{ item.data.external_url if item.data.external_content else item.url | url }}" target="{{ 'blank' if item.data.external_url else '_self' }}" class="hover:bg-accent-100 dark:hover:bg-foreground-dark no-underline flex flex-col rounded-lg shadow-xl dark:shadow-xl-dark overflow-hidden no-hyphens">
     <div class="flex-shrink-0">
         {% image item.data.cover_path | url, item.data.cover_alt, false, '', 'eager', 'h-72 w-full object-cover' %}
     </div>
@@ -14,8 +14,10 @@
             <div class="">
                 <div class="flex text-base space-x-1 dark:text-green-800 text-yellow-500">
                     <time datetime="{{ item.data.published_at | htmlDateString }}">{{ item.data.published_at | readableDate }}</time>
-                    <span aria-hidden="true"> &middot; </span>
-                    <p> Lectura de {{ item | readingTime }} </p>
+                    {% if not item.data.external_content %}
+                        <span aria-hidden="true"> &middot; </span>
+                        <p> Lectura de {{ item | readingTime }} </p>
+                    {% endif %}
                 </div>
             </div>
         </div>

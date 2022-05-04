@@ -208,7 +208,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.on('eleventy.after', async () => {
     try {
-      fs.rmSync('_site/newsletters', { recursive: true, force: true });
+      fs.rmSync('_site/newsletters', { recursive: true });
     } catch(error) {
       console.error(error)
     }
