@@ -27,9 +27,6 @@
     debugMode = false
 
 [[plugins]]
-  package = "netlify-plugin-submit-sitemap"
-
-[[plugins]]
   package = "@algolia/netlify-plugin-crawler"
 
 [[plugins]]
