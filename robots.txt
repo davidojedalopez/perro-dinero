@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /_macros/*/
-Disallow: /api/*
 Sitemap: https://perrodinero.blog/sitemap.xml
