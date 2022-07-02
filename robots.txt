@@ -3,7 +3,6 @@ Allow: /posts/*/
 Allow: /libros/*/
 Allow: /ensayosatomicos/*/
 Allow: /portafolio
-Disallow: /posts/
 Disallow: /libros/
 Disallow: /faqs/*/
 Disallow: /faqs/
