@@ -1,16 +1,3 @@
-User-agent: Algolia Crawler
-Allow: /posts/*/
-Allow: /libros/*/
-Allow: /ensayosatomicos/*/
-Allow: /portafolio
-Disallow: /libros/
-Disallow: /faqs/*/
-Disallow: /faqs/
-Disallow: /feed.xml
-Disallow: /404.html
-Disallow: /sitemap.xml
-Disallow: /suscrito
-
 User-agent: *
 Disallow: /_macros/*/
 Disallow: /api/*
