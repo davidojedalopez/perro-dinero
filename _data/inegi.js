@@ -14,6 +14,6 @@ module.exports = async function () {
             amount: 35101.08,
             description: 'Valor anual de la UMA. Se calcula multiplicando su valor mensual por 12',
             for_year: 2022
-        },
+        }
     }
 }
