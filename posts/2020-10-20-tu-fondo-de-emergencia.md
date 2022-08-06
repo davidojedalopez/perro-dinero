@@ -93,7 +93,7 @@ Tiene **disponibilidad diaria**; pero tienes que pedir el retiro antes de las 12
 
 Podría parecer que no retienes ISR con Bonddia porque la calculadora de la página de Cetesdirecto no lo muestra para este instrumento:
 
-![Calculadora de Cetesdirecto, mostrando inversión con Bonddia](/img/posts/bonddia_calculadora.png)
+{% image 'img/posts/bonddia_calculadora.png', 'Calculadora de Cetesdirecto, mostrando inversión con Bonddia' %}
 
 Pero en realidad te lo están **reteniendo diariamente** y al final del año te permiten descargar una constancia de percepciones y retenciones. No encontrarás la constancia para el año en curso, solo puedes descargar las de ejercicios fiscales pasados. Esto es lo que entregarías a tu contador para hacer tu declaración anual.
 
@@ -115,7 +115,7 @@ Algunos **ejemplos de SOFIPOs** son **SuperTasas**, **Kubo Financiero** y **Fins
 
 En SuperTasas el plan de liquidez diaria se llama "A la vista" y te ofrece una Ganancia Anual Total (GAT) real de 0.98%. El GAT real es lo que te queda después de tomar en cuenta la inflación. Aquí un ejemplo:
 
-![Tabla de rendimientos en SuperTasas](/img/posts/supertasas_fondo_emergencia.png)
+{% image 'img/posts/supertasas_fondo_emergencia.png', 'Tabla de rendimientos en SuperTasas' %}
 
 No pagarías impuestos porque los $50,000 pesos no superan las 5 UMAs.
 
@@ -123,7 +123,7 @@ No pagarías impuestos porque los $50,000 pesos no superan las 5 UMAs.
 
 En Kubo Financiero el plan se llama "Kubo.ahorro" y ahorita está medio jodido:
 
-![Tabla de rendimientos en Kubo Financiero](/img/posts/kubo_financiero_fondo_emergencia.png)
+{% image 'img/posts/kubo_financiero_fondo_emergencia.png', 'Tabla de rendimientos en Kubo Financiero' %}
 
 #### Finsus
 
