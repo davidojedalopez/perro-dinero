@@ -6,6 +6,7 @@ published_at: 2020-07-02
 cover_path: img/posts/covers/codi.png
 cover_alt: "Nina con la lengua de fuera viendo fijamente a la cámara."
 tags: ['mexico', 'plataformas', 'codi']
+newsletter_cta: true
 ---
 
 <details open>
@@ -25,7 +26,7 @@ De seguro en algún momento de tu vida has utilizado un código QR:
 
 - 📱 Confirmar, en medio de la peda, que los pomos que te chingaste eran legales 👀
 
-![Un perro muy borracho](/img/posts/perro_borracho.gif)
+{% image 'img/posts/perro_borracho.gif', 'Un perro muy borracho' %}
 
 Pero, ¿cuántas veces has utilizado un código QR para recibir o enviar dinero? **Eso hace CoDi**.
 
@@ -55,11 +56,11 @@ Las imágenes siguientes son del proceso utilizando la app de BBVA. Se verá un 
 
 #### Abre tu app y selecciona “Operación QR + CoDi”
 
-![Pantalla principal de la app BBVA](/img/posts/codi_bbva_1.png)
+{% image 'img/posts/codi_bbva_1.png', 'Pantalla principal de la app BBVA' %}
 
 #### Selecciona la pestaña “Cobrar”
 
-![Operaciones QR + CoDi en la app BBVA](/img/posts/codi_bbva_2.png)
+{% image 'img/posts/codi_bbva_2.png', 'Operaciones QR + CoDi en la app BBVA' %}
 
 Antes de que le des zoom a la imagen para ver qué fotos hay, te las describo. De izquierda a derecha: la imagen antes de esta; un comentario de un fan en mi newsletter; mis plantas secas; y un pastel de Covid 🦠
 
@@ -69,27 +70,25 @@ Antes de que le des zoom a la imagen para ver qué fotos hay, te las describo. D
 
 Aquí seleccionas la cuenta en la que caerá el dinero, el importe y el concepto (opcional).
 
-![Cobrar con QA en app de BBVA](/img/posts/cod_bbva_3.png)
+{% image 'img/posts/cod_bbva_3.png', 'Cobrar con QA en app de BBVA' %}
 
 #### Pícale en “Crear QR”
 
 En este punto ya tendrás un código QR para compartir a la raza, y cualquiera que lo escanee te podrá pagar $10 pesotes. Aquí está el que acabo de crear en este ejemplo, pa’ que me motives a seguir creando contenido perrón 🐕
 
-![Detalle de cuenta con QR](/img/posts/codi_bbva_4.png)
+{% image 'img/posts/codi_bbva_4.png', 'Detalle de cuenta con QR' %}
 
 Si haces scroll en esa pantalla puedes encontrar un botón para compartir el código 😉
 
 ### Pagar con CoDi
 
-#### Igual, abre la app y selecciona hacer operación con CoDi
-
-#### Ahora selecciona la pestaña “Pagar” (está seleccionada por defecto)
-
-#### Escanea el código QR que te compartieron e inicia sesión
+1. Igual, abre la app y selecciona hacer operación con CoDi.
+2. Ahora selecciona la pestaña “Pagar” (está seleccionada por defecto).
+3. Escanea el código QR que te compartieron e inicia sesión.
 
 Puedes escanearlo o seleccionar una foto de tu galería. Si te mandaron la imagen por WhatsApp, aquí la podrías ver. Cuando escanees el código tendrás oportunidad de confirmar, y se verá así:
 
-![Pagar con código QR en app BBVA](/img/posts/codi_bbva_5.png)
+{% image 'img/posts/codi_bbva_5.png', 'Pagar con código QR en app BBVA' %}
 
 Al aceptar te llegará una notificación del cobro y también le llegará una notificación a quien le pagaste.
 
