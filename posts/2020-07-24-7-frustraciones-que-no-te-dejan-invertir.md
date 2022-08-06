@@ -19,7 +19,7 @@ tags: ['inversiones', 'errores']
 
 En noviembre del 2019 **yo no sabía nada de inversiones**. No tenía nada invertido, y con trabajo tenía dinero ahorrado. Pero el internet es mágico.
 
-![Un pollo saliendo mágicamente de un huevo](/img/posts/magic.gif)
+{% image 'img/posts/magic.gif', 'Un pollo saliendo mágicamente de un huevo.' %}
 
 En diciembre comencé a ver videos en YouTube y a leer libros sobre finanzas personales y el **27 de diciembre del 2019 hice mi primera inversión**.
 
@@ -61,7 +61,7 @@ Mi primera inversión fue de $5,700 pesos, pero **puedes empezar desde $100 peso
 
 Ni siquiera te darás cuenta de que te hace falta ese dinero, y cuando menos lo pienses ya tendrás una buena lana invertida 👇
 
-![Gráfica de interés compuesto](/img/posts/interes_compuesto.png)
+{% image 'img/posts/interes_compuesto.png', 'Gráfica de interés compuesto.' %}
 
 No te preocupes por la cantidad con la que empiezas, pero **empieza**.
 
@@ -107,7 +107,7 @@ Hacer cosas nuevas asusta, pero piénsalo al revés. **Imagina todo lo que pierd
 
 Lo mismo ocurre con las inversiones. Si algo te detiene, que no sea esto.
 
-![Tweet de James Clear sobre el costo de no actuar](/img/posts/james_clear_tweet_costo_de_no_actuar.png)
+{% image 'img/posts/james_clear_tweet_costo_de_no_actuar.png', 'Tweet de James Clear sobre el costo de no actuar.' %}
 
 ### ¿Qué haces?
 

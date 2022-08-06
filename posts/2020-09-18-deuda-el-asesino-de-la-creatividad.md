@@ -37,7 +37,7 @@ El interés implícito es psicológico porque sabes que cada mes una gran parte 
 
 Y quién no conoce a alguien que sacó su celular a crédito y este se chingó antes de haberlo pagado por completo. El típico: "wey, valió madre mi cel y todavía ni lo terminaba de pagar". Te aseguro que lo que más duele es el "todavía ni lo terminaba de pagar" 🤣
 
-![Rana Rene quejándose que no puede comprar el iPhone 11 porque todavía no termina de pagar el iPhone 6](/img/posts/iphone_meme.jpg)
+{% image 'img/posts/iphone_meme.jpg', 'Rana Rene quejándose que no puede comprar el iPhone 11 porque todavía no termina de pagar el iPhone 6.' %}
 
 La siguiente vez que quieras hacer una compra grande piensa esto primero:
 
@@ -95,13 +95,13 @@ En cambio, si no tuvieras la deuda, podrías tomar el trabajo sin tanta preocupa
 
 Así se ve un buen margen de oportunidad:
 
-![Gráfica de barra que muestra un margen de oportunidad grande. Poco gasto y mucho ingreso.](/img/posts/margen_de_oportunidad_ideal.png)
+{% image 'img/posts/margen_de_oportunidad_ideal.png', 'Gráfica de barra que muestra un margen de oportunidad grande. Poco gasto y mucho ingreso.' %}
 
 Cuando vives rozando tus posibilidades, o más allá, tu margen de oportunidad es tan bajo que ni siquiera te pasa por la cabeza arriesgarte. Tu mente se limita a seguir haciendo lo que ya haces aunque apenas sea suficiente.
 
 Y es en esta situación donde muchos optan por un crédito, haciendo que tu margen sea prácticamente nulo. Eres esclavo de tus deudas:
 
-![Gráfica de barra que muestra un margen de oportunidad casi nulo. El gasto es casi igual al ingreso.](/img/posts/margen_de_oportunidad_comun.png)
+{% image 'img/posts/margen_de_oportunidad_comun.png', 'Gráfica de barra que muestra un margen de oportunidad casi nulo. El gasto es casi igual al ingreso.' %}
 
 ***
 

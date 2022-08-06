@@ -21,7 +21,7 @@ Una respuesta común a cómo ahorrar más es: dejando de comprar café en la cal
 
 Es cierto que los **gastos hormiga** pueden representar un **problema si no los controlas**, pero privarse de un buen café no va con mi estilo de vida.
 
-![Un perro policía metiendo un teléfono celular en una taza de café](/img/posts/dog_and_coffee.gif)
+{% image 'img/posts/dog_and_coffee.gif', 'Un perro policía metiendo un teléfono celular en una taza de café.' %}
 
 ¿Has pensado que la mejor forma de ahorrar es en realidad **ganando más**?
 

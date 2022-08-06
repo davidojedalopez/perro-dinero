@@ -41,7 +41,7 @@ En este post te enseñaré la forma más efectiva de pagar tus deudas: el **mét
 
 Al inicio no es más que una bola de nieve, pero pronto se convierte en una gran masa de nieve que **nada puede detener**:
 
-![Un reno dentro de una bola de nieve bajando una colina](/img/posts/bola_de_nieve.gif)
+{% image 'img/posts/bola_de_nieve.gif', 'Un reno dentro de una bola de nieve bajando una colina.' %}
 
 **Así acabarás con tus deudas**. No, no rodando y dándote un buen chingazo 🤣 Si no empezando con la deuda más pequeña para ganar impulso, aprovechando las pequeñas victorias para motivarte a pagar las más grandes lo más rápido posible 💪🏼
 
@@ -67,7 +67,7 @@ Ahora que sabes qué es y porqué funciona el método bola de nieve, es hora de 
 
 **Primero necesitas saber cuanto debes.**
 
-![Viejito de la película "El Hoyo"](/img/posts/obvio.jpeg)
+{% image 'img/posts/obvio.jpeg', 'Viejito de la película "El Hoyo".' %}
 
 Y aunque parezca obvio, no todas las personas saben cuánto deben y menos la cantidad de intereses que están pagando.
 
@@ -95,7 +95,7 @@ Ya con la lista de tus deudas ordenada tienes que comenzar a ejecutar el plan. Y
 
 Supongamos que tienes las siguientes deudas, ya ordenadas:
 
-![Tabla con deudas, pagos mínimos y totales](/img/posts/tabla_deudas.png)
+{% image 'img/posts/tabla_deudas.png', 'Tabla con deudas, pagos mínimos y totales.' %}
 
 Nota que no agregué los intereses que pagas en cada deuda. De momento no son importantes porque el objetivo es pagar la menor deuda primero, y continuar con el resto.
 

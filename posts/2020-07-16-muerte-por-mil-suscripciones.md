@@ -19,7 +19,7 @@ tags: ['ahorro', 'presupuestos', 'suscripciones']
 
 Los chinos tenían una técnica muy peculiar para llevar a cabo torturas y penas de muerte: **Muerte por mil cortes**. La técnica consistía en hacer pequeños cortes a una persona hasta que se desangrara. Qué forma de empezar un post de finanzas personales, ¿verdad? 😈
 
-![Coraje el perro cobarde sorprendido](/img/posts/coraje_sorprendido.gif)
+{% image 'img/posts/coraje_sorprendido.gif', 'Coraje el perro cobarde sorprendido.' %}
 
 Pero no te preocupes, esta técnica fue prohibida en 1905 y ya no existen registros de su uso.
 
@@ -105,7 +105,7 @@ Si estás seguro de que seguirás usando el servicio y te da mucho valor, no lo 
 
 Con Amazon Prime te ahorras tres meses por pagarlo anual:
 
-![Costos de Amazon Prime](/img/posts/amazon_prime.png)
+{% image 'img/posts/amazon_prime.png', 'Costos de Amazon Prime.' %}
 
 Solo que ojo con Prime. Te estás ahorrando tres meses en la suscripción, pero si tener envíos gratis hará que hagas más pedidos, **te saldrá el tiro por la culata** 🧐
 

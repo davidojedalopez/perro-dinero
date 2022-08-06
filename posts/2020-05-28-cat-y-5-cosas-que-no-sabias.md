@@ -158,11 +158,11 @@ Ahora solo hace falta especificar los pagos. Como dijimos que nos prestarían $1
 
 12 pagos de $10,000 cada uno son $120,000. Vamos a darle con eso.
 
-![Calculadora de CAT— Pagos](/img/posts/cat_online_3.png)
+{% image 'img/posts/cat_online_3.png', 'Calculadora de CAT— Pagos.' %}
 
 Le damos calcular y nos muestra el CAT de este crédito que acabamos de armar:
 
-![Calculadora de CAT— Resultado](/img/posts/cat_online_4.png)
+{% image 'img/posts/cat_online_4.png', 'Calculadora de CAT— Resultado.' %}
 
 Los detalles incluyen el monto total a pagar y la cantidad de intereses y/o cargos adicionales.
 

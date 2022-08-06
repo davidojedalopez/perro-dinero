@@ -17,9 +17,9 @@ tags: ['recursos', 'inversiones', 'ahorro', 'deuda', 'desarrollo personal']
 
 </details>
 
-Cada quien **aprende** de forma **diferente** y la gran ventaja que tenemos hoy es que hay **infinidad de formatos** para consumir información. Algunos incluso dirán que hay **demasiada** información 👇
+Cada quien **aprende** de forma **diferente** y la gran ventaja que tenemos hoy es que hay **infinidad de formatos** para consumir información. Algunos incluso dirán que hay **demasiada** información 👇:
 
-![Muchos perros cachorros jugando con un niño](/img/posts/dogs_and_child.gif)
+{% image 'img/posts/dogs_and_child.gif', 'Muchos perros cachorros jugando con un niño.' %}
 
 Hoy puedes aprender:
 

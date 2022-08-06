@@ -52,7 +52,7 @@ Para confirmar que todo está bien, sigue estos pasos:
 - 🔹 Selecciona la pestaña "**Otros trámites y servicios**"
 - 🔹 Selecciona la opción "**Obtén tu opinión del cumplimiento de obligaciones fiscales**"
 
-![Menú del SAT para obtener la opinión de cumplimiento de obligaciones fiscales](/img/posts/opinion_de_cumplimiento_sat.png)
+{% image 'img/posts/opinion_de_cumplimiento_sat.png', 'Menú del SAT para obtener la opinión de cumplimiento de obligaciones fiscales.' %}
 
 El resultado es un archivo PDF que dice, entre otras cosas, si la opinión fiscal es positiva o negativa.
 

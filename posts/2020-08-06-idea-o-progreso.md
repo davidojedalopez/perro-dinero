@@ -23,7 +23,7 @@ Yo he estado en las dos situaciones muchas veces, y muy pocas en un punto medio.
 
 En este post quiero retar mis propias ideas y convencerte de que en muchas ocasiones pensar y planear detenidamente es el camino correcto en lugar de solo empezar.
 
-![Perro con ropa de oficina sentado frente a una computadora](/img/posts/perro_en_computadora.gif)
+{% image 'img/posts/perro_en_computadora.gif', 'Perro con ropa de oficina sentado frente a una computadora.' %}
 
 ***
 

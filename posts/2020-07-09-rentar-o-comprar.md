@@ -21,7 +21,7 @@ tags: ['inversiones', 'rentar', 'comprar', 'casa', 'hipoteca']
 
 **La mayoría dirá que comprar**, ¿por qué pagar a alguien más para vivir en su casa cuando puedo pagar y vivir en mi propia casa?
 
-![Muchos cachorros confundidos](/img/posts/confused_dogs.gif)
+{% image 'img/posts/confused_dogs.gif', 'Muchos cachorros confundidos.' %}
 
 La principal razón por la que decidí escribir esto es porque todavía escucho a muchas personas decir que rentar es **tirar tu dinero a la basura**. Que para qué seguir pagando renta cuando puedes usar ese dinero para pagar el crédito de una casa.
 

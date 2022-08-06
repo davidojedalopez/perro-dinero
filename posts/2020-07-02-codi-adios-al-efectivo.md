@@ -134,7 +134,7 @@ Banxico te dirá que CoDi es una solución para combatir la corrupción, fraude 
 
 [Según Banxico, alias Nostradamus, hay 18,121,000 usuarios en septiembre del 2020](https://www.banxico.org.mx/sistemas-de-pago/codi-cobro-digital-banco-me.html) (estoy escribiendo esto hoy, 2 de julio del 2020):
 
-![Gráfico de usuarios estimados que usan CoDi](/img/posts/uso_de_codi.png)
+{% image 'img/posts/uso_de_codi.png', 'Gráfico de usuarios estimados que usan CoDi.' %}
 
 Pero ya, [según los datos disponibles en la página oficial de CoDi](https://www.banxico.org.mx/sistemas-de-pago/d/%7B4B9AD916-9308-AF18-D469-E17A63D4AB56%7D.xlsx) (link es un archivo de Excel), el **29 de junio del 2020** había **3,207,704** usuarios registrados en CoDi.
 
