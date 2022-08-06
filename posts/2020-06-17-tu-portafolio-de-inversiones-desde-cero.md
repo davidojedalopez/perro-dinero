@@ -7,6 +7,7 @@ published_at: 2020-06-17
 cover_path: img/posts/covers/portafolio_desde_cero.png
 cover_alt: "Nina acostada en el parque volteando hacia atrás, sorprendida."
 tags: ['inversiones', 'David Swensen', 'market timing', 'vea', 'voo', 'vwo', 'vgsh', 'vtip', 'vnq', 'cetes']
+newsletter_cta: true
 ---
 
 <details open>
@@ -20,7 +21,7 @@ tags: ['inversiones', 'David Swensen', 'market timing', 'vea', 'voo', 'vwo', 'vg
 
 Ya te decidiste a invertir, **pero no sabes cómo empezar** 🤔. Ya conoces [muchas plataformas para invertir con poco dinero](/posts/21-plataformas-para-invertir/), pero **no te puedes decidir por una** 😕.
 
-![Hombre frustrado tirando todo lo que encuentra en su escritorio](/img/posts/frustrado.gif)
+{% image 'img/posts/frustrado.gif', 'Hombre frustrado tirando todo lo que encuentra en su escritorio' %}
 
 Algo que puedes hacer para sobrepasar esa frustración es comenzar con un **portafolio prediseñado** y avanzar desde ahí 😯.
 
@@ -48,7 +49,7 @@ La asignación de activos es **decidir la proporción de los distintos tipos de 
 
 Velo de esta manera, tu portafolio es como tu **carrito del super** 🛒
 
-![Perro paseando un mini carrito del super](/img/posts/perro_paseando_carrito.gif)
+{% image 'img/posts/perro_paseando_carrito.gif', 'Perro paseando un mini carrito del super' %}
 
 Cuando vas al super compras diferentes tipos de comida para tener una dieta balanceada: carne, frutas, verduras, lácteos, chelas, etc.
 
@@ -180,7 +181,7 @@ Como te platicaba, recomiendo comenzar con una plantilla de asignación de activ
 
 Yo comencé con el modelo de Swensen. La asignación de activos con este modelo es así:
 
-![Porcentaje de activos en portafolio](/img/posts/portafolio.png)
+{% image 'img/posts/portafolio.png', 'Porcentaje de activos en portafolio' %}
 
 Como recordatorio, antes mencioné los tres principios de un buen portafolio: 1) enfoque en capital; 2) diversificación; y 3) consideración de impuestos.
 
