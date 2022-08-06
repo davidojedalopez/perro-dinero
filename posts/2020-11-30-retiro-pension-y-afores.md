@@ -35,7 +35,7 @@ Aquí te explico lo **mínimo** que tienes que saber sobre el retiro y de cómo 
 
 De seguro has imaginado tu retiro, y lo que harás cuando lo alcances. Probablemente se ve algo así:
 
-![Nina en la playa, disfrutando su retiro.](/img/posts/nina_en_la_playa.png)
+{% image 'img/posts/nina_en_la_playa.png', 'Nina en la playa, disfrutando su retiro.' %}
 
 **¿Pero has pensado de dónde saldrá el dinero?**
 
@@ -53,7 +53,7 @@ En cuál de los dos estás dependerá de cuando empezaste a cotizar en el Instit
 
 > Si cotizaste antes del **1º de julio de 1997** estás en el régimen 73. Si cotizaste después de esa fecha, estás en el régimen 97.
 
-![Diagrama para indicar a qué régimen de pensión perteneces dependiendo de la primera vez que cotizaste en el IMSS](/img/posts/pension_regimenes_73_y_97.svg)
+{% image 'img/posts/pension_regimenes_73_y_97.svg', 'Diagrama para indicar a qué régimen de pensión perteneces dependiendo de la primera vez que cotizaste en el IMSS' %}
 
 El régimen del 73 también se conoce como **generación de transición**, y el régimen del 97 como **generación Afore**.
 
@@ -163,7 +163,7 @@ Existe la posibilidad de que no estés en ninguna Afore si trabajas por tu cuent
 
 Al momento de escribir este post existen 11 Afores en México. [Aquí puedes ver las que existen y las cuentas que manejan](https://www.consar.gob.mx/gobmx/aplicativo/siset/CuadroInicial.aspx?md=5) a octubre del 2020:
 
-![Lista de Afores y de cuentas que manejan a octubre del 2020](/img/posts/afores_consar.png)
+{% image 'img/posts/afores_consar.png', 'Lista de Afores y de cuentas que manejan a octubre del 2020' %}
 
 Lo bueno es que no tienes por qué casarte con una Afore por el resto de tu vida, **puedes cambiarte**. El trámite empieza contactando a la Afore a la que te quieres cambiar. Puedes encontrar más detalles del [proceso de cambio de Afore aquí](https://www.gob.mx/consar/articulos/como-me-cambio-de-afore).
 
@@ -195,7 +195,7 @@ No soy la persona indicada para decirte cuántos impuestos tendrás que pagar al
 
 Cada Afore cobra diferentes comisiones anuales sobre el saldo de tu cuenta. Puedes [revisar los números más actualizados aquí](https://www.gob.mx/consar/es/articulos/comisiones-vigentes-en-2020?idiom=es). Así están para el 2020:
 
-![Comisiones Afores 2020](/img/posts/comisiones_afore_2020.png)
+{% image 'img/posts/comisiones_afore_2020.png', 'Comisiones Afores 2020' %}
 
 ### Rendimientos
 
@@ -219,7 +219,7 @@ Conforme te hacías más viejo ese dinero se iba **moviendo** de SIEFORE, donde 
 
 Era algo así (imagen obtenida del [portal e-sar](https://www.e-sar.com.mx/PortalEsar/public/sieforeInfo.do)):
 
-![Régimen anterior de SIEFOREs](/img/posts/siefores_reginem_anterior.png)
+{% image 'img/posts/siefores_reginem_anterior.png', 'Régimen anterior de SIEFOREs' %}
 
 ### Nuevo Régimen (generacional)
 
@@ -236,7 +236,8 @@ Hay un total de **10 SIEFOREs** generacionales:
 - 💰 **SIEFORE Básica Inicial**: Todos los que nacieron a partir de 1995
 
 Más ilustrativo:
-![SIEFOREs generacionales](/img/posts/siefores_generacionales.png)
+
+{% image 'img/posts/siefores_generacionales.png', 'SIEFOREs generacionales' %}
 
 La SIEFORE 55-59 desaparecerá cuando las personas nacidas en 1959 tengan 65 años de edad, y la SIEFORE Básica Inicial se convertirá en SIEFORE Básica 95-99. Y también se creará una nueva SIEFORE Básica Inicial para todas las personas nacidas a partir del 2000. Y así sucesivamente.
 
