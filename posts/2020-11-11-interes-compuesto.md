@@ -68,7 +68,7 @@ Es muy bonito hacer estos cálculos porque demuestran el **principio** del inter
 
 Esta es una gráfica típica de un cálculo ideal de interés compuesto:
 
-![Gráfica de interés compuesto con inversión inicial de $10,000, a 30 años y tasa anual del 10%](/img/posts/interes_compuesto_grafica.png)
+{% image 'img/posts/interes_compuesto_grafica.png', 'Gráfica de interés compuesto con inversión inicial de $10,000, a 30 años y tasa anual del 10%' %}
 
 Puedes encontrar la [calculadora en la página oficial del gobierno de Estados Unidos](https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator).
 
@@ -88,7 +88,7 @@ Es imposible tener una inversión que genere los mismos rendimientos cada año, 
 
 Estos son los [rendimientos de Cetes a un año desde noviembre de 1990 a septiembre del 2020](https://www.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?accion=consultarCuadro&idCuadro=CF107&sector=22&locale=es):
 
-![Rendimientos históricos de Cetes a un año](/img/posts/rendimiento_historico_cetes.png)
+{% image 'img/posts/rendimiento_historico_cetes.png', 'Rendimientos históricos de Cetes a un año.' %}
 
 Las tasas cambian. Unos años poco, y otros un chingo. Y no se puede predecir cuál será el cambio. Por eso hay que tomar los cálculos de interés compuesto con tasa fija con un grano de sal 🧂
 
@@ -100,7 +100,7 @@ Y las calculadoras de interés compuesto que encuentras en internet ni siquiera 
 
 Por ejemplo, si inviertes $10,000 pesos en Cetes de un año, con la tasa de rendimientos que ofrecen hoy, **retendrías $144.94 de ISR**:
 
-![Calculadora de rendimientos de Cetes a 1 año](/img/posts/calculadora_cetes_365_dias.png)
+{% image 'img/posts/calculadora_cetes_365_dias.png', 'Calculadora de rendimientos de Cetes a 1 año.' %}
 
 Y en México tienes una ventaja: Cetesdirecto **no cobra comisiones**. Pero es un caso especial porque la mayoría de las plataformas de inversiones incurren en comisiones por su servicio.
 
@@ -182,7 +182,7 @@ Igualmente puedes despejar la fórmula para determinar la tasa de interés que n
 
 ¿De dónde sale el 72? Sale de la fórmula exacta para calcular el tiempo que tomaría a una inversión duplicar su valor con interés compuesto ([imagen tomada de Investopedia](https://www.investopedia.com/terms/r/ruleof72.asp)):
 
-![Fórmula exacta para calcular los años en que una inversión se duplica](/img/posts/formula_doble_inversion.png)
+{% image 'img/posts/formula_doble_inversion.png', 'Fórmula exacta para calcular los años en que una inversión se duplica.' %}
 
 Está cabrón saber cuánto da eso a ojo de buen cubero, por eso se usa el 72 como un aproximado 😉
 
