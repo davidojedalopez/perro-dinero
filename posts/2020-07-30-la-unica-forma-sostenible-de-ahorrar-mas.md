@@ -6,6 +6,7 @@ published_at: 2020-07-30
 cover_path: img/posts/covers/forma_de_ahorrar.png
 cover_alt: "Nina acostada sobre su espalda jugando con un pato de plástico amarillo"
 tags: ['ahorro', 'presupuestos', 'gastos hormiga']
+newsletter_cta: true
 ---
 
 <details open>

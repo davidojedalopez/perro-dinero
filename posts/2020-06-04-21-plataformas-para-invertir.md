@@ -6,6 +6,7 @@ published_at: 2020-06-04
 cover_path: img/posts/covers/21_plataformas.png
 cover_alt: "Nina acostada, volteando a la cámara con cara de no molestar."
 tags: ['inversiones', 'plataformas']
+newsletter_cta: true
 ---
 
 <details open>
