@@ -34,7 +34,7 @@ En este post te voy a explicar, en palabras simples, las opciones de inversión 
 
 Esto es lo que ves cuando entras a la pestaña de "Invertir" en cetesdirecto:
 
-![Opciones de inversión en Cetesdirecto](/img/posts/opciones_de_inversion_cetesdirecto.png)
+{% image 'img/posts/opciones_de_inversion_cetesdirecto.png', 'Opciones de inversión en Cetesdirecto' %}
 
 Son seis opciones de inversión diferente, donde cuatro de ellas son bonos:
 
@@ -47,7 +47,7 @@ Son seis opciones de inversión diferente, donde cuatro de ellas son bonos:
 
 Y para hacerlo más complicado, cada que entras a una opción te aparecen otras más con diferentes plazos:
 
-![Plazos de inversión para cetes en Cetesdirecto](/img/posts/plazos_de_inversion_para_cetes.png)
+{% image 'img/posts/plazos_de_inversion_para_cetes.png', 'Plazos de inversión para cetes en Cetesdirecto' %}
 
 ¿Cuál es la diferencia entre cada una? ¿Cuál te conviene elegir?
 
@@ -55,7 +55,7 @@ Y para hacerlo más complicado, cada que entras a una opción te aparecen otras 
 
 Si te da hueva leer, con esta tabla puedes saber lo mínimo necesario de cada instrumento:
 
-![Resumen de instrumentos de inversión en Cetesdirecto](/img/posts/resumen_cetes_directo.png)
+{% image 'img/posts/resumen_cetes_directo.png', 'Resumen de instrumentos de inversión en Cetesdirecto' %}
 
 Aquí el [link para que puedas descargar la imagen más fácil](/img/posts/resumen_cetes_directo.png).
 
