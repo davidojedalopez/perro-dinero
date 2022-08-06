@@ -7,6 +7,7 @@ published_at: 2020-06-11
 cover_path: img/posts/covers/inversiones_y_jabon.png
 cover_alt: "Nina sentada y vestida con un moño rojo."
 tags: ['inversiones', 'inversión pasiva', 'inversión activa']
+newsletter_cta: true
 ---
 
 <details open>
@@ -20,7 +21,7 @@ tags: ['inversiones', 'inversión pasiva', 'inversión activa']
 
 ¿En qué se parece una **inversión** a una **barra de jabón**? Entre más la manejes, más pequeña se hace. Sin albur 🙃
 
-![Dexter pegándose un baño](/img/posts/dexter_soap.gif)
+{% image 'img/posts/dexter_soap.gif', 'Dexter pegándose un baño' %}
 
 En este post describiré y contrastaré dos tipos de inversiones: **activas y pasivas**.
 
@@ -60,7 +61,7 @@ La escena suele ser así:
 
 1. El inversionista se vuelve millonario, o al menos no pierde su dinero.
 
-![Expresión de felicidad después de mucha chamba. Personaje de Billions](/img/posts/billions.gif)
+{% image 'img/posts/billions.gif', 'Expresión de felicidad después de mucha chamba. Personaje de Billions' %}
 
 **La vida real no es así.**
 
