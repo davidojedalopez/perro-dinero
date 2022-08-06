@@ -52,7 +52,7 @@ La receta es el índice que la compañía sigue para construir el ETF. Esta rece
 
 Con esta imagen te quedará más claro:
 
-![Relación entre los actores de un restaurante y los ETFs](/img/posts/analogia_etf_restaurante.svg)
+{% image 'img/posts/analogia_etf_restaurante.svg', 'Relación entre los actores de un restaurante y los ETFs' %}
 
 ## Mercado origen
 
@@ -84,7 +84,7 @@ En un mercado como el de Estados Unidos esto no es un problema porque es el merc
 
 Para que te des una idea de los tamaños de mercado, checa la siguiente imagen con un comparativo de los tamaños de diferentes mercados en el mundo, [cortesía de *Visual Capitalist*](https://www.visualcapitalist.com/all-of-the-worlds-money-and-markets-in-one-visualization-2020/):
 
-![Comparativo de tamaños de mercados globales](/img/posts/tamano_mercado.png)
+{% image 'img/posts/tamano_mercado.png', 'Comparativo de tamaños de mercados globales' %}
 
 Los mercados New York Stock Exchange y Nasdaq, **ambos estadounidenses**, corresponden a **más del 45% del mercado global**. México ni siquiera aparece en la imagen.
 
@@ -92,11 +92,11 @@ Además del tamaño del mercado, también tienes que fijarte en el ETF específi
 
 Esto lo puedes revisar directamente con tu broker cuando quieres hacer la compra. Así se ve en GBM+ para VOO:
 
-![Captura de pantalla de sección de compra y venta en GBM+. Se muestran volúmenes altos en el ETF VOO.](/img/posts/gbm_voo.png)
+{% image 'img/posts/gbm_voo.png', 'Captura de pantalla de sección de compra y venta en GBM+. Se muestran volúmenes altos en el ETF VOO.' %}
 
 **El volumen** indica la **oferta y demanda** de ese ETF en ese momento. Entre más alto el número, más líquido el ETF. VOO es uno de los más activos, pero si revisas uno como VTIP verás que no es tan líquido a pesar de ser parte del mercado estadounidense:
 
-![Captura de pantalla de sección de compra y venta en GBM+. Volumen de compra en 1 y volumen de venta en 0 para ETF VTIP.](/img/posts/gbm_vtip.png)
+{% image 'img/posts/gbm_vtip.png', 'Captura de pantalla de sección de compra y venta en GBM+. Volumen de compra en 1 y volumen de venta en 0 para ETF VTIP.' %}
 
 Esto no significa que no lo puedas vender o comprar. Pero será más tardado encontrar una postura para cumplir tu orden, y/o tendrás que modificar tu oferta.
 
@@ -132,7 +132,7 @@ No tienes que calcular el <abbr title="Net Asset Value">NAV</abbr> manualmente p
 
 Por ejemplo, puedes ver el [NAV de VOO en la página de Vanguard](https://investor.vanguard.com/etf/profile/performance/voo):
 
-![Precio de mercado y NAV para ETF VOO](/img/posts/precio_mercado_nav_voo.png)
+{% image 'img/posts/precio_mercado_nav_voo.png', 'Precio de mercado y NAV para ETF VOO' %}
 
 ## ¿Cuál es la relación entre el precio de mercado y el NAV?
 
@@ -174,7 +174,7 @@ Lo bueno es que este costo es muy bajo comparado con otros fondos de inversión 
 
 Pero aguas, incluso pequeñas diferencias podrían ser un factor decisivo entre elegir un ETF u otro. Aquí te va un [ejemplo tomado de Investopedia](https://www.investopedia.com/articles/personal-finance/092613/pay-attention-your-funds-expense-ratio.asp) donde se comparan los rendimientos de ETFs hipotéticos cuya única diferencia es el costo de administración (Expense Ratio en inglés):
 
-![Tabla comparativa de rendimientos después de 20 años con diferentes valores de costo de administración.](/img/posts/expense_ratio_example.png)
+{% image 'img/posts/expense_ratio_example.png', 'Tabla comparativa de rendimientos después de 20 años con diferentes valores de costo de administración.' %}
 
 Nota como un cambio de 0.5% puede generar casi 50% menos rendimientos en un plazo de 20 años.
 
