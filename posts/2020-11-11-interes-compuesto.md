@@ -1,5 +1,6 @@
 ---
 title: "Interés compuesto, ¿octava maravilla o pura farsa?"
+title_key: "interes_compuesto"
 description: "Muchos te venden el interés compuesto como lo mejor del mundo, pero pocos te cuentan la realidad. Vamos a desmentirlo un poco."
 published_at: 2020-11-11
 cover_path: img/posts/covers/nina_en_la_cama.png
