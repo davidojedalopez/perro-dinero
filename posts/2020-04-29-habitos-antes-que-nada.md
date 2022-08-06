@@ -39,7 +39,7 @@ Si de entrada no tienes buenos hábitos en tu vida en general, lo más probable 
 
 Como en muchas otras cosas en la vida, **lo más difícil es comenzar**. Y una de las razones por las que he visto que las personas fallan en cumplir sus metas o formar sus hábitos, es que se van de hocico. Algo así:
 
-![Bato cayendo de hocico](/img/posts/bato_cayendo_de_hocico.gif)
+{% image 'img/posts/bato_cayendo_de_hocico.gif', 'Bato cayendo de hocico' %}
 
 Están los típicos propósitos de año nuevo (que en realidad la gente se propone empezar después del Día de Reyes porque, pues, la rosca 🐷): Bajar de peso, ir al gimnasio, leer más, viajar más, etc.
 
@@ -79,7 +79,7 @@ Estos consejos parecen contra-intuitivos, ¿cómo crees que estaré fit si solo 
 
 James Clear, autor de **Hábitos Atómicos** toca a fondo el tema de cómo la **falta de acción** es uno de los principales componentes que nos detienen para formar hábitos:
 
-![Tweet de James Clear sobre el costo de no actuar](/img/posts/james_clear_tweet_costo_de_no_actuar.png)
+{% image 'img/posts/james_clear_tweet_costo_de_no_actuar.png', 'Tweet de James Clear sobre el costo de no actuar' %}
 
 > El costo de no tomar acción es mucho más grande que el de tomar una acción incorrecta. La mayoría de los fracasos los pagas una sola vez; la mayoría de tus arrepentimientos son costos recurrentes.
 
