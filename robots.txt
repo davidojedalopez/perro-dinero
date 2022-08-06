@@ -1,3 +1,5 @@
+Sitemap: https://perrodinero.blog/sitemap.xml
+
 User-agent: Algolia Crawler
 Allow: /posts/*/
 Allow: /libros/*/
@@ -12,6 +14,6 @@ Disallow: /sitemap.xml
 Disallow: /suscrito
 
 User-agent: *
+Allow: *
 Disallow: /_macros/*/
 Disallow: /api/*
-Sitemap: https://perrodinero.blog/sitemap.xml
