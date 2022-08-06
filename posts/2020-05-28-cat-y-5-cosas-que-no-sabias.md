@@ -6,6 +6,7 @@ published_at: 2020-05-28
 cover_path: img/posts/covers/cat.png
 cover_alt: "Nina y yo, David, abrazados frente a mi pastel de cumpleaños número 28."
 tags: ['mexico', 'creditos', 'deudas', 'cat']
+newsletter_cta: true
 ---
 
 <details open>
@@ -35,7 +36,7 @@ Si solo comparas la tasa de interés, estás comparando 🍐 con 🍎. Hay mucho
 
 Te conviene la que te cobre menos, incluyendo todos los factores posibles.
 
-![Gato cuidando su lana](/img/posts/gato_con_dinero.gif)
+{% image 'img/posts/gato_con_dinero.gif', 'Gato cuidando su lana' %}
 
 Pequeño paréntesis: Hoy es mi cumpleaños 🥳🎂
 
@@ -93,7 +94,7 @@ Conocer el CAT real de una tarjeta de crédito es más sencillo. Vamos haciendo 
 
 Para obtener el CAT de mi tarjeta de crédito [entré a la página de BBVA y ubiqué mi tarjeta](https://www.bbva.mx/personas/productos/tarjetas-de-credito/afinidad-unam.html). El banco está obligado a mostrar el CAT para cada una de sus tarjetas (más sobre esto en otro punto). Aquí está el de mi tarjeta en particular:
 
-![CAT promedio de tarjeta de crédito BBVA UNAM](/img/posts/cat_bbva.png)
+{% image 'img/posts/cat_bbva.png', 'CAT promedio de tarjeta de crédito BBVA UNAM' %}
 
 Ahora, si descargo mi estado de cuenta y reviso el CAT real (en la primera página, parte superior derecha) veo que **es de 5.9%**.
 
@@ -143,13 +144,13 @@ Haremos el ejercicio con un monto de $101,000 con una comisión de apertura de $
 
 En número de disposiciones ponemos 1 porque nos darán la lana de un chingazo.
 
-![Calculadora de CAT— Montos iniciales](/img/posts/cat_online_1.png)
+{% image 'img/posts/cat_online_1.png', 'Calculadora de CAT— Montos iniciales' %}
 
 Le damos en "Continuar".
 
 Suponemos que los pagos son mensuales y que todos los pagos son por la misma cantidad. No tenemos cargos adicionales, así que dejamos el punto cinco en 0.
 
-![Calculadora de CAT— Pagos periódicos](/img/posts/cat_online_2.png)
+{% image 'img/posts/cat_online_2.png', 'Calculadora de CAT— Pagos periódicos' %}
 
 Continuamos...
 
