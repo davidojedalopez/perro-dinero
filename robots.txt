@@ -13,7 +13,12 @@ Disallow: /404.html
 Disallow: /sitemap.xml
 Disallow: /suscrito
 
+User-agent: AhrefsSiteAudit
+Allow: /
+
+User-agent: AhrefsBot
+Allow: /
+
 User-agent: *
-Allow: *
 Disallow: /_macros/*/
 Disallow: /api/*
