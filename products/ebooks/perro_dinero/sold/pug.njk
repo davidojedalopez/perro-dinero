@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+title: ¡Gracias por tu compra!
+cover_path: img/perro_dinero.png
+permalink: "ebook/sale/{{ page.fileSlug }}/"
+---
+
+<article class="pb-8 lg:w-3/4 mx-auto">
+  <h1 class="mb-8 text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">¡Gracias por tu compra! 🎉</h1>
+
+  {% image 'img/ebook/pug.png', 'Un pug.' %}
+
+  <p>Compraste el paquete <span class="text-accent-500 dark:text-accent-dark-500">Pug</span>, que incluye:</p>
+  <ul>
+    <li class="ml-4">👉 E-book con todo lo que he aprendido sobre finanzas personales.</li>
+    <li class="ml-4">👉 Plantillas, hojas de trabajo y otros documentos.</li>
+  </ul>
+
+  {% include "ebook/common_sale_success.njk" %}
+
+</section>

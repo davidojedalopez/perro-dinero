@@ -12,6 +12,8 @@ Disallow: /feed.xml
 Disallow: /404.html
 Disallow: /sitemap.xml
 Disallow: /suscrito
+Disallow: /ebook/*/
+Disallow: /ebook/
 
 User-agent: AhrefsSiteAudit
 Allow: /
@@ -22,3 +24,5 @@ Allow: /
 User-agent: *
 Disallow: /_macros/*/
 Disallow: /api/*
+Disallow: /ebook/*/
+Disallow: /ebook/
