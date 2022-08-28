@@ -12,6 +12,7 @@ body {
 
 header {
   grid-template-areas:
+      "banner banner"
       "home toggle"
       "search search";
 }
@@ -19,6 +20,7 @@ header {
 @screen md {
   header {
     grid-template-areas:
+      "banner banner banner banner banner"
       "home search search . toggle"
       ". . . . ."
   }
