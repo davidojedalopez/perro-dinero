@@ -8,7 +8,7 @@
   "scripts": {
     "clean": "rimraf _site",
     "serve:webpack": "webpack --mode development --watch",
-    "serve:eleventy": "eleventy --serve",
+    "serve:eleventy": "eleventy --serve --incremental",
     "serve": "npm-run-all clean --parallel serve:*",
     "dev": "npm-run-all clean --parallel serve:*",
     "build:webpack": "webpack --mode production",

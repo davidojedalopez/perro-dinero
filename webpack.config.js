@@ -17,7 +17,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        exclude: /node_modules/,
+        exclude: [/node_modules/, /newsletters/, /_site\/newsletters/],
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
       }
     ]
