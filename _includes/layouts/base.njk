@@ -165,8 +165,10 @@
       <div class="hidden md:inline"></div>
     </footer>
 
-    <script type="text/javascript" defer src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
-    <script type="text/javascript" defer>
+    <script src="{{ '/assets/main.js' | url }}"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.js"></script>
+    <script type="text/javascript">
       algoliasearchNetlify({
         appId: '0XVEQ8TLK3',
         apiKey: 'fef279042309319fe04cbb7778b5e67f',
@@ -181,7 +183,5 @@
         color: '#1D853B'
       });
     </script>
-
-    <script src="{{ '/assets/main.js' | url }}"></script>
   </body>
 </html>
