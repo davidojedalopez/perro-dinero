@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: Portafolio de inversiones
 description: "Detalles sobre mi portafolio de inversiones."
-lastUpdated: 2021-12-06
+lastUpdated: 2022-09-05
 cover_path: img/perro_dinero.png
 ---
 
@@ -12,7 +12,7 @@ cover_path: img/perro_dinero.png
 
   <div class="mt-8">
     <p>
-      Mi portafolio está compuesto principalmente por ETFs de Vanguard y activos de renta fija en Cetesdirecto y SuperTasas. Fuera de estas inversiones tengo:
+      Mi portafolio está compuesto principalmente por ETFs de Vanguard, algunas acciones individuales, un poco de criptomonedas y activos de renta fija en Cetesdirecto y SuperTasas. Fuera de estas inversiones tengo:
     </p>
     <ul>
         <li>• 2/3 de mi fondo de emergencia en deuda gubernamental (Bonddia)</li>
@@ -23,9 +23,9 @@ cover_path: img/perro_dinero.png
 
     <section>
         <h2>Portafolio actual</h2>
-        <p>Esta es la asignación de activos que tengo actualmente. Intento invertir más dinero cada mes; a veces hasta el 50% de mis ingresos, otras veces no me da para invertir.</p>
+        <p>Esta es la asignación de activos que tengo actualmente para renta variable y cripto. Intento invertir más dinero cada mes; a veces hasta el 50% de mis ingresos, otras veces no me da para invertir.</p>
 
-        <canvas data-id="current-portfolio" height="260"></canvas>
+        {% image 'img/portafolio_perro_dinero.png', 'Distribución de mi portafolio de inversiones.' %}
     </section>
 
     <section>
@@ -79,74 +79,3 @@ cover_path: img/perro_dinero.png
   </div>
 
 </article>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-<script>
-  const ctxCurrent = document.querySelector('[data-id="current-portfolio"]').getContext('2d');
-  const assetsMap = {
-      'VOO': 12.74,
-      'VEA': 7.99,
-      'VWO': 6.31,
-      'VNQ': 9.11,
-      'VGT': 3.31,
-      'VT': 33.68,
-      'Activision': 3.04,
-      'Apple': 4.99,
-      'Alsea': 0.62,
-      'BTC': 1.49,
-      'ETH': 1.51,
-      'SuperTasas': 3.37,
-      'UDIBONOS': 3.59,
-  }
-  const chartCurrent = new Chart(ctxCurrent, {
-      type: 'pie',
-      data: {
-          labels: Object.keys(assetsMap),
-          datasets: [{
-              label: 'Activos',
-              data: Object.values(assetsMap),
-              backgroundColor: [
-                'rgba(255, 99, 132, 0.8)',
-                'rgba(54, 162, 235, 0.8)',
-                'rgba(255, 206, 86, 0.8)',
-                'rgba(75, 192, 192, 0.8)',
-                'rgba(153, 102, 255, 0.8)',
-                'rgba(255, 159, 64, 0.8)',
-                'rgba(255, 50, 15, 0.8)',
-                'rgba(240, 123, 114, 0.8)',
-                'rgba(123, 170, 247, 0.8)',
-                'rgb(41,115,27)',
-                'rgb(107,202,89)',
-                'rgb(247, 180, 174)'
-              ],
-
-              borderColor: 'rgb(255,255,255)',
-              borderWidth: 1
-          }],
-      },
-      options: {
-            legend: {
-                position: 'bottom',
-                labels: {
-                    fontColor: '#1D853B',
-                    fontSize: 14,
-                    fontStyle: 'bold',
-                    padding: 20
-                },
-                align: 'center'
-            },
-            title: {
-                display: false,
-                fontSize: 36,
-                fontColor: '#1D853B',
-                fontStyle: 'bold',
-                text: 'Portafolio actual'
-            },
-            layout: {
-                padding: {
-                    top: 25
-                }
-            }
-        },
-  });
-</script>
