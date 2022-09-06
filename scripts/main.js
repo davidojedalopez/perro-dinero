@@ -22,10 +22,11 @@ function setAnnotations() {
       if (entry.isIntersecting) {
         setTimeout(() => {
           annotate(entry.target, {
-            type: 'underline',
+            type: 'box',
             padding: 5,
             multiline: true,
-            animationDuration: 1500
+            animationDuration: 1500,
+            color: "#F3CA3E"
           }).show();
         }, 500)
         observer.unobserve(entry.target)
