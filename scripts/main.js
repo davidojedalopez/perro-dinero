@@ -25,8 +25,8 @@ function setAnnotations() {
             type: 'box',
             padding: 5,
             multiline: true,
-            animationDuration: 1500,
-            color: "#F3CA3E"
+            animationDuration: 1000,
+            color: "#b91c1c"
           }).show();
         }, 500)
         observer.unobserve(entry.target)

@@ -147,7 +147,7 @@ article table {
 }
 
 article th {
-  @apply bg-accent-100 dark:bg-foreground-dark border text-center px-4 py-4;
+  @apply bg-accent-100 dark:bg-slate-800 border text-center px-4 py-4;
 }
 
 article td {
