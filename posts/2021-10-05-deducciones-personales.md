@@ -21,17 +21,17 @@ Las deducciones personales te ayudan a pagar menos impuestos.
 
 **¿Pero qué y hasta cuánto puedes deducir?** Como persona física (tú, como individuo) puedes deducir gastos en 9 grandes categorías.
 
-Para los cálculos de los límites en esas deducciones, necesitaremos dos indicadores económicos (determinados para octubre del 2021, la fecha de este post):
+Para los cálculos de los límites en esas deducciones, necesitaremos dos indicadores económicos (estos valores son los más recientes, se actualizan en automático):
 
-- • **Unidad de Inversión (UDI):** $6.941734 pesos.
-- • **Unidad de Medida y Actualización (UMA) anual:** $32,693.4
+- • **Unidad de Inversión (UDI):** ${{ banxico.udi.amount }} pesos.
+- • **Unidad de Medida y Actualización (UMA) anual:** {{ inegi.uma_yearly.amount_pretty }} pesos.
 
 ## Límite general de deducciones
 
 El monto total de deducciones que se pueden hacer está limitado a la cantidad que resulte **menor** entre:
 
 - • _El 15% de tus ingresos._ Incluyendo aquellos por los que no pagues impuestos, como un fondo de ahorro o repartición de ganancias (PTU).
-- • 5 UMAs anuales ($163,467 pesos).
+- • 5 UMAs anuales ({{ inegi.uma_yearly_times_five.amount_pretty }} pesos).
 
 Este límite no aplica para las deducciones de donativos ni aportaciones al retiro.
 
@@ -45,7 +45,7 @@ Ahora sí, vamos con cada una de las deducciones personales.
 
 Con énfasis en las últimas dos porque cada vez nos preocupamos más por nuestra salud, tanto física como mental.
 
-Estos gastos también los puedes deducir para tu cónyuge, para la persona con quien vivas en concubinato y para tus ascendientes (padres, abuelos, etc) o descendientes (hijos, nietos, etc) en línea recta. Pero únicamente si los ingresos de estas personas durante el año a deducir no superan los $32,693 pesos (una UMA anual).
+Estos gastos también los puedes deducir para tu cónyuge, para la persona con quien vivas en concubinato y para tus ascendientes (padres, abuelos, etc) o descendientes (hijos, nietos, etc) en línea recta. Pero únicamente si los ingresos de estas personas durante el año a deducir no superan los {{ inegi.uma_yearly.amount_pretty }} pesos (una UMA anual).
 
 En caso de incapacidad también puedes deducir, adicional a lo anterior, honorarios dentales, de enfermería, análisis o estudios clínicos, prótesis y compra o renta de aparatos de rehabilitación.
 
@@ -70,13 +70,13 @@ Solo tienes que cumplir los **requisitos de permanencia**, es decir, no sacar es
 
 Aquí también entran los Planes Personales para el Retiro, también conocidos como PPR.
 
-Este tipo de deducción está topada al 10% de los ingresos acumulables, pero sin exceder las 5 UMAs anuales ($163,467 pesos).
+Este tipo de deducción está topada al 10% de los ingresos acumulables, pero sin exceder las 5 UMAs anuales ({{ inegi.uma_yearly_times_five.amount_pretty }} pesos).
 
 ## Hipoteca
 
 > Son deducibles los intereses reales pagados por créditos hipotecarios.
 
-Si tienes una hipoteca y no estás deduciendo los intereses, estás regalando dinero. La **única limitación** es que el crédito no exceda de $5,206,300.5 pesos (750,000 UDIs).
+Si tienes una hipoteca y no estás deduciendo los intereses, estás regalando dinero. La **única limitación** es que el crédito no exceda de 750,000 UDIs (recuerda que la UDI vale ${{ banxico.udi.amount }} pesos).
 
 ## Colegiaturas
 
@@ -133,7 +133,7 @@ Por ejemplo, si compras un plan funerario para tus abuelos este año, pero ellos
 
 Estos gastos los puedes deducir para tu cónyuge, para la persona con quien vivas en concubinato y para tus ascendientes (padres, abuelos, etc) o descendientes (hijos, nietos, etc) en línea recta.
 
-El límite de beneficio fiscal no puede exceder los $32,693 pesos (UMA anual).
+El límite de beneficio fiscal no puede exceder los {{ inegi.uma_yearly.amount_pretty }} pesos (UMA anual).
 
 ## Sobre los límites
 
