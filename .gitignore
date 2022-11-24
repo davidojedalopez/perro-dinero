@@ -11,3 +11,4 @@ token.json
 
 .idea/*
 .cache/*
+.vscode/
