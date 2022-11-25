@@ -7,5 +7,6 @@
     "markdown",
     "latex",
     "plaintext"
-  ]
+  ],
+  "terminal.integrated.fontSize": 18
 }
