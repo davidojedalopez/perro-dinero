@@ -50,8 +50,9 @@ function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loadi
     },
     filenameFormat: ((id, src, width, format, options) => {
       const extension = path.extname(src);
+      const second_to_last_part = path.normalize(src).split("/").reverse()[1]
       const name = path.basename(src, extension)
-      return `${name}-${width}w.${format}`;
+      return `${second_to_last_part}-${name}-${width}w.${format}`;
     }),
     urlPath: "/img/",
     outputDir: "./_site/img",
