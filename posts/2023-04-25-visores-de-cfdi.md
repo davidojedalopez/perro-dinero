@@ -85,6 +85,6 @@ Además, al igual que en tu declaración anual, aquí puedes darte cuenta si hay
 
 ***
 
-Con estos dos visores deberías tener todo lo necesario para revisar, en un lugar centralizado, que todos tus CFDIs de ingresos, retenciones y deducciones personales están en regla 🥳.
+Con estos dos visores deberías tener todo lo necesario para revisar, en un lugar centralizado, que todos tus CFDIs de ingresos, retenciones y deducciones personales estén en regla 🥳.
 
 Muchas gracias por leerme 💜.
