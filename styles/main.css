@@ -223,3 +223,14 @@ input[type="search"] {
   height: 500px;
   width: 450px;
 }
+
+.newsletter-cta {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+.newsletter-cta.visible {
+  opacity: 1;
+  visibility: visible;
+}
