@@ -29,15 +29,15 @@
     "url": "https://davidojeda.dev"
   },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-cache-assets": "^2.3.0",
-    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-img": "3.1.0",
     "@11ty/eleventy-navigation": "^0.1.6",
-    "@11ty/eleventy-plugin-rss": "^1.0.9",
-    "@netlify/plugin-lighthouse": "^3.2.1",
+    "@11ty/eleventy-plugin-rss": "1.2.0",
+    "@netlify/plugin-lighthouse": "4.1.1",
     "@tailwindcss/forms": "^0.5.0",
     "autoprefixer": "10.4.5",
-    "css-loader": "^3.6.0",
+    "css-loader": "6.7.3",
     "dotenv": "^8.6.0",
     "eleventy-plugin-reading-time": "0.0.1",
     "flat-cache": "^2.0.1",
@@ -46,7 +46,7 @@
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.3.0",
     "markdown-it-toc-done-right": "^4.2.0",
-    "mini-css-extract-plugin": "^0.9.0",
+    "mini-css-extract-plugin": "2.7.5",
     "netlify-plugin-a11y": "0.0.12",
     "node-fetch": "^2.6.1",
     "npm-run-all": "^4.1.5",
@@ -54,10 +54,10 @@
     "postcss-loader": "^4.1.0",
     "rimraf": "^3.0.2",
     "rough-notation": "^0.5.1",
-    "tailwindcss": "^3.0.24",
+    "tailwindcss": "^3.3.1",
     "update": "^0.7.4",
-    "webpack": "^5.11.0",
-    "webpack-cli": "^3.3.12",
-    "workbox-webpack-plugin": "^6.0.2"
+    "webpack": "5.80.0",
+    "webpack-cli": "^5.0.2",
+    "workbox-webpack-plugin": "6.5.4"
   }
 }

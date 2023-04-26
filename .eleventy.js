@@ -43,8 +43,8 @@ function structuredData(data) {
 
 function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', classes = "", sizes = "(min-width: 30em) 50vw, 100vw") {
   const options = {
-    widths: [400, 600, 640],
-    formats: ['webp', 'jpeg', 'gif'],
+    widths: [600, 640],
+    formats: ['webp', 'jpeg'],
     sharpOptions: {
       animated: true
     },
@@ -190,22 +190,6 @@ module.exports = function (eleventyConfig) {
     level: [1, 2, 3]
   }).disable('code');
   eleventyConfig.setLibrary("md", markdownLibrary);
-
-  // Browsersync Overrides
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function (err, browserSync) {
-        // browserSync.addMiddleware("*", (req, res) => {
-        //   const content_404 = fs.readFileSync('_site/404.html'));
-        //   res.writeHead(404, { "ContentType": "text/html; charset=UTF-8" })
-        //   res.write(content_404);
-        //   res.end();
-        // });
-      },
-    },
-    ui: false,
-    ghostMode: false
-  });
 
   eleventyConfig.addNunjucksShortcode("image", imageShortCode);
   eleventyConfig.addNunjucksShortcode("structured_data", structuredData);
