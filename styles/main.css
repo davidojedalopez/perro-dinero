@@ -46,6 +46,7 @@ article video {
 }
 
 article blockquote {
+  @apply w-full;
   @apply mx-auto;
   @apply my-8;
   @apply p-4;
@@ -54,6 +55,13 @@ article blockquote {
   @apply border-accent-500 dark:border-accent-dark-500;
   @apply bg-accent-100 dark:bg-foreground-dark;
   @apply rounded;
+}
+
+article math {
+  @apply text-2xl;
+  @apply w-full mx-auto;
+  @apply mt-4 mb-6 p-4;
+  @apply flex justify-center;
 }
 
 article blockquote p {
