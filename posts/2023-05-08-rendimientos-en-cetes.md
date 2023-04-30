@@ -93,7 +93,7 @@ No olvides que la **tasa de interés es un porcentaje** y al momento de hacer op
 
 También recuerda que la tasa de interés es **anualizada**; no obtendrás el 11.27% de rendimiento en un plazo de 28 días, sino lo propocional al año completo. Por ello, tenemos que dividir el resultado entre el [número de días del año financiero o año comercial (360 días)](https://es.wikipedia.org/wiki/A%C3%B1o_comercial):
 
-<math>
+<math display="block">
   <mrow>
     <mfrac linethickness="1">
       <mrow>
@@ -149,7 +149,7 @@ Ahora, al cálculo:
 
 Dividimos esta cantidad entre los [días naturales que tiene el año (365 o 366 en años bisiestos)](https://es.wikipedia.org/wiki/A%C3%B1o_natural):
 
-<math>
+<math display="block">
   <mrow>
     <mfrac linethickness="1">
       <mrow>
