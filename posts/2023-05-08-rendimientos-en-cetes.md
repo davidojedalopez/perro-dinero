@@ -233,7 +233,7 @@ Todos estos cálculos son aproximados y serán diferentes de los montos finales,
 
 ¿Por qué? 
 
-Porque recordemos que al invertir en CETES, estás comprando títulos de deuda, y cada uno de estos títulos tiene un precio. Los CETES **los compras a descuento**; aunque su valor nominal es de $10 pesos, tú los compras por algunos centavos menos. 
+Porque recuerda que al invertir en CETES estás comprando títulos de deuda, y cada uno de estos títulos tiene un precio. Los CETES **los compras a descuento**; aunque su valor nominal es de $10 pesos, tú los compras por algunos centavos menos. 
 
 Si los compraras al valor nominal de $10 pesos, podrías comprar exactamente 1,000 títulos de CETES con los $10,000 pesos de tu inversión. 
 
