@@ -1,6 +1,6 @@
 ---
 title: "Lo mínimo que debes saber sobre amortización 📉"
-description: "Amortización es el pago gradual de una deuda o crédito mediante abonos periódicos. Cierto porcentaje de cada abono sirve para pagar los intereses de la deuda, mientras que otro porcentaje es para reducirla."
+description: "Amortización es el pago gradual de una deuda o crédito mediante abonos periódicos."
 published: true
 published_at: 2020-05-21
 cover_path: img/posts/covers/amortizacion.png
