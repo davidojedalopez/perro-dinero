@@ -1,6 +1,6 @@
 ---
 title: "Notas: El Millonario de la Puerta de al Lado"
-description: "Amasar una fortuna requiere disciplina, sacrificio y trabajo duro. Esa es la enseñanza del libro El millonario de la puerta de al lado, de Thomas J. Stanley y William D. Danko."
+description: "Amasar una fortuna requiere disciplina, sacrificio y trabajo duro. Esa es la enseñanza del libro El millonario de la puerta de al lado."
 published: true
 published_at: 2020-09-25
 cover_path: img/posts/covers/millionario_puerta_de_al_lado.png
