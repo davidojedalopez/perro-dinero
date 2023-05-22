@@ -44,6 +44,25 @@ Puedes calcular los rendimientos con interés compuesto para cualquier periodo d
 
 > Monto final = Monto inicial x ( 1 + r/100 )<sup>n</sup>
 
+<math display="block">
+  <mrow>
+    <mtext>Monto final</mtext>
+    <mo>=</mo>
+    <mtext>Monto inicial</mtext>
+    <mo class="font-bold text-accent-500 dark:text-accent-dark-500">&#x00D7;</mo>
+    <mn>1</mn>
+    <mo>+</mo>
+    <mfrac linethickness="1">
+      <mrow>
+        <mtext>r</mtext>
+      </mrow>
+      <mrow>
+        <mn>100</mn>
+      </mrow>
+    </mfrac>
+  </mrow>
+</math>
+
 donde:
 - r = tasa de interés
 - n = número de periodos

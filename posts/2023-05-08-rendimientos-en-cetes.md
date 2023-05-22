@@ -1,6 +1,6 @@
 ---
 title: "Rendimientos de una inversión en CETES: Ejemplo práctico"
-description: Aprende a calcular rendimientos de CETES con un ejemplo paso a paso. Descubre cómo obtener el interés neto y ganancia real en una inversión de $10,000 pesos en CETES a 28 días.
+description: Aprende a calcular el interés bruto, neto y ganancia real de una inversión en CETES con un ejemplo paso a paso.
 published_at: 2023-05-08
 cover_path: img/posts/rendimientos_en_cetes/cover.png
 cover_alt: Nina tirando la hueva en el piso.
