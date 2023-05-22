@@ -1,6 +1,6 @@
 ---
 title: Actualización de portafolio (Marzo 2023)
-description: Últimas novedades sobre mis inversiones.
+description: "Últimas novedades sobre mi portafolio y decisiones de inversión. Spoiler: Mi plan no ha cambiado mucho."
 published_at: 2023-03-15
 cover_path: img/posts/actualizacion_portafolio_marzo_2023/cover.png
 cover_alt: Nina, cruzando sus patas elegantemente.

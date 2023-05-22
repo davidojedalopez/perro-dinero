@@ -1,6 +1,6 @@
 ---
 title: ¿Estoy obligado a hacer mi declaración anual? 🤔
-description: Una de las preguntas más comunes en tiempos de declaraciones anuales para personas físicas.
+description: Una de las preguntas más comunes en tiempos de declaraciones anuales para personas físicas, y la respuesta no es tan complicada. 
 published_at: 2023-05-01
 cover_path: img/posts/obligacion_a_declarar/cover.png
 cover_alt: Alyx y Nina acostadas en el cesped disfrutando de la vida.
