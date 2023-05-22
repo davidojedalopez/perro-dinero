@@ -1,6 +1,6 @@
 ---
 title: "¿Planear detenidamente o solo empezar?"
-description: "En un proceso centrado en ideas lo más importante es encontrar las ideas adecuadas. En un proceso centrado en progreso lo más importante es empezar ya. ¿Cómo encuentras el balance?"
+description: "Mi experiencia encontrando el balance entre planificación y ejecución de ideas."
 published: true
 published_at: 2020-08-06
 cover_path: img/posts/covers/idea_o_progreso.png
