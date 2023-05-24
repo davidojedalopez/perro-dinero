@@ -1,6 +1,6 @@
 ---
 title: Metas intermedias
-description: ¿Qué puedes hacer para mejorar las probabilidades de cumplir tus metas?
+description: ¿Qué puedes hacer para mejorar las probabilidades de cumplir tus metas? Definir metas intermedias te ayudará a mantenerte en el camino.
 published_at: 2022-01-26
 newsletter_cta: true
 share_image_url: /img/micro_essays/010_metas_intermedias.png

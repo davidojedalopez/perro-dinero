@@ -1,6 +1,6 @@
 ---
 title: "Impuestos por venta de acciones"
-description: "¿Cuántos impuestos pagas por vender tus acciones en la bolsa de valores? Aquí lo sabrás."
+description: "Pagas el 10% de impuestos sobre tus rendimientos anuales por venta de acciones. Aquí te explico todos los detalles."
 published_at: 2021-03-05
 cover_path: img/posts/covers/nina_impuestos_acciones.jpg
 cover_alt: "Nina con su mantel."

@@ -1,7 +1,7 @@
 ---
 title: ¿Qué son las FIBRAs?
 title_key: "que_son_las_fibras"
-description: Invierte en inmuebles de una manera diversificada, con poco capital y fiscalmente eficiente.
+description: Los Fideicomisos de Infraestructura y Bienes Raíces (FIBRA) son un vehículo de inversión para invertir en bienes raíces sin poseer un inmueble físico.
 published_at: 2022-07-12
 cover_path: img/posts/covers/que_son_las_fibras.png
 cover_alt: Nina y Alyx, volteando hacia lados opuestos al lado de un dique.

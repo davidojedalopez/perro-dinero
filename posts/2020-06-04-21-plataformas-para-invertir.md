@@ -1,6 +1,6 @@
 ---
 title: "21 plataformas para comenzar a invertir"
-description: "Empieza a invertir con $100 pesos en una de estas 21 plataformas."
+description: "Empieza a invertir desde $100 pesos en una de estas 21 plataformas, desde renta fija y variable, hasta fondeos colectivos y paneles solares."
 published: true
 published_at: 2020-06-04
 cover_path: img/posts/covers/21_plataformas.png

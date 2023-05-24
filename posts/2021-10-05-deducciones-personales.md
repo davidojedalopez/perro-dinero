@@ -1,7 +1,7 @@
 ---
 title: Deducciones personales para personas físicas
 title_key: "deducciones_personales"
-description: ¿Qué y hasta cuánto puedes deducir en tu declaración anual?
+description: ¿Qué y hasta cuánto puedes deducir en tu declaración anual? Deduce lo que puedas y no dejes dinero en la mesa.
 published_at: 2021-10-05
 cover_path: img/posts/deducciones_personales/cover.jpg
 cover_alt: Nina con la lengua de fuera.

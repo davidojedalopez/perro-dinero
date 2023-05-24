@@ -1,6 +1,6 @@
 ---
 title: De bajada o de subida, da igual 🎢︎
-description: Cuando eres un inversionista en valor te beneficias de ambas.
+description: Cuando inviertes al largo plazo, no importa si el valor de tus activos sube o baja, porque ganas de cualquier forma.
 published_at: 2021-03-12
 newsletter_cta: true
 share_image_url: /img/micro_essays/005_de_bajada_o_de_subida.png
