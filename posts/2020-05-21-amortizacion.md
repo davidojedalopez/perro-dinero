@@ -1,5 +1,5 @@
 ---
-title: "Lo mínimo que debes saber sobre amortización 📉"
+title: "Amortización: Deudas, abonos a capital y sus implicaciones en tus créditos"
 description: "Amortización es el pago gradual de una deuda o crédito mediante abonos periódicos. Entiende este concepto para administrar mejor tus deudas."
 published: true
 published_at: 2020-05-21

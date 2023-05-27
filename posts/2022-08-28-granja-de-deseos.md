@@ -1,6 +1,6 @@
 ---
-title: Tu granja de deseos
-description: Gasta tu dinero sin culpas.
+title: Tu granja de deseos; gasta tu dinero sin culpas
+description: Una estrategia para gastar más en lo que de verdad quieres y ahorrar en el camino.
 published_at: 2022-08-28
 cover_path: img/posts/covers/granja_de_deseos_cover.png
 cover_alt: Nina, entre las plantas en su granja.

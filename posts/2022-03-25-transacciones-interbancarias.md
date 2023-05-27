@@ -1,5 +1,5 @@
 ---
-title: Transacciones interbancarias
+title: Transacciones interbancarias y cámaras de compensación en el ecosistema mexicano
 title_key: "transacciones_interbancarias"
 description: ¿Qué hay detrás de una transacción interbancaria? ¿Quiénes participan? ¿Quién se lleva cuánto?
 published_at: 2022-03-25

@@ -1,6 +1,6 @@
 ---
-title: Meses sin intereses, pero al revés
-description: Para comprar con intención y sin pagar intereses.
+title: Meses sin intereses (MSI), pero al revés
+description: En lugar de pasar meses abonando a una compra de MSI, mejor planea tus compras con intención y sin pagar intereses.
 published_at: 2022-09-07
 cover_path: img/posts/covers/meses_sin_intereses.png
 cover_alt: Alyx y Milo, tirados en el piso.

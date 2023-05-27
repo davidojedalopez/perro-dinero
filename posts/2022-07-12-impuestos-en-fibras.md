@@ -1,7 +1,7 @@
 ---
-title: Impuestos en FIBRAs
+title: "FIBRAs: Impuestos y su tratamiento fiscal"
 title_key: "impuestos_en_fibras"
-description: Las FIBRAs son un vehículo de inversión fiscalmente eficiente. ¿Qué tantos impuestos pagas por estas inversiones?
+description: ¿Qué tantos impuestos pagas por tus inversiones en Fideicomisos de Infraestructura y Bienes Raíces (FIBRAs)?
 published_at: 2022-07-12
 cover_path: img/posts/covers/impuestos_en_fibras.jpg
 cover_alt: Alyx, toma cercana de perfil.
@@ -20,7 +20,7 @@ newsletter_cta: true
 
 </details>
 
-Las FIBRAs son una forma de invertir en bienes raíces de forma diversificada y con poco capital.
+Los Fideicomisos de Infraestructura y Bienes Raíces (FIBRAs) son una forma de invertir en bienes raíces de forma diversificada y con poco capital.
 
 Tienen sus ventajas y desventajas en comparación con la compra y/o renta y venta de inmuebles, como lo platico en este otro post: 
 
