@@ -1,6 +1,6 @@
 ---
 title: Te vendo un tweet
-description: ¿Qué son los NFTs (Non-Fungible Tokens)?
+description: ¿Qué son los NFTs (Non-Fungible Tokens) y por qué deberías, al menos, conocerlos?
 published_at: 2021-05-14
 cover_path: img/posts/covers/nina_impuestos_acciones.jpg
 cover_alt: "Nina con su mantel."

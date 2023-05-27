@@ -1,6 +1,6 @@
 ---
 title: Vende lo caliente; compra lo frío
-description: Rebalancear un portafolio es difícil.
+description: Rebalancear un portafolio es difícil y contraituitivo, pero es una de las mejores estrategias cuando inviertes al largo plazo.
 published_at: 2021-02-01
 newsletter_cta: true
 share_image_url: /img/micro_essays/002_vende_lo_caliente_compra_lo_frio.png

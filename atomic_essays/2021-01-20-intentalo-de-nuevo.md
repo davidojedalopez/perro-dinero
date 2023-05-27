@@ -1,6 +1,6 @@
 ---
 title: Inténtalo de nuevo
-description: Vive tu vida como un videojuego.
+description: Vive tu vida como un videojuego; no te rindas y sigue luchando.
 published_at: 2021-01-20
 newsletter_cta: true
 share_image_url: /img/micro_essays/001_intentalo_de_nuevo.png

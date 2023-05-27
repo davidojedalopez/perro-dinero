@@ -1,6 +1,6 @@
 ---
 title: Cuatro portafolios de inversión para que empieces a invertir hoy
-description: Ahora ya sabrás por dónde empezar.
+description: "Entre ellos: el lazy portafolio, una versión ajustada de éste último, el modelo de Swensen y mi propio portafolio."
 published_at: 2021-05-28
 cover_path: img/posts/covers/nina_curada.jpeg
 cover_alt: "Nina debajo de una hamaca"
