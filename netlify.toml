@@ -27,9 +27,6 @@
     debugMode = false
 
 [[plugins]]
-  package = "@algolia/netlify-plugin-crawler"
-
-[[plugins]]
   package = "netlify-plugin-a11y"
 
 [[redirects]]
