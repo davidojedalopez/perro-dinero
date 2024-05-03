@@ -43,7 +43,7 @@ function structuredData(data) {
 
 function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', classes = "", sizes = "(min-width: 30em) 50vw, 100vw") {
   const options = {
-    widths: [600, 640],
+    widths: [600, 640, 800, 1200],
     formats: ['webp', 'jpeg'],
     sharpOptions: {
       animated: true
