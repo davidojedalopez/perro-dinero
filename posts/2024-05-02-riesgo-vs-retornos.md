@@ -15,7 +15,7 @@ Aquí te comparto una reflexión sobre la relación entre el riesgo y los retorn
 
 ---
 
-Es común escuchar que a mayor riesgo, mayor retorno, pensando ciégamente que la relación es directa y estrictamente proporcional, todo el tiempo. Esto está muy alejado de la realidad.
+Es común escuchar que a mayor riesgo, mayor retorno, pensando ciegamente que la relación es directa y estrictamente proporcional, todo el tiempo. Esto está muy alejado de la realidad.
 
 Para empezar, la frase debería ser más como:
 
@@ -23,17 +23,17 @@ Para empezar, la frase debería ser más como:
 
 La diferencia es sutil, pero lo más importante que leerás hoy.
 
-Nadie espera que la tasa libre de riesgo, conocida en México como la **Tasa de Interés Interbancaria de Equilibrio**, o TIIE para los compas, produzca cerca de los mismos retornos que un negocio o una inversión en la bolsa de valores.
+Nadie espera que la tasa libre de riesgo, conocida en México como la **tasa de Cetes a 28 días**, produzca cerca de los mismos retornos que un negocio o una inversión en la bolsa de valores.
 
-Si vas a invertir en instrumentos de mayor riesgo que la TIIE, como acciones, bienes raíces, o en un negocio, **esperarías** que te regrese mucho más que lo que unos Cetes te darían, por ejemplo. Y digo esperarías, porque una inversión de mayor riesgo no garantiza un retorno mayor.
+Si vas a invertir en instrumentos de mayor riesgo que la tasa **libre** de riesgo, como acciones, bienes raíces, o en un negocio, **esperarías** que te regrese mucho más que lo que unos Cetes te darían, por ejemplo. Y digo esperarías, porque una inversión de mayor riesgo no garantiza un retorno mayor.
 
 De hecho, **no garantiza nada**.
 
-Si invertir con mayor riesgo siempre te diera retornos mayores, entonces ya no sería una inversión riesgosa.
+Si invertir en activos de mayor riesgo siempre te diera retornos mayores, entonces ya no sería una inversión riesgosa.
 
 La relación entre riesgo y retorno es más bien una **distribución de probabilidades**. Es decir, a mayor riesgo, mayor la probabilidad de que obtengas un retorno mayor, pero también mayor la probabilidad de que obtengas un retorno menor, o incluso de que **pierdas todo el dinero invertido**.
 
-Esto se vuelve extremádamente importante a la hora de analizar una inversión.
+Esto se vuelve extremadamente importante a la hora de analizar una inversión.
 
 ¿Cuánto retorno deberías de exigir, o esperar, dado el riesgo de cada tipo de instrumento? Recordando que el proceso para analizar una inversión es como una cadena, en donde cada tipo de inversión establece los requerimientos para la siguiente.
 
@@ -62,7 +62,7 @@ No por nada a finales del 2022, cuando los rendimientos de Cetes estaban ya alre
 
 No soy financiero, ni economista, ni tengo estudios que me respalden, y apenas va el primer cuarto del año, pero creo que estos estimados no están muy lejos de lo que deberíamos exigir del mercado y de los distintos vehículos de inversión en este momento. Para que al menos valga la pena el incremento de riesgo.
 
-Y sí, **esperar un 17-18% de retornos en el S&P 500 es una locura**, y más si sabes que en lo que val del año lleva un 6.91%, y anualizado durante los últimos 95 años ha tenido un rendimiento del 9.8%.
+Y sí, **esperar un 17-18% de retornos en el S&P 500 es una locura**, y más si sabes que en lo que va del año lleva un 6.91%, y anualizado durante los últimos 95 años ha tenido un rendimiento del 9.8%.
 
 {% image 'img/posts/riesgo_vs_retorno/s&p_500_ytd.png', 'Rendimientos del índice S&P 500 en lo que va del año 2024, tomado el 23 de abril.' %}
 
