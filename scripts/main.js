@@ -182,7 +182,7 @@ function setDebtPlannerTool() {
   };
 
   const simulatePlan = (debts, extraPayment, strategy) => {
-    const sortedDebts = [...debts].sort((a, b) => {
+    const sortByStrategy = (items) => [...items].sort((a, b) => {
       if (strategy === 'avalanche') {
         if (b.rate === a.rate) {
           return a.balance - b.balance;
@@ -195,7 +195,7 @@ function setDebtPlannerTool() {
       return a.balance - b.balance;
     });
 
-    const state = sortedDebts.map((debt) => ({
+    const state = debts.map((debt) => ({
       ...debt,
       balance: debt.balance,
       interestPaid: 0,
@@ -231,12 +231,10 @@ function setDebtPlannerTool() {
       });
 
       let remainingExtra = extraPayment;
-      for (const debt of state) {
+      const prioritizedDebts = sortByStrategy(state.filter((debt) => debt.balance > 0));
+      for (const debt of prioritizedDebts) {
         if (remainingExtra <= 0) {
           break;
-        }
-        if (debt.balance <= 0) {
-          continue;
         }
         const payment = Math.min(remainingExtra, debt.balance);
         debt.balance -= payment;
@@ -263,7 +261,20 @@ function setDebtPlannerTool() {
   const renderResults = (result) => {
     resultsRows.innerHTML = '';
 
-    result.debts.forEach((debt, index) => {
+    const orderedDebts = [...result.debts].sort((a, b) => {
+      if (a.payoffMonth === null && b.payoffMonth === null) {
+        return 0;
+      }
+      if (a.payoffMonth === null) {
+        return 1;
+      }
+      if (b.payoffMonth === null) {
+        return -1;
+      }
+      return a.payoffMonth - b.payoffMonth;
+    });
+
+    orderedDebts.forEach((debt, index) => {
       const row = document.createElement('tr');
       row.innerHTML = `
         <td class="px-4 py-3 font-semibold text-accent-900 dark:text-accent-dark-200">${index + 1}</td>
