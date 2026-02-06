@@ -11,7 +11,13 @@ window.addEventListener("load", (event) => {
 
 function setNewsletterObserver() {
   const newsletterCta = document.querySelector('.newsletter-cta');
+  if (!newsletterCta) {
+    return;
+  }
   const iframe = newsletterCta.querySelector('iframe.newsletter-cta-iframe');
+  if (!iframe) {
+    return;
+  }
 
   const observerCallback = (entries, observer) => {
     entries.forEach(entry => {
