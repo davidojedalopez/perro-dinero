@@ -39,7 +39,9 @@ cover_path: img/perro_dinero.png
       </label>
     </div>
 
-    <div class="overflow-x-auto rounded-xl border border-accent-200/60 dark:border-foreground-dark/60 bg-white dark:bg-background-dark">
+    <div class="sm:hidden space-y-4" data-debt-cards></div>
+
+    <div class="hidden sm:block overflow-x-auto rounded-xl border border-accent-200/60 dark:border-foreground-dark/60 bg-white dark:bg-background-dark">
       <table class="min-w-full divide-y divide-accent-200/60 dark:divide-foreground-dark/60 text-left text-sm">
         <thead class="bg-accent-100/60 dark:bg-foreground-dark/40 text-accent-700 dark:text-accent-dark-600">
           <tr>
@@ -85,7 +87,9 @@ cover_path: img/perro_dinero.png
         </div>
       </div>
 
-      <div class="overflow-x-auto rounded-xl border border-accent-200/60 dark:border-foreground-dark/60">
+      <div class="sm:hidden space-y-3" data-results-cards></div>
+
+      <div class="hidden sm:block overflow-x-auto rounded-xl border border-accent-200/60 dark:border-foreground-dark/60">
         <table class="min-w-full divide-y divide-accent-200/60 dark:divide-foreground-dark/60 text-left text-sm">
           <thead class="bg-accent-100/60 dark:bg-foreground-dark/40 text-accent-700 dark:text-accent-dark-600">
             <tr>
@@ -129,6 +133,37 @@ cover_path: img/perro_dinero.png
           </button>
         </td>
       </tr>
+    </template>
+
+    <template data-debt-card>
+      <div data-debt-card class="rounded-xl border border-accent-200/60 dark:border-foreground-dark/60 bg-white dark:bg-background-dark p-4 space-y-4">
+        <div class="flex items-center justify-between">
+          <p class="text-sm font-semibold text-accent-700 dark:text-accent-dark-600">Deuda</p>
+          <button data-remove type="button" class="text-sm font-semibold text-red-600 hover:text-red-700">
+            Quitar
+          </button>
+        </div>
+        <label class="space-y-2 text-sm font-semibold text-accent-700 dark:text-accent-dark-600">
+          Nombre
+          <input data-field="name" type="text" placeholder="Ej. Tarjeta XYZ"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+        </label>
+        <label class="space-y-2 text-sm font-semibold text-accent-700 dark:text-accent-dark-600">
+          Saldo (MXN)
+          <input data-field="balance" type="number" min="0" step="0.01" placeholder="0"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+        </label>
+        <label class="space-y-2 text-sm font-semibold text-accent-700 dark:text-accent-dark-600">
+          Tasa anual (%)
+          <input data-field="rate" type="number" min="0" step="0.01" placeholder="0"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+        </label>
+        <label class="space-y-2 text-sm font-semibold text-accent-700 dark:text-accent-dark-600">
+          Pago mínimo (MXN)
+          <input data-field="min" type="number" min="0" step="0.01" placeholder="0"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+        </label>
+      </div>
     </template>
   </section>
 </article>

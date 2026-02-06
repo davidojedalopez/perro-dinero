@@ -99,11 +99,14 @@ function setDebtPlannerTool() {
   const addDebtButton = tool.querySelector('[data-add-debt]');
   const calculateButton = tool.querySelector('[data-calc]');
   const rowsContainer = tool.querySelector('[data-debt-rows]');
+  const cardsContainer = tool.querySelector('[data-debt-cards]');
   const rowTemplate = tool.querySelector('template[data-debt-row]');
+  const cardTemplate = tool.querySelector('template[data-debt-card]');
   const extraPaymentInput = tool.querySelector('[data-extra-payment]');
   const strategyInput = tool.querySelector('[data-strategy]');
   const resultsContainer = tool.querySelector('[data-results]');
   const resultsRows = tool.querySelector('[data-results-rows]');
+  const resultsCards = tool.querySelector('[data-results-cards]');
   const errorBox = tool.querySelector('[data-error]');
   const totalMonths = tool.querySelector('[data-total-months]');
   const totalInterest = tool.querySelector('[data-total-interest]');
@@ -144,17 +147,41 @@ function setDebtPlannerTool() {
     const rateInput = row.querySelector('[data-field="rate"]');
     const minInput = row.querySelector('[data-field="min"]');
     const removeButton = row.querySelector('[data-remove]');
+    const rowId = `debt-${Date.now()}-${Math.floor(Math.random() * 10000)}`;
 
     nameInput.value = values.name || '';
     balanceInput.value = values.balance ?? '';
     rateInput.value = values.rate ?? '';
     minInput.value = values.min ?? '';
 
+    row.dataset.rowId = rowId;
     removeButton.addEventListener('click', () => {
-      row.remove();
+      tool.querySelectorAll(`[data-row-id="${rowId}"]`).forEach((item) => item.remove());
     });
 
     rowsContainer.appendChild(fragment);
+
+    if (cardTemplate && cardsContainer) {
+      const cardFragment = cardTemplate.content.cloneNode(true);
+      const card = cardFragment.querySelector('[data-debt-card]');
+      const cardNameInput = card.querySelector('[data-field="name"]');
+      const cardBalanceInput = card.querySelector('[data-field="balance"]');
+      const cardRateInput = card.querySelector('[data-field="rate"]');
+      const cardMinInput = card.querySelector('[data-field="min"]');
+      const cardRemoveButton = card.querySelector('[data-remove]');
+
+      cardNameInput.value = values.name || '';
+      cardBalanceInput.value = values.balance ?? '';
+      cardRateInput.value = values.rate ?? '';
+      cardMinInput.value = values.min ?? '';
+      card.dataset.rowId = rowId;
+
+      cardRemoveButton.addEventListener('click', () => {
+        tool.querySelectorAll(`[data-row-id="${rowId}"]`).forEach((item) => item.remove());
+      });
+
+      cardsContainer.appendChild(cardFragment);
+    }
   };
 
   const parseNumber = (value) => {
@@ -163,7 +190,10 @@ function setDebtPlannerTool() {
   };
 
   const collectDebts = () => {
-    const rows = Array.from(rowsContainer.querySelectorAll('[data-debt-row]'));
+    const sourceContainer = cardsContainer && cardsContainer.children.length > 0
+      ? cardsContainer
+      : rowsContainer;
+    const rows = Array.from(sourceContainer.querySelectorAll('[data-debt-row], [data-debt-card]'));
     return rows
       .map((row) => {
         const name = row.querySelector('[data-field="name"]').value.trim();
@@ -260,6 +290,9 @@ function setDebtPlannerTool() {
 
   const renderResults = (result) => {
     resultsRows.innerHTML = '';
+    if (resultsCards) {
+      resultsCards.innerHTML = '';
+    }
 
     const orderedDebts = [...result.debts].sort((a, b) => {
       if (a.payoffMonth === null && b.payoffMonth === null) {
@@ -284,6 +317,23 @@ function setDebtPlannerTool() {
         <td class="px-4 py-3 text-accent-800 dark:text-accent-dark-200">${currencyFormatter.format(debt.totalPaid)}</td>
       `;
       resultsRows.appendChild(row);
+
+      if (resultsCards) {
+        const card = document.createElement('div');
+        card.className = 'rounded-xl border border-accent-200/60 dark:border-foreground-dark/60 bg-white dark:bg-background-dark p-4 space-y-2';
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <p class="text-sm font-semibold text-accent-700 dark:text-accent-dark-600">Orden ${index + 1}</p>
+            <p class="text-sm font-semibold text-accent-900 dark:text-accent-dark-200">${debt.name}</p>
+          </div>
+          <div class="text-sm text-accent-700 dark:text-accent-dark-600">
+            <p><span class="font-semibold">Mes de liquidación:</span> ${formatMonths(debt.payoffMonth)}</p>
+            <p><span class="font-semibold">Interés pagado:</span> ${currencyFormatter.format(debt.interestPaid)}</p>
+            <p><span class="font-semibold">Pago total:</span> ${currencyFormatter.format(debt.totalPaid)}</p>
+          </div>
+        `;
+        resultsCards.appendChild(card);
+      }
     });
 
     totalMonths.textContent = formatMonths(result.months);
