@@ -122,6 +122,10 @@ function setDebtPlannerTool() {
     maximumFractionDigits: 2
   });
 
+  extraPaymentInput.addEventListener('focus', (event) => {
+    event.target.select();
+  });
+
   const defaultDebts = [
     { name: 'Tarjeta de crédito', balance: 18000, rate: 42, min: 900 },
     { name: 'Préstamo personal', balance: 60000, rate: 22, min: 1800 }
