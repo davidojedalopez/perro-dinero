@@ -103,7 +103,6 @@ function setDebtPlannerTool() {
   const rowTemplate = tool.querySelector('template[data-debt-row]');
   const cardTemplate = tool.querySelector('template[data-debt-card]');
   const extraPaymentInput = tool.querySelector('[data-extra-payment]');
-  const strategyInput = tool.querySelector('[data-strategy]');
   const resultsContainer = tool.querySelector('[data-results]');
   const resultsRows = tool.querySelector('[data-results-rows]');
   const resultsCards = tool.querySelector('[data-results-cards]');
@@ -111,6 +110,12 @@ function setDebtPlannerTool() {
   const totalMonths = tool.querySelector('[data-total-months]');
   const totalInterest = tool.querySelector('[data-total-interest]');
   const totalPaid = tool.querySelector('[data-total-paid]');
+  const totalDebt = tool.querySelector('[data-total-debt]');
+  const snowballInterest = tool.querySelector('[data-snowball-interest]');
+  const snowballMonths = tool.querySelector('[data-snowball-months]');
+  const avalancheInterest = tool.querySelector('[data-avalanche-interest]');
+  const avalancheMonths = tool.querySelector('[data-avalanche-months]');
+  const recommendation = tool.querySelector('[data-recommendation]');
   const currencyFormatter = new Intl.NumberFormat('es-MX', {
     style: 'currency',
     currency: 'MXN',
@@ -288,7 +293,7 @@ function setDebtPlannerTool() {
     };
   };
 
-  const renderResults = (result) => {
+  const renderResults = (result, comparison) => {
     resultsRows.innerHTML = '';
     if (resultsCards) {
       resultsCards.innerHTML = '';
@@ -339,6 +344,15 @@ function setDebtPlannerTool() {
     totalMonths.textContent = formatMonths(result.months);
     totalInterest.textContent = currencyFormatter.format(result.totalInterestPaid);
     totalPaid.textContent = currencyFormatter.format(result.totalPaid);
+
+    if (comparison) {
+      totalDebt.textContent = currencyFormatter.format(comparison.totalDebt);
+      snowballInterest.textContent = currencyFormatter.format(comparison.snowball.totalInterestPaid);
+      snowballMonths.textContent = formatMonths(comparison.snowball.months);
+      avalancheInterest.textContent = currencyFormatter.format(comparison.avalanche.totalInterestPaid);
+      avalancheMonths.textContent = formatMonths(comparison.avalanche.months);
+      recommendation.textContent = comparison.recommendation;
+    }
   };
 
   addDebtButton.addEventListener('click', () => {
@@ -349,7 +363,6 @@ function setDebtPlannerTool() {
     clearError();
     const debts = collectDebts();
     const extraPayment = parseNumber(extraPaymentInput.value);
-    const strategy = strategyInput.value;
 
     if (debts.length === 0) {
       showError('Agrega al menos una deuda con saldo válido.');
@@ -364,11 +377,24 @@ function setDebtPlannerTool() {
       return;
     }
 
-    const result = simulatePlan(debts, extraPayment, strategy);
-    if (result.maxedOut) {
+    const snowballResult = simulatePlan(debts, extraPayment, 'snowball');
+    const avalancheResult = simulatePlan(debts, extraPayment, 'avalanche');
+    const totalDebtValue = debts.reduce((sum, debt) => sum + debt.balance, 0);
+    const bestResult = snowballResult.totalInterestPaid <= avalancheResult.totalInterestPaid
+      ? { label: 'bola de nieve', result: snowballResult }
+      : { label: 'avalancha', result: avalancheResult };
+    const comparison = {
+      totalDebt: totalDebtValue,
+      snowball: snowballResult,
+      avalanche: avalancheResult,
+      recommendation: `La mejor opción para pagar menos intereses es ${bestResult.label}, con ${currencyFormatter.format(bestResult.result.totalInterestPaid)} de intereses sobre ${currencyFormatter.format(totalDebtValue)}.`
+    };
+
+    const result = bestResult.result;
+    if (snowballResult.maxedOut || avalancheResult.maxedOut) {
       showError('La simulación superó 600 meses. Revisa los pagos mínimos o la tasa de interés.');
     }
-    renderResults(result);
+    renderResults(result, comparison);
     resultsContainer.classList.remove('hidden');
   });
 
