@@ -9,6 +9,10 @@
     "path": "/feed.xml",
     "id": "https://perrodinero.blog/"
   },
+  "feedJson": {
+    "filename": "feed.json",
+    "path": "/feed.json"
+  },
   "author": {
     "name": "David Ojeda",
     "email": "david@perrodinero.blog",
