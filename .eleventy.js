@@ -174,6 +174,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('humans.txt')
+  eleventyConfig.addPassthroughCopy('llms.txt')
   eleventyConfig.addPassthroughCopy('manifest.json')
   eleventyConfig.addPassthroughCopy('.well-known')
 
