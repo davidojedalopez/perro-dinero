@@ -10,7 +10,9 @@
     <meta name="author" content="{{ metadata.author.name }}">
     <link type="text/plain" rel="author" href="/humans.txt" />
 
-    <meta property="og:type" content="website">
+    {% set resolvedStructuredData = renderData.structuredData or structuredData or metadata.structuredData %}
+    {% set isPostPage = (page.url and page.url.startsWith('/posts/')) or (resolvedStructuredData and resolvedStructuredData.type == "post") %}
+    <meta property="og:type" content="{{ 'article' if isPostPage else 'website' }}">
     <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
     <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
@@ -92,7 +94,7 @@
     <link rel="apple-touch-startup-image" href="{{ '/img/favicon/apple-splash-640-1136.jpg' | url }}" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="{{ '/img/favicon/apple-splash-1136-640.jpg' | url }}" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 
-    {% structured_data renderData.structuredData or structuredData or metadata.structuredData %}
+    {% structured_data resolvedStructuredData %}
 
     <link rel="manifest" href="{{ '/manifest.json' | url }}" >
   </head>
