@@ -122,8 +122,13 @@ function setDebtPlannerTool() {
     maximumFractionDigits: 2
   });
 
-  extraPaymentInput.addEventListener('focus', (event) => {
-    event.target.select();
+  tool.addEventListener('focusin', (event) => {
+    if (!(event.target instanceof HTMLInputElement)) {
+      return;
+    }
+    if (event.target.type === 'text' || event.target.type === 'number') {
+      event.target.select();
+    }
   });
 
   const defaultDebts = [
