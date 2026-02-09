@@ -7,31 +7,31 @@ A personal finance blog in Spanish ("Perro Dinero" translates to "Money Dog") fo
 ## Tech Stack
 
 ### Core Framework
-- **Eleventy (11ty)** v2.0.1 - Static site generator powering the entire site
-- **Node.js** >= 20.0.0 - Runtime environment requirement
+- **Eleventy (11ty)** - Static site generator powering the entire site
+- **Node.js** - Runtime environment requirement
 
 ### Templating
 - **Nunjucks** - Primary templating engine for HTML layouts
 - **Markdown** - Content authoring format for blog posts and essays
-- **markdown-it** v10.0.0 - Markdown parser with extensions
-  - markdown-it-anchor v5.3.0 - Auto-generate heading anchors
-  - markdown-it-toc-done-right v4.2.0 - Table of contents generation
+- **markdown-it** - Markdown parser with extensions
+  - markdown-it-anchor - Auto-generate heading anchors
+  - markdown-it-toc-done-right - Table of contents generation
 
 ### Styling
-- **Tailwind CSS** v3.3.1 - Utility-first CSS framework
-  - @tailwindcss/forms v0.5.0 - Form styling plugin
+- **Tailwind CSS** - Utility-first CSS framework
+  - @tailwindcss/forms - Form styling plugin
   - Dark mode support (class-based)
-- **PostCSS** v8.4.13 - CSS processing
-- **Webpack** v5.80.0 - Asset bundling and build pipeline
+- **PostCSS** - CSS processing
+- **Webpack** - Asset bundling and build pipeline
   - Handles CSS extraction and processing
   - Service worker generation for PWA support
 
 ### Eleventy Plugins
-- **@11ty/eleventy-plugin-rss** v1.2.0 - RSS feed generation
-- **@11ty/eleventy-navigation** v0.1.6 - Navigation structure management
-- **@11ty/eleventy-img** v4.0.2 - Image optimization and processing
-- **@11ty/eleventy-cache-assets** v2.3.0 - Cache external API data
-- **eleventy-plugin-reading-time** v0.0.1 - Calculate estimated reading time
+- **@11ty/eleventy-plugin-rss** - RSS feed generation
+- **@11ty/eleventy-navigation** - Navigation structure management
+- **@11ty/eleventy-img** - Image optimization and processing
+- **@11ty/eleventy-cache-assets** - Cache external API data
+- **eleventy-plugin-reading-time** - Calculate estimated reading time
 
 ### Data Sources
 - **Banxico API** - Fetches Mexican economic indicators including:
@@ -53,8 +53,8 @@ A personal finance blog in Spanish ("Perro Dinero" translates to "Money Dog") fo
 
 ### Deployment
 - **Netlify** - Continuous deployment platform
-  - **@netlify/plugin-lighthouse** v6.0.0 - Performance auditing
-  - **netlify-plugin-a11y** v0.0.12 - Accessibility testing
+  - **@netlify/plugin-lighthouse** - Performance auditing
+  - **netlify-plugin-a11y** - Accessibility testing
   - **netlify-plugin-no-more-404** - 404 error tracking
 
 ## Project Structure
