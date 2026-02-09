@@ -132,8 +132,8 @@ function setDebtPlannerTool() {
   });
 
   const defaultDebts = [
-    { name: 'Tarjeta de crédito', balance: 18000, rate: 42, min: 900 },
-    { name: 'Préstamo personal', balance: 60000, rate: 22, min: 1800 }
+    { name: 'Tarjeta de crédito (tasa alta)', balance: 12000, rate: 55, min: 600 },
+    { name: 'Préstamo personal (tasa baja)', balance: 45000, rate: 14, min: 1500 }
   ];
 
   const formatMonths = (months) => {
