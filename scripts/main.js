@@ -390,15 +390,21 @@ function setDebtPlannerTool() {
     const snowballResult = simulatePlan(debts, extraPayment, 'snowball');
     const avalancheResult = simulatePlan(debts, extraPayment, 'avalanche');
     const totalDebtValue = debts.reduce((sum, debt) => sum + debt.balance, 0);
-    const bestResult = snowballResult.totalInterestPaid <= avalancheResult.totalInterestPaid
+    const interestDiff = snowballResult.totalInterestPaid - avalancheResult.totalInterestPaid;
+    const isTie = Math.abs(interestDiff) < 0.01;
+    const bestResult = interestDiff <= 0
       ? { label: 'bola de nieve', result: snowballResult, other: avalancheResult }
       : { label: 'avalancha', result: avalancheResult, other: snowballResult };
-    const interestSavings = Math.max(bestResult.other.totalInterestPaid - bestResult.result.totalInterestPaid, 0);
+    const interestSavings = Math.abs(interestDiff);
+    const otherLabel = bestResult.label === 'bola de nieve' ? 'avalancha' : 'bola de nieve';
+    const recommendationText = isTie
+      ? `Ambas estrategias generan intereses muy similares (${currencyFormatter.format(snowballResult.totalInterestPaid)} sobre ${currencyFormatter.format(totalDebtValue)}), así que puedes elegir la que te motive más.`
+      : `La mejor opción para pagar menos intereses es ${bestResult.label}, con ${currencyFormatter.format(bestResult.result.totalInterestPaid)} de intereses sobre ${currencyFormatter.format(totalDebtValue)}. Ahorras ${currencyFormatter.format(interestSavings)} frente a ${otherLabel}.`;
     const comparison = {
       totalDebt: totalDebtValue,
       snowball: snowballResult,
       avalanche: avalancheResult,
-      recommendation: `La mejor opción para pagar menos intereses es ${bestResult.label}, con ${currencyFormatter.format(bestResult.result.totalInterestPaid)} de intereses sobre ${currencyFormatter.format(totalDebtValue)}. Ahorras ${currencyFormatter.format(interestSavings)} frente a la otra estrategia.`
+      recommendation: recommendationText
     };
 
     const result = bestResult.result;
