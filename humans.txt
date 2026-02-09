@@ -11,3 +11,4 @@
 	Language: Spanish
 	Doctype: HTML5
 	IDE: Visual Studio Code
+	LLMs: /llms.txt

@@ -1,0 +1,16 @@
+# Perro Dinero
+
+Resumen: Blog de finanzas personales con consejos prácticos, análisis y recursos para ahorrar, invertir y tomar mejores decisiones de dinero en México.
+Temática: Finanzas personales en México.
+
+Enlaces clave:
+- /sitemap.xml
+- /feed.xml
+- /posts/
+- /faqs/
+- /books/
+- /ensayosatomicos/
+- /api/indicadores_economicos.json
+
+Contacto: David Ojeda (davidojeda@hey.com)
+Idioma: Español (es-MX)
