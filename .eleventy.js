@@ -7,6 +7,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const readingTime = require('eleventy-plugin-reading-time');
 const Image = require('@11ty/eleventy-img');
 const path = require("path");
+const themes = require("./_data/themes");
 
 Settings.defaultLocale = 'es-MX';
 
@@ -74,6 +75,32 @@ function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loadi
   return figureCaption ?
     `<figure>${html}<figcaption>${figureCaption}</figcaption></figure>` :
     html
+}
+
+function normalizeThemeToken(value = "") {
+  return value
+    .toString()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .trim()
+    .toLowerCase();
+}
+
+function toArray(value) {
+  if (!value) {
+    return [];
+  }
+  return Array.isArray(value) ? value : [value];
+}
+
+function createThemeLookup() {
+  return Object.entries(themes).reduce((lookup, [themeKey, themeData]) => {
+    const tokens = [themeKey, ...(themeData.aliases || [])];
+    tokens.forEach((token) => {
+      lookup[normalizeThemeToken(token)] = themeKey;
+    });
+    return lookup;
+  }, {});
 }
 
 
@@ -145,6 +172,39 @@ module.exports = function (eleventyConfig) {
     return collectionApi
       .getFilteredByGlob("posts/*.md")
       .filter(shouldBeLive);
+  });
+
+  eleventyConfig.addCollection("postsByTheme", function (collectionApi) {
+    const themeLookup = createThemeLookup();
+    const index = Object.values(themes).reduce((acc, theme) => {
+      acc[theme.slug] = [];
+      return acc;
+    }, {});
+
+    collectionApi
+      .getFilteredByGlob("posts/*.md")
+      .filter(shouldBeLive)
+      .forEach((post) => {
+        const rawTokens = [
+          ...toArray(post.data.tags),
+          ...toArray(post.data.themes)
+        ];
+
+        const postThemes = new Set();
+        rawTokens.forEach((token) => {
+          const normalized = normalizeThemeToken(token);
+          const canonicalThemeKey = themeLookup[normalized];
+          if (canonicalThemeKey && themes[canonicalThemeKey]) {
+            postThemes.add(canonicalThemeKey);
+          }
+        });
+
+        postThemes.forEach((themeKey) => {
+          index[themes[themeKey].slug].push(post);
+        });
+      });
+
+    return index;
   });
 
   eleventyConfig.addCollection("books", function (collectionApi) {
