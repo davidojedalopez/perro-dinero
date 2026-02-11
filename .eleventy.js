@@ -7,6 +7,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const readingTime = require('eleventy-plugin-reading-time');
 const Image = require('@11ty/eleventy-img');
 const path = require("path");
+const topics = require("./_data/topics");
 
 Settings.defaultLocale = 'es-MX';
 
@@ -168,6 +169,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("faqs", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob('faqs/*.md')
+  });
+
+  eleventyConfig.addCollection("topicHubs", function () {
+    return topics.canonical;
   });
 
   eleventyConfig.addPassthroughCopy("img");
