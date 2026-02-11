@@ -1,0 +1,185 @@
+---
+layout: layouts/base.njk
+title: Herramientas
+description: "Herramientas prácticas para tomar mejores decisiones con tus finanzas personales."
+cover_path: img/perro_dinero.png
+---
+
+<article class="py-8 space-y-8" data-debt-planner>
+  <header class="space-y-3">
+    <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">{{ title }}</h1>
+    <p class="text-lg text-accent-600 dark:text-accent-dark-600">
+      Usa estas herramientas para analizar tus decisiones y tomar control de tus finanzas personales.
+    </p>
+  </header>
+
+  <section class="space-y-6 rounded-2xl border border-accent-200/60 dark:border-foreground-dark/60 bg-accent-50 dark:bg-foreground-dark p-6">
+    <div class="space-y-2">
+      <h2 class="text-2xl font-bold text-primary dark:text-primary-dark">Planificador de deudas</h2>
+      <p class="text-base text-accent-700 dark:text-accent-dark-600">
+        Compara el método <strong>bola de nieve</strong> (saldo menor primero) vs. <strong>avalancha</strong> (tasa más alta primero)
+        y descubre cuánto tardas en salir de deudas.
+      </p>
+    </div>
+
+    <div class="grid gap-4 sm:grid-cols-2">
+      <label class="space-y-2 text-sm font-semibold text-accent-700 dark:text-accent-dark-600">
+        Pago extra mensual (MXN)
+        <input data-extra-payment type="number" min="0" step="0.01" value="1200"
+          class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+      </label>
+    </div>
+
+    <div class="sm:hidden space-y-4" data-debt-cards></div>
+
+    <div class="hidden sm:block overflow-x-auto rounded-xl border border-accent-200/60 dark:border-foreground-dark/60 bg-white dark:bg-background-dark">
+      <table class="min-w-full divide-y divide-accent-200/60 dark:divide-foreground-dark/60 text-left text-sm">
+        <thead class="bg-accent-100/60 dark:bg-foreground-dark/40 text-accent-700 dark:text-accent-dark-600">
+          <tr>
+            <th class="px-4 py-3 font-semibold">Deuda</th>
+            <th class="px-4 py-3 font-semibold">Saldo (MXN)</th>
+            <th class="px-4 py-3 font-semibold">Tasa anual (%)</th>
+            <th class="px-4 py-3 font-semibold">Pago mínimo (MXN)</th>
+            <th class="px-4 py-3 font-semibold"><span class="sr-only">Acciones</span></th>
+          </tr>
+        </thead>
+        <tbody data-debt-rows class="divide-y divide-accent-100/80 dark:divide-foreground-dark/60">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-3">
+      <button data-add-debt type="button"
+        class="rounded-md border border-accent-300 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-4 py-2 text-sm font-semibold text-accent-700 dark:text-accent-dark-600 hover:bg-accent-100/70 dark:hover:bg-foreground-dark/60">
+        + Agregar deuda
+      </button>
+      <button data-calc type="button"
+        class="rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-700">
+        Calcular plan
+      </button>
+    </div>
+
+    <div data-results class="hidden space-y-4 rounded-xl border border-accent-200/60 dark:border-foreground-dark/60 bg-white dark:bg-background-dark p-5">
+      <h3 class="text-xl font-semibold text-primary dark:text-primary-dark">Resultados</h3>
+      <div data-error class="hidden rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700"></div>
+
+      <div class="grid gap-3 sm:grid-cols-3 text-sm text-accent-700 dark:text-accent-dark-600">
+        <div class="rounded-lg border border-accent-100 dark:border-foreground-dark/60 bg-accent-50 dark:bg-foreground-dark/60 p-3">
+          <p class="font-semibold">Tiempo total</p>
+          <p data-total-months class="text-base font-bold text-accent-900 dark:text-accent-dark-200"></p>
+        </div>
+        <div class="rounded-lg border border-accent-100 dark:border-foreground-dark/60 bg-accent-50 dark:bg-foreground-dark/60 p-3">
+          <p class="font-semibold">Intereses pagados</p>
+          <p data-total-interest class="text-base font-bold text-accent-900 dark:text-accent-dark-200"></p>
+        </div>
+        <div class="rounded-lg border border-accent-100 dark:border-foreground-dark/60 bg-accent-50 dark:bg-foreground-dark/60 p-3">
+          <p class="font-semibold">Pago total</p>
+          <p data-total-paid class="text-base font-bold text-accent-900 dark:text-accent-dark-200"></p>
+        </div>
+      </div>
+
+      <div class="rounded-xl border border-accent-200/60 dark:border-foreground-dark/60 bg-accent-50/80 dark:bg-foreground-dark/60 p-4 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <h4 class="text-lg font-semibold text-primary dark:text-primary-dark">Comparativa de estrategias</h4>
+          <p class="text-sm text-accent-700 dark:text-accent-dark-600">
+            Total de deudas: <span data-total-debt class="font-semibold text-accent-900 dark:text-accent-dark-200"></span>
+          </p>
+        </div>
+        <div class="grid gap-3 sm:grid-cols-2 text-sm text-accent-700 dark:text-accent-dark-600">
+          <div class="rounded-lg border border-accent-100 dark:border-foreground-dark/60 bg-white dark:bg-background-dark p-3 space-y-2">
+            <p class="font-semibold">Bola de nieve</p>
+            <p>Intereses: <span data-snowball-interest class="font-semibold text-accent-900 dark:text-accent-dark-200"></span></p>
+            <p>Tiempo: <span data-snowball-months class="font-semibold text-accent-900 dark:text-accent-dark-200"></span></p>
+          </div>
+          <div class="rounded-lg border border-accent-100 dark:border-foreground-dark/60 bg-white dark:bg-background-dark p-3 space-y-2">
+            <p class="font-semibold">Avalancha</p>
+            <p>Intereses: <span data-avalanche-interest class="font-semibold text-accent-900 dark:text-accent-dark-200"></span></p>
+            <p>Tiempo: <span data-avalanche-months class="font-semibold text-accent-900 dark:text-accent-dark-200"></span></p>
+          </div>
+        </div>
+        <div class="rounded-lg border border-accent-100 dark:border-foreground-dark/60 bg-white dark:bg-background-dark p-3 text-sm text-accent-700 dark:text-accent-dark-600">
+          <p class="font-semibold text-accent-900 dark:text-accent-dark-200">Sugerencia</p>
+          <p data-recommendation></p>
+        </div>
+      </div>
+
+      <div class="sm:hidden space-y-3" data-results-cards></div>
+
+      <div class="hidden sm:block overflow-x-auto rounded-xl border border-accent-200/60 dark:border-foreground-dark/60">
+        <table class="min-w-full divide-y divide-accent-200/60 dark:divide-foreground-dark/60 text-left text-sm">
+          <thead class="bg-accent-100/60 dark:bg-foreground-dark/40 text-accent-700 dark:text-accent-dark-600">
+            <tr>
+              <th class="px-4 py-3 font-semibold">Orden</th>
+              <th class="px-4 py-3 font-semibold">Deuda</th>
+              <th class="px-4 py-3 font-semibold">Mes de liquidación</th>
+              <th class="px-4 py-3 font-semibold">Interés pagado</th>
+              <th class="px-4 py-3 font-semibold">Pago total</th>
+            </tr>
+          </thead>
+          <tbody data-results-rows class="divide-y divide-accent-100/80 dark:divide-foreground-dark/60"></tbody>
+        </table>
+      </div>
+
+      <p class="text-xs text-accent-600 dark:text-accent-dark-600">
+        Nota: Esto es una estimación. Las tasas y cargos reales pueden variar según tu contrato.
+      </p>
+    </div>
+
+    <template data-debt-row>
+      <tr data-debt-row>
+        <td class="px-4 py-3">
+          <input data-field="name" type="text" placeholder="Ej. Tarjeta XYZ"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-sm text-accent-900 dark:text-accent-dark-200" />
+        </td>
+        <td class="px-4 py-3">
+          <input data-field="balance" type="number" min="0" step="0.01" placeholder="0"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-sm text-accent-900 dark:text-accent-dark-200" />
+        </td>
+        <td class="px-4 py-3">
+          <input data-field="rate" type="number" min="0" step="0.01" placeholder="0"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-sm text-accent-900 dark:text-accent-dark-200" />
+        </td>
+        <td class="px-4 py-3">
+          <input data-field="min" type="number" min="0" step="0.01" placeholder="0"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-sm text-accent-900 dark:text-accent-dark-200" />
+        </td>
+        <td class="px-4 py-3 text-right">
+          <button data-remove type="button" class="text-sm font-semibold text-red-600 hover:text-red-700">
+            Quitar
+          </button>
+        </td>
+      </tr>
+    </template>
+
+    <template data-debt-card>
+      <div data-debt-card class="rounded-xl border border-accent-200/60 dark:border-foreground-dark/60 bg-white dark:bg-background-dark p-4 space-y-4">
+        <div class="flex items-center justify-between">
+          <p class="text-sm font-semibold text-accent-700 dark:text-accent-dark-600">Deuda</p>
+          <button data-remove type="button" class="text-sm font-semibold text-red-600 hover:text-red-700">
+            Quitar
+          </button>
+        </div>
+        <label class="space-y-2 text-sm font-semibold text-accent-700 dark:text-accent-dark-600">
+          Nombre
+          <input data-field="name" type="text" placeholder="Ej. Tarjeta XYZ"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+        </label>
+        <label class="space-y-2 text-sm font-semibold text-accent-700 dark:text-accent-dark-600">
+          Saldo (MXN)
+          <input data-field="balance" type="number" min="0" step="0.01" placeholder="0"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+        </label>
+        <label class="space-y-2 text-sm font-semibold text-accent-700 dark:text-accent-dark-600">
+          Tasa anual (%)
+          <input data-field="rate" type="number" min="0" step="0.01" placeholder="0"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+        </label>
+        <label class="space-y-2 text-sm font-semibold text-accent-700 dark:text-accent-dark-600">
+          Pago mínimo (MXN)
+          <input data-field="min" type="number" min="0" step="0.01" placeholder="0"
+            class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-2 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+        </label>
+      </div>
+    </template>
+  </section>
+</article>
