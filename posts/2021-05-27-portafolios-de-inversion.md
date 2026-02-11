@@ -5,6 +5,7 @@ published_at: 2021-05-28
 cover_path: img/posts/covers/nina_curada.jpeg
 cover_alt: "Nina debajo de una hamaca"
 tags: ['portafolios', 'inversiones', 'dca', 'vt', 'vanguard', 'lazy', 'vea', 'voo', 'vwo', 'vnq', 'cetes']
+themes: ['inversion']
 newsletter_cta: true
 ---
 

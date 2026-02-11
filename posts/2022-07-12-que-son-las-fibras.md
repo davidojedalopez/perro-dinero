@@ -6,6 +6,7 @@ published_at: 2022-07-12
 cover_path: img/posts/covers/que_son_las_fibras.png
 cover_alt: Nina y Alyx, volteando hacia lados opuestos al lado de un dique.
 tags: ['fibras', 'bienes raices', 'inmuebles', 'funo']
+themes: []
 newsletter_cta: true
 ---
 

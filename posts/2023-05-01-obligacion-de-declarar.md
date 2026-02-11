@@ -5,6 +5,7 @@ published_at: 2023-05-01
 cover_path: img/posts/obligacion_a_declarar/cover.png
 cover_alt: Alyx y Nina acostadas en el cesped disfrutando de la vida.
 tags: ['SAT', 'impuestos', 'declaracion anual']
+themes: []
 newsletter_cta: true
 ---
 

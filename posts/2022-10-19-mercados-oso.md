@@ -5,6 +5,7 @@ published_at: 2022-10-19
 cover_path: img/posts/mercados_oso/cover.png
 cover_alt: Nina, acostada entre las flores y Alyx en el fondo saltando.
 tags: ['mercado oso', 'bear market', 'crisis', 'market']
+themes: []
 newsletter_cta: true
 ---
 

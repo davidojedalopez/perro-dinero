@@ -5,6 +5,7 @@ published_at: 2021-05-14
 cover_path: img/posts/covers/nina_impuestos_acciones.jpg
 cover_alt: "Nina con su mantel."
 tags: ['blockchain', 'nft', 'tweet', 'cripto']
+themes: []
 newsletter_cta: true
 ---
 

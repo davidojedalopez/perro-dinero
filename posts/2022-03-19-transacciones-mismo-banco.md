@@ -6,6 +6,7 @@ published_at: 2022-03-19
 cover_path: img/posts/covers/transacciones_mismo_banco.jpg
 cover_alt: Nina, con la lengua de fuera en el Jardin Botánico.
 tags: ['tarjeta de credito', 'crédito', 'credito', 'tarjeta de crédito', 'transacción mismo banco']
+themes: []
 newsletter_cta: true
 ---
 

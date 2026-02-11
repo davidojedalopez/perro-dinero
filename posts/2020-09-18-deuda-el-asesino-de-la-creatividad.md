@@ -6,6 +6,7 @@ published_at: 2020-09-18
 cover_path: img/posts/covers/deudas_asesinas.png
 cover_alt: "Nina frente a una alberca con vista al mar de Mazatán"
 tags: ['deudas', 'deuda buena', 'deuda mala', 'costo de oportunidad']
+themes: ['deudas']
 newsletter_cta: true
 ---
 

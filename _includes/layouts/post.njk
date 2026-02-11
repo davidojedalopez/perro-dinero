@@ -25,6 +25,17 @@ eleventyComputed:
     <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Actualizado el</span> <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ last_updated_at | readableDate }}</time>
   {% endif %}
 
+  {% set postThemes = page.data | postThemes %}
+  {% if postThemes | length %}
+    <div class="mt-4 flex flex-wrap gap-2" aria-label="Temas del post">
+      {% for theme in postThemes %}
+        <a href="{{ theme.slug | url }}" class="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700">
+          {{ theme.title }}
+        </a>
+      {% endfor %}
+    </div>
+  {% endif %}
+
   {% if cover_path %}
     <div class="mt-4 rounded mx-auto w-full max-w-screen-sm h-auto">
       <div class="relative -z-1">

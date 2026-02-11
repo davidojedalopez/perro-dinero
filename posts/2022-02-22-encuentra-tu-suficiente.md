@@ -5,6 +5,7 @@ published_at: 2022-02-22
 cover_path: img/posts/covers/cuando_es_suficiente.jpg
 cover_alt: Alyx sonriendo a la cámara.
 tags: ['introspección']
+themes: []
 newsletter_cta: true
 ---
 

@@ -6,6 +6,7 @@ published_at: 2020-10-20
 cover_path: img/posts/covers/nina_fondo_emergencia.JPG
 cover_alt: "Nina acostada en la tierra, junto a su frisbee azul."
 tags: ['inversiones', 'fondo de emergencia', 'liquidez']
+themes: ['inversion']
 newsletter_cta: true
 ---
 
