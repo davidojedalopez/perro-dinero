@@ -171,6 +171,10 @@ module.exports = function (eleventyConfig) {
   })
 
   // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter("filterByTheme", (posts, themeSlug) => {
+    return posts.filter((post) => Array.isArray(post.data.temas) && post.data.temas.includes(themeSlug));
+  });
+
   eleventyConfig.addFilter("head", (array, n) => {
     if (n < 0) {
       return array.slice(n);
@@ -249,6 +253,13 @@ module.exports = function (eleventyConfig) {
     return collectionApi
       .getFilteredByGlob('atomic_essays/*.md')
       .filter(shouldBeLive);
+  });
+
+
+  eleventyConfig.addCollection("temas", function (collectionApi) {
+    return collectionApi
+      .getFilteredByGlob("temas/*.njk")
+      .filter(item => item.url !== '/temas/');
   });
 
   eleventyConfig.addCollection("faqs", function (collectionApi) {

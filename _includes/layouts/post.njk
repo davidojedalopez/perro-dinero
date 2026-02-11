@@ -71,6 +71,20 @@ eleventyComputed:
   <small class="opacity-50">Este post tiene enlaces de afiliado. Me dan una comisión si compras con mi enlace, pero a tí te cuesta lo mismo. Nunca recomiendo nada que no haya probado yo mismo.</small>
 {% endif %}
 
+{% if temas and temas | length %}
+  <section class="mt-8 p-4 border rounded-lg">
+    <h2 class="font-black text-xl">Este post también vive en estos hubs</h2>
+    <div class="mt-3 flex flex-wrap gap-2">
+      {% for temaSlug in temas %}
+        {% set tema = temas_hub.bySlug[temaSlug] %}
+        {% if tema %}
+          <a class="no-underline px-3 py-1 rounded-full bg-accent-100 dark:bg-foreground-dark border" href="/temas/{{ tema.slug }}/">{{ tema.emoji }} {{ tema.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}
+
 <div class="flex flex-col mt-8 p-4 space-y-12 mb-8">
   <p class="opacity-75">Otras publicaciones que pueden interesarte 💭</p>
 
