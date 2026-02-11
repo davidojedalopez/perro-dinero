@@ -1,0 +1,41 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: temas_hub.list
+  size: 1
+  alias: tema
+permalink: "/temas/{{ tema.slug }}/"
+eleventyComputed:
+  title: "{{ tema.title }} | Hub de finanzas"
+  description: "{{ tema.definition }}"
+---
+
+{% set relatedPosts = collections.posts | filterByTheme(tema.slug) %}
+
+<section class="space-y-8">
+  <header>
+    <p><a href="/temas/">← Ver todos los temas</a></p>
+    <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl">{{ tema.emoji }} {{ tema.title }}</h1>
+  </header>
+
+  <article class="p-4 border rounded-lg bg-accent-50 dark:bg-foreground-dark">
+    <h2 class="font-black text-2xl mb-2">Definición + enlaces clave</h2>
+    <p>{{ tema.definition }}</p>
+    <ul class="mt-4 list-disc pl-6 space-y-1">
+      {% for link in tema.keyLinks %}
+        <li><a href="{{ link.href }}">{{ link.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </article>
+
+  <section>
+    <h2 class="font-black text-2xl mb-4">Posts relacionados ({{ relatedPosts | length }})</h2>
+    <div class="flex flex-col space-y-8">
+      {% for post in relatedPosts | reverse %}
+        {% include "postitem.njk" %}
+      {% else %}
+        <p>Aún no hay posts asignados para este tema.</p>
+      {% endfor %}
+    </div>
+  </section>
+</section>

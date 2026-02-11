@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+title: "Temas de finanzas personales"
+description: "Hubs por tema para aprender presupuesto, inversión, ahorro, deudas y seguros."
+permalink: /temas/
+---
+
+<section class="space-y-6">
+  <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl">Hubs por tema 🧭</h1>
+  <p>Elige una temática para ver definición, enlaces clave y posts relacionados.</p>
+
+  <div class="grid gap-4 md:grid-cols-2">
+    {% for tema in temas_hub.list %}
+      <a class="no-underline p-4 border rounded-lg hover:shadow-md" href="/temas/{{ tema.slug }}/">
+        <h2 class="font-black text-2xl">{{ tema.emoji }} {{ tema.title }}</h2>
+        <p class="mt-2 text-base">{{ tema.definition }}</p>
+      </a>
+    {% endfor %}
+  </div>
+</section>

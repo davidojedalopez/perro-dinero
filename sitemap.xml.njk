@@ -11,4 +11,15 @@ eleventyExcludeFromCollections: true
     <lastmod>{{ page.date.toISOString() }}</lastmod>
   </url>
 {%- endfor %}
+{% for page in collections.temas %}
+  {% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <url>
+    <loc>{{ absoluteUrl }}</loc>
+    <lastmod>{{ page.date.toISOString() }}</lastmod>
+  </url>
+{%- endfor %}
+{% set temasIndexUrl %}{{ '/temas/' | url | absoluteUrl(metadata.url) }}{% endset %}
+  <url>
+    <loc>{{ temasIndexUrl }}</loc>
+  </url>
 </urlset>
