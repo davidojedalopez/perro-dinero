@@ -5,6 +5,7 @@ published_at: 2023-05-08
 cover_path: img/posts/rendimientos_en_cetes/cover.png
 cover_alt: Nina tirando la hueva en el piso.
 tags: ['cetes', 'interés compuesto', 'cetesdirecto', 'isr', 'inversion']
+themes: ['inversion']
 newsletter_cta: true
 ---
 

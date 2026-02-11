@@ -6,6 +6,7 @@ published_at: 2021-10-05
 cover_path: img/posts/deducciones_personales/cover.jpg
 cover_alt: Nina con la lengua de fuera.
 tags: ['impuestos', 'declaración anual', 'deducciones personales', 'SAT', 'ISR', 'LISR', 'Ley de Impuesto Sobre la Renta']
+themes: []
 newsletter_cta: true
 ---
 

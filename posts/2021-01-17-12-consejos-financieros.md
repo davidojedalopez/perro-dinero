@@ -5,6 +5,7 @@ published_at: 2021-01-17
 cover_path: img/posts/covers/nina_y_kai.png
 cover_alt: "Nina y Kai cotorreando un rato."
 tags: ['listticle', 'seguros', 'buró de crédito', 'presupuesto']
+themes: ['seguros', 'presupuesto']
 newsletter_cta: true
 ---
 

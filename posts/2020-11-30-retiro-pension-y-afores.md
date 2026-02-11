@@ -7,6 +7,7 @@ last_updated_at: 2020-12-12
 cover_path: img/posts/covers/retiro_y_afores.jpg
 cover_alt: "Nina y Thamy."
 tags: ['retiro', 'afore', 'pension', 'ley del 97', 'ley del 73']
+themes: []
 newsletter_cta: true
 ---
 

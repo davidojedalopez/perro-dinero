@@ -5,6 +5,7 @@ published_at: 2023-04-25
 cover_path: img/posts/visores_cfdi/cover.png
 cover_alt: Alyx, esperando que le tire la pelota.
 tags: ['SAT', 'impuestos', 'CFDI', 'declaracion anual']
+themes: []
 newsletter_cta: true
 ---
 

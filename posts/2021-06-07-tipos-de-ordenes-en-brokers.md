@@ -5,6 +5,7 @@ published_at: 2021-06-07
 cover_path: img/posts/covers/nina_y_alyx.png
 cover_alt:
 tags: ['inversion', 'broker', 'tipos de órdenes', 'limitada', 'a mercado']
+themes: ['inversion']
 newsletter_cta: true
 ---
 

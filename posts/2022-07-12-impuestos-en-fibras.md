@@ -6,6 +6,7 @@ published_at: 2022-07-12
 cover_path: img/posts/covers/impuestos_en_fibras.jpg
 cover_alt: Alyx, toma cercana de perfil.
 tags: ['fibras', 'bienes raices', 'inmuebles', 'fibra mty', 'impuestos', 'lisr']
+themes: []
 newsletter_cta: true
 ---
 
