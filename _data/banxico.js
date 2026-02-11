@@ -1,10 +1,14 @@
 const Cache = require("@11ty/eleventy-cache-assets");
 const dotenv = require('dotenv');
+const { HttpsProxyAgent } = require('https-proxy-agent');
+const { getProxyForUrl } = require('proxy-from-env');
+
 dotenv.config();
+
 const API_KEY = process.env.BANXICO_API_KEY
 const MINIMUM_WAGE_SERIES = {
     border_minimum_wage: 'SL11295',
-    general_minimum_wage: 'SL11298',    
+    general_minimum_wage: 'SL11298',
 }
 const UDI_SERIES = {
     udi: 'SP68257'
@@ -20,6 +24,7 @@ const BANXICO_SERIES = {
     ...UDI_SERIES,
     ...CETES_SERIES
 }
+const proxyAgents = new Map()
 
 module.exports = async function () {
     console.log("Fetching Banxico's economic indicators...");
@@ -33,9 +38,11 @@ module.exports = async function () {
 }
 
 async function fetch_data(series) {
-    const json = await Cache(`https://www.banxico.org.mx/SieAPIRest/service/v1/series/${series}/datos/oportuno?token=${API_KEY}`, {
+    const url = `https://www.banxico.org.mx/SieAPIRest/service/v1/series/${series}/datos/oportuno?token=${API_KEY}`
+    const json = await Cache(url, {
         duration: '1d',
-        type: 'json'
+        type: 'json',
+        fetchOptions: getFetchOptions(url)
     })
     const now = Date.now()
     const nowWithMxFormat = new Intl
@@ -67,5 +74,21 @@ async function fetch_data(series) {
         consulted_at_friendly: nowWithFriendlyFormat,
         consulted_at: nowWithMxFormat,
         consulted_at_epoch: now
+    }
+}
+
+function getFetchOptions(url) {
+    const proxyUrl = getProxyForUrl(url)
+
+    if (!proxyUrl) {
+        return {}
+    }
+
+    if (!proxyAgents.has(proxyUrl)) {
+        proxyAgents.set(proxyUrl, new HttpsProxyAgent(proxyUrl))
+    }
+
+    return {
+        agent: proxyAgents.get(proxyUrl)
     }
 }
