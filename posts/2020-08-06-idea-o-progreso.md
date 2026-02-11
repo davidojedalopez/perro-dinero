@@ -6,6 +6,7 @@ published_at: 2020-08-06
 cover_path: img/posts/covers/idea_o_progreso.png
 cover_alt: "Nina, con la lengua de fuera, acostada en el parque sobre el pasto"
 tags: ['desarrollo personal']
+themes: []
 newsletter_cta: true
 ---
 

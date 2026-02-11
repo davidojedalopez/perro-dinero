@@ -5,6 +5,7 @@ published_at: 2021-03-05
 cover_path: img/posts/covers/nina_impuestos_acciones.jpg
 cover_alt: "Nina con su mantel."
 tags: ['impuestos', 'acciones', 'sat']
+themes: []
 newsletter_cta: true
 ---
 

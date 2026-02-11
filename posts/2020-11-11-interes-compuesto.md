@@ -6,6 +6,7 @@ published_at: 2020-11-11
 cover_path: img/posts/covers/nina_en_la_cama.png
 cover_alt: "Nina, a gusto acostada en la cama."
 tags: ['inversiones', 'interés compuesto', 'regla del 72']
+themes: ['inversion']
 newsletter_cta: true
 ---
 

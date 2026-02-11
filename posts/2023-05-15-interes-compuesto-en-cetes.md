@@ -5,6 +5,7 @@ published_at: 2023-05-15
 cover_path: img/posts/obligacion_a_declarar/cover.png
 cover_alt: Alyx y Nina acostadas en el cesped disfrutando de la vida.
 tags: ['cetes', 'interés compuesto', 'cetesdirecto']
+themes: []
 newsletter_cta: true
 draft: true
 ---

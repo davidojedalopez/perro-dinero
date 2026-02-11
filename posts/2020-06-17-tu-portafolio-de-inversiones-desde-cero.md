@@ -7,6 +7,7 @@ published_at: 2020-06-17
 cover_path: img/posts/covers/portafolio_desde_cero.png
 cover_alt: "Nina acostada en el parque volteando hacia atrás, sorprendida."
 tags: ['inversiones', 'David Swensen', 'market timing', 'vea', 'voo', 'vwo', 'vgsh', 'vtip', 'vnq', 'cetes']
+themes: ['inversion']
 newsletter_cta: true
 ---
 

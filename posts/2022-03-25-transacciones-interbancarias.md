@@ -6,6 +6,7 @@ published_at: 2022-03-25
 cover_path: img/posts/covers/transaccion_interbancaria_cover.jpg
 cover_alt: Nina, acostada en la tierra.
 tags: ['tarjeta de credito', 'crédito', 'credito', 'tarjeta de crédito', 'transacción mismo banco', 'interbancaria', 'camara de compensacion', 'titular de marca', 'mastercard', 'visa', 'prosa', 'e-global']
+themes: []
 newsletter_cta: true
 ---
 

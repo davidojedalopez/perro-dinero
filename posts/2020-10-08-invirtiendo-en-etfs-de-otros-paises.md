@@ -5,6 +5,7 @@ published_at: 2020-10-08
 cover_path: img/posts/covers/nina_etf_otros_paises.jpg
 cover_alt: "Nina comiendo nieve de vainilla de una cuchara"
 tags: ['inversiones', 'etfs', 'SIC', 'sistema internacional de cotizaciones', 'voo', 'arbitraje']
+themes: ['inversion']
 newsletter_cta: true
 ---
 

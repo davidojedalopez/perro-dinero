@@ -7,6 +7,7 @@ published_at: 2020-06-11
 cover_path: img/posts/covers/inversiones_y_jabon.png
 cover_alt: "Nina sentada y vestida con un moño rojo."
 tags: ['inversiones', 'inversión pasiva', 'inversión activa']
+themes: ['inversion']
 newsletter_cta: true
 ---
 

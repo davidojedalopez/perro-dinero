@@ -5,6 +5,7 @@ published_at: 2023-03-15
 cover_path: img/posts/actualizacion_portafolio_marzo_2023/cover.png
 cover_alt: Nina, cruzando sus patas elegantemente.
 tags: ['portafolio']
+themes: []
 newsletter_cta: true
 ---
 

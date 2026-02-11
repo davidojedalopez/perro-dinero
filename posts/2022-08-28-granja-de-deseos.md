@@ -5,6 +5,7 @@ published_at: 2022-08-28
 cover_path: img/posts/covers/granja_de_deseos_cover.png
 cover_alt: Nina, entre las plantas en su granja.
 tags: ['presupuesto', 'ynab']
+themes: ['presupuesto']
 newsletter_cta: true
 ---
 

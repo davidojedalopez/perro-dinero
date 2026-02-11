@@ -6,6 +6,7 @@ published_at: 2022-07-12
 cover_path: img/posts/covers/bienes_raices_o_fibras.jpg
 cover_alt: Nina, acostada en una cama de plantas.
 tags: ['fibras', 'bienes raices', 'inmuebles', 'funo', 'impuestos']
+themes: []
 newsletter_cta: true
 ---
 

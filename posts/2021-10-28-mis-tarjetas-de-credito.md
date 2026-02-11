@@ -5,6 +5,7 @@ published_at: 2021-10-28
 cover_path: img/posts/tarjetas_de_credito/cover.jpg
 cover_alt: Nina y Alyx en un arroyo.
 tags: ['tarjetas de credito', 'bbva', 'bancomer', 'nu', 'volaris', 'invex']
+themes: []
 newsletter_cta: true
 ---
 

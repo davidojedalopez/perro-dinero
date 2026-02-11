@@ -6,6 +6,7 @@ published_at: 2020-06-25
 cover_path: img/posts/covers/11_recursos.png
 cover_alt: "Nina y su papá, Panda, amarrados a una barda de madera en Altata, una playa de Sinaloa."
 tags: ['recursos', 'inversiones', 'ahorro', 'deuda', 'desarrollo personal']
+themes: ['inversion', 'ahorro', 'deudas']
 newsletter_cta: true
 ---
 

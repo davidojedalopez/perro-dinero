@@ -5,6 +5,7 @@ published_at: 2022-09-07
 cover_path: img/posts/covers/meses_sin_intereses.png
 cover_alt: Alyx y Milo, tirados en el piso.
 tags: ['presupuesto', 'meses sin intereses', 'msi']
+themes: ['presupuesto']
 newsletter_cta: true
 ---
 

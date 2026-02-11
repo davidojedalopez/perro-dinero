@@ -103,6 +103,33 @@ function createThemeLookup() {
   }, {});
 }
 
+const themeLookup = createThemeLookup();
+
+function resolvePostThemeKeys(postData = {}, { fallbackToTags = true, onInvalidTheme } = {}) {
+  const explicitThemes = toArray(postData.themes).filter((token) => typeof token === "string");
+  const rawTokens = explicitThemes.length > 0
+    ? explicitThemes
+    : (fallbackToTags ? toArray(postData.tags) : []);
+
+  const postThemes = new Set();
+
+  rawTokens.forEach((token) => {
+    const normalized = normalizeThemeToken(token);
+    const canonicalThemeKey = themeLookup[normalized];
+
+    if (canonicalThemeKey && themes[canonicalThemeKey]) {
+      postThemes.add(canonicalThemeKey);
+      return;
+    }
+
+    if (explicitThemes.length > 0 && onInvalidTheme) {
+      onInvalidTheme(token);
+    }
+  });
+
+  return Array.from(postThemes);
+}
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -152,6 +179,13 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, n);
   });
 
+  eleventyConfig.addFilter("postThemes", (postData = {}) => {
+    return resolvePostThemeKeys(postData).map((themeKey) => ({
+      key: themeKey,
+      ...themes[themeKey]
+    }));
+  });
+
   const now = Date.now()
   const shouldBeLive = post => post.data.published_at <= now && !post.data.draft;
 
@@ -175,7 +209,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("postsByTheme", function (collectionApi) {
-    const themeLookup = createThemeLookup();
     const index = Object.values(themes).reduce((acc, theme) => {
       acc[theme.slug] = [];
       return acc;
@@ -185,17 +218,10 @@ module.exports = function (eleventyConfig) {
       .getFilteredByGlob("posts/*.md")
       .filter(shouldBeLive)
       .forEach((post) => {
-        const rawTokens = [
-          ...toArray(post.data.tags),
-          ...toArray(post.data.themes)
-        ];
-
-        const postThemes = new Set();
-        rawTokens.forEach((token) => {
-          const normalized = normalizeThemeToken(token);
-          const canonicalThemeKey = themeLookup[normalized];
-          if (canonicalThemeKey && themes[canonicalThemeKey]) {
-            postThemes.add(canonicalThemeKey);
+        const postThemes = resolvePostThemeKeys(post.data, {
+          fallbackToTags: true,
+          onInvalidTheme: (token) => {
+            console.warn(`[themes] Tema no definido "${token}" en ${post.inputPath}`);
           }
         });
 
