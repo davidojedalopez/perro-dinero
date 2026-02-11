@@ -42,9 +42,9 @@ function structuredData(data) {
   return `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`
 }
 
-function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', classes = "", sizes = "(min-width: 30em) 50vw, 100vw") {
+async function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', classes = "", sizes = "(min-width: 30em) 50vw, 100vw") {
   const options = {
-    widths: [600, 640, 800, 1200],
+    widths: [640, 960],
     formats: ['webp', 'jpeg'],
     sharpOptions: {
       animated: true
@@ -59,7 +59,7 @@ function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loadi
     outputDir: "./_site/img",
     useCache: true
   }
-  Image(src, options);
+  const metadata = await Image(src, options);
 
   const imageAttributes = {
     class: classes,
@@ -69,7 +69,6 @@ function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loadi
     decoding: 'async',
   }
 
-  const metadata = Image.statsSync(src, options)
   const html = Image.generateHTML(metadata, imageAttributes, { whitespaceMode: 'inline' })
   const figureCaption = altShouldBeCaption ? alt : caption
   return figureCaption ?
@@ -231,7 +230,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy('robots.txt')
   eleventyConfig.addPassthroughCopy('humans.txt')
   eleventyConfig.addPassthroughCopy('llms.txt')
@@ -252,7 +250,7 @@ module.exports = function (eleventyConfig) {
   }).disable('code');
   eleventyConfig.setLibrary("md", markdownLibrary);
 
-  eleventyConfig.addNunjucksShortcode("image", imageShortCode);
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortCode);
   eleventyConfig.addNunjucksShortcode("structured_data", structuredData);
 
   eleventyConfig.on('eleventy.after', async () => {

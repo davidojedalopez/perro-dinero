@@ -27,14 +27,25 @@ const BANXICO_SERIES = {
 const proxyAgents = new Map()
 
 module.exports = async function () {
-    console.log("Fetching Banxico's economic indicators...");
-
-    const api_data = {}
-    for (const [key, value] of Object.entries(BANXICO_SERIES)) {
-        const data = await fetch_data(value)
-        api_data[key] = data
+    if (!API_KEY) {
+        if (process.env.DEBUG?.includes('banxico')) {
+            console.warn("BANXICO_API_KEY is not set; returning empty Banxico indicators.");
+        }
+        return {};
     }
-    return api_data
+
+    if (process.env.DEBUG?.includes('banxico')) {
+        console.log("Fetching Banxico's economic indicators...");
+    }
+
+    const entries = await Promise.all(
+        Object.entries(BANXICO_SERIES).map(async ([key, value]) => {
+            const data = await fetch_data(value)
+            return [key, data]
+        })
+    )
+
+    return Object.fromEntries(entries)
 }
 
 async function fetch_data(series) {
