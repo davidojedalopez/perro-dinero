@@ -47,7 +47,6 @@
     "markdown-it-anchor": "^5.3.0",
     "markdown-it-toc-done-right": "^4.2.0",
     "mini-css-extract-plugin": "2.7.5",
-    "netlify-plugin-a11y": "0.0.12",
     "node-fetch": "^2.6.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.13",

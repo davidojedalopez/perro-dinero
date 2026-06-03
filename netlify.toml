@@ -26,9 +26,6 @@
     # (for development) turn true for extra diagnostic logging
     debugMode = false
 
-[[plugins]]
-  package = "netlify-plugin-a11y"
-
 [[redirects]]
   from = "/feed"
   to = "/feed.xml"

@@ -9,6 +9,10 @@ token.json
 # Local Netlify folder
 .netlify
 
+# Local AI agent skills
+.agents/
+skills-lock.json
+
 .idea/*
 .cache/*
 .vscode/
