@@ -4,7 +4,6 @@ const pluginRss = require("@11ty/eleventy-plugin-rss").default;
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-const readingTime = require('eleventy-plugin-reading-time');
 const Image = require('@11ty/eleventy-img');
 const path = require("path");
 const themes = require("./_data/themes");
@@ -130,11 +129,61 @@ function resolvePostThemeKeys(postData = {}, { fallbackToTags = true, onInvalidT
   return Array.from(postThemes);
 }
 
+function stripFrontMatter(content) {
+  return content.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, "");
+}
+
+function contentForReadingTime(postOrContent) {
+  if (typeof postOrContent === "string") {
+    return postOrContent;
+  }
+
+  if (!postOrContent || typeof postOrContent !== "object") {
+    return "";
+  }
+
+  if (typeof postOrContent.rawInput === "string") {
+    return postOrContent.rawInput;
+  }
+
+  const inputPath = postOrContent.inputPath || postOrContent.page?.inputPath;
+  if (inputPath && fs.existsSync(inputPath)) {
+    return fs.readFileSync(inputPath, "utf8");
+  }
+
+  return "";
+}
+
+function readingTimeFilter(postOrContent, { printSeconds = false, raw = false, speed = 300 } = {}) {
+  const content = stripFrontMatter(contentForReadingTime(postOrContent))
+    .replace(/(<([^>]+)>)/gi, "")
+    .replace(/\{[%#][\s\S]*?[%#]\}/g, "")
+    .replace(/\{\{[\s\S]*?\}\}/g, "");
+  const matches = content.match(/[\u0400-\u04FF]+|\S+\s*/g);
+  const count = matches !== null ? matches.length : 0;
+
+  if (printSeconds) {
+    const min = Math.floor(count / speed);
+    const sec = Math.floor((count % speed) / (speed / 60));
+
+    if (raw) {
+      return min * 60 + sec;
+    }
+
+    const mins = min + " minute" + (min === 1 ? "" : "s") + ", ";
+    const secs = sec + " second" + (sec === 1 ? "" : "s");
+    return min > 0 ? mins + secs : secs;
+  }
+
+  const min = Math.ceil(count / speed);
+  return raw ? min : min + " min";
+}
+
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addPlugin(readingTime);
+  eleventyConfig.addFilter("readingTime", readingTimeFilter);
 
   eleventyConfig.setDataDeepMerge(true);
 
