@@ -120,7 +120,7 @@
 
       <div style="grid-area: search">
         <label class="sr-only" for="search-posts">Buscar en posts</label>
-        <input id="search-posts" type="search" placeholder="🔍 Buscar en posts..." class="w-full px-4 py-2 rounded-full border-accent-500 dark:border-accent-dark-500 border-l-2 border-b-2 placeholder-accent-500 dark:placeholder-accent-dark-500 placeholder-opacity-100" />
+        <input id="search-posts" type="search" placeholder="🔍 Buscar en posts..." class="w-full px-4 py-2 rounded-full border-accent-500 dark:border-accent-dark-500 border-l-2 border-b-2 placeholder-accent-500 dark:placeholder-foreground-dark placeholder-opacity-100" />
       </div>
 
       {% include "dark_mode_toggle.njk" %}
@@ -228,7 +228,7 @@
         <p>CETES 3 meses: {{ banxico.cetes_91_days_yield_rate.amount }}%</p>
         <p>CETES 6 meses: {{ banxico.cetes_182_days_yield_rate.amount }}%</p>
         <p>CETES 1 año: {{ banxico.cetes_364_days_yield_rate.amount }}%</p>
-        <p class="text-xs text-opacity-75">{{ banxico.cetes_28_days_yield_rate.updated_at_friendly }}</p>
+        <p class="text-xs opacity-75">{{ banxico.cetes_28_days_yield_rate.updated_at_friendly }}</p>
       </div>
     </footer>
 
