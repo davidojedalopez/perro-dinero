@@ -1,6 +1,6 @@
 const { DateTime, Settings } = require("luxon");
 const fs = require("fs");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginRss = require("@11ty/eleventy-plugin-rss").default;
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
@@ -270,9 +270,10 @@ module.exports = function (eleventyConfig) {
     breaks: true,
     linkify: true
   }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "🔗"
+    permalink: markdownItAnchor.permalink.linkInsideHeader({
+      class: "direct-link",
+      symbol: "🔗"
+    })
   }).use(require("markdown-it-toc-done-right"), {
     level: [1, 2, 3]
   }).disable('code');
