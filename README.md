@@ -54,7 +54,6 @@ A personal finance blog in Spanish ("Perro Dinero" translates to "Money Dog") fo
 ### Deployment
 - **Netlify** - Continuous deployment platform
   - **@netlify/plugin-lighthouse** - Performance auditing
-  - **netlify-plugin-a11y** - Accessibility testing
   - **netlify-plugin-no-more-404** - 404 error tracking
 
 ## Project Structure
