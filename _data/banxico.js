@@ -38,7 +38,7 @@ module.exports = async function () {
 }
 
 async function fetch_data(series) {
-    const url = `https://www.banxico.org.mx/SieAPIRest/service/v1/series/${series}/datos/oportuno?token=${API_KEY}`
+    const url = `https://www.banxico.org.mx/SieAPIRest/service/v1/series/${series}/datos/oportuno`
     const json = await Cache(url, {
         duration: '1d',
         type: 'json',
@@ -79,16 +79,19 @@ async function fetch_data(series) {
 
 function getFetchOptions(url) {
     const proxyUrl = getProxyForUrl(url)
-
-    if (!proxyUrl) {
-        return {}
+    const fetchOptions = {
+        headers: {
+            'Bmx-Token': API_KEY
+        }
     }
 
-    if (!proxyAgents.has(proxyUrl)) {
-        proxyAgents.set(proxyUrl, new HttpsProxyAgent(proxyUrl))
+    if (proxyUrl) {
+        if (!proxyAgents.has(proxyUrl)) {
+            proxyAgents.set(proxyUrl, new HttpsProxyAgent(proxyUrl))
+        }
+
+        fetchOptions.agent = proxyAgents.get(proxyUrl)
     }
 
-    return {
-        agent: proxyAgents.get(proxyUrl)
-    }
+    return fetchOptions
 }
