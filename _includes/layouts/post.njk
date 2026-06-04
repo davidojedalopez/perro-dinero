@@ -10,9 +10,9 @@ eleventyComputed:
       url: "{{ author_url or metadata.author.url }}"
     headline: "{{ title }}"
     keywords: "{{ tags }}"
-    image: "{{ cover_path | url | absoluteUrl(metadata.url) }}"
+    image: "{{ cover_path | absoluteSiteUrl(metadata.url) }}"
     datePublished: "{{ published_at | toISOString }}"
-    dateModified: "{{ lastUpdated or published_at | toISOString }}"
+    dateModified: "{{ (last_updated_at or published_at) | toISOString }}"
 ---
 
 <article class="pb-8 lg:w-3/4 mx-auto">

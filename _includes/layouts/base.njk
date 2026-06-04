@@ -17,6 +17,19 @@
     <link type="text/plain" rel="author" href="/humans.txt" />
 
     {% set resolvedStructuredData = renderData.structuredData or structuredData or metadata.structuredData %}
+    {% set structuredDataContext = {
+      metadata: metadata,
+      page: page,
+      pageTitle: pageTitle,
+      pageDescription: pageDescription,
+      coverPath: cover_path or metadata.default_cover,
+      tags: tags,
+      collections: collections,
+      author: author,
+      publishedAt: (published_at | toISOString) if published_at else '',
+      lastUpdatedAt: (last_updated_at | toISOString) if last_updated_at else '',
+      draft: draft
+    } %}
     {% set isPostPage = (page.url and page.url.startsWith('/posts/')) or (resolvedStructuredData and resolvedStructuredData.type == "post") %}
     <meta property="og:type" content="{{ 'article' if isPostPage else 'website' }}">
     <meta property="og:url" content="{{ absolutePageUrl }}">
@@ -102,7 +115,7 @@
     <link rel="apple-touch-startup-image" href="{{ '/img/favicon/apple-splash-640-1136.jpg' | url }}" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="{{ '/img/favicon/apple-splash-1136-640.jpg' | url }}" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 
-    {% structured_data resolvedStructuredData %}
+    {% structured_data resolvedStructuredData, structuredDataContext %}
 
     <link rel="manifest" href="{{ '/manifest.json' | url }}" >
   </head>
