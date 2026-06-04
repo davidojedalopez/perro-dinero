@@ -45,6 +45,7 @@ module.exports = {
     filename: (pathData) => pathData.chunk.name === 'service-worker'
       ? '[name].js'
       : '[name].[contenthash:12].js',
+    chunkFilename: 'assets/[name].[contenthash:12].js',
     path: path.resolve(__dirname, '_site/')
   },
   plugins: [
