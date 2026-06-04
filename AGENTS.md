@@ -6,7 +6,7 @@ Perro Dinero is a Spanish personal-finance static site built with Eleventy, Nunj
 
 ## Setup
 
-- Use Node.js `>=20`.
+- Use Node.js `26.3.0` (see `.nvmrc`).
 - Install dependencies with `npm install`.
 - Builds require `BANXICO_API_KEY` in local `.env`; the value is configured in Netlify for the `perrodinero` site.
 - Never print, commit, or place secrets in URLs/logs. `.env` is gitignored.
