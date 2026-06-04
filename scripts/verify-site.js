@@ -204,8 +204,55 @@ assertExists('_site/herramientas/index.html');
 assertExists('_site/portafolio/index.html');
 const hashedMainCssFiles = assertSingleFileMatch('assets', /^main\.[a-f0-9]{8,}\.css$/, 'hashed main CSS');
 const hashedMainJsFiles = assertSingleFileMatch('assets', /^main\.[a-f0-9]{8,}\.js$/, 'hashed main JS');
+const annotationChunkFiles = assertSingleFileMatch('assets', /^annotations\.[a-f0-9]{8,}\.js$/, 'lazy annotations JS chunk');
+const debtPlannerChunkFiles = assertSingleFileMatch('assets', /^debt-planner\.[a-f0-9]{8,}\.js$/, 'lazy debt planner JS chunk');
+const newsletterObserverChunkFiles = assertSingleFileMatch('assets', /^newsletter-observer\.[a-f0-9]{8,}\.js$/, 'lazy newsletter observer JS chunk');
 assertExists('_site/assets/manifest.json');
 assertExists('_site/service-worker.js');
+
+const mainJsRelPath = hashedMainJsFiles[0] ? path.join('assets', hashedMainJsFiles[0]) : '';
+const mainJsPath = mainJsRelPath ? path.join(site, mainJsRelPath) : '';
+const mainJs = mainJsPath && fs.existsSync(mainJsPath) ? fs.readFileSync(mainJsPath, 'utf8') : '';
+if (mainJs && fs.statSync(mainJsPath).size < 14 * 1024) {
+  pass('initial main JS bundle is under 14 KB');
+} else if (mainJsPath) {
+  fail('initial main JS bundle should stay under 14 KB after lazy-loading page features');
+}
+
+for (const forbidden of ['rough-notation', 'Tarjeta de crédito (tasa alta)', 'simulatePlan', 'newsletter-cta-iframe']) {
+  if (mainJs.includes(forbidden)) {
+    fail(`initial main JS bundle should not eagerly include page feature code: ${forbidden}`);
+  } else {
+    pass(`initial main JS bundle does not include ${forbidden}`);
+  }
+}
+
+const debtPlannerChunk = debtPlannerChunkFiles[0]
+  ? fs.readFileSync(path.join(site, 'assets', debtPlannerChunkFiles[0]), 'utf8')
+  : '';
+if (debtPlannerChunk.includes('Tarjeta de crédito (tasa alta)') && debtPlannerChunk.includes('La mejor opción para pagar menos intereses')) {
+  pass('debt planner code is emitted in the debt planner chunk');
+} else {
+  fail('debt planner chunk should contain the debt planner implementation');
+}
+
+const newsletterObserverChunk = newsletterObserverChunkFiles[0]
+  ? fs.readFileSync(path.join(site, 'assets', newsletterObserverChunkFiles[0]), 'utf8')
+  : '';
+if (newsletterObserverChunk.includes('newsletter-cta-iframe')) {
+  pass('newsletter observer code is emitted in the newsletter observer chunk');
+} else {
+  fail('newsletter observer chunk should contain the newsletter iframe observer implementation');
+}
+
+const annotationChunk = annotationChunkFiles[0]
+  ? fs.readFileSync(path.join(site, 'assets', annotationChunkFiles[0]), 'utf8')
+  : '';
+if (annotationChunk.includes('annotated') && /rough|annotation/i.test(annotationChunk)) {
+  pass('annotation code is emitted in the annotations chunk');
+} else {
+  fail('annotations chunk should contain the rough notation implementation');
+}
 
 for (const relPath of ['_site/assets/main.css', '_site/assets/main.js']) {
   if (fs.existsSync(path.join(root, relPath))) {
