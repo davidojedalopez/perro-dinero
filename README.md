@@ -8,7 +8,7 @@ A personal finance blog in Spanish ("Perro Dinero" translates to "Money Dog") fo
 
 ### Core Framework
 - **Eleventy (11ty)** - Static site generator powering the entire site
-- **Node.js** - Runtime environment requirement
+- **Node.js 26.3.0** - Runtime environment requirement (see `.nvmrc`)
 
 ### Templating
 - **Nunjucks** - Primary templating engine for HTML layouts
@@ -31,7 +31,7 @@ A personal finance blog in Spanish ("Perro Dinero" translates to "Money Dog") fo
 - **@11ty/eleventy-navigation** - Navigation structure management
 - **@11ty/eleventy-img** - Image optimization and processing
 - **@11ty/eleventy-cache-assets** - Cache external API data
-- **eleventy-plugin-reading-time** - Calculate estimated reading time
+- **Custom readingTime filter** - Calculate estimated reading time
 
 ### Data Sources
 - **Banxico API** - Fetches Mexican economic indicators including:

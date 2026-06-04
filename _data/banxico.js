@@ -1,9 +1,9 @@
-const Cache = require("@11ty/eleventy-cache-assets");
+const Cache = require("@11ty/eleventy-fetch");
 const dotenv = require('dotenv');
 const { HttpsProxyAgent } = require('https-proxy-agent');
 const { getProxyForUrl } = require('proxy-from-env');
 
-dotenv.config();
+dotenv.config({ quiet: true });
 
 const API_KEY = process.env.BANXICO_API_KEY
 const MINIMUM_WAGE_SERIES = {

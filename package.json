@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Perro Dinero - Finanzas Personales",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=26.3.0"
   },
   "scripts": {
     "clean": "rimraf _site",
@@ -16,7 +16,9 @@
     "build": "run-s clean build:*",
     "debug": "DEBUG=* eleventy",
     "convert-gifs": "for i in img/posts/*.gif; do ffmpeg -i \"$i\" -b:v 0 -crf 25 -vcodec libx264 -pix_fmt yuv420p \"${i%.*}.mp4\" -y; ffmpeg -i \"$i\" -c vp9 -b:v 0 -crf 41 \"${i%.*}.webm\" -y; done",
-    "update-portfolio": "./scripts/updatePortfolio.js"
+    "update-portfolio": "./scripts/updatePortfolio.js",
+    "verify:site": "node scripts/verify-site.js",
+    "verify": "npm run build && npm run verify:site"
   },
   "repository": {
     "type": "git",
@@ -29,34 +31,37 @@
     "url": "https://davidojeda.dev"
   },
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.1.6",
     "@11ty/eleventy-cache-assets": "^2.3.0",
-    "@11ty/eleventy-img": "4.0.2",
-    "@11ty/eleventy-navigation": "^0.1.6",
-    "@11ty/eleventy-plugin-rss": "1.2.0",
-    "@netlify/plugin-lighthouse": "6.0.0",
-    "@tailwindcss/forms": "^0.5.0",
-    "autoprefixer": "10.4.5",
-    "css-loader": "6.7.3",
-    "dotenv": "^8.6.0",
-    "eleventy-plugin-reading-time": "0.0.1",
-    "flat-cache": "^2.0.1",
-    "gray-matter": "^4.0.2",
-    "luxon": "^1.25.0",
-    "markdown-it": "^10.0.0",
-    "markdown-it-anchor": "^5.3.0",
+    "@11ty/eleventy-fetch": "^5.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-navigation": "^1.0.5",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@csstools/postcss-oklab-function": "^5.0.4",
+    "@netlify/plugin-lighthouse": "^6.0.4",
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/postcss": "^4.3.0",
+    "autoprefixer": "^10.5.0",
+    "css-loader": "^7.1.4",
+    "dotenv": "^17.4.2",
+    "luxon": "^3.7.2",
+    "markdown-it": "^14.2.0",
+    "markdown-it-anchor": "^9.2.0",
     "markdown-it-toc-done-right": "^4.2.0",
-    "mini-css-extract-plugin": "2.7.5",
-    "node-fetch": "^2.6.1",
+    "mini-css-extract-plugin": "^2.10.2",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.13",
-    "postcss-loader": "^4.1.0",
-    "rimraf": "^3.0.2",
+    "postcss": "^8.5.15",
+    "postcss-loader": "^8.2.1",
+    "rimraf": "^6.1.3",
     "rough-notation": "^0.5.1",
-    "tailwindcss": "^3.3.1",
-    "update": "^0.7.4",
-    "webpack": "5.80.0",
-    "webpack-cli": "^5.0.2",
-    "workbox-webpack-plugin": "6.5.4"
+    "tailwindcss": "^4.3.0",
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3",
+    "workbox-webpack-plugin": "^7.4.1"
+  },
+  "overrides": {
+    "cookie": "^0.7.2",
+    "tar-fs": "^2.1.4",
+    "ws": "^8.21.0"
   }
 }

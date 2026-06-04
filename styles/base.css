@@ -1,101 +1,183 @@
-@tailwind base;
+@import 'tailwindcss';
 
-body {
-  scroll-behavior: smooth;
-  @apply font-main;
-  @apply text-primary dark:text-primary-dark;
-  hyphens: auto;
+@plugin '@tailwindcss/forms';
 
-  font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.5em + (2 - 1.5) * ((100vw - 300px)/(1600 - 300)));
-}
+@custom-variant dark (&:is(.dark *));
 
-header {
-  grid-template-areas:
-      "banner banner"
-      "home toggle"
-      "search search";
-}
+@theme {
+  --color-current: currentColor;
+  --color-primary: #000000;
 
-@screen md {
-  header {
-    grid-template-areas:
-      "banner banner banner banner banner"
-      "home search search . toggle"
-      ". . . . ."
+  --color-accent-100: #e8f3eb;
+  --color-accent-200: #c7e1ce;
+  --color-accent-300: #a5ceb1;
+  --color-accent-400: #61aa76;
+  --color-accent-500: #1d853b;
+  --color-accent-600: #1a7835;
+  --color-accent-700: #115023;
+  --color-accent-800: #0d3c1b;
+  --color-accent-900: #092812;
+
+  --color-accent-dark-100: #fefaec;
+  --color-accent-dark-200: #fcf2cf;
+  --color-accent-dark-300: #faeab2;
+  --color-accent-dark-400: #f7da78;
+  --color-accent-dark-500: #f3ca3e;
+  --color-accent-dark-600: #dbb638;
+  --color-accent-dark-700: #927925;
+  --color-accent-dark-800: #6d5b1c;
+  --color-accent-dark-900: #493d13;
+
+  --color-background: #fafafa;
+  --color-background-dark: #222831;
+  --color-foreground-dark: #393e46;
+  --color-primary-dark: #eeeeee;
+  --color-twitter: #1b95e0;
+  --color-twitter-hover: #0c7abf;
+  --color-reddit: #ff5700;
+
+  --font-logo: Roboto Condensed, sans-serif;
+  --font-main: Open Sans, sans-serif;
+
+  --z-index--1: -1;
+
+  --animate-scaleUp: scaleUp 1s ease-in-out infinite;
+
+  --shadow-md-dark: 0 4px 6px -1px #393e46, 0 2px 4px -1px #393e46;
+  --shadow-2xl-dark: 0 25px 50px -12px #393e46;
+
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
 
-h1 {
-  @apply leading-snug;
-  font-size: calc(36px + (40 - 36) * ((100vw - 300px) / (1600 - 300)));
-  hyphens: none;
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
 }
 
-h2 {
-  font-size: calc(28px + (32 - 28) * ((100vw - 300px) / (1600 - 300)));
-  @apply leading-tight;
-  hyphens: none;
+@layer base {
+  body {
+    scroll-behavior: smooth;
+    @apply font-main;
+    @apply text-primary dark:text-primary-dark;
+    hyphens: auto;
+
+    font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(1.5em + (2 - 1.5) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  header {
+    grid-template-areas:
+      'banner banner'
+      'home toggle'
+      'search search';
+  }
+
+  @media (width >= theme(--breakpoint-md)) {
+    header {
+      grid-template-areas:
+        'banner banner banner banner banner'
+        'home search search . toggle'
+        '. . . . .';
+    }
+  }
+
+  h1 {
+    @apply leading-snug;
+    font-size: calc(36px + (40 - 36) * ((100vw - 300px) / (1600 - 300)));
+    hyphens: none;
+  }
+
+  h2 {
+    font-size: calc(28px + (32 - 28) * ((100vw - 300px) / (1600 - 300)));
+    @apply leading-tight;
+    hyphens: none;
+  }
+
+  h3 {
+    font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
+    hyphens: none;
+  }
+
+  h4 {
+    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
+  }
+
+  a {
+    @apply underline;
+  }
+
+  a:hover {
+  }
+
+  a:visited {
+    opacity: 0.25;
+  }
+
+  hr {
+    @apply border-2;
+    @apply border-accent-500 dark:border-accent-dark-500;
+    @apply my-8;
+  }
+
+  .button {
+    @apply py-2 px-4;
+    @apply border-accent-500 dark:border-accent-dark-500;
+    @apply text-accent-500 dark:text-accent-dark-500;
+
+    @apply bg-accent-500 dark:bg-accent-dark-500;
+    @apply text-white dark:text-black;
+
+    @apply border-2;
+    @apply text-center;
+    @apply mx-auto;
+    @apply rounded-sm;
+    @apply no-underline;
+    @apply cursor-pointer;
+  }
+
+  .button:hover {
+    @apply bg-accent-400 dark:bg-accent-dark-400;
+    @apply border-accent-400 dark:border-accent-dark-400;
+  }
+
+  .button--outline {
+    @apply py-2 px-4;
+    @apply border-2;
+    @apply text-center;
+    @apply mx-auto;
+    @apply rounded-sm;
+    @apply no-underline;
+    @apply cursor-pointer;
+    @apply border-accent-300 dark:border-accent-dark-300;
+
+    @apply bg-accent-100 dark:bg-foreground-dark;
+    @apply text-black dark:text-accent-dark-300;
+  }
+
+  .button--outline:hover {
+    @apply dark:text-black;
+  }
 }
-
-h3 {
-  font-size: calc(20px + (24 - 20) * ((100vw - 300px) / (1600 - 300)));
-  hyphens: none;
-}
-
-h4 {
-  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)));
-}
-
-a {
-  @apply underline;
-}
-
-a:hover {
-}
-
-a:visited {
-  @apply text-opacity-25;
-}
-
-hr {
-  @apply border-2;
-  @apply border-accent-500 dark:border-accent-dark-500;
-  @apply my-8;
-}
-
-.button {
-  @apply py-2 px-4;
-  @apply border-accent-500 dark:border-accent-dark-500;
-  @apply text-accent-500 dark:text-accent-dark-500;
-
-  @apply bg-accent-500 dark:bg-accent-dark-500;
-  @apply text-white dark:text-black;
-
-  @apply border-2;
-  @apply text-center;
-  @apply mx-auto;
-  @apply rounded;
-  @apply no-underline;
-  @apply cursor-pointer;
-}
-
-.button:hover {
-  @apply bg-accent-400 dark:bg-accent-dark-400;
-  @apply border-accent-400 dark:border-accent-dark-400;
-}
-
-.button--outline {
-  @apply button;
-  @apply border-accent-300 dark:border-accent-dark-300;
-
-  @apply bg-accent-100 dark:bg-foreground-dark;
-  @apply text-black dark:text-accent-dark-300;
-}
-
-.button--outline:hover {
-  @apply dark:text-black;
-}
-
-@tailwind components;
-@tailwind utilities;

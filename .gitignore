@@ -1,6 +1,5 @@
 _site/
 node_modules/
-package-lock.json
 credentials.json
 .env
 token.json
@@ -11,6 +10,7 @@ token.json
 
 # Local AI agent skills
 .agents/
+.hermes/
 skills-lock.json
 
 .idea/*
