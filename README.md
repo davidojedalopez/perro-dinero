@@ -128,7 +128,7 @@ npm run clean
 
 ## Continuous Verification
 
-Pull requests and pushes to `master` run the GitHub Actions `Verify` workflow. It reads Node from `.nvmrc`, runs `npm ci`, `npm run verify`, and `npm audit --audit-level=moderate` so failures are deterministic and independent of Netlify app/plugin behavior.
+Pull requests and pushes to `master` run the GitHub Actions `Verify` workflow. It reads Node from `.nvmrc`, runs `npm ci`, `npm run verify`, and `npm audit --audit-level=moderate` so failures are deterministic and independent of Netlify app/plugin behavior. CI sets `BANXICO_OFFLINE=true` and builds with committed fixture data instead of requiring a Banxico secret or live API response.
 
 Netlify remains the deployment preview and Lighthouse gate for PRs.
 

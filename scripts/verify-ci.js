@@ -44,6 +44,7 @@ assertIncludes(workflow, /actions\/checkout@v4/, 'workflow checks out the reposi
 assertIncludes(workflow, /actions\/setup-node@v4/, 'workflow uses actions/setup-node@v4');
 assertIncludes(workflow, /node-version-file:\s*['"]?\.nvmrc['"]?/, 'workflow reads Node version from .nvmrc');
 assertIncludes(workflow, /cache:\s*['"]?npm['"]?/, 'workflow enables npm cache');
+assertIncludes(workflow, /BANXICO_OFFLINE:\s*['"]?true['"]?/, 'workflow uses offline Banxico fixture data for deterministic CI builds');
 assertIncludes(workflow, /run:\s*npm ci/, 'workflow runs deterministic npm ci install');
 assertIncludes(workflow, /run:\s*npm run verify/, 'workflow runs npm run verify');
 assertIncludes(workflow, /run:\s*npm audit --audit-level=moderate/, 'workflow runs moderate npm audit');
