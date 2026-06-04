@@ -3,7 +3,7 @@ title: Los únicos 2 tipos de órdenes bursátiles que necesitas
 description: Si tus principales inversiones son en ETF, con estos dos tipos de órdenes sacas la chamba.
 published_at: 2021-06-07
 cover_path: img/posts/covers/nina_y_alyx.png
-cover_alt:
+cover_alt: Nina y Alyx.
 tags: ['inversion', 'broker', 'tipos de órdenes', 'limitada', 'a mercado']
 themes: ['inversion']
 newsletter_cta: true

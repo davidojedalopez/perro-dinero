@@ -11,12 +11,25 @@ const { renderStructuredData } = require("./config/structured-data");
 
 Settings.defaultLocale = 'es-MX';
 
-function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', classes = "", sizes = "(min-width: 30em) 50vw, 100vw") {
+function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', classes = "", sizes = "(min-width: 48rem) 50vw, 100vw", fetchpriority = '') {
+  const extension = path.extname(src).toLowerCase();
+  const isAnimatedGif = extension === '.gif';
   const options = {
-    widths: [600, 640, 800, 1200],
-    formats: ['webp', 'jpeg'],
-    sharpOptions: {
-      animated: true
+    widths: isAnimatedGif ? [240, 320, 480] : [320, 640, 960, 1280],
+    formats: isAnimatedGif ? ['webp'] : ['avif', 'webp', 'jpeg'],
+    sharpOptions: isAnimatedGif ? { animated: true } : {},
+    sharpAvifOptions: {
+      quality: 45,
+      effort: 4
+    },
+    sharpWebpOptions: {
+      quality: isAnimatedGif ? 70 : 75,
+      effort: 4
+    },
+    sharpJpegOptions: {
+      quality: 82,
+      progressive: true,
+      mozjpeg: true
     },
     filenameFormat: ((id, src, width, format, options) => {
       const extension = path.extname(src);
@@ -36,6 +49,9 @@ function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loadi
     sizes,
     loading,
     decoding: 'async',
+  }
+  if (fetchpriority) {
+    imageAttributes.fetchpriority = fetchpriority;
   }
 
   const metadata = Image.statsSync(src, options)

@@ -159,6 +159,41 @@ function assertNetlifyHeader(pathPattern, expectedCacheControl) {
   }
 }
 
+function extractTags(contents, tagName) {
+  return contents.match(new RegExp(`<${tagName}\\b(?:[^>"']|"[^"]*"|'[^']*')*>`, 'gi')) || [];
+}
+
+function assertImageAttributes(contents, relPath) {
+  for (const tag of extractTags(contents, 'img')) {
+    const src = extractAttribute(tag, 'src') || '(missing src)';
+    const alt = extractAttribute(tag, 'alt');
+    if (alt) {
+      pass(`${relPath} image ${src} has alt text`);
+    } else {
+      fail(`${relPath} image ${src} should have non-empty alt text`);
+    }
+
+    if (extractAttribute(tag, 'decoding') === 'async') {
+      pass(`${relPath} image ${src} uses async decoding`);
+    } else {
+      fail(`${relPath} image ${src} should use decoding=\"async\"`);
+    }
+  }
+}
+
+function assertPictureHasAvif(contents, relPath) {
+  const pictures = contents.match(/<picture\b[\s\S]*?<\/picture>/gi) || [];
+  for (const [index, picture] of pictures.entries()) {
+    if (/\.(?:gif|webp)(?:\s|\?|["'])/i.test(picture) && !/\.(?:jpe?g|png)(?:\s|\?|["'])/i.test(picture)) {
+      pass(`${relPath} picture ${index + 1} is animated-only and does not require AVIF`);
+    } else if (/type=["']image\/avif["']/i.test(picture)) {
+      pass(`${relPath} picture ${index + 1} includes AVIF source`);
+    } else {
+      fail(`${relPath} picture ${index + 1} should include an AVIF source`);
+    }
+  }
+}
+
 assertExists('_site/index.html');
 assertExists('_site/feed.xml');
 assertExists('_site/feed.json');
@@ -201,6 +236,46 @@ for (const staleReference of ['/assets/main.css', '/assets/main.js']) {
 
 assertNetlifyHeader('/assets/*', 'public, max-age=31536000, immutable');
 assertNetlifyHeader('/service-worker.js', 'public, max-age=0, must-revalidate');
+
+const generatedAvifFiles = walk(path.join(site, 'img')).filter((file) => file.endsWith('.avif'));
+if (generatedAvifFiles.length > 0) {
+  pass(`generated AVIF image count is ${generatedAvifFiles.length}`);
+} else {
+  fail('generated image output should include AVIF derivatives');
+}
+
+const ANIMATED_IMAGE_DERIVATIVE_ALLOWLIST = [
+  'img/posts-coraje_sorprendido-230w.webp',
+  'img/posts-dogs_and_child-240w.webp',
+  'img/posts-frustrado-200w.webp',
+  'img/posts-perro_en_computadora-480w.webp',
+];
+
+const oversizedOptimizedImages = walk(path.join(site, 'img'))
+  .filter((file) => /-\d+w\.(?:avif|webp|jpeg)$/.test(file))
+  .filter((file) => !ANIMATED_IMAGE_DERIVATIVE_ALLOWLIST.includes(path.relative(site, file)))
+  .filter((file) => fs.statSync(file).size > 500 * 1024)
+  .map((file) => `${path.relative(site, file)} (${Math.round(fs.statSync(file).size / 1024)} KB)`);
+if (oversizedOptimizedImages.length === 0) {
+  pass('optimized responsive image derivatives are under 500 KB');
+} else {
+  fail(`optimized responsive image derivatives should be under 500 KB: ${oversizedOptimizedImages.slice(0, 10).join(', ')}`);
+}
+
+if (indexHtml) {
+  const firstIndexImage = extractTags(indexHtml, 'img')[0] || '';
+  if (extractAttribute(firstIndexImage, 'loading') === 'eager') {
+    pass('homepage LCP image uses eager loading');
+  } else {
+    fail('homepage LCP image should use loading="eager"');
+  }
+
+  if (extractAttribute(firstIndexImage, 'fetchpriority') === 'high') {
+    pass('homepage LCP image uses high fetchpriority');
+  } else {
+    fail('homepage LCP image should use fetchpriority="high"');
+  }
+}
 
 if (fs.existsSync(path.join(site, 'AGENTS.md'))) {
   fail('_site/AGENTS.md should not exist');
@@ -277,6 +352,9 @@ for (const file of walk(site).filter((file) => file.endsWith('.html'))) {
 
   const htmlTag = contents.match(/<html\b[^>]*>/i)?.[0] || '';
   const headContents = contents.match(/<head\b[^>]*>([\s\S]*?)<\/head>/i)?.[1] || '';
+  assertImageAttributes(contents, relPath);
+  assertPictureHasAvif(contents, relPath);
+
   const lang = extractAttribute(htmlTag, 'lang');
   if (lang === 'es-MX') {
     pass(`${relPath} uses lang=\"es-MX\"`);
