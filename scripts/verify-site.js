@@ -126,6 +126,39 @@ function walk(dir, files = []) {
   return files;
 }
 
+function assertSingleFileMatch(relDir, regex, description) {
+  const fullDir = path.join(site, relDir);
+  const matches = fs.existsSync(fullDir)
+    ? fs.readdirSync(fullDir).filter((entry) => regex.test(entry))
+    : [];
+
+  if (matches.length === 1) {
+    pass(`${description} exists: ${path.posix.join(relDir, matches[0])}`);
+  } else {
+    fail(`${description} should have exactly one matching file, found ${matches.length}`);
+  }
+
+  return matches;
+}
+
+function assertNetlifyHeader(pathPattern, expectedCacheControl) {
+  const netlifyTomlPath = path.join(root, 'netlify.toml');
+  const netlifyToml = fs.existsSync(netlifyTomlPath) ? fs.readFileSync(netlifyTomlPath, 'utf8') : '';
+  const escapedPathPattern = pathPattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const headerBlock = netlifyToml.match(new RegExp(`\\[\\[headers\\]\\][\\s\\S]*?for\\s*=\\s*["']${escapedPathPattern}["'][\\s\\S]*?(?=\\n\\[\\[|$)`));
+
+  if (!headerBlock) {
+    fail(`netlify.toml should define headers for ${pathPattern}`);
+    return;
+  }
+
+  if (headerBlock[0].includes(`cache-control = "${expectedCacheControl}"`)) {
+    pass(`netlify.toml sets ${expectedCacheControl} for ${pathPattern}`);
+  } else {
+    fail(`netlify.toml should set cache-control = "${expectedCacheControl}" for ${pathPattern}`);
+  }
+}
+
 assertExists('_site/index.html');
 assertExists('_site/feed.xml');
 assertExists('_site/feed.json');
@@ -134,9 +167,40 @@ assertExists('_site/posts/cetes/index.html');
 assertExists('_site/posts/rendimientos-en-cetes/index.html');
 assertExists('_site/herramientas/index.html');
 assertExists('_site/portafolio/index.html');
-assertExists('_site/assets/main.css');
-assertExists('_site/assets/main.js');
+const hashedMainCssFiles = assertSingleFileMatch('assets', /^main\.[a-f0-9]{8,}\.css$/, 'hashed main CSS');
+const hashedMainJsFiles = assertSingleFileMatch('assets', /^main\.[a-f0-9]{8,}\.js$/, 'hashed main JS');
+assertExists('_site/assets/manifest.json');
 assertExists('_site/service-worker.js');
+
+for (const relPath of ['_site/assets/main.css', '_site/assets/main.js']) {
+  if (fs.existsSync(path.join(root, relPath))) {
+    fail(`${relPath} should not exist; main CSS/JS should be content-hashed`);
+  } else {
+    pass(`${relPath} is not emitted`);
+  }
+}
+
+const indexHtml = fs.existsSync(path.join(site, 'index.html'))
+  ? fs.readFileSync(path.join(site, 'index.html'), 'utf8')
+  : '';
+for (const file of [...hashedMainCssFiles, ...hashedMainJsFiles]) {
+  if (indexHtml.includes(`/assets/${file}`)) {
+    pass(`index.html references /assets/${file}`);
+  } else {
+    fail(`index.html should reference /assets/${file}`);
+  }
+}
+
+for (const staleReference of ['/assets/main.css', '/assets/main.js']) {
+  if (indexHtml.includes(staleReference)) {
+    fail(`index.html should not reference stale un-hashed asset ${staleReference}`);
+  } else {
+    pass(`index.html does not reference ${staleReference}`);
+  }
+}
+
+assertNetlifyHeader('/assets/*', 'public, max-age=31536000, immutable');
+assertNetlifyHeader('/service-worker.js', 'public, max-age=0, must-revalidate');
 
 if (fs.existsSync(path.join(site, 'AGENTS.md'))) {
   fail('_site/AGENTS.md should not exist');
