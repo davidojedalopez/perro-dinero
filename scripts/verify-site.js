@@ -60,6 +60,55 @@ function isValidIsoDate(value) {
   return !Number.isNaN(timestamp) && new Date(timestamp).toISOString() === value;
 }
 
+function getJsonLdBlocks(contents, relPath) {
+  const scripts = contents.match(/<script\b[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/gi) || [];
+
+  return scripts.map((script, index) => {
+    const json = script.replace(/^<script\b[^>]*>/i, '').replace(/<\/script>$/i, '').trim();
+    try {
+      const data = JSON.parse(json);
+      pass(`${relPath} JSON-LD block ${index + 1} parses`);
+      return data;
+    } catch (error) {
+      fail(`${relPath} JSON-LD block ${index + 1} should be valid JSON: ${error.message}`);
+      return null;
+    }
+  }).filter(Boolean);
+}
+
+function toSchemaArray(value) {
+  if (!value) {
+    return [];
+  }
+
+  if (Array.isArray(value)) {
+    return value.flatMap(toSchemaArray);
+  }
+
+  if (Array.isArray(value['@graph'])) {
+    return value['@graph'].flatMap(toSchemaArray);
+  }
+
+  return [value];
+}
+
+function findSchema(schemas, type) {
+  return schemas.find((schema) => {
+    const schemaType = schema && schema['@type'];
+    return schemaType === type || (Array.isArray(schemaType) && schemaType.includes(type));
+  });
+}
+
+function assertSchemaType(schemas, type, relPath) {
+  const schema = findSchema(schemas, type);
+  if (schema) {
+    pass(`${relPath} has ${type} schema`);
+  } else {
+    fail(`${relPath} should have ${type} schema`);
+  }
+  return schema;
+}
+
 function walk(dir, files = []) {
   if (!fs.existsSync(dir)) {
     return files;
@@ -244,6 +293,80 @@ for (const file of walk(site).filter((file) => file.endsWith('.html'))) {
       pass(`${relPath} has ISO ${property}`);
     } else {
       fail(`${relPath} ${property} should be an ISO timestamp: ${value || '(empty)'}`);
+    }
+  }
+
+  const schemas = getJsonLdBlocks(contents, relPath).flatMap(toSchemaArray);
+
+  if (relPath === 'index.html') {
+    const website = assertSchemaType(schemas, 'WebSite', relPath);
+    if (website) {
+      if (website.url && isAbsoluteHttpUrl(website.url)) {
+        pass(`${relPath} WebSite schema has an absolute url`);
+      } else {
+        fail(`${relPath} WebSite schema should have an absolute url`);
+      }
+
+      if (website.inLanguage === 'es-MX') {
+        pass(`${relPath} WebSite schema uses es-MX`);
+      } else {
+        fail(`${relPath} WebSite schema should use inLanguage es-MX`);
+      }
+    }
+  }
+
+  if (relPath === 'posts/cetes/index.html') {
+    const blogPosting = assertSchemaType(schemas, 'BlogPosting', relPath);
+    const breadcrumb = assertSchemaType(schemas, 'BreadcrumbList', relPath);
+    if (blogPosting) {
+      for (const property of ['headline', 'description', 'datePublished', 'dateModified', 'image', 'url', 'mainEntityOfPage']) {
+        if (blogPosting[property]) {
+          pass(`${relPath} BlogPosting schema has ${property}`);
+        } else {
+          fail(`${relPath} BlogPosting schema should have ${property}`);
+        }
+      }
+
+      if (blogPosting.inLanguage === 'es-MX') {
+        pass(`${relPath} BlogPosting schema uses es-MX`);
+      } else {
+        fail(`${relPath} BlogPosting schema should use inLanguage es-MX`);
+      }
+    }
+
+    if (breadcrumb?.itemListElement?.length >= 3) {
+      pass(`${relPath} BreadcrumbList schema has page hierarchy`);
+    } else {
+      fail(`${relPath} BreadcrumbList schema should include home, section, and page items`);
+    }
+  }
+
+  if (relPath === 'preguntas-frecuentes/index.html') {
+    const faqPage = assertSchemaType(schemas, 'FAQPage', relPath);
+    if (faqPage?.mainEntity?.length >= 1) {
+      pass(`${relPath} FAQPage schema has questions`);
+    } else {
+      fail(`${relPath} FAQPage schema should include at least one question`);
+    }
+  }
+
+  if (relPath === 'libros/el-monje-que-vendio-su-ferrari/index.html') {
+    const book = assertSchemaType(schemas, 'Book', relPath);
+    const breadcrumb = assertSchemaType(schemas, 'BreadcrumbList', relPath);
+    if (book) {
+      for (const property of ['name', 'author', 'description', 'image', 'url']) {
+        if (book[property]) {
+          pass(`${relPath} Book schema has ${property}`);
+        } else {
+          fail(`${relPath} Book schema should have ${property}`);
+        }
+      }
+    }
+
+    if (breadcrumb?.itemListElement?.length >= 3) {
+      pass(`${relPath} BreadcrumbList schema has page hierarchy`);
+    } else {
+      fail(`${relPath} BreadcrumbList schema should include home, section, and page items`);
     }
   }
 }
