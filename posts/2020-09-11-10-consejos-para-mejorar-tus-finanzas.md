@@ -29,7 +29,7 @@ Las mejoras cosas en la vida toman tiempo, y lo mejor que puedes hacer es avanza
 
 Es imposible empezar tu negocio desde cero de la noche a la mañana. Es difícil que te den un aumento si no lo pides y no tomas más responsabilidades cada día. Tienes que trabajar un chingo para conseguirlo, no hay atajos.
 
-La forma en la que decidas aumentar tus ingresos dependerá totalmente de ti: ¿negocio propio, freelancing, promoción en el trabajo? Tú decides. [Lee esto si necesitas más ideas de fuentes de ingreso](/posts/la-unica-forma-sostenible-de-ahorrar-mas/#incrementa-tus-ingresos/).
+La forma en la que decidas aumentar tus ingresos dependerá totalmente de ti: ¿negocio propio, freelancing, promoción en el trabajo? Tú decides. [Lee esto si necesitas más ideas de fuentes de ingreso](/posts/la-unica-forma-sostenible-de-ahorrar-mas/#incrementa-tus-ingresos).
 
 ## Págate primero
 

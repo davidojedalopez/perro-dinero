@@ -1,387 +1,66 @@
-const { DateTime, Settings } = require("luxon");
-const fs = require("fs");
-const pluginRss = require("@11ty/eleventy-plugin-rss").default;
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const Image = require('@11ty/eleventy-img');
-const path = require("path");
-const themes = require("./_data/themes");
-const { renderStructuredData } = require("./config/structured-data");
+const fs = require('fs');
+const { Settings } = require('luxon');
+const pluginRss = require('@11ty/eleventy-plugin-rss').default;
+const pluginNavigation = require('@11ty/eleventy-navigation');
+const { registerCollections } = require('./config/collections');
+const { registerFilters } = require('./config/filters');
+const { registerMarkdown } = require('./config/markdown');
+const { imageShortCode } = require('./config/shortcodes/image');
+const { renderStructuredData } = require('./config/structured-data');
 
 Settings.defaultLocale = 'es-MX';
 
-function imageShortCode(src, alt, altShouldBeCaption = true, caption = '', loading = 'lazy', classes = "", sizes = "(min-width: 48rem) 50vw, 100vw", fetchpriority = '') {
-  const extension = path.extname(src).toLowerCase();
-  const isAnimatedGif = extension === '.gif';
-  const options = {
-    widths: isAnimatedGif ? [240, 320, 480] : [320, 640, 960, 1280],
-    formats: isAnimatedGif ? ['webp'] : ['avif', 'webp', 'jpeg'],
-    sharpOptions: isAnimatedGif ? { animated: true } : {},
-    sharpAvifOptions: {
-      quality: 45,
-      effort: 4
-    },
-    sharpWebpOptions: {
-      quality: isAnimatedGif ? 70 : 75,
-      effort: 4
-    },
-    sharpJpegOptions: {
-      quality: 82,
-      progressive: true,
-      mozjpeg: true
-    },
-    filenameFormat: ((id, src, width, format, options) => {
-      const extension = path.extname(src);
-      const second_to_last_part = path.normalize(src).split("/").reverse()[1]
-      const name = path.basename(src, extension)
-      return `${second_to_last_part}-${name}-${width}w.${format}`;
-    }),
-    urlPath: "/img/",
-    outputDir: "./_site/img",
-    useCache: true
-  }
-  Image(src, options);
-
-  const imageAttributes = {
-    class: classes,
-    alt,
-    sizes,
-    loading,
-    decoding: 'async',
-  }
-  if (fetchpriority) {
-    imageAttributes.fetchpriority = fetchpriority;
-  }
-
-  const metadata = Image.statsSync(src, options)
-  const html = Image.generateHTML(metadata, imageAttributes, { whitespaceMode: 'inline' })
-  const figureCaption = altShouldBeCaption ? alt : caption
-  return figureCaption ?
-    `<figure>${html}<figcaption>${figureCaption}</figcaption></figure>` :
-    html
+function registerPassthroughCopy(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy('img');
+  eleventyConfig.addPassthroughCopy('css');
+  eleventyConfig.addPassthroughCopy('robots.txt');
+  eleventyConfig.addPassthroughCopy('humans.txt');
+  eleventyConfig.addPassthroughCopy('llms.txt');
+  eleventyConfig.addPassthroughCopy('manifest.json');
+  eleventyConfig.addPassthroughCopy('.well-known');
 }
 
-function normalizeThemeToken(value = "") {
-  return value
-    .toString()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .trim()
-    .toLowerCase();
-}
-
-function toArray(value) {
-  if (!value) {
-    return [];
-  }
-  return Array.isArray(value) ? value : [value];
-}
-
-function createThemeLookup() {
-  return Object.entries(themes).reduce((lookup, [themeKey, themeData]) => {
-    const tokens = [themeKey, ...(themeData.aliases || [])];
-    tokens.forEach((token) => {
-      lookup[normalizeThemeToken(token)] = themeKey;
-    });
-    return lookup;
-  }, {});
-}
-
-const themeLookup = createThemeLookup();
-
-function resolvePostThemeKeys(postData = {}, { fallbackToTags = true, onInvalidTheme } = {}) {
-  const explicitThemes = toArray(postData.themes).filter((token) => typeof token === "string");
-  const rawTokens = explicitThemes.length > 0
-    ? explicitThemes
-    : (fallbackToTags ? toArray(postData.tags) : []);
-
-  const postThemes = new Set();
-
-  rawTokens.forEach((token) => {
-    const normalized = normalizeThemeToken(token);
-    const canonicalThemeKey = themeLookup[normalized];
-
-    if (canonicalThemeKey && themes[canonicalThemeKey]) {
-      postThemes.add(canonicalThemeKey);
-      return;
-    }
-
-    if (explicitThemes.length > 0 && onInvalidTheme) {
-      onInvalidTheme(token);
-    }
-  });
-
-  return Array.from(postThemes);
-}
-
-function stripFrontMatter(content) {
-  return content.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, "");
-}
-
-function contentForReadingTime(postOrContent) {
-  if (typeof postOrContent === "string") {
-    return postOrContent;
-  }
-
-  if (!postOrContent || typeof postOrContent !== "object") {
-    return "";
-  }
-
-  if (typeof postOrContent.rawInput === "string") {
-    return postOrContent.rawInput;
-  }
-
-  const inputPath = postOrContent.inputPath || postOrContent.page?.inputPath;
-  if (inputPath && fs.existsSync(inputPath)) {
-    return fs.readFileSync(inputPath, "utf8");
-  }
-
-  return "";
-}
-
-function readingTimeFilter(postOrContent, { printSeconds = false, raw = false, speed = 300 } = {}) {
-  const content = stripFrontMatter(contentForReadingTime(postOrContent))
-    .replace(/(<([^>]+)>)/gi, "")
-    .replace(/\{[%#][\s\S]*?[%#]\}/g, "")
-    .replace(/\{\{[\s\S]*?\}\}/g, "");
-  const matches = content.match(/[\u0400-\u04FF]+|\S+\s*/g);
-  const count = matches !== null ? matches.length : 0;
-
-  if (printSeconds) {
-    const min = Math.floor(count / speed);
-    const sec = Math.floor((count % speed) / (speed / 60));
-
-    if (raw) {
-      return min * 60 + sec;
-    }
-
-    const mins = min + " minute" + (min === 1 ? "" : "s") + ", ";
-    const secs = sec + " second" + (sec === 1 ? "" : "s");
-    return min > 0 ? mins + secs : secs;
-  }
-
-  const min = Math.ceil(count / speed);
-  return raw ? min : min + " min";
-}
-function normalizeSiteUrl(value, baseUrl) {
-  if (!value) {
-    return '';
-  }
-
+function removeNewsletterOutput() {
   try {
-    return new URL(value).href;
-  } catch {
-    const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
-    return new URL(value.toString().replace(/^\/+/, ''), normalizedBase).href;
+    const dir = '_site/newsletters';
+    if (fs.existsSync(dir)) {
+      fs.rmSync(dir, { recursive: true });
+    }
+  } catch (error) {
+    console.error(error);
   }
 }
-
-function isExternalUrl(value, baseUrl) {
-  if (!value) {
-    return false;
-  }
-
-  try {
-    return new URL(value).origin !== new URL(baseUrl).origin;
-  } catch {
-    return false;
-  }
-}
-
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginNavigation);
-  eleventyConfig.addFilter("readingTime", readingTimeFilter);
-  eleventyConfig.addFilter("absoluteSiteUrl", normalizeSiteUrl);
-  eleventyConfig.addFilter("isExternalUrl", isExternalUrl);
-
   eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.addLayoutAlias('post', 'layouts/post.njk');
 
-  eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
+  registerFilters(eleventyConfig);
+  registerCollections(eleventyConfig);
+  registerPassthroughCopy(eleventyConfig);
+  registerMarkdown(eleventyConfig);
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
-    if (dateObj instanceof String) {
-      dateObj = new Date(dateObj);
-    }
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat("dd LLLL yyyy");
-  });
-
-  eleventyConfig.addFilter("toISOString", dateObj => {
-    if (dateObj instanceof String) {
-      dateObj = new Date(dateObj)
-    }
-    return dateObj.toISOString();
-  });
-
-  eleventyConfig.addFilter("getTime", dateObj => {
-    if (dateObj instanceof String) {
-      dateObj = new Date(dateObj)
-    }
-    return dateObj.getTime();
-  });
-
-  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter('htmlDateString', dateObj => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
-  });
-
-  eleventyConfig.addFilter('slugDate', dateObj => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy/LL/dd');
-  })
-
-  // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter("head", (array, n) => {
-    if (n < 0) {
-      return array.slice(n);
-    }
-
-    return array.slice(0, n);
-  });
-
-  eleventyConfig.addFilter("postThemes", (postData = {}) => {
-    return resolvePostThemeKeys(postData).map((themeKey) => ({
-      key: themeKey,
-      ...themes[themeKey]
-    }));
-  });
-
-  const now = Date.now()
-  const shouldBeLive = post => post.data.published_at <= now && !post.data.draft;
-
-  eleventyConfig.addCollection("publishables", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob(["posts/*.md", "books/*.md", "atomic_essays/*.md", "newsletters/*.md"])
-      .filter(shouldBeLive);
-  });
-
-  eleventyConfig.addCollection("rssables", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob(["posts/*.md", "books/*.md", "atomic_essays/*.md"])
-      .filter(shouldBeLive);
-  });
-
-
-  eleventyConfig.addCollection("posts", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob("posts/*.md")
-      .filter(shouldBeLive);
-  });
-
-  eleventyConfig.addCollection("postsByTheme", function (collectionApi) {
-    const index = Object.values(themes).reduce((acc, theme) => {
-      acc[theme.slug] = [];
-      return acc;
-    }, {});
-
-    collectionApi
-      .getFilteredByGlob("posts/*.md")
-      .filter(shouldBeLive)
-      .forEach((post) => {
-        const postThemes = resolvePostThemeKeys(post.data, {
-          fallbackToTags: true,
-          onInvalidTheme: (token) => {
-            console.warn(`[themes] Tema no definido "${token}" en ${post.inputPath}`);
-          }
-        });
-
-        postThemes.forEach((themeKey) => {
-          index[themes[themeKey].slug].push(post);
-        });
-      });
-
-    return index;
-  });
-
-  eleventyConfig.addCollection("books", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob("books/*.md")
-      .filter(shouldBeLive);
-  });
-
-  eleventyConfig.addCollection("postsAndBooks", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob(["posts/*.md", "books/*.md"])
-      .filter(shouldBeLive);
-  });
-
-  eleventyConfig.addCollection("atomic_essays", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob('atomic_essays/*.md')
-      .filter(shouldBeLive);
-  });
-
-  eleventyConfig.addCollection("faqs", function (collectionApi) {
-    return collectionApi
-      .getFilteredByGlob('faqs/*.md')
-  });
-
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy('robots.txt')
-  eleventyConfig.addPassthroughCopy('humans.txt')
-  eleventyConfig.addPassthroughCopy('llms.txt')
-  eleventyConfig.addPassthroughCopy('manifest.json')
-  eleventyConfig.addPassthroughCopy('.well-known')
-
-  /* Markdown Overrides */
-  let markdownLibrary = markdownIt({
-    html: true,
-    breaks: true,
-    linkify: true
-  }).use(markdownItAnchor, {
-    permalink: markdownItAnchor.permalink.linkInsideHeader({
-      class: "direct-link",
-      symbol: "🔗"
-    })
-  }).use(require("markdown-it-toc-done-right"), {
-    level: [1, 2, 3]
-  }).disable('code');
-  eleventyConfig.setLibrary("md", markdownLibrary);
-
-  eleventyConfig.addNunjucksShortcode("image", imageShortCode);
-  eleventyConfig.addNunjucksShortcode("structured_data", renderStructuredData);
-
-  eleventyConfig.on('eleventy.after', async () => {
-    try {
-      const dir = '_site/newsletters'
-      if(fs.existsSync(dir)) {
-        fs.rmSync(dir, { recursive: true });
-      }
-    } catch(error) {
-      console.error(error)
-    }
-  })
+  eleventyConfig.addNunjucksShortcode('image', imageShortCode);
+  eleventyConfig.addNunjucksShortcode('structured_data', renderStructuredData);
+  eleventyConfig.on('eleventy.after', removeNewsletterOutput);
 
   return {
     templateFormats: [
-      "md",
-      "njk",
-      "html",
-      "liquid"
+      'md',
+      'njk',
+      'html',
+      'liquid',
     ],
-
-    // If your site lives in a different subdirectory, change this.
-    // Leading or trailing slashes are all normalized away, so don’t worry about those.
-
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for link URLs (it does not affect your file structure)
-    // Best paired with the `url` filter: https://www.11ty.io/docs/filters/url/
-
-    // You can also pass this in on the command line using `--pathprefix`
-    // pathPrefix: "/",
-
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
-
-    // These are all optional, defaults are shown:
+    markdownTemplateEngine: 'njk',
+    htmlTemplateEngine: 'njk',
+    dataTemplateEngine: 'njk',
     dir: {
-      input: ".",
-      includes: "_includes",
-      data: "_data",
-      output: "_site"
-    }
+      input: '.',
+      includes: '_includes',
+      data: '_data',
+      output: '_site',
+    },
   };
 };

@@ -1,7 +1,7 @@
 ---
 title: Advice that sticks
 author: Moira Somers
-description:
+description: "Lecciones de Moira Somers para que la asesoría financiera sea clara, útil y accionable."
 draft: true
 cover_path:
 cover_alt:
