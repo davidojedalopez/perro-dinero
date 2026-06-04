@@ -1,6 +1,6 @@
 ---
 title: No necesitas ser un genio para ser un buen inversionista
-description: Si hablar de tus inversiones te provoca ataques de adrenalina, algo estás haciendo mal.
+description: "Un recordatorio breve de que invertir bien depende más del control emocional que de ser un genio financiero."
 published_at: 2021-10-03
 newsletter_cta: true
 share_image_url: /img/micro_essays/007_inversiones_aburridas.png

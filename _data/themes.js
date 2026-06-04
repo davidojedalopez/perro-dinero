@@ -15,7 +15,7 @@ module.exports = {
     definition: "Uso estratégico de tu dinero para generar rendimientos a largo plazo.",
     key_links: [
       "/portafolio/",
-      "/books/"
+      "/libros/"
     ],
     aliases: ["inversion", "inversión", "inversiones", "invertir"]
   },
@@ -25,7 +25,7 @@ module.exports = {
     definition: "Reserva de dinero para metas, emergencias y estabilidad financiera.",
     key_links: [
       "/posts/",
-      "/faqs/"
+      "/preguntas-frecuentes/"
     ],
     aliases: ["ahorro", "ahorros", "ahorrar"]
   },
@@ -35,7 +35,7 @@ module.exports = {
     definition: "Gestión de obligaciones financieras para reducir costo e impacto.",
     key_links: [
       "/posts/",
-      "/faqs/"
+      "/preguntas-frecuentes/"
     ],
     aliases: ["deuda", "deudas", "endeudamiento"]
   },
@@ -45,7 +45,7 @@ module.exports = {
     definition: "Protección financiera ante riesgos mediante pólizas y coberturas.",
     key_links: [
       "/posts/",
-      "/faqs/"
+      "/preguntas-frecuentes/"
     ],
     aliases: ["seguro", "seguros", "aseguradora", "aseguradoras"]
   }

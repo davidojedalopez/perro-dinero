@@ -31,7 +31,7 @@ A personal finance blog in Spanish ("Perro Dinero" translates to "Money Dog") fo
 - **@11ty/eleventy-plugin-rss** - RSS feed generation
 - **@11ty/eleventy-navigation** - Navigation structure management
 - **@11ty/eleventy-img** - Image optimization and processing
-- **@11ty/eleventy-cache-assets** - Cache external API data
+- **@11ty/eleventy-fetch** - Cache external API data
 - **Custom readingTime filter** - Calculate estimated reading time
 
 ### Data Sources
@@ -131,6 +131,18 @@ npm run clean
 Pull requests and pushes to `master` run the GitHub Actions `Verify` workflow. It reads Node from `.nvmrc`, runs `npm ci`, `npm run verify`, and `npm audit --audit-level=moderate` so failures are deterministic and independent of Netlify app/plugin behavior. CI sets `BANXICO_OFFLINE=true` and builds with committed fixture data instead of requiring a Banxico secret or live API response.
 
 Netlify remains the deployment preview and Lighthouse gate for PRs.
+
+## Dependency Maintenance
+
+Build-time tooling stays in `dependencies` because Netlify installs the production dependency graph before running `npm run build`; moving Eleventy, Webpack, PostCSS, Tailwind, or Netlify plugins to `devDependencies` would require an explicit Netlify install-policy change.
+
+Renovate is configured in `renovate.json` with grouped, scheduled PRs for Node runtime, Eleventy, Tailwind/PostCSS, Webpack/Workbox, Netlify plugins, and low-risk patch/minor updates.
+
+Current `overrides` are kept for transitive dependency hardening:
+
+- `cookie`: pulled through `@netlify/plugin-lighthouse` via Lighthouse/Sentry/Express; override keeps patched `0.7.x` until upstream plugin dependencies move forward.
+- `tar-fs`: pulled through Lighthouse/Puppeteer stacks; override keeps patched `2.1.x` where older Puppeteer is still present.
+- `ws`: pulled through Eleventy dev server, Lighthouse, and Puppeteer; override keeps patched `8.x` across those transitive paths.
 
 ## Environment Variables
 

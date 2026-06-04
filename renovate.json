@@ -1,0 +1,110 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "timezone": "America/Mexico_City",
+  "schedule": [
+    "before 8am on monday"
+  ],
+  "prConcurrentLimit": 3,
+  "prHourlyLimit": 1,
+  "rangeStrategy": "bump",
+  "labels": [
+    "dependencies"
+  ],
+  "regexManagers": [
+    {
+      "description": "Update Node runtime from .nvmrc",
+      "fileMatch": [
+        "^\\.nvmrc$"
+      ],
+      "matchStrings": [
+        "(?<currentValue>\\d+\\.\\d+\\.\\d+)"
+      ],
+      "depNameTemplate": "node",
+      "datasourceTemplate": "node-version"
+    }
+  ],
+  "packageRules": [
+    {
+      "groupName": "Node runtime",
+      "matchDatasources": [
+        "node-version"
+      ],
+      "matchPackageNames": [
+        "node"
+      ]
+    },
+    {
+      "groupName": "Eleventy stack",
+      "matchPackageNames": [
+        "/^@11ty\\//",
+        "markdown-it",
+        "markdown-it-anchor",
+        "markdown-it-toc-done-right",
+        "luxon"
+      ]
+    },
+    {
+      "groupName": "Tailwind and PostCSS stack",
+      "matchPackageNames": [
+        "tailwindcss",
+        "/^@tailwindcss\\//",
+        "postcss",
+        "postcss-loader",
+        "autoprefixer",
+        "/^@csstools\\//"
+      ]
+    },
+    {
+      "groupName": "Webpack and Workbox stack",
+      "matchPackageNames": [
+        "webpack",
+        "webpack-cli",
+        "css-loader",
+        "mini-css-extract-plugin",
+        "workbox-webpack-plugin"
+      ]
+    },
+    {
+      "groupName": "Netlify plugins",
+      "matchPackageNames": [
+        "/^@netlify\\//",
+        "/^netlify-plugin-/"
+      ]
+    },
+    {
+      "groupName": "Low-risk npm patch/minor updates",
+      "matchManagers": [
+        "npm"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "excludePackageNames": [
+        "/^@11ty\\//",
+        "markdown-it",
+        "markdown-it-anchor",
+        "markdown-it-toc-done-right",
+        "luxon",
+        "tailwindcss",
+        "/^@tailwindcss\\//",
+        "postcss",
+        "postcss-loader",
+        "autoprefixer",
+        "/^@csstools\\//",
+        "webpack",
+        "webpack-cli",
+        "css-loader",
+        "mini-css-extract-plugin",
+        "workbox-webpack-plugin",
+        "/^@netlify\\//",
+        "/^netlify-plugin-/"
+      ]
+    }
+  ]
+}

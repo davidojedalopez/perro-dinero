@@ -7,8 +7,8 @@ Enlaces clave:
 - /sitemap.xml
 - /feed.xml
 - /posts/
-- /faqs/
-- /books/
+- /preguntas-frecuentes/
+- /libros/
 - /ensayosatomicos/
 - /api/indicadores_economicos.json
 

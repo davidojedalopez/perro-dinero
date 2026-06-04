@@ -2,6 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   darkMode: 'class',
+  safelist: ['filter'],
   content: [
     './*.njk',
     './_includes/**/*.njk',

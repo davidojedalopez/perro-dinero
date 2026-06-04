@@ -19,7 +19,10 @@
     "update-portfolio": "./scripts/updatePortfolio.js",
     "verify:site": "node scripts/verify-site.js",
     "verify:ci": "node scripts/verify-ci.js",
-    "verify": "npm run build && npm run verify:site && npm run verify:ci"
+    "verify:deps": "node scripts/verify-dependencies.js",
+    "verify:eleventy": "node scripts/verify-eleventy-config.js",
+    "verify:links": "node scripts/verify-links.js",
+    "verify": "npm run build && npm run verify:site && npm run verify:ci && npm run verify:deps && npm run verify:eleventy && npm run verify:links"
   },
   "repository": {
     "type": "git",
@@ -33,7 +36,6 @@
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.6",
-    "@11ty/eleventy-cache-assets": "^2.3.0",
     "@11ty/eleventy-fetch": "^5.1.2",
     "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-navigation": "^1.0.5",
