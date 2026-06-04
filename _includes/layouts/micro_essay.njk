@@ -14,7 +14,7 @@ permalink: "ensayosatomicos/{{ page.fileSlug }}/"
     <div class="pb-4">
         <p class="mb-4" data-id="share">Puedes <strong>compartir este ensayo atómico como una imagen</strong> desde el
           celular dejando presionada la foto y seleccionando la opción de compartir 📲 </p>
-        <img class="mx-auto" src="{{ share_image_url | url }}" alt="Ensayo atómico en formato imagen" width="150">
+        <img class="mx-auto" src="{{ share_image_url | url }}" alt="Ensayo atómico en formato imagen" width="150" decoding="async" loading="lazy">
     </div>
 
 </article>

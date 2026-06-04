@@ -1,6 +1,8 @@
 <a href="{{ item.data.external_url if item.data.external_content else item.url | url }}" target="{{ 'blank' if item.data.external_url else '_self' }}" class="hover:bg-accent-100 dark:hover:bg-foreground-dark no-underline flex flex-col rounded-lg shadow-xl dark:shadow-xl-dark overflow-hidden no-hyphens">
     <div class="flex-shrink-0">
-        {% image item.data.cover_path | url, item.data.cover_alt, false, '', 'eager', 'h-72 w-full object-cover' %}
+        {% set heroLoading = 'eager' if loop.first else 'lazy' %}
+        {% set heroFetchPriority = 'high' if loop.first else '' %}
+        {% image item.data.cover_path | url, item.data.cover_alt, false, '', heroLoading, 'h-72 w-full object-cover', '(min-width: 1280px) 33vw, (min-width: 1024px) 50vw, 100vw', heroFetchPriority %}
     </div>
     <div class="flex-1 bg-foreground-dark dark:bg-primary-dark p-6 flex flex-col justify-between">
         <div class="flex-1">

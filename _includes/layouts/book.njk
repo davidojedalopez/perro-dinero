@@ -15,7 +15,7 @@ structuredData:
       <time class="text-base text-accent-600 dark:text-accent-dark-600" datetime="{{ published_at | htmlDateString }}">{{ published_at | readableDate }}</time> <span class="px-2 text-base text-accent-600 dark:text-accent-dark-600">·</span> <span class="text-base text-accent-600 dark:text-accent-dark-600">Lectura de {{ content | readingTime }}</span>
     </div>
     {% if cover_path %}
-      {% image cover_path | url, cover_alt, false, '', 'eager' %}
+      {% image cover_path | url, cover_alt, false, '', 'eager', '', '(min-width: 640px) 240px, 50vw', 'high' %}
     {% endif %}
   </div>
 

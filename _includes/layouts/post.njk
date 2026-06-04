@@ -39,7 +39,7 @@ eleventyComputed:
   {% if cover_path %}
     <div class="mt-4 rounded mx-auto w-full max-w-screen-sm h-auto">
       <div class="relative -z-1">
-        {% image cover_path | url, cover_alt, false, '', 'eager' %}
+        {% image cover_path | url, cover_alt, false, '', 'eager', '', '(min-width: 768px) 640px, 100vw', 'high' %}
       </div>
     </div>
   {% endif %}
