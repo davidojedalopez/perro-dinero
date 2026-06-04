@@ -1,11 +1,17 @@
 <!doctype html>
-<html lang="es" class="relative h-full">
+<html lang="es-MX" class="relative h-full">
   <head>
+    {% set pageTitle = renderData.title or title or metadata.title %}
+    {% set pageDescription = renderData.description or description or metadata.description %}
+    {% set canonicalHref = canonical_url or page.url %}
+    {% set absoluteCanonicalUrl = canonicalHref | absoluteSiteUrl(metadata.url) %}
+    {% set absolutePageUrl = page.url | absoluteSiteUrl(metadata.url) %}
+    {% set socialImageUrl = (cover_path or metadata.default_cover) | absoluteSiteUrl(metadata.url) %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta name="title" content="{{ renderData.title or title or metadata.title }}">
-    <meta name="description" content="{{ renderData.description or description or metadata.description }}">
+    <title>{{ pageTitle }}</title>
+    <meta name="title" content="{{ pageTitle }}">
+    <meta name="description" content="{{ pageDescription }}">
 
     <meta name="author" content="{{ metadata.author.name }}">
     <link type="text/plain" rel="author" href="/humans.txt" />
@@ -13,33 +19,33 @@
     {% set resolvedStructuredData = renderData.structuredData or structuredData or metadata.structuredData %}
     {% set isPostPage = (page.url and page.url.startsWith('/posts/')) or (resolvedStructuredData and resolvedStructuredData.type == "post") %}
     <meta property="og:type" content="{{ 'article' if isPostPage else 'website' }}">
-    <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
-    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
-    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
-    <meta property="og:image" content="{{ metadata.url }}/{{ cover_path or metadata.default_cover }}">
+    <meta property="og:url" content="{{ absolutePageUrl }}">
+    <meta property="og:title" content="{{ pageTitle }}">
+    <meta property="og:description" content="{{ pageDescription }}">
+    <meta property="og:image" content="{{ socialImageUrl }}">
 
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="{{ metadata.url }}{{ page.url }}">
-    <meta property="twitter:title" content="{{ renderData.title or title or metadata.title }}">
-    <meta property="twitter:description" content="{{ renderData.description or description or metadata.description }}">
-    <meta property="twitter:image" content="{{ metadata.url }}/{{ cover_path or metadata.default_cover }}">
+    <meta property="twitter:url" content="{{ absolutePageUrl }}">
+    <meta property="twitter:title" content="{{ pageTitle }}">
+    <meta property="twitter:description" content="{{ pageDescription }}">
+    <meta property="twitter:image" content="{{ socialImageUrl }}">
 
     <meta name="twitter:site" content="@PerroDinero">
     <meta name="twitter:creator" content="@PerroDinero">
 
     <meta name="theme-color" content="#F3CA3E">
 
-    {% if canonical_url %}
-      <link rel="canonical" href="{{ canonical_url }}" />
-      <link rel="alternate" hreflang="en" href="{{ canonical_url }}" />
+    <link rel="canonical" href="{{ absoluteCanonicalUrl }}" />
+    {% if canonical_url and (canonical_url | isExternalUrl(metadata.url)) %}
+      <link rel="alternate" hreflang="en" href="{{ absoluteCanonicalUrl }}" />
     {% endif %}
 
     {# For Algolia Crawler #}
     {% if published_at %}
-      <meta property="article:published_time" content="{{ published_at | getTime }}">
+      <meta property="article:published_time" content="{{ published_at | toISOString }}">
     {% endif %}
     {% if last_updated_at %}
-      <meta property="article:modified_time" content="{{ last_updated_at | getTime }}">
+      <meta property="article:modified_time" content="{{ last_updated_at | toISOString }}">
     {% endif %}
     <meta property="article:author" content="{{ metadata.author.name }}">
     {% if tags %}

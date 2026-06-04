@@ -60,3 +60,13 @@
   from = "/microensayos"
   to = "/ensayosatomicos/"
   status = 301
+
+[[redirects]]
+  from = "/faqs/*"
+  to = "/preguntas-frecuentes/"
+  status = 301
+
+[[redirects]]
+  from = "/temas/theme/"
+  to = "/"
+  status = 301

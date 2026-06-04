@@ -1,3 +1,6 @@
+---
+permalink: false
+---
 {% set theme = themes[theme_key] %}
 {% set relatedPosts = (collections.postsByTheme[theme.slug] or []) | sort(true, false, 'data.published_at') %}
 

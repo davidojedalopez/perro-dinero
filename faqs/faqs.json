@@ -3,5 +3,6 @@
         "faqs",
         "preguntas_frecuentes"
     ],
-    "eleventyExcludeFromCollections": false
+    "eleventyExcludeFromCollections": false,
+    "permalink": false
 }
