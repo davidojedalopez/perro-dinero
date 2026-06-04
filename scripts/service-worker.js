@@ -21,12 +21,27 @@ registerRoute(
 );
 
 registerRoute(
-  ({ request }) =>
-    request.destination === 'style' ||
-    request.destination === 'script' ||
-    request.destination === 'worker',
-  new StaleWhileRevalidate({
-    cacheName: 'assets',
+  ({ url, request }) =>
+    url.pathname.startsWith('/assets/') &&
+    (request.destination === 'style' || request.destination === 'script'),
+  new CacheFirst({
+    cacheName: 'versioned-assets',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [200],
+      }),
+      new ExpirationPlugin({
+        maxEntries: 30,
+        maxAgeSeconds: 60 * 60 * 24 * 365, // 1 year
+      }),
+    ],
+  }),
+);
+
+registerRoute(
+  ({ url }) => url.pathname === '/service-worker.js',
+  new NetworkFirst({
+    cacheName: 'service-worker',
     plugins: [
       new CacheableResponsePlugin({
         statuses: [200],
