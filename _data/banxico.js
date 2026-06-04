@@ -1,5 +1,7 @@
 const Cache = require("@11ty/eleventy-fetch");
 const dotenv = require('dotenv');
+const fs = require('fs');
+const path = require('path');
 const { HttpsProxyAgent } = require('https-proxy-agent');
 const { getProxyForUrl } = require('proxy-from-env');
 
@@ -27,6 +29,11 @@ const BANXICO_SERIES = {
 const proxyAgents = new Map()
 
 module.exports = async function () {
+    if (process.env.BANXICO_OFFLINE === 'true') {
+        console.log("Using offline Banxico fixture data...");
+        return readOfflineFixture()
+    }
+
     console.log("Fetching Banxico's economic indicators...");
 
     const api_data = {}
@@ -75,6 +82,11 @@ async function fetch_data(series) {
         consulted_at: nowWithMxFormat,
         consulted_at_epoch: now
     }
+}
+
+function readOfflineFixture() {
+    const fixturePath = path.join(__dirname, 'fixtures', 'banxico-ci.json')
+    return JSON.parse(fs.readFileSync(fixturePath, 'utf8'))
 }
 
 function getFetchOptions(url) {

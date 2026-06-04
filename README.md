@@ -1,3 +1,4 @@
+[![Verify](https://github.com/davidojedalopez/perro-dinero/actions/workflows/verify.yml/badge.svg)](https://github.com/davidojedalopez/perro-dinero/actions/workflows/verify.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/484d9a9f-dc24-4d30-90c4-142ae40c60b7/deploy-status)](https://app.netlify.com/sites/practical-fermi-c5a1da/deploys)
 
 # Perro Dinero
@@ -124,6 +125,12 @@ npm run update-portfolio
 # Clean build directory
 npm run clean
 ```
+
+## Continuous Verification
+
+Pull requests and pushes to `master` run the GitHub Actions `Verify` workflow. It reads Node from `.nvmrc`, runs `npm ci`, `npm run verify`, and `npm audit --audit-level=moderate` so failures are deterministic and independent of Netlify app/plugin behavior. CI sets `BANXICO_OFFLINE=true` and builds with committed fixture data instead of requiring a Banxico secret or live API response.
+
+Netlify remains the deployment preview and Lighthouse gate for PRs.
 
 ## Environment Variables
 

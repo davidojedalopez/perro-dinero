@@ -18,7 +18,8 @@
     "convert-gifs": "for i in img/posts/*.gif; do ffmpeg -i \"$i\" -b:v 0 -crf 25 -vcodec libx264 -pix_fmt yuv420p \"${i%.*}.mp4\" -y; ffmpeg -i \"$i\" -c vp9 -b:v 0 -crf 41 \"${i%.*}.webm\" -y; done",
     "update-portfolio": "./scripts/updatePortfolio.js",
     "verify:site": "node scripts/verify-site.js",
-    "verify": "npm run build && npm run verify:site"
+    "verify:ci": "node scripts/verify-ci.js",
+    "verify": "npm run build && npm run verify:site && npm run verify:ci"
   },
   "repository": {
     "type": "git",

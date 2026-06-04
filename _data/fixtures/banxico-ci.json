@@ -1,0 +1,79 @@
+{
+  "border_minimum_wage": {
+    "description": "Salarios Mínimos Zona Libre de la Frontera Norte Pesos por día",
+    "amount": 440.87,
+    "series_id": "SL11295",
+    "updated_at_friendly": "1 abr 2026",
+    "udpated_at": "01/04/2026",
+    "updated_at_epoch": 1775023200000,
+    "consulted_at_friendly": "4 jun 2026",
+    "consulted_at": "04/06/26",
+    "consulted_at_epoch": 1780605673020
+  },
+  "general_minimum_wage": {
+    "description": "Salarios Mínimos General Pesos por día",
+    "amount": 315.04,
+    "series_id": "SL11298",
+    "updated_at_friendly": "1 abr 2026",
+    "udpated_at": "01/04/2026",
+    "updated_at_epoch": 1775023200000,
+    "consulted_at_friendly": "4 jun 2026",
+    "consulted_at": "04/06/26",
+    "consulted_at_epoch": 1780605673034
+  },
+  "udi": {
+    "description": "Valor de UDIS",
+    "amount": 8.82994,
+    "series_id": "SP68257",
+    "updated_at_friendly": "10 jun 2026",
+    "udpated_at": "10/06/2026",
+    "updated_at_epoch": 1781071200000,
+    "consulted_at_friendly": "4 jun 2026",
+    "consulted_at": "04/06/26",
+    "consulted_at_epoch": 1780605673034
+  },
+  "cetes_28_days_yield_rate": {
+    "description": "Valores gubernamentales. Resultados de la subasta semanal Tasa de rendimiento. Cetes a 28 días",
+    "amount": 6.36,
+    "series_id": "SF43936",
+    "updated_at_friendly": "4 jun 2026",
+    "udpated_at": "04/06/2026",
+    "updated_at_epoch": 1780552800000,
+    "consulted_at_friendly": "4 jun 2026",
+    "consulted_at": "04/06/26",
+    "consulted_at_epoch": 1780605673035
+  },
+  "cetes_91_days_yield_rate": {
+    "description": "Valores gubernamentales. Resultados de la subasta semanal Tasa de rendimiento. Cetes a 91 días",
+    "amount": 6.56,
+    "series_id": "SF43939",
+    "updated_at_friendly": "4 jun 2026",
+    "udpated_at": "04/06/2026",
+    "updated_at_epoch": 1780552800000,
+    "consulted_at_friendly": "4 jun 2026",
+    "consulted_at": "04/06/26",
+    "consulted_at_epoch": 1780605673035
+  },
+  "cetes_182_days_yield_rate": {
+    "description": "Valores gubernamentales. Resultados de la subasta semanal Tasa de rendimiento. Cetes a 182 días",
+    "amount": 6.69,
+    "series_id": "SF43942",
+    "updated_at_friendly": "4 jun 2026",
+    "udpated_at": "04/06/2026",
+    "updated_at_epoch": 1780552800000,
+    "consulted_at_friendly": "4 jun 2026",
+    "consulted_at": "04/06/26",
+    "consulted_at_epoch": 1780605673036
+  },
+  "cetes_364_days_yield_rate": {
+    "description": "Valores gubernamentales. Resultados de la subasta semanal Tasa de rendimiento. Cetes a 364 días",
+    "amount": 7.16,
+    "series_id": "SF43945",
+    "updated_at_friendly": "28 may 2026",
+    "udpated_at": "28/05/2026",
+    "updated_at_epoch": 1779948000000,
+    "consulted_at_friendly": "4 jun 2026",
+    "consulted_at": "04/06/26",
+    "consulted_at_epoch": 1780605673036
+  }
+}
