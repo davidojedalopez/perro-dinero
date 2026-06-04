@@ -178,12 +178,38 @@ function readingTimeFilter(postOrContent, { printSeconds = false, raw = false, s
   const min = Math.ceil(count / speed);
   return raw ? min : min + " min";
 }
+function normalizeSiteUrl(value, baseUrl) {
+  if (!value) {
+    return '';
+  }
+
+  try {
+    return new URL(value).href;
+  } catch {
+    const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+    return new URL(value.toString().replace(/^\/+/, ''), normalizedBase).href;
+  }
+}
+
+function isExternalUrl(value, baseUrl) {
+  if (!value) {
+    return false;
+  }
+
+  try {
+    return new URL(value).origin !== new URL(baseUrl).origin;
+  } catch {
+    return false;
+  }
+}
 
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addFilter("readingTime", readingTimeFilter);
+  eleventyConfig.addFilter("absoluteSiteUrl", normalizeSiteUrl);
+  eleventyConfig.addFilter("isExternalUrl", isExternalUrl);
 
   eleventyConfig.setDataDeepMerge(true);
 
