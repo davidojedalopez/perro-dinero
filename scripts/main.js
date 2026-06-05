@@ -19,6 +19,12 @@ function loadPageFeatures() {
       .catch((error) => console.error('Failed to load debt planner feature', error));
   }
 
+  if (document.querySelector('[data-cash-parking], [data-retirement-layers]')) {
+    import(/* webpackChunkName: "money-post-tools" */ './features/money-post-tools')
+      .then(({ initMoneyPostTools }) => initMoneyPostTools())
+      .catch((error) => console.error('Failed to load money post tools feature', error));
+  }
+
   if (document.querySelector('.newsletter-cta')) {
     import(/* webpackChunkName: "newsletter-observer" */ './features/newsletter-observer')
       .then(({ initNewsletterObserver }) => initNewsletterObserver())
