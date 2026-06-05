@@ -22,6 +22,7 @@ Perro Dinero is a Spanish personal-finance static site built with Eleventy, Nunj
 
 - Prefer small, focused changes and verify with `npm run build` when touching templates, data, styles, scripts, or content structure.
 - Keep public-facing copy in Spanish (`es-MX`) unless asked otherwise.
+- When drafting, editing, or refining Perro Dinero content, follow `writing-style.md` to preserve David's voice.
 - Content lives mainly in `posts/`, `atomic_essays/`, `books/`, `newsletters/`, and `faqs/`.
 - Do not edit or commit generated/local directories: `_site/`, `node_modules/`, `.cache/`, `.netlify/`, `.agents/`.
 - Banxico API requests should authenticate with the `Bmx-Token` header, not a `token` query parameter.
