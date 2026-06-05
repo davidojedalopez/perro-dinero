@@ -244,3 +244,96 @@ input[type="search"] {
   opacity: 1;
   visibility: visible;
 }
+
+.pd-tool {
+  @apply my-8 rounded-2xl border-2 border-accent-500/30 dark:border-accent-dark-500/40 bg-accent-100/60 dark:bg-foreground-dark p-4 md:p-6 shadow-lg;
+}
+
+.pd-tool h3,
+.pd-tool h4 {
+  @apply pt-0;
+}
+
+.pd-tool-grid {
+  @apply grid gap-4 md:grid-cols-2;
+}
+
+.pd-tool br {
+  display: none;
+}
+
+.pd-tool-field {
+  @apply flex flex-col gap-2 rounded-xl bg-white/80 dark:bg-background-dark/70 p-3;
+}
+
+.pd-tool-field label {
+  @apply text-sm font-bold text-accent-800 dark:text-accent-dark-200;
+}
+
+.pd-tool-field input[type="number"] {
+  @apply w-full rounded-lg border border-accent-300 dark:border-accent-dark-700 bg-white dark:bg-background-dark px-3 py-2 text-base dark:text-primary-dark;
+}
+
+.pd-tool-field input[type="range"] {
+  @apply w-full accent-accent-500;
+}
+
+.pd-tool-checkbox {
+  @apply flex items-center gap-3 rounded-xl bg-white/80 dark:bg-background-dark/70 p-3 text-sm font-bold text-accent-800 dark:text-accent-dark-200;
+}
+
+.pd-tool-result {
+  @apply rounded-xl bg-white dark:bg-background-dark p-4 ring-1 ring-accent-200 dark:ring-accent-dark-800;
+}
+
+.pd-tool-result-label {
+  @apply text-sm opacity-75;
+}
+
+.pd-tool-result-value {
+  @apply text-2xl font-black text-accent-500 dark:text-accent-dark-500;
+}
+
+.pd-tool-note {
+  @apply mt-4 rounded-xl border-l-4 border-accent-500 dark:border-accent-dark-500 bg-white/80 dark:bg-background-dark/80 p-4 font-bold;
+}
+
+.pd-tool-bars {
+  @apply mt-4 space-y-3;
+}
+
+.pd-tool-bar-row {
+  @apply grid gap-2;
+}
+
+.pd-tool-bar-label {
+  @apply text-sm font-bold text-accent-800 dark:text-accent-dark-200;
+}
+
+.pd-tool-bar-track {
+  @apply h-4 w-full overflow-hidden rounded-full bg-white dark:bg-background-dark ring-1 ring-accent-200 dark:ring-accent-dark-800;
+}
+
+.pd-tool-bar-fill {
+  @apply h-full rounded-full bg-accent-500 dark:bg-accent-dark-500 transition-all duration-300;
+}
+
+.pd-tool-bar-fill-danger {
+  @apply bg-red-500 dark:bg-red-400;
+}
+
+.pd-tool-bar-fill-muted {
+  @apply bg-slate-500 dark:bg-slate-300;
+}
+
+.pd-scenario-card {
+  @apply rounded-xl bg-white/80 dark:bg-background-dark/80 p-4 ring-1 ring-accent-200 dark:ring-accent-dark-800;
+}
+
+.pd-scenario-card ul {
+  @apply mb-0;
+}
+
+.pd-scenario-card li {
+  @apply my-2;
+}

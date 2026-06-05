@@ -19,6 +19,12 @@ function loadPageFeatures() {
       .catch((error) => console.error('Failed to load debt planner feature', error));
   }
 
+  if (document.querySelector('[data-pay-debt-invest]')) {
+    import(/* webpackChunkName: "pay-debt-invest" */ './features/pay-debt-invest')
+      .then(({ initPayDebtInvestTool }) => initPayDebtInvestTool())
+      .catch((error) => console.error('Failed to load pay debt vs invest feature', error));
+  }
+
   if (document.querySelector('.newsletter-cta')) {
     import(/* webpackChunkName: "newsletter-observer" */ './features/newsletter-observer')
       .then(({ initNewsletterObserver }) => initNewsletterObserver())
