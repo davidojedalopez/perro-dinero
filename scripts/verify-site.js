@@ -201,11 +201,13 @@ assertExists('_site/api/indicadores_economicos.json');
 assertExists('_site/posts/cetes/index.html');
 assertExists('_site/posts/rendimientos-en-cetes/index.html');
 assertExists('_site/herramientas/index.html');
+assertExists('_site/herramientas/calculadora-afore-ahorro-voluntario/index.html');
 assertExists('_site/portafolio/index.html');
 const hashedMainCssFiles = assertSingleFileMatch('assets', /^main\.[a-f0-9]{8,}\.css$/, 'hashed main CSS');
 const hashedMainJsFiles = assertSingleFileMatch('assets', /^main\.[a-f0-9]{8,}\.js$/, 'hashed main JS');
 const annotationChunkFiles = assertSingleFileMatch('assets', /^annotations\.[a-f0-9]{8,}\.js$/, 'lazy annotations JS chunk');
 const debtPlannerChunkFiles = assertSingleFileMatch('assets', /^debt-planner\.[a-f0-9]{8,}\.js$/, 'lazy debt planner JS chunk');
+const aforeVoluntarySavingsChunkFiles = assertSingleFileMatch('assets', /^afore-voluntary-savings\.[a-f0-9]{8,}\.js$/, 'lazy AFORE voluntary savings JS chunk');
 const newsletterObserverChunkFiles = assertSingleFileMatch('assets', /^newsletter-observer\.[a-f0-9]{8,}\.js$/, 'lazy newsletter observer JS chunk');
 assertExists('_site/assets/manifest.json');
 assertExists('_site/service-worker.js');
@@ -219,7 +221,7 @@ if (mainJs && fs.statSync(mainJsPath).size < 14 * 1024) {
   fail('initial main JS bundle should stay under 14 KB after lazy-loading page features');
 }
 
-for (const forbidden of ['rough-notation', 'Tarjeta de crédito (tasa alta)', 'simulatePlan', 'newsletter-cta-iframe']) {
+for (const forbidden of ['rough-notation', 'Tarjeta de crédito (tasa alta)', 'simulatePlan', 'newsletter-cta-iframe', 'calculateAforeVoluntarySavings', 'AforeWeb / CONSAR']) {
   if (mainJs.includes(forbidden)) {
     fail(`initial main JS bundle should not eagerly include page feature code: ${forbidden}`);
   } else {
@@ -254,6 +256,16 @@ if (annotationChunk.includes('annotated') && /rough|annotation/i.test(annotation
   fail('annotations chunk should contain the rough notation implementation');
 }
 
+
+const aforeVoluntarySavingsChunk = aforeVoluntarySavingsChunkFiles[0]
+  ? fs.readFileSync(path.join(site, 'assets', aforeVoluntarySavingsChunkFiles[0]), 'utf8')
+  : '';
+if (aforeVoluntarySavingsChunk.includes('AforeWeb / CONSAR') && aforeVoluntarySavingsChunk.includes('social_quota_not_modeled') && aforeVoluntarySavingsChunk.includes('aportación voluntaria necesaria')) {
+  pass('AFORE voluntary savings calculator code is emitted in the AFORE lazy chunk');
+} else {
+  fail('AFORE lazy chunk should contain the calculator implementation and source metadata');
+}
+
 for (const relPath of ['_site/assets/main.css', '_site/assets/main.js']) {
   if (fs.existsSync(path.join(root, relPath))) {
     fail(`${relPath} should not exist; main CSS/JS should be content-hashed`);
@@ -265,6 +277,24 @@ for (const relPath of ['_site/assets/main.css', '_site/assets/main.js']) {
 const indexHtml = fs.existsSync(path.join(site, 'index.html'))
   ? fs.readFileSync(path.join(site, 'index.html'), 'utf8')
   : '';
+const aforeCalculatorHtml = fs.existsSync(path.join(site, 'herramientas/calculadora-afore-ahorro-voluntario/index.html'))
+  ? fs.readFileSync(path.join(site, 'herramientas/calculadora-afore-ahorro-voluntario/index.html'), 'utf8')
+  : '';
+if (aforeCalculatorHtml.includes('data-afore-voluntary-savings')
+  && aforeCalculatorHtml.includes('Calculadora AFORE: ahorro voluntario mensual necesario')
+  && aforeCalculatorHtml.includes('Supuestos y fuentes')
+  && aforeCalculatorHtml.includes('INEGI UMA')
+  && aforeCalculatorHtml.includes('Ley del Seguro Social')
+  && aforeCalculatorHtml.includes('Estimación educativa')) {
+  pass('AFORE calculator generated HTML includes calculator shell, source attribution, assumptions, and disclaimer');
+} else {
+  fail('AFORE calculator generated HTML should include calculator shell, source attribution, assumptions, and disclaimer');
+}
+if (aforeCalculatorHtml.includes('/herramientas/calculadora-afore-ahorro-voluntario/') && aforeCalculatorHtml.includes('ahorro voluntario')) {
+  pass('AFORE calculator has route metadata in generated HTML');
+} else {
+  fail('AFORE calculator should have route metadata in generated HTML');
+}
 for (const file of [...hashedMainCssFiles, ...hashedMainJsFiles]) {
   if (indexHtml.includes(`/assets/${file}`)) {
     pass(`index.html references /assets/${file}`);

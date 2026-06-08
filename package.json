@@ -14,6 +14,7 @@
     "build:webpack": "webpack --mode production",
     "build:eleventy": "eleventy",
     "build": "run-s clean build:*",
+    "test:calculators": "node --test scripts/calculators/**/*.test.mjs",
     "debug": "DEBUG=* eleventy",
     "convert-gifs": "for i in img/posts/*.gif; do ffmpeg -i \"$i\" -b:v 0 -crf 25 -vcodec libx264 -pix_fmt yuv420p \"${i%.*}.mp4\" -y; ffmpeg -i \"$i\" -c vp9 -b:v 0 -crf 41 \"${i%.*}.webm\" -y; done",
     "update-portfolio": "./scripts/updatePortfolio.js",
@@ -22,7 +23,7 @@
     "verify:deps": "node scripts/verify-dependencies.js",
     "verify:eleventy": "node scripts/verify-eleventy-config.js",
     "verify:links": "node scripts/verify-links.js",
-    "verify": "npm run build && npm run verify:site && npm run verify:ci && npm run verify:deps && npm run verify:eleventy && npm run verify:links"
+    "verify": "npm run build && npm run test:calculators && npm run verify:site && npm run verify:ci && npm run verify:deps && npm run verify:eleventy && npm run verify:links"
   },
   "repository": {
     "type": "git",

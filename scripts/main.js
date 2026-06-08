@@ -19,6 +19,13 @@ function loadPageFeatures() {
       .catch((error) => console.error('Failed to load debt planner feature', error));
   }
 
+
+  if (document.querySelector('[data-afore-voluntary-savings]')) {
+    import(/* webpackChunkName: "afore-voluntary-savings" */ './features/calculators/afore-voluntary-savings')
+      .then(({ initAforeVoluntarySavingsCalculator }) => initAforeVoluntarySavingsCalculator())
+      .catch((error) => console.error('Failed to load AFORE voluntary savings calculator feature', error));
+  }
+
   if (document.querySelector('.newsletter-cta')) {
     import(/* webpackChunkName: "newsletter-observer" */ './features/newsletter-observer')
       .then(({ initNewsletterObserver }) => initNewsletterObserver())
