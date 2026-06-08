@@ -1,0 +1,194 @@
+---
+layout: layouts/base.njk
+title: Calculadora rentar vs comprar casa en México | Perro Dinero
+description: "Compara rentar vs comprar casa en México con hipoteca, enganche, gastos de compra, mantenimiento, plusvalía, renta y costo de oportunidad."
+cover_path: img/perro_dinero.png
+---
+
+<article class="py-8 space-y-10" data-rent-vs-buy-mx>
+  <script type="application/json" data-rent-vs-buy-defaults>
+    {
+      "purchasePrice": 3000000,
+      "currentMonthlyRent": 15000,
+      "downPaymentPct": 20,
+      "mortgageTermYears": 20,
+      "mortgageNominalAnnualRatePct": 10.5,
+      "catPct": 13.1,
+      "closingCostPct": 6,
+      "ownerAnnualTaxInsurancePct": 0.3,
+      "maintenanceAnnualPct": 1,
+      "homeAppreciationAnnualPct": 4,
+      "rentGrowthAnnualPct": 5,
+      "opportunityReturnAnnualPct": 8,
+      "sellingCostPct": 4,
+      "comparisonHorizonYears": 10
+    }
+  </script>
+
+  <header class="space-y-4">
+    <p class="money-tool-kicker text-accent-700 dark:text-accent-dark-600">Herramientas · Vivienda México</p>
+    <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">Calculadora rentar vs comprar casa en México</h1>
+    <p class="text-xl text-accent-700 dark:text-accent-dark-600">
+      Compara una hipoteca contra seguir rentando e invertir la diferencia. Mete precio, renta, enganche y tus supuestos. La respuesta aburrida: depende. La respuesta útil: depende de estos números.
+    </p>
+    <p class="rounded-xl border border-accent-200/70 bg-accent-50 p-4 text-sm font-bold text-accent-800 dark:border-foreground-dark/80 dark:bg-foreground-dark dark:text-accent-dark-200">
+      Herramienta educativa. No sustituye una oferta vinculante del banco, cotización de notaría, avalúo, revisión legal/fiscal ni due diligence de la propiedad.
+    </p>
+  </header>
+
+  <section class="money-tool space-y-6">
+    <div class="space-y-2">
+      <h2 class="pt-0 text-2xl font-black text-primary dark:text-primary-dark">Haz la comparación</h2>
+      <p class="text-accent-700 dark:text-accent-dark-600">En 2 minutos vas a ver qué escenario termina con más patrimonio estimado y qué supuesto está moviendo más el resultado. No guardamos tus datos; todo corre en tu navegador.</p>
+      <noscript>
+        <p class="rounded-xl border border-red-300 bg-red-50 p-4 text-red-900">No pudimos cargar la calculadora porque tu navegador no está ejecutando JavaScript. Actívalo o recarga la página para usarla.</p>
+      </noscript>
+    </div>
+
+    <div class="grid gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(320px,0.9fr)]">
+      <form class="space-y-5" action="#" onsubmit="return false;">
+        <fieldset class="space-y-4">
+          <legend class="text-lg font-black text-accent-900 dark:text-primary-dark">Lo mínimo para empezar</legend>
+          <div class="money-tool-grid">
+            <div class="money-tool-field">
+              <label for="rvb-purchase-price">Precio de la vivienda</label>
+              <input id="rvb-purchase-price" data-rvb-input name="purchasePrice" type="number" inputmode="decimal" min="1" step="10000" aria-describedby="rvb-purchase-price-help rvb-purchase-price-error" />
+              <p id="rvb-purchase-price-help" class="text-sm text-accent-700 dark:text-accent-dark-600">El precio de compra que estás considerando.</p>
+              <p id="rvb-purchase-price-error" data-error-for="purchasePrice" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field">
+              <label for="rvb-rent">Renta mensual actual</label>
+              <input id="rvb-rent" data-rvb-input name="currentMonthlyRent" type="number" inputmode="decimal" min="0" step="500" aria-describedby="rvb-rent-help rvb-rent-error" />
+              <p id="rvb-rent-help" class="text-sm text-accent-700 dark:text-accent-dark-600">Lo que pagas hoy o pagarías por una vivienda parecida.</p>
+              <p id="rvb-rent-error" data-error-for="currentMonthlyRent" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field">
+              <label for="rvb-down-payment">Enganche (%)</label>
+              <input id="rvb-down-payment" data-rvb-input name="downPaymentPct" type="number" inputmode="decimal" min="0" max="95" step="0.5" aria-describedby="rvb-down-payment-help rvb-down-payment-preview rvb-down-payment-error" />
+              <p id="rvb-down-payment-help" class="text-sm text-accent-700 dark:text-accent-dark-600">Dinero de entrada. También es dinero que podrías invertir si rentas.</p>
+              <p id="rvb-down-payment-preview" data-down-payment-preview class="text-sm font-bold text-accent-800 dark:text-primary-dark"></p>
+              <p id="rvb-down-payment-error" data-error-for="downPaymentPct" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field">
+              <label for="rvb-rate">Tasa anual de la hipoteca (%)</label>
+              <input id="rvb-rate" data-rvb-input name="mortgageNominalAnnualRatePct" type="number" inputmode="decimal" min="0" max="30" step="0.1" aria-describedby="rvb-rate-help rvb-rate-error" />
+              <p id="rvb-rate-help" class="text-sm text-accent-700 dark:text-accent-dark-600">Usamos esta tasa nominal para calcular la mensualidad. Referencia Banxico RIB vivienda; no es oferta bancaria.</p>
+              <p id="rvb-rate-error" data-error-for="mortgageNominalAnnualRatePct" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field">
+              <label for="rvb-term">Plazo de la hipoteca (años)</label>
+              <input id="rvb-term" data-rvb-input name="mortgageTermYears" type="number" inputmode="numeric" min="1" max="30" step="1" aria-describedby="rvb-term-help rvb-term-error" />
+              <p id="rvb-term-help" class="text-sm text-accent-700 dark:text-accent-dark-600">Si el horizonte es más largo que el plazo, la calculadora deja de cobrar mensualidad tras liquidar.</p>
+              <p id="rvb-term-error" data-error-for="mortgageTermYears" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field">
+              <label for="rvb-closing">Gastos de compra / escrituración (%)</label>
+              <input id="rvb-closing" data-rvb-input name="closingCostPct" type="number" inputmode="decimal" min="0" max="25" step="0.1" aria-describedby="rvb-closing-help rvb-closing-preview rvb-closing-error" />
+              <p id="rvb-closing-help" class="text-sm text-accent-700 dark:text-accent-dark-600">Estimación de ISAI, notaría, registro, avalúo y otros gastos. Varía por estado y operación.</p>
+              <p id="rvb-closing-preview" data-closing-preview class="text-sm font-bold text-accent-800 dark:text-primary-dark"></p>
+              <p id="rvb-closing-error" data-error-for="closingCostPct" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field md:col-span-2">
+              <label for="rvb-horizon">Horizonte de comparación (años)</label>
+              <input id="rvb-horizon" data-rvb-input name="comparisonHorizonYears" type="number" inputmode="numeric" min="1" max="40" step="1" aria-describedby="rvb-horizon-help rvb-horizon-error" />
+              <p id="rvb-horizon-help" class="text-sm text-accent-700 dark:text-accent-dark-600">¿En cuántos años quieres comparar tu patrimonio? Mientras más largo el plazo, más pesan tus supuestos.</p>
+              <p id="rvb-horizon-error" data-error-for="comparisonHorizonYears" class="hidden text-sm font-bold"></p>
+            </div>
+          </div>
+        </fieldset>
+
+        <details class="money-tool-result" open>
+          <summary class="cursor-pointer text-lg font-black text-accent-900 dark:text-primary-dark">Cambiar supuestos avanzados</summary>
+          <p class="mt-3 text-sm text-accent-700 dark:text-accent-dark-600">Aquí vive la parte incómoda: nadie sabe el futuro. Estos supuestos no son predicciones; son perillas para probar escenarios.</p>
+          <div class="money-pill-list my-4">
+            <button type="button" data-rvb-scenario="conservative" class="rounded-full bg-white px-3 py-2 text-sm font-bold text-accent-800 ring-1 ring-accent-200 hover:bg-accent-50 dark:bg-background-dark dark:text-accent-dark-200 dark:ring-primary-dark">Conservador</button>
+            <button type="button" data-rvb-scenario="base" class="rounded-full bg-white px-3 py-2 text-sm font-bold text-accent-800 ring-1 ring-accent-200 hover:bg-accent-50 dark:bg-background-dark dark:text-accent-dark-200 dark:ring-primary-dark">Base</button>
+            <button type="button" data-rvb-scenario="high" class="rounded-full bg-white px-3 py-2 text-sm font-bold text-accent-800 ring-1 ring-accent-200 hover:bg-accent-50 dark:bg-background-dark dark:text-accent-dark-200 dark:ring-primary-dark">Alto</button>
+          </div>
+          <div class="money-tool-grid">
+            <div class="money-tool-field">
+              <label for="rvb-rent-growth">Aumento anual esperado de la renta (%)</label>
+              <input id="rvb-rent-growth" data-rvb-input name="rentGrowthAnnualPct" type="number" inputmode="decimal" min="-20" max="50" step="0.1" aria-describedby="rvb-rent-growth-error" />
+              <p data-error-for="rentGrowthAnnualPct" id="rvb-rent-growth-error" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field">
+              <label for="rvb-appreciation">Apreciación anual de la vivienda (%)</label>
+              <input id="rvb-appreciation" data-rvb-input name="homeAppreciationAnnualPct" type="number" inputmode="decimal" min="-20" max="50" step="0.1" aria-describedby="rvb-appreciation-error" />
+              <p data-error-for="homeAppreciationAnnualPct" id="rvb-appreciation-error" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field">
+              <label for="rvb-opportunity">Rendimiento anual de invertir la diferencia (%)</label>
+              <input id="rvb-opportunity" data-rvb-input name="opportunityReturnAnnualPct" type="number" inputmode="decimal" min="-20" max="50" step="0.1" aria-describedby="rvb-opportunity-error" />
+              <p class="text-sm text-accent-700 dark:text-accent-dark-600">Puedes usar CETES como referencia editable; no promete rendimientos futuros.</p>
+              <p data-error-for="opportunityReturnAnnualPct" id="rvb-opportunity-error" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field">
+              <label for="rvb-maintenance">Mantenimiento anual estimado (%)</label>
+              <input id="rvb-maintenance" data-rvb-input name="maintenanceAnnualPct" type="number" inputmode="decimal" min="0" max="25" step="0.1" aria-describedby="rvb-maintenance-error" />
+              <p data-error-for="maintenanceAnnualPct" id="rvb-maintenance-error" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field">
+              <label for="rvb-tax-insurance">Predial, seguro y cuotas anuales (%)</label>
+              <input id="rvb-tax-insurance" data-rvb-input name="ownerAnnualTaxInsurancePct" type="number" inputmode="decimal" min="0" max="25" step="0.1" aria-describedby="rvb-tax-insurance-error" />
+              <p class="text-sm text-accent-700 dark:text-accent-dark-600">Estimación sobre valor de vivienda; el predial real depende del municipio y valor catastral.</p>
+              <p data-error-for="ownerAnnualTaxInsurancePct" id="rvb-tax-insurance-error" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field">
+              <label for="rvb-selling">Costo estimado de venta (%)</label>
+              <input id="rvb-selling" data-rvb-input name="sellingCostPct" type="number" inputmode="decimal" min="0" max="25" step="0.1" aria-describedby="rvb-selling-error" />
+              <p data-error-for="sellingCostPct" id="rvb-selling-error" class="hidden text-sm font-bold"></p>
+            </div>
+            <div class="money-tool-field md:col-span-2">
+              <label for="rvb-cat">CAT del crédito (opcional)</label>
+              <input id="rvb-cat" data-rvb-input name="catPct" type="number" inputmode="decimal" min="0" max="100" step="0.1" aria-describedby="rvb-cat-help rvb-cat-error" />
+              <p id="rvb-cat-help" class="text-sm text-accent-700 dark:text-accent-dark-600">No lo usamos para calcular tu mensualidad; sirve para comparar créditos cuando no modelamos comisiones, seguros y otros costos.</p>
+              <p id="rvb-cat-error" data-error-for="catPct" class="hidden text-sm font-bold"></p>
+            </div>
+          </div>
+        </details>
+
+        <button data-rvb-calculate type="button" class="rounded-md bg-green-600 px-5 py-3 text-sm font-black text-white hover:bg-green-700">Comparar mi escenario</button>
+      </form>
+
+      <aside class="space-y-5 xl:sticky xl:top-6 xl:self-start">
+        <div data-rvb-output class="rounded-2xl border border-accent-200/60 bg-white p-5 text-accent-700 dark:border-foreground-dark/80 dark:bg-background-dark dark:text-accent-dark-600" aria-live="polite">
+          <p class="money-tool-kicker">Cargando calculadora…</p>
+          <p>Si esto no cambia, intenta recargar la página.</p>
+        </div>
+        <div class="money-tool-result space-y-3">
+          <p class="money-tool-kicker">Copiar resumen</p>
+          <textarea data-rvb-summary readonly class="h-32 w-full rounded-lg border border-accent-200 bg-white p-3 text-sm dark:border-primary-dark dark:bg-background-dark dark:text-primary-dark"></textarea>
+          <button data-copy-rvb-summary type="button" class="rounded-md border border-accent-300 bg-white px-4 py-2 text-sm font-bold text-accent-800 hover:bg-accent-50 dark:border-primary-dark dark:bg-background-dark dark:text-primary-dark">Copiar resumen</button>
+          <p data-copy-status class="text-sm font-bold text-accent-700 dark:text-accent-dark-600" aria-live="polite"></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="money-tool-result space-y-4">
+    <h2>Supuestos y fuentes</h2>
+    <p>Esta herramienta usa supuestos editables. Algunos vienen de fuentes oficiales como referencia; otros son reglas de dedo porque tu banco, notaría, estado, colonia y edificio pueden cambiar mucho la historia.</p>
+    <ul class="space-y-2">
+      <li><strong>Tasa hipotecaria de referencia:</strong> Banxico, Reporte de Indicadores Básicos de créditos a la vivienda, dato de mercado rezagado a marzo de 2024; no es oferta bancaria.</li>
+      <li><strong>CAT:</strong> Banxico explica el Costo Anual Total como medida para comparar créditos. Aquí es informativo y no mueve la amortización.</li>
+      <li><strong>CETES / rendimiento de oportunidad:</strong> Banxico SIE puede servir como referencia editable en pesos, no como promesa de rendimiento futuro.</li>
+      <li><strong>Vivienda / plusvalía:</strong> SHF publica índices de precios de vivienda; tu ciudad, colonia y tipo de vivienda pueden variar muchísimo.</li>
+      <li><strong>ISAI, predial y notaría:</strong> dependen de leyes locales, municipio, notaría y operación. Si no tienes cotización, usa el porcentaje manual como estimado.</li>
+    </ul>
+    <p class="rounded-xl border-l-4 border-accent-500 bg-white/85 p-4 font-bold text-accent-800 dark:bg-background-dark/85 dark:text-accent-dark-200">Esto no es asesoría legal, fiscal, hipotecaria ni de inversión. Antes de comprar, pide una corrida formal al banco, cotiza notaría, revisa impuestos locales, avalúo, título, régimen de condominio, permisos y cualquier bronca legal que no quieres descubrir después de firmar.</p>
+  </section>
+
+  <section class="space-y-4">
+    <h2>Qué compara esta calculadora</h2>
+    <p>Comprar casa no es automáticamente “invertir” y rentar no es automáticamente “tirar dinero”. La calculadora compara dos patrimonios al final de un horizonte: si compras, valor estimado de la vivienda menos deuda pendiente y costo de venta; si rentas, el dinero inicial que no usaste para comprar más la diferencia mensual invertida o consumida.</p>
+
+    <h2>Supuestos que más cambian el resultado</h2>
+    <p>Los grandes sospechosos son plusvalía, aumentos de renta, rendimiento de invertir la diferencia, tasa hipotecaria y costos de compra/venta. Si cambias 1 o 2 puntos y la respuesta se voltea, la señal no es que la calculadora falle: tienes un escenario sensible.</p>
+
+    <h2>Por qué CAT no es lo mismo que tasa de amortización</h2>
+    <p>La mensualidad se calcula con la tasa nominal de la hipoteca. El CAT sirve para comparar créditos porque incluye otros costos, pero si lo metemos como tasa podemos contar dos veces comisiones o seguros.</p>
+
+    <h2>Limitaciones: notaría, ISAI, predial y banco</h2>
+    <p>Los gastos de comprar vivienda en México pueden cambiar por estado, municipio, valor catastral, banco, notaría y tipo de operación. Por eso esta versión usa porcentajes editables y fuentes visibles en lugar de prometer precisión nacional falsa.</p>
+  </section>
+</article>

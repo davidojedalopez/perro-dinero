@@ -19,6 +19,12 @@ function loadPageFeatures() {
       .catch((error) => console.error('Failed to load debt planner feature', error));
   }
 
+  if (document.querySelector('[data-rent-vs-buy-mx]')) {
+    import(/* webpackChunkName: "rent-vs-buy-mx" */ './features/calculators/rent-vs-buy')
+      .then(({ initRentVsBuyMexico }) => initRentVsBuyMexico())
+      .catch((error) => console.error('Failed to load rent vs buy México calculator', error));
+  }
+
   if (document.querySelector('.newsletter-cta')) {
     import(/* webpackChunkName: "newsletter-observer" */ './features/newsletter-observer')
       .then(({ initNewsletterObserver }) => initNewsletterObserver())

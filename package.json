@@ -22,7 +22,9 @@
     "verify:deps": "node scripts/verify-dependencies.js",
     "verify:eleventy": "node scripts/verify-eleventy-config.js",
     "verify:links": "node scripts/verify-links.js",
-    "verify": "npm run build && npm run verify:site && npm run verify:ci && npm run verify:deps && npm run verify:eleventy && npm run verify:links"
+    "test:calculators": "node --test scripts/calculators/**/*.test.mjs",
+    "verify:calculators": "npm run test:calculators",
+    "verify": "npm run build && npm run verify:calculators && npm run verify:site && npm run verify:ci && npm run verify:deps && npm run verify:eleventy && npm run verify:links"
   },
   "repository": {
     "type": "git",
