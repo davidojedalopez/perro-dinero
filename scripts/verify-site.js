@@ -201,11 +201,13 @@ assertExists('_site/api/indicadores_economicos.json');
 assertExists('_site/posts/cetes/index.html');
 assertExists('_site/posts/rendimientos-en-cetes/index.html');
 assertExists('_site/herramientas/index.html');
+assertExists('_site/calculadoras/sueldo-neto-mexico/index.html');
 assertExists('_site/portafolio/index.html');
 const hashedMainCssFiles = assertSingleFileMatch('assets', /^main\.[a-f0-9]{8,}\.css$/, 'hashed main CSS');
 const hashedMainJsFiles = assertSingleFileMatch('assets', /^main\.[a-f0-9]{8,}\.js$/, 'hashed main JS');
 const annotationChunkFiles = assertSingleFileMatch('assets', /^annotations\.[a-f0-9]{8,}\.js$/, 'lazy annotations JS chunk');
 const debtPlannerChunkFiles = assertSingleFileMatch('assets', /^debt-planner\.[a-f0-9]{8,}\.js$/, 'lazy debt planner JS chunk');
+const sueldoNetoChunkFiles = assertSingleFileMatch('assets', /^calculator-sueldo-neto\.[a-f0-9]{8,}\.js$/, 'lazy sueldo neto calculator JS chunk');
 const newsletterObserverChunkFiles = assertSingleFileMatch('assets', /^newsletter-observer\.[a-f0-9]{8,}\.js$/, 'lazy newsletter observer JS chunk');
 assertExists('_site/assets/manifest.json');
 assertExists('_site/service-worker.js');
@@ -219,7 +221,7 @@ if (mainJs && fs.statSync(mainJsPath).size < 14 * 1024) {
   fail('initial main JS bundle should stay under 14 KB after lazy-loading page features');
 }
 
-for (const forbidden of ['rough-notation', 'Tarjeta de crédito (tasa alta)', 'simulatePlan', 'newsletter-cta-iframe']) {
+for (const forbidden of ['rough-notation', 'Tarjeta de crédito (tasa alta)', 'simulatePlan', 'newsletter-cta-iframe', 'Sueldo neto estimado']) {
   if (mainJs.includes(forbidden)) {
     fail(`initial main JS bundle should not eagerly include page feature code: ${forbidden}`);
   } else {
@@ -234,6 +236,24 @@ if (debtPlannerChunk.includes('Tarjeta de crédito (tasa alta)') && debtPlannerC
   pass('debt planner code is emitted in the debt planner chunk');
 } else {
   fail('debt planner chunk should contain the debt planner implementation');
+}
+
+const sueldoNetoChunk = sueldoNetoChunkFiles[0]
+  ? fs.readFileSync(path.join(site, 'assets', sueldoNetoChunkFiles[0]), 'utf8')
+  : '';
+if (sueldoNetoChunk.includes('Sueldo neto estimado') && sueldoNetoChunk.includes('IMSS trabajador')) {
+  pass('sueldo neto calculator code is emitted in the calculator chunk');
+} else {
+  fail('sueldo neto calculator chunk should contain the calculator implementation');
+}
+
+const sueldoNetoHtml = fs.existsSync(path.join(site, 'calculadoras/sueldo-neto-mexico/index.html'))
+  ? fs.readFileSync(path.join(site, 'calculadoras/sueldo-neto-mexico/index.html'), 'utf8')
+  : '';
+if (sueldoNetoHtml.includes('data-sueldo-neto') && sueldoNetoHtml.includes('Fuentes oficiales') && sueldoNetoHtml.includes('subsidio al empleo')) {
+  pass('sueldo neto page includes calculator shell and source notes');
+} else {
+  fail('sueldo neto page should include calculator shell and source notes');
 }
 
 const newsletterObserverChunk = newsletterObserverChunkFiles[0]

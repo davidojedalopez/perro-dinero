@@ -1,0 +1,182 @@
+---
+layout: layouts/base.njk
+title: Calculadora de sueldo neto México 2026
+description: "Calcula tu sueldo neto en México con tablas 2026. Estima ISR, subsidio al empleo, cuotas IMSS y descuentos de nómina con fuentes oficiales."
+permalink: /calculadoras/sueldo-neto-mexico/
+cover_path: img/perro_dinero.png
+---
+
+<article class="py-8 space-y-8" data-sueldo-neto>
+  <header class="space-y-4">
+    <p class="inline-flex rounded-full bg-accent-100 dark:bg-foreground-dark px-3 py-1 text-sm font-black uppercase tracking-wide text-accent-700 dark:text-accent-dark-200">Con tablas 2026</p>
+    <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-4xl md:text-5xl">Calculadora de sueldo neto México 2026</h1>
+    <p class="text-lg text-accent-700 dark:text-accent-dark-600">
+      Pon tu sueldo bruto y estimamos cuánto te quedaría después de ISR, subsidio al empleo e IMSS.
+      No reemplaza tu recibo de nómina, pero sí ayuda a entender la quincena sin abrir la Ley del ISR como lectura de playa.
+    </p>
+  </header>
+
+  <section class="money-tool rounded-2xl border border-accent-200/60 dark:border-foreground-dark/60 bg-accent-50 dark:bg-foreground-dark p-5 md:p-6 space-y-6">
+    <script type="application/json" data-sueldo-neto-data>{{ mexicoFinance.sueldoNeto | dump | safe }}</script>
+
+    <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.9fr)]">
+      <form class="space-y-5" data-sueldo-neto-form novalidate>
+        <div data-error-summary class="hidden rounded-xl border border-red-200 bg-red-50 p-4 text-sm font-bold text-red-800 dark:border-red-700 dark:bg-red-950/40 dark:text-red-200" role="alert">
+          Revisa los campos marcados. Hay algo que no cuadra antes de calcular.
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <label class="space-y-2 text-sm font-bold text-accent-800 dark:text-primary-dark" for="sueldo-neto-gross">
+            Sueldo bruto
+            <input id="sueldo-neto-gross" name="gross" data-field="gross" type="text" inputmode="decimal" value="30000" placeholder="Ej. 30000" aria-describedby="sueldo-neto-gross-help sueldo-neto-gross-error" class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-3 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+            <span id="sueldo-neto-gross-help" class="block text-xs font-normal text-accent-700 dark:text-accent-dark-600">El monto antes de ISR, IMSS y otros descuentos.</span>
+            <span id="sueldo-neto-gross-error" data-error-for="gross" class="block min-h-5 text-xs text-red-700 dark:text-red-300"></span>
+          </label>
+
+          <label class="space-y-2 text-sm font-bold text-accent-800 dark:text-primary-dark" for="sueldo-neto-frequency">
+            Frecuencia de pago
+            <select id="sueldo-neto-frequency" name="frequency" data-field="frequency" aria-describedby="sueldo-neto-frequency-help" class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-3 text-base font-normal text-accent-900 dark:text-accent-dark-200">
+              <option value="monthly">Mensual</option>
+              <option value="biweekly">Quincenal</option>
+              <option value="decenal">Decenal</option>
+              <option value="weekly">Semanal</option>
+            </select>
+            <span id="sueldo-neto-frequency-help" class="block text-xs font-normal text-accent-700 dark:text-accent-dark-600">Elige cómo te pagan ese bruto. No mezcles sueldo mensual con frecuencia quincenal.</span>
+          </label>
+
+          <label class="space-y-2 text-sm font-bold text-accent-800 dark:text-primary-dark" for="sueldo-neto-month">
+            Mes del cálculo
+            <select id="sueldo-neto-month" name="month" data-field="month" aria-describedby="sueldo-neto-month-help" class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-3 text-base font-normal text-accent-900 dark:text-accent-dark-200">
+              <option value="1">Enero 2026</option>
+              <option value="6" selected>Febrero-diciembre 2026</option>
+            </select>
+            <span id="sueldo-neto-month-help" class="block text-xs font-normal text-accent-700 dark:text-accent-dark-600">Importa porque enero 2026 tiene una regla transitoria de subsidio.</span>
+          </label>
+
+          <label class="space-y-2 text-sm font-bold text-accent-800 dark:text-primary-dark" for="sueldo-neto-zone">
+            Zona de salario mínimo
+            <select id="sueldo-neto-zone" name="zone" data-field="zone" aria-describedby="sueldo-neto-zone-help" class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-3 text-base font-normal text-accent-900 dark:text-accent-dark-200">
+              <option value="general">Zona general</option>
+              <option value="border">Zona Libre de la Frontera Norte</option>
+            </select>
+            <span id="sueldo-neto-zone-help" class="block text-xs font-normal text-accent-700 dark:text-accent-dark-600">Usa la zona donde está registrado el trabajo para salario mínimo.</span>
+          </label>
+
+          <label class="flex items-center gap-3 rounded-xl bg-white/85 dark:bg-background-dark/75 p-3 text-sm font-bold text-accent-800 dark:text-primary-dark sm:col-span-2">
+            <input name="imss" data-field="imss" type="checkbox" checked class="h-5 w-5 rounded border-accent-300 text-accent-500" />
+            <span>
+              Cotizo en IMSS
+              <span class="block text-xs font-normal text-accent-700 dark:text-accent-dark-600">Déjalo prendido si estás en nómina formal.</span>
+            </span>
+          </label>
+
+          <label class="space-y-2 text-sm font-bold text-accent-800 dark:text-primary-dark sm:col-span-2" for="sueldo-neto-other-deductions">
+            Otros descuentos de nómina
+            <input id="sueldo-neto-other-deductions" name="otherDeductions" data-field="otherDeductions" type="text" inputmode="decimal" value="0" placeholder="Ej. 1500" aria-describedby="sueldo-neto-other-deductions-help sueldo-neto-other-deductions-error" class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-3 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+            <span id="sueldo-neto-other-deductions-help" class="block text-xs font-normal text-accent-700 dark:text-accent-dark-600">Infonavit, Fonacot, caja de ahorro, préstamo, sindicato u otros descuentos. No metas ISR ni IMSS aquí.</span>
+            <span id="sueldo-neto-other-deductions-error" data-error-for="otherDeductions" class="block min-h-5 text-xs text-red-700 dark:text-red-300"></span>
+          </label>
+        </div>
+
+        <details class="w-full max-w-none rounded-xl border border-accent-200 dark:border-foreground-dark bg-white/70 dark:bg-background-dark/70 p-4">
+          <summary>Datos finos de nómina, si los tienes</summary>
+          <p class="text-sm text-accent-700 dark:text-accent-dark-600">Si no sabes esto, no pasa nada. Usamos prestaciones mínimas de ley para estimar el SBC.</p>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <label class="space-y-2 text-sm font-bold text-accent-800 dark:text-primary-dark" for="sueldo-neto-sbc">
+              SBC diario conocido
+              <input id="sueldo-neto-sbc" name="sbc" data-field="sbc" type="text" inputmode="decimal" placeholder="Opcional" aria-describedby="sueldo-neto-sbc-help sueldo-neto-sbc-error" class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-3 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+              <span id="sueldo-neto-sbc-help" class="block text-xs font-normal text-accent-700 dark:text-accent-dark-600">Si aparece en tu recibo o reporte del IMSS, ponlo aquí.</span>
+              <span id="sueldo-neto-sbc-error" data-error-for="sbc" class="block min-h-5 text-xs text-red-700 dark:text-red-300"></span>
+            </label>
+            <label class="space-y-2 text-sm font-bold text-accent-800 dark:text-primary-dark" for="sueldo-neto-aguinaldo">
+              Días de aguinaldo
+              <input id="sueldo-neto-aguinaldo" name="aguinaldoDays" data-field="aguinaldoDays" type="number" min="0" step="1" value="15" class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-3 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+            </label>
+            <label class="space-y-2 text-sm font-bold text-accent-800 dark:text-primary-dark" for="sueldo-neto-vacation">
+              Días de vacaciones
+              <input id="sueldo-neto-vacation" name="vacationDays" data-field="vacationDays" type="number" min="0" step="1" value="12" class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-3 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+            </label>
+            <label class="space-y-2 text-sm font-bold text-accent-800 dark:text-primary-dark" for="sueldo-neto-premium">
+              Prima vacacional (%)
+              <input id="sueldo-neto-premium" name="vacationPremium" data-field="vacationPremium" type="number" min="0" step="0.01" value="25" class="w-full rounded-md border border-accent-200/80 dark:border-foreground-dark/80 bg-white dark:bg-background-dark px-3 py-3 text-base font-normal text-accent-900 dark:text-accent-dark-200" />
+            </label>
+          </div>
+        </details>
+      </form>
+
+      <section class="rounded-xl bg-white dark:bg-background-dark p-5 ring-1 ring-accent-200 dark:ring-primary-dark space-y-4" aria-live="polite" aria-atomic="true" data-result-panel>
+        <div class="flex items-center justify-between gap-3">
+          <p class="text-sm font-bold uppercase tracking-wide text-accent-700 dark:text-accent-dark-600">Neto estimado</p>
+          <span class="rounded-full bg-accent-100 dark:bg-foreground-dark px-3 py-1 text-xs font-black uppercase tracking-wide text-accent-700 dark:text-accent-dark-200">Con tablas 2026</span>
+        </div>
+        <p data-result-net class="text-4xl font-black text-accent-500 dark:text-accent-dark-500">$0.00</p>
+        <p data-result-summary class="text-sm text-accent-700 dark:text-accent-dark-600">Ejemplo con $30,000 brutos mensuales. Cambia los datos y el resultado se actualiza.</p>
+        <dl class="grid gap-3 sm:grid-cols-2" data-result-metrics>
+          <div class="rounded-lg bg-accent-50 dark:bg-foreground-dark p-3"><dt class="text-xs font-bold uppercase opacity-70">Retención efectiva</dt><dd data-result-effective class="text-lg font-black text-accent-900 dark:text-accent-dark-200">0%</dd></div>
+          <div class="rounded-lg bg-accent-50 dark:bg-foreground-dark p-3"><dt class="text-xs font-bold uppercase opacity-70">ISR estimado</dt><dd data-result-isr class="text-lg font-black text-accent-900 dark:text-accent-dark-200">$0.00</dd></div>
+          <div class="rounded-lg bg-accent-50 dark:bg-foreground-dark p-3"><dt class="text-xs font-bold uppercase opacity-70">Subsidio aplicado</dt><dd data-result-subsidy class="text-lg font-black text-accent-900 dark:text-accent-dark-200">$0.00</dd></div>
+          <div class="rounded-lg bg-accent-50 dark:bg-foreground-dark p-3"><dt class="text-xs font-bold uppercase opacity-70">IMSS trabajador</dt><dd data-result-imss class="text-lg font-black text-accent-900 dark:text-accent-dark-200">$0.00</dd></div>
+        </dl>
+        <div data-warnings class="space-y-2"></div>
+        <button type="button" data-copy-summary class="rounded-lg border border-accent-300 dark:border-primary-dark bg-white dark:bg-background-dark px-3 py-2 text-sm font-bold text-accent-800 dark:text-primary-dark hover:bg-accent-100 dark:hover:bg-foreground-dark focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent-500">Copiar resumen</button>
+        <p data-copy-status class="min-h-5 text-sm font-bold text-accent-700 dark:text-accent-dark-600"></p>
+      </section>
+    </div>
+
+    <section class="grid gap-4 lg:grid-cols-2">
+      <div class="rounded-xl bg-white/85 dark:bg-background-dark/85 p-4 ring-1 ring-accent-200 dark:ring-primary-dark">
+        <h2 class="!pt-0">¿A dónde se fue la diferencia?</h2>
+        <dl class="space-y-2 text-sm" data-breakdown></dl>
+      </div>
+      <div class="rounded-xl bg-white/85 dark:bg-background-dark/85 p-4 ring-1 ring-accent-200 dark:ring-primary-dark">
+        <h2 class="!pt-0">Supuestos usados</h2>
+        <ul class="mb-0 text-sm" data-assumptions></ul>
+      </div>
+    </section>
+
+    <details class="w-full max-w-none rounded-xl border border-accent-200 dark:border-foreground-dark bg-white/70 dark:bg-background-dark/70 p-4">
+      <summary>Ver cómo salió el cálculo</summary>
+      <dl class="grid gap-3 sm:grid-cols-2 text-sm" data-technical-detail></dl>
+    </details>
+  </section>
+
+  <section class="grid gap-4 md:grid-cols-3">
+    <div class="rounded-xl bg-accent-50 dark:bg-foreground-dark p-4">
+      <h2>ISR</h2>
+      <p>Es la retención de impuesto sobre la renta. Para sueldos se calcula con tarifas por periodo y puede bajar si aplica subsidio al empleo.</p>
+    </div>
+    <div class="rounded-xl bg-accent-50 dark:bg-foreground-dark p-4">
+      <h2>IMSS trabajador</h2>
+      <p>Es tu parte de cuotas del IMSS. La estimamos con tu SBC diario. Si tu SBC real es distinto, el resultado cambia.</p>
+    </div>
+    <div class="rounded-xl bg-accent-50 dark:bg-foreground-dark p-4">
+      <h2>SBC</h2>
+      <p>El salario base de cotización no siempre es tu sueldo dividido entre 30. Puede integrar aguinaldo, vacaciones, prima y otras prestaciones.</p>
+    </div>
+  </section>
+
+  <section class="space-y-4 rounded-2xl border border-accent-200/60 dark:border-foreground-dark/60 bg-accent-50 dark:bg-foreground-dark p-5 md:p-6">
+    <h2>Fuentes oficiales</h2>
+    <p>Para no andar adivinando, usamos fuentes oficiales y guardamos el año de las tablas. Aun así, revisa fechas: las reglas fiscales y de seguridad social pueden cambiar.</p>
+    <ul class="space-y-2">
+      {% for source in mexicoFinance.sueldoNeto.sources %}
+        <li><a href="{{ source.url }}">{{ source.name }}</a> — {{ source.publisher }}{% if source.source_date %}, {{ source.source_date }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+    <p class="rounded-xl border-l-4 border-amber-500 bg-white/85 dark:bg-background-dark/85 p-4 text-sm">
+      Nota rara, pero importante: para 2026 usamos la fórmula publicada del subsidio al empleo. El texto del DOF menciona una cifra que no empata perfecto con UMA mensual × 15.02%. Dejamos la nota visible porque inventar certeza aquí sería peor.
+    </p>
+  </section>
+
+  <section class="rounded-2xl border border-accent-200/60 dark:border-foreground-dark/60 bg-accent-50 dark:bg-foreground-dark p-5 md:p-6">
+    <h2>Lo que esta calculadora no hace</h2>
+    <p>Esta calculadora estima sueldo ordinario. No calcula aguinaldo, bonos, comisiones variables, finiquito, liquidación ni costo para la empresa.</p>
+    <p class="text-sm">
+      Esta herramienta es para entender números, no para tomarla como asesoría fiscal, legal, contable, laboral, de nómina o IMSS. No sustituye tu recibo de nómina ni la revisión de un especialista. El cálculo puede diferir por prestaciones superiores, pagos variables, ausencias, incapacidades, bonos, comisiones, vales, fondo o caja de ahorro, créditos Infonavit/Fonacot, cuotas sindicales, múltiples patrones, zona registrada, SBC real, cambios legales y políticas internas de la empresa.
+    </p>
+  </section>
+
+  <noscript>
+    <p class="rounded-xl border border-red-200 bg-red-50 p-4 text-red-800">Esta calculadora necesita JavaScript para actualizar el resultado. Las fuentes y supuestos siguen visibles abajo.</p>
+  </noscript>
+</article>

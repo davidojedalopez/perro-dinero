@@ -1,0 +1,156 @@
+{
+  "id": "sueldo-neto-mexico.2026",
+  "year": 2026,
+  "currency": "MXN",
+  "valid_from": "2026-01-01",
+  "valid_to": "2026-12-31",
+  "sources": [
+    {
+      "id": "isr-salarios.2026.anexo8",
+      "name": "Anexo 8 RMF 2026: tarifas ISR para salarios",
+      "publisher": "DOF / SAT",
+      "url": "https://www.dof.gob.mx/nota_detalle.php?codigo=5777219&fecha=28/12/2025",
+      "source_date": "2025-12-28"
+    },
+    {
+      "id": "subsidio-empleo.2026",
+      "name": "Decreto de subsidio para el empleo 2026",
+      "publisher": "DOF",
+      "url": "https://www.dof.gob.mx/nota_detalle.php?codigo=5777649&fecha=31/12/2025",
+      "source_date": "2025-12-31"
+    },
+    {
+      "id": "uma.2026",
+      "name": "UMA 2026",
+      "publisher": "INEGI",
+      "url": "https://www.inegi.org.mx/temas/uma/",
+      "source_date": "2026"
+    },
+    {
+      "id": "minimum-wage.2026",
+      "name": "Salarios mínimos generales 2026",
+      "publisher": "DOF / CONASAMI",
+      "url": "https://www.dof.gob.mx/nota_detalle.php?codigo=5775534&fecha=09/12/2025",
+      "source_date": "2025-12-09"
+    },
+    {
+      "id": "lss",
+      "name": "Ley del Seguro Social",
+      "publisher": "Cámara de Diputados",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LSS.pdf"
+    },
+    {
+      "id": "lisr",
+      "name": "Ley del ISR",
+      "publisher": "Cámara de Diputados",
+      "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf"
+    }
+  ],
+  "uma": {
+    "daily_cents": 11731,
+    "monthly_cents": 356622,
+    "annual_cents": 4279464,
+    "source_id": "uma.2026"
+  },
+  "minimum_wage": {
+    "general": {
+      "label": "Zona general",
+      "daily_cents": 31504,
+      "monthly_cents": 958247
+    },
+    "border": {
+      "label": "Zona Libre de la Frontera Norte",
+      "daily_cents": 44087,
+      "monthly_cents": 1340980
+    }
+  },
+  "subsidy": {
+    "threshold_monthly_cents": 1149266,
+    "feb_dec_percent_bps": 1502,
+    "feb_dec_formula_amount_cents": 53565,
+    "published_recital_amount_cents": 53622,
+    "january_transitory": {
+      "uma_monthly_cents": 343946,
+      "percent_bps": 1559,
+      "formula_amount_cents": 53621
+    },
+    "monthly_days_divisor": 30.4,
+    "no_cash_excess": true,
+    "source_id": "subsidio-empleo.2026"
+  },
+  "imss_worker": {
+    "source_id": "lss",
+    "sbc_cap_uma_daily_multiplier": 25,
+    "line_items": [
+      { "id": "em_excess_over_3_uma", "label": "Enfermedades y maternidad: excedente sobre 3 UMA", "basis": "daily_sbc_minus_3_uma", "rate_bps": 40 },
+      { "id": "prestaciones_dinero", "label": "Prestaciones en dinero", "basis": "daily_sbc", "rate_bps": 25 },
+      { "id": "gastos_medicos_pensionados", "label": "Gastos médicos pensionados", "basis": "daily_sbc", "rate_bps": 37.5 },
+      { "id": "invalidez_vida", "label": "Invalidez y vida", "basis": "daily_sbc", "rate_bps": 62.5 },
+      { "id": "cesantia_vejez", "label": "Cesantía en edad avanzada y vejez", "basis": "daily_sbc", "rate_bps": 112.5 }
+    ]
+  },
+  "periods": {
+    "monthly": { "label": "mes", "days": 30, "isr_table": "monthly" },
+    "biweekly": { "label": "quincena", "days": 15, "isr_table": "biweekly" },
+    "decenal": { "label": "decena", "days": 10, "isr_table": "decenal" },
+    "weekly": { "label": "semana", "days": 7, "isr_table": "weekly" }
+  },
+  "isr_tables": {
+    "weekly": [
+      [1, 19446, 0, 192],
+      [19447, 165067, 371, 640],
+      [165068, 290087, 9695, 1088],
+      [290088, 337211, 23296, 1600],
+      [337212, 403732, 30835, 1792],
+      [403733, 814275, 42756, 2136],
+      [814276, 1283408, 130445, 2352],
+      [1283409, 2450245, 240786, 3000],
+      [2450246, 3266991, 590835, 3200],
+      [3266992, 9800966, 852194, 3400],
+      [9800967, null, 3073749, 3500]
+    ],
+    "decenal": [
+      [1, 27780, 0, 192],
+      [27781, 235810, 530, 640],
+      [235811, 414410, 13850, 1088],
+      [414411, 481730, 33280, 1600],
+      [481731, 576760, 44050, 1792],
+      [576761, 1163250, 61080, 2136],
+      [1163251, 1833440, 186350, 2352],
+      [1833441, 3500350, 343980, 3000],
+      [3500351, 4667130, 844050, 3200],
+      [4667131, 14001380, 1217420, 3400],
+      [14001381, null, 4391070, 3500]
+    ],
+    "biweekly": [
+      [1, 41670, 0, 192],
+      [41671, 353715, 795, 640],
+      [353716, 621615, 20775, 1088],
+      [621616, 722595, 49920, 1600],
+      [722596, 865140, 66075, 1792],
+      [865141, 1744875, 91620, 2136],
+      [1744876, 2750160, 279525, 2352],
+      [2750161, 5250525, 515970, 3000],
+      [5250526, 7000695, 1266075, 3200],
+      [7000696, 21002070, 1826130, 3400],
+      [21002071, null, 6586605, 3500]
+    ],
+    "monthly": [
+      [1, 84459, 0, 192],
+      [84460, 716851, 1622, 640],
+      [716852, 1259802, 42095, 1088],
+      [1259803, 1464464, 101168, 1600],
+      [1464465, 1753364, 133914, 1792],
+      [1753365, 3536283, 185684, 2136],
+      [3536284, 5573668, 566516, 2352],
+      [5573669, 10641050, 1045709, 3000],
+      [10641051, 14188066, 2565923, 3200],
+      [14188067, 42564199, 3700969, 3400],
+      [42564200, null, 13348854, 3500]
+    ]
+  },
+  "notes": [
+    "La tabla ISR y las cuotas se guardan en centavos y puntos base para cálculos determinísticos.",
+    "Para febrero-diciembre 2026, la fórmula UMA mensual × 15.02% da $535.65 aunque el recital del DOF menciona $536.22; esta calculadora usa la fórmula y muestra advertencia."
+  ]
+}

@@ -19,6 +19,12 @@ function loadPageFeatures() {
       .catch((error) => console.error('Failed to load debt planner feature', error));
   }
 
+  if (document.querySelector('[data-sueldo-neto]')) {
+    import(/* webpackChunkName: "calculator-sueldo-neto" */ './features/calculators/sueldo-neto')
+      .then(({ initSueldoNetoCalculator }) => initSueldoNetoCalculator())
+      .catch((error) => console.error('Failed to load sueldo neto calculator feature', error));
+  }
+
   if (document.querySelector('.newsletter-cta')) {
     import(/* webpackChunkName: "newsletter-observer" */ './features/newsletter-observer')
       .then(({ initNewsletterObserver }) => initNewsletterObserver())

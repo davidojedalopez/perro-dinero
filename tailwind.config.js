@@ -7,6 +7,7 @@ module.exports = {
     './*.njk',
     './_includes/**/*.njk',
     './feed/**/*.njk',
+    './calculadoras/**/*.njk',
     './products/**/*.njk',
     './temas/**/*.njk',
     './posts/**/*.md',
