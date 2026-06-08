@@ -1,0 +1,10 @@
+{
+  "year": 2026,
+  "annual_rate_percent": 0.9,
+  "valid_from": "2026-01-01",
+  "valid_to": "2026-12-31",
+  "source_id": "lif-2026",
+  "source_date": "2025-11-07",
+  "retrieved_at": "2026-06-07",
+  "note": "Retención provisional anual sobre intereses conforme a Ley de Ingresos de la Federación 2026, Artículo 24. No representa impuesto final anual."
+}

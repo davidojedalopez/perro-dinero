@@ -130,10 +130,31 @@ function isExternalUrl(value, baseUrl) {
   }
 }
 
+function htmlSafeJsonStringify(value) {
+  return JSON.stringify(value)
+    .replace(/[<>&\u2028\u2029]/g, (character) => {
+      switch (character) {
+        case '<':
+          return '\\u003C';
+        case '>':
+          return '\\u003E';
+        case '&':
+          return '\\u0026';
+        case '\u2028':
+          return '\\u2028';
+        case '\u2029':
+          return '\\u2029';
+        default:
+          return character;
+      }
+    });
+}
+
 function registerFilters(eleventyConfig) {
   eleventyConfig.addFilter('readingTime', readingTimeFilter);
   eleventyConfig.addFilter('absoluteSiteUrl', normalizeSiteUrl);
   eleventyConfig.addFilter('isExternalUrl', isExternalUrl);
+  eleventyConfig.addFilter('htmlSafeJson', htmlSafeJsonStringify);
 
   eleventyConfig.addFilter('readableDate', (dateObj) => {
     if (dateObj instanceof String) {
@@ -182,6 +203,7 @@ function registerFilters(eleventyConfig) {
 module.exports = {
   contentForReadingTime,
   createThemeLookup,
+  htmlSafeJsonStringify,
   isExternalUrl,
   normalizeSiteUrl,
   normalizeThemeToken,

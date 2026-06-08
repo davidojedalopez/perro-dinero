@@ -50,6 +50,10 @@ if (filters) {
   assert(filters.normalizeSiteUrl('/posts/cetes/', 'https://perrodinero.blog') === 'https://perrodinero.blog/posts/cetes/', 'normalizeSiteUrl resolves relative URLs');
   assert(typeof filters.isExternalUrl === 'function', 'filters module exports isExternalUrl');
   assert(filters.isExternalUrl('https://example.com', 'https://perrodinero.blog') === true, 'isExternalUrl detects external URLs');
+  assert(typeof filters.htmlSafeJsonStringify === 'function', 'filters module exports htmlSafeJsonStringify');
+  const unsafeJson = filters.htmlSafeJsonStringify({ value: '</script><img src=x onerror=alert(1)> & \u2028 \u2029' });
+  assert(!unsafeJson.includes('<') && !unsafeJson.includes('>') && !unsafeJson.includes('&'), 'htmlSafeJsonStringify escapes HTML-breaking characters');
+  assert(JSON.parse(unsafeJson).value.includes('</script>'), 'htmlSafeJsonStringify preserves parsed JSON data');
 }
 
 const collections = requireIfExists('config/collections.js');

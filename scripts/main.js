@@ -19,6 +19,12 @@ function loadPageFeatures() {
       .catch((error) => console.error('Failed to load debt planner feature', error));
   }
 
+  if (document.querySelector('[data-cetes-real-return]')) {
+    import(/* webpackChunkName: "cetes-real-return" */ './features/calculators/cetes-real-return')
+      .then(({ initCetesRealReturnCalculator }) => initCetesRealReturnCalculator())
+      .catch((error) => console.error('Failed to load CETES real return calculator feature', error));
+  }
+
   if (document.querySelector('.newsletter-cta')) {
     import(/* webpackChunkName: "newsletter-observer" */ './features/newsletter-observer')
       .then(({ initNewsletterObserver }) => initNewsletterObserver())

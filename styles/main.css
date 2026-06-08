@@ -244,3 +244,151 @@ input[type="search"] {
   opacity: 1;
   visibility: visible;
 }
+
+.money-tool {
+  @apply my-8 rounded-2xl border-2 border-accent-500/25 dark:border-accent-dark-500/35 bg-accent-100/45 dark:bg-foreground-dark p-4 md:p-6 shadow-lg;
+}
+
+.money-tool h3,
+.money-tool h4 {
+  @apply pt-0;
+}
+
+.money-tool br {
+  display: none;
+}
+
+.money-tool-grid {
+  @apply grid gap-4 md:grid-cols-2;
+}
+
+.money-tool-field {
+  @apply flex flex-col gap-2 rounded-xl bg-white/85 dark:bg-background-dark/75 p-3;
+}
+
+.money-tool-field label,
+.money-tool-checkbox {
+  @apply text-sm font-bold text-accent-800 dark:text-primary-dark;
+}
+
+.money-tool-field input,
+.money-tool-field select {
+  @apply w-full rounded-lg border border-accent-300 dark:border-primary-dark bg-white dark:bg-background-dark px-3 py-2 text-base dark:text-primary-dark;
+}
+
+.money-tool-field input[type="range"] {
+  @apply accent-accent-500;
+}
+
+.money-tool-checkbox {
+  @apply flex items-center gap-3 rounded-xl bg-white/85 dark:bg-background-dark/75 p-3;
+}
+
+.money-tool-result {
+  @apply rounded-xl bg-white dark:bg-background-dark p-4 ring-1 ring-accent-200 dark:ring-primary-dark;
+}
+
+.money-tool-kicker {
+  @apply text-sm font-bold uppercase tracking-wide opacity-70;
+}
+
+.money-tool-value {
+  @apply text-2xl font-black text-accent-500 dark:text-accent-dark-500;
+}
+
+.money-tool-note {
+  @apply mt-4 rounded-xl border-l-4 border-accent-500 dark:border-accent-dark-500 bg-white/85 dark:bg-background-dark/85 p-4 font-bold;
+}
+
+.money-bars {
+  @apply mt-4 space-y-3;
+}
+
+.money-bar-row {
+  @apply grid gap-2;
+}
+
+.money-bar-label {
+  @apply text-sm font-bold text-accent-800 dark:text-primary-dark;
+}
+
+.money-bar-track {
+  @apply h-4 w-full overflow-hidden rounded-full bg-white dark:bg-background-dark ring-1 ring-accent-200 dark:ring-primary-dark;
+}
+
+.money-bar-fill {
+  @apply h-full rounded-full bg-accent-500 dark:bg-accent-dark-500 transition-all duration-300;
+}
+
+.money-bar-fill-muted {
+  @apply bg-slate-500 dark:bg-slate-300;
+}
+
+.money-bar-fill-warning {
+  @apply bg-amber-500 dark:bg-amber-300;
+}
+
+.money-static-card {
+  @apply rounded-xl bg-white/85 dark:bg-background-dark/85 p-4 ring-1 ring-accent-200 dark:ring-primary-dark;
+}
+
+.money-static-card ul {
+  @apply mb-0;
+}
+
+.money-static-card li {
+  @apply my-2;
+}
+
+.money-pill-list {
+  @apply flex flex-wrap gap-2;
+}
+
+.money-pill-list span,
+.money-tool-chip {
+  @apply rounded-full bg-accent-100 dark:bg-foreground-dark px-3 py-1 text-sm font-bold text-accent-800 dark:text-accent-dark-200;
+}
+
+.money-tool-chip {
+  @apply border border-accent-300 dark:border-accent-dark-500 hover:bg-accent-200 dark:hover:bg-background-dark focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent-500;
+}
+
+.money-tool-error {
+  @apply min-h-5 text-sm font-bold text-red-700 dark:text-red-300;
+}
+
+.money-tool-error-summary {
+  @apply rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800 dark:border-red-700 dark:bg-red-950/40 dark:text-red-200;
+}
+
+.money-tool-secondary-button {
+  @apply rounded-lg border border-accent-300 dark:border-primary-dark bg-white dark:bg-background-dark px-3 py-2 text-sm font-bold text-accent-800 dark:text-primary-dark hover:bg-accent-100 dark:hover:bg-foreground-dark focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-accent-500;
+}
+
+.money-tool-details {
+  @apply w-full max-w-none rounded-xl border border-accent-200 dark:border-foreground-dark bg-white/70 dark:bg-background-dark/70 p-4;
+}
+
+.money-tool-details summary {
+  @apply cursor-pointer font-black text-primary dark:text-primary-dark;
+}
+
+.money-breakdown-grid {
+  @apply grid gap-3 sm:grid-cols-2;
+}
+
+.money-breakdown-grid div {
+  @apply rounded-lg bg-white/85 dark:bg-background-dark/85 p-3;
+}
+
+.money-breakdown-grid dt {
+  @apply text-sm font-bold text-accent-800 dark:text-primary-dark;
+}
+
+.money-breakdown-grid dd {
+  @apply m-0 text-lg font-black text-accent-500 dark:text-accent-dark-500;
+}
+
+.money-source-note {
+  @apply rounded-lg bg-white/80 dark:bg-background-dark/80 p-3 text-sm text-accent-800 dark:text-accent-dark-200;
+}

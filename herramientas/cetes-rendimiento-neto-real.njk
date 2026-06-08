@@ -1,0 +1,184 @@
+---
+layout: layouts/base.njk
+title: Calculadora CETES rendimiento neto real
+description: Calcula cuánto podrías ganar con CETES después de retención ISR provisional e inflación. Estima rendimiento bruto, neto nominal y real con supuestos claros.
+permalink: /herramientas/cetes-rendimiento-neto-real/
+cover_path: img/perro_dinero.png
+---
+{% set cetesCalculator = mexicoFinance.calculators.cetesRealReturn %}
+
+<article class="py-8 space-y-8" data-cetes-real-return>
+  <header class="space-y-4">
+    <p class="text-sm font-black uppercase tracking-wide text-accent-500 dark:text-accent-dark-500">Herramienta</p>
+    <h1 class="text-accent-500 dark:text-accent-dark-500 font-black text-3xl leading-tight sm:text-4xl md:text-5xl break-words">Calculadora CETES: rendimiento neto y real</h1>
+    <p class="text-lg text-accent-700 dark:text-accent-dark-600">
+      Pon cuánto quieres invertir, el plazo y una inflación estimada. Te mostramos cuánto te quedaría al vencimiento,
+      cuánto se retendría de ISR y si tu rendimiento le gana a la inflación. Sin prometer magia, porque no hay lonche gratis.
+    </p>
+    <p>
+      Los CETES pueden verse sencillos: compras barato, te pagan $10 por título al vencimiento y listo. Pero falta hacer dos
+      preguntas incómodas: ¿cuánto te retienen? y ¿cuánto de esa ganancia se come la inflación?
+    </p>
+  </header>
+
+  <script type="application/json" data-cetes-data>{{ cetesCalculator | htmlSafeJson | safe }}</script>
+
+  <section class="money-tool space-y-6" aria-labelledby="cetes-tool-title">
+    <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.9fr)]">
+      <form class="space-y-4" data-cetes-form>
+        <h2 id="cetes-tool-title" class="text-2xl font-black text-primary dark:text-primary-dark">Calcula tu escenario</h2>
+
+        <fieldset class="money-tool-grid">
+          <legend class="sr-only">Datos de inversión</legend>
+
+          <div class="money-tool-field">
+            <label for="cetes-amount">Monto a invertir</label>
+            <input id="cetes-amount" data-field="amount" type="number" min="100" max="10000000" step="0.01" inputmode="decimal" value="{{ cetesCalculator.defaultAmount }}" aria-describedby="cetes-amount-help cetes-amount-error" />
+            <p id="cetes-amount-help" class="text-sm">Mínimo $100. Usa pesos mexicanos. La calculadora compra títulos completos y deja el sobrante como efectivo no invertido.</p>
+            <p id="cetes-amount-error" class="money-tool-error" data-error-for="amount" aria-live="polite"></p>
+          </div>
+
+          <div class="money-tool-field">
+            <label for="cetes-term">Plazo CETES</label>
+            <select id="cetes-term" data-field="termId" aria-describedby="cetes-term-help cetes-term-error">
+              {% for term in cetesCalculator.terms %}
+                <option value="{{ term.id }}" {% if term.id == cetesCalculator.defaultTermId %}selected{% endif %}>{{ term.label }}</option>
+              {% endfor %}
+            </select>
+            <p id="cetes-term-help" class="text-sm">Elige el plazo que quieres comparar. Mostramos los días exactos usados en el cálculo.</p>
+            <p id="cetes-term-error" class="money-tool-error" data-error-for="termId" aria-live="polite"></p>
+          </div>
+
+          <div class="money-tool-field">
+            <label for="cetes-inflation">Inflación anual estimada</label>
+            <input id="cetes-inflation" data-field="inflationAnnualPercent" type="number" step="0.01" inputmode="decimal" placeholder="Ej. 4.00" value="{{ cetesCalculator.defaultInflationAnnualPercent }}" aria-describedby="cetes-inflation-help cetes-inflation-error" />
+            <p id="cetes-inflation-help" class="text-sm">Si la dejas vacía, mostramos rendimiento neto nominal, pero no rendimiento real.</p>
+            <p id="cetes-inflation-error" class="money-tool-error" data-error-for="inflationAnnualPercent" aria-live="polite"></p>
+          </div>
+
+          <div class="money-tool-field">
+            <label for="cetes-rate">Tasa anual CETES</label>
+            <input id="cetes-rate" data-field="annualRatePercent" type="number" min="0" max="100" step="0.01" inputmode="decimal" aria-describedby="cetes-rate-help cetes-rate-error" />
+            <p id="cetes-rate-help" class="text-sm" data-rate-source></p>
+            <button type="button" class="money-tool-secondary-button" data-reset-rate>Restaurar tasa de referencia</button>
+            <p id="cetes-rate-error" class="money-tool-error" data-error-for="annualRatePercent" aria-live="polite"></p>
+          </div>
+        </fieldset>
+
+        <details class="money-tool-details">
+          <summary>Avanzado: retención ISR y supuestos</summary>
+          <div class="mt-4 money-tool-grid">
+            <div class="money-tool-field">
+              <label for="cetes-withholding">Retención ISR anual aplicable</label>
+              <input id="cetes-withholding" data-field="withholdingAnnualRatePercent" type="number" min="0" max="10" step="0.01" inputmode="decimal" value="{{ cetesCalculator.withholding.annualRatePercent }}" aria-describedby="cetes-withholding-help cetes-withholding-error" />
+              <p id="cetes-withholding-help" class="text-sm">Para {{ cetesCalculator.withholding.year }}, la LIF establece {{ cetesCalculator.withholding.annualRatePercent }}% anual. Es retención provisional, no impuesto final.</p>
+              <p id="cetes-withholding-error" class="money-tool-error" data-error-for="withholdingAnnualRatePercent" aria-live="polite"></p>
+            </div>
+            <div class="money-source-note">
+              <p class="font-bold">Supuesto fijo</p>
+              <p>La calculadora compra títulos completos de CETES con valor nominal de $10. El remanente no se invierte en BONDDIA en esta versión.</p>
+            </div>
+          </div>
+        </details>
+
+        <div class="space-y-3">
+          <p class="font-bold">Prueba estos escenarios</p>
+          <div class="flex flex-wrap gap-2">
+            <button type="button" class="money-tool-chip" data-inflation-scenario="3">Inflación baja: 3.00%</button>
+            <button type="button" class="money-tool-chip" data-inflation-scenario="4">Inflación media: 4.00%</button>
+            <button type="button" class="money-tool-chip" data-inflation-scenario="6">Inflación alta: 6.00%</button>
+          </div>
+          <p class="text-sm">No uses un solo número como verdad absoluta. Cambia la inflación y mira cuándo el resultado deja de verse tan bonito.</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <button type="submit" class="rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white hover:bg-green-700">Calcular mi rendimiento</button>
+          <button type="button" class="money-tool-secondary-button" data-copy-summary>Copiar resumen</button>
+        </div>
+        <p class="text-sm" data-copy-status aria-live="polite"></p>
+        <div class="money-tool-error-summary hidden" data-error-summary role="alert"></div>
+      </form>
+
+      <aside class="space-y-4" aria-live="polite">
+        <div class="money-tool-result space-y-3">
+          <p class="money-tool-kicker">Al vencimiento te quedarían</p>
+          <p class="money-tool-value" data-output="maturityTotal">—</p>
+          <p data-output="netInterestText">Ganancia neta estimada: —</p>
+          <p class="font-bold" data-output="realReturnText">Agrega inflación para estimar rendimiento real.</p>
+          <p class="text-xs">Estimación educativa. No es recomendación de inversión, asesoría fiscal, contable ni legal.</p>
+        </div>
+
+        <div class="grid gap-3 sm:grid-cols-2">
+          <div class="money-static-card">
+            <p class="money-tool-kicker">Interés bruto</p>
+            <p class="money-tool-value" data-output="grossInterest">—</p>
+            <p>Antes de retención.</p>
+          </div>
+          <div class="money-static-card">
+            <p class="money-tool-kicker">ISR retenido estimado</p>
+            <p class="money-tool-value" data-output="withholding">—</p>
+            <p>Retención provisional.</p>
+          </div>
+          <div class="money-static-card">
+            <p class="money-tool-kicker">Rendimiento neto nominal</p>
+            <p class="money-tool-value" data-output="netNominalReturn">—</p>
+            <p>Antes de inflación.</p>
+          </div>
+          <div class="money-static-card">
+            <p class="money-tool-kicker">Inflación del periodo</p>
+            <p class="money-tool-value" data-output="inflationPeriod">—</p>
+            <p>Escenario anual ajustado al plazo.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="money-tool-note" data-output="message">Empieza con un monto y una inflación. Con el monto y el plazo ya podemos estimar interés neto; con inflación, poder de compra.</div>
+
+    <details class="money-tool-details" open>
+      <summary>¿Cómo sale este número?</summary>
+      <p>Los CETES se compran por título. Por eso puede sobrar un poquito de dinero sin invertir. No es error de la calculadora; es parte del modelo.</p>
+      <dl class="money-breakdown-grid" data-breakdown>
+        <div><dt>Precio estimado por título</dt><dd data-output="titlePrice">—</dd></div>
+        <div><dt>Títulos comprados</dt><dd data-output="titles">—</dd></div>
+        <div><dt>Inversión efectiva en CETES</dt><dd data-output="effectiveInvestment">—</dd></div>
+        <div><dt>Remanente no invertido</dt><dd data-output="uninvestedRemainder">—</dd></div>
+        <div><dt>Interés bruto al vencimiento</dt><dd data-output="grossInterestDetail">—</dd></div>
+        <div><dt>Retención ISR provisional</dt><dd data-output="withholdingDetail">—</dd></div>
+        <div><dt>Monto total estimado</dt><dd data-output="maturityTotalDetail">—</dd></div>
+      </dl>
+    </details>
+  </section>
+
+  <section class="money-tool-note space-y-3">
+    <h2 class="text-2xl font-black text-primary dark:text-primary-dark">Qué significa</h2>
+    <p data-output="explanation">
+      Este cálculo todavía está incompleto para hablar de poder de compra. Ya sabemos cuánto quedaría después de la retención,
+      pero falta decir contra qué inflación lo estás comparando.
+    </p>
+  </section>
+
+  <section class="space-y-4 rounded-2xl border border-accent-200/60 dark:border-foreground-dark/60 bg-accent-50 dark:bg-foreground-dark p-6" data-cetes-sources>
+    <h2 class="text-2xl font-black text-primary dark:text-primary-dark">Supuestos y fuentes</h2>
+    <ul>
+      <li>Se asume que mantienes los CETES hasta el vencimiento.</li>
+      <li>La tasa anual CETES viene de Banxico SIE o de una tasa manual capturada por ti.</li>
+      <li>El precio del título usa base de 360 días; la retención ISR estimada usa base de 365 días.</li>
+      <li>La retención ISR es provisional; tu ISR anual final puede cambiar según tu situación fiscal.</li>
+      <li>La inflación es un supuesto capturado por ti, no un dato oficial integrado en esta versión.</li>
+      <li>El remanente no se invierte en BONDDIA en v1.</li>
+    </ul>
+    <div class="grid gap-3 md:grid-cols-2">
+      {% for source in cetesCalculator.sources %}
+        <p class="money-source-note">
+          <a href="{{ source.url }}" rel="noopener noreferrer">{{ source.name }}</a><br>
+          {{ source.description }}
+        </p>
+      {% endfor %}
+    </div>
+    <p class="text-sm">
+      Esta calculadora estima rendimiento neto y real con los datos que capturaste y las fuentes disponibles. La retención ISR mostrada es provisional.
+      Si vas a tomar una decisión importante, revisa Cetesdirecto, SAT o a tu contador. Aquí hacemos números para entender, no para decirte qué comprar.
+    </p>
+  </section>
+</article>

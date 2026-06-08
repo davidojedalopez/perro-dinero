@@ -201,11 +201,13 @@ assertExists('_site/api/indicadores_economicos.json');
 assertExists('_site/posts/cetes/index.html');
 assertExists('_site/posts/rendimientos-en-cetes/index.html');
 assertExists('_site/herramientas/index.html');
+assertExists('_site/herramientas/cetes-rendimiento-neto-real/index.html');
 assertExists('_site/portafolio/index.html');
 const hashedMainCssFiles = assertSingleFileMatch('assets', /^main\.[a-f0-9]{8,}\.css$/, 'hashed main CSS');
 const hashedMainJsFiles = assertSingleFileMatch('assets', /^main\.[a-f0-9]{8,}\.js$/, 'hashed main JS');
 const annotationChunkFiles = assertSingleFileMatch('assets', /^annotations\.[a-f0-9]{8,}\.js$/, 'lazy annotations JS chunk');
 const debtPlannerChunkFiles = assertSingleFileMatch('assets', /^debt-planner\.[a-f0-9]{8,}\.js$/, 'lazy debt planner JS chunk');
+const cetesRealReturnChunkFiles = assertSingleFileMatch('assets', /^cetes-real-return\.[a-f0-9]{8,}\.js$/, 'lazy CETES real return JS chunk');
 const newsletterObserverChunkFiles = assertSingleFileMatch('assets', /^newsletter-observer\.[a-f0-9]{8,}\.js$/, 'lazy newsletter observer JS chunk');
 assertExists('_site/assets/manifest.json');
 assertExists('_site/service-worker.js');
@@ -219,7 +221,7 @@ if (mainJs && fs.statSync(mainJsPath).size < 14 * 1024) {
   fail('initial main JS bundle should stay under 14 KB after lazy-loading page features');
 }
 
-for (const forbidden of ['rough-notation', 'Tarjeta de crédito (tasa alta)', 'simulatePlan', 'newsletter-cta-iframe']) {
+for (const forbidden of ['rough-notation', 'Tarjeta de crédito (tasa alta)', 'simulatePlan', 'newsletter-cta-iframe', 'Ganancia neta estimada', 'calculateCetesRealReturn']) {
   if (mainJs.includes(forbidden)) {
     fail(`initial main JS bundle should not eagerly include page feature code: ${forbidden}`);
   } else {
@@ -254,6 +256,15 @@ if (annotationChunk.includes('annotated') && /rough|annotation/i.test(annotation
   fail('annotations chunk should contain the rough notation implementation');
 }
 
+const cetesRealReturnChunk = cetesRealReturnChunkFiles[0]
+  ? fs.readFileSync(path.join(site, 'assets', cetesRealReturnChunkFiles[0]), 'utf8')
+  : '';
+if (cetesRealReturnChunk.includes('Ganancia neta estimada') && cetesRealReturnChunk.includes('retención ISR') && cetesRealReturnChunk.includes('CETES')) {
+  pass('CETES calculator code is emitted in the CETES lazy chunk');
+} else {
+  fail('CETES lazy chunk should contain the calculator implementation');
+}
+
 for (const relPath of ['_site/assets/main.css', '_site/assets/main.js']) {
   if (fs.existsSync(path.join(root, relPath))) {
     fail(`${relPath} should not exist; main CSS/JS should be content-hashed`);
@@ -265,6 +276,29 @@ for (const relPath of ['_site/assets/main.css', '_site/assets/main.js']) {
 const indexHtml = fs.existsSync(path.join(site, 'index.html'))
   ? fs.readFileSync(path.join(site, 'index.html'), 'utf8')
   : '';
+const cetesCalculatorHtml = fs.existsSync(path.join(site, 'herramientas/cetes-rendimiento-neto-real/index.html'))
+  ? fs.readFileSync(path.join(site, 'herramientas/cetes-rendimiento-neto-real/index.html'), 'utf8')
+  : '';
+if (cetesCalculatorHtml.includes('data-cetes-real-return')
+  && cetesCalculatorHtml.includes('Calculadora CETES: rendimiento neto y real')
+  && cetesCalculatorHtml.includes('Retención ISR anual aplicable')
+  && cetesCalculatorHtml.includes('Supuestos y fuentes')
+  && cetesCalculatorHtml.includes('Banxico SIE, CETES')
+  && cetesCalculatorHtml.includes('Estimación educativa')) {
+  pass('CETES calculator generated HTML includes calculator shell, source attribution, assumptions, and disclaimer');
+} else {
+  fail('CETES calculator generated HTML should include calculator shell, source attribution, assumptions, and disclaimer');
+}
+if (cetesCalculatorHtml.includes('data-cetes-data') && cetesCalculatorHtml.includes('cetes-364') && cetesCalculatorHtml.includes('annualRatePercent')) {
+  pass('CETES calculator embeds deterministic term data for lazy client hydration');
+} else {
+  fail('CETES calculator should embed deterministic term data for lazy client hydration');
+}
+if (cetesCalculatorHtml.includes('/herramientas/cetes-rendimiento-neto-real/') && cetesCalculatorHtml.includes('Calculadora CETES rendimiento neto real')) {
+  pass('CETES calculator has route metadata in generated HTML');
+} else {
+  fail('CETES calculator should have route metadata in generated HTML');
+}
 for (const file of [...hashedMainCssFiles, ...hashedMainJsFiles]) {
   if (indexHtml.includes(`/assets/${file}`)) {
     pass(`index.html references /assets/${file}`);
